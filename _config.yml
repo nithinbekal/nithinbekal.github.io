@@ -3,4 +3,4 @@ description: ''
 url: http://nithinbekal.com
 pygments: true
 permalink: /posts/:title
-exclude: [deploy.sh]
+markdown: kramdown
