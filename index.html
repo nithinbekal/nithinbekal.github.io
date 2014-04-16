@@ -1,0 +1,27 @@
+---
+layout: default
+title: Nithin Bekal
+---
+
+<div id='bio'>
+  Hi there! I'm Nithin. I work at <a href='http://crowdstudio.in'>CrowdStudio</a> and live in Kochi, India. I <a href='http://github.com/nithinbekal'>write code</a>, and occassionally scribble stuff here, or (more frequently) on <a href='http://twitter.com/nithinbekal'>Twitter</a>. Also a <a href='https://www.goodreads.com/user/show/1059476-nithin-bekal'>bibliophile</a>, movie buff and Liverpool FC fanatic.
+</div>
+
+<div class='posts'>
+  {% for post in site.posts %}
+    {% unless post.next %}
+      <h3 class='year'>{{ post.date | date: '%Y' }}</h3>
+    {% else %}
+      {% capture year  %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        <h3 class='year'>{{ post.date | date: '%Y' }}</h3>
+      {% endif %}
+
+    {% endunless %}
+    <a href='{{ post.url }}'>
+      <span class='title'>{{ post.title }}</span>
+      <span class='published-on'>{{ post.date | date_to_string }}</span>
+    </a>
+  {% endfor %}
+</div>

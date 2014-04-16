@@ -1,0 +1,353 @@
+---
+layout: post
+title:  "Writing Ruby Gems"
+date:   2011-06-17 12:00:00
+alias: [/2011/writing-ruby-gems/, /2011/writing-ruby-gems-part-5-setting-up-rspec/]
+categories: programming
+---
+
+Writing a Ruby gem is a lot easier than it sounds. Many tutorials about writing gems recommend using something like [Jeweler](https://github.com/technicalpickles/jeweler) or [Hoe](https://github.com/seattlerb/hoe) to create the structure of the gem for you.
+
+Using such tools will make it much easier to get started with a gem, but building a gem from scratch will help you figure out how exactly those tools organize your gem's structure. Here, we will walk through creating a gem from scratch, without generating any code.
+
+The gem we are creating here is called sudoku, and it is supposed to be able to solve... er... sudoku puzzles. But this tutorial isn't about creating a sudoku solver, so we'll not worry too much about the logic that goes into a sudoku solver and instead focus on how we will package our gem.
+
+The gem name sudoku is obviously taken (by me) and you can't publish the gem to rubygems.org with the same name. I will be using the name sudoku for our gem in the rest of the tutorial, but you can use some other gem name (sudoku-yourname, perhaps?) and replace "sudoku" by your gem's name wherever applicable.
+
+I've pushed the code for [this project to github](https://github.com/nithinbekal/sudoku), so you can take a look at the latest code there.
+
+# 1. Gem Specifications
+
+The first thing to do when creating a new gem is to create a file called gemspec that contains information about the gem. The gemspec file will have the name of your gem, ie. my gemspec will be called sudoku.gemspec.
+
+Create a directory for your sudoku solver gem and add a gemspec file. In your gemspec file, add the following code, replacing the values for name, authors, email and homepage:
+
+{% highlight ruby %}
+Gem::Specification.new do |s|
+ s.name        = "sudoku"
+ s.version     = '0.0.0'
+ s.authors     = ["Nithin Bekal"]
+ s.email       = ["me@nithinbekal.com"]
+
+ s.summary     = "Sudoku solver in Ruby"
+ s.description = "Solves Sudoku puzzles. D'uh!"
+ s.homepage    = "http://github.com/nithinbekal/sudoku"
+end
+{% endhighlight %}
+
+Now that you've written the gemspec, build the gem using the "gem build" command:
+
+{% highlight ruby %}
+$ gem build sudoku.gemspec
+ Successfully built RubyGem
+ Name: sudoku
+ Version: 0.0.0
+ File: sudoku-0.0.0.gem
+{% endhighlight %}
+
+This command will package your gem project into a gem file that can be used to install the gem. This file will have the structure gem_name-version.gem (with the gem name and version coming from the gemspec). Our sudoku gem is at version 0.0.0, so the gem file will have the name sudoku-0.0.0.gem. You can use this file to install the gem for your ruby installation with "gem install sudoku-0.0.0.gem".
+
+{% highlight ruby %}
+$ gem install sudoku-0.0.0.gem
+Successfully installed sudoku-0.0.0
+1 gem installed
+Installing ri documentation for sudoku-0.0.0...
+Installing RDoc documentation for sudoku-0.0.0...
+{% endhighlight %}
+
+You can check that the gem is available by doing:
+
+{% highlight ruby %}
+$ gem list | grep sudoku
+sudoku (0.0.0)
+{% endhighlight %}
+
+If you check the gem installation folder for the gem and you'll see that there are no files in it. To find the location where the gem will be installed, do "gem env" on the terminal:
+
+{% highlight ruby %}
+$ gem env
+RubyGems Environment:
+ - RUBYGEMS VERSION: 1.8.5
+ - RUBY VERSION: 1.9.2 (2011-02-18 patchlevel 180) [i686-linux]
+ - INSTALLATION DIRECTORY: /home/username/.rvm/gems/ruby-1.9.2-p180
+ - RUBY EXECUTABLE: /home/username/.rvm/rubies/ruby-1.9.2-p180/bin/ruby
+ - EXECUTABLE DIRECTORY: /home/username/.rvm/gems/ruby-1.9.2-p180/bin
+ - RUBYGEMS PLATFORMS:
+    - ruby
+    - x86-linux
+ - GEM PATHS:
+    - /home/username/.rvm/gems/ruby-1.9.2-p180
+    - /home/username/.rvm/gems/ruby-1.9.2-p180@global
+ - GEM CONFIGURATION:
+    - :update_sources => true
+    - :verbose => true
+    - :benchmark => false
+    - :backtrace => false
+    - :bulk_threshold => 1000
+ - REMOTE SOURCES:
+    - http://rubygems.org/
+    {% endhighlight %}
+
+Go to the path shown as INSTALLATION DIRECTORY, and within that navigate to gems directory. Here, you will find your new sudoku gem in the directory sudoku-0.0.1. This directory will be empty now because we haven't yet written any code for our awesome sudoku solver.
+
+Now that we have created a gemspec, used it to build our (empty) gem and even installed it, you can sit back for a few minutes and bask in the glory of your awesome new gem. (Let's ignore the fact for now that it does absolutely nothing. After all, eventually our gem will be able to solve any sudoku you throw at it.)
+
+
+# 2. Adding some code
+
+In the previous post, we saw how to set up the gemspec and also installed the empty gem into our rubygems directory. Now it's time we started adding some code to our gem.
+
+Create a directory called lib/ and save a file sudoku.rb with the following code:
+
+{% highlight ruby %}
+module Sudoku
+ # hopefully someday this module will solve Sudoku.
+end
+{% endhighlight %}
+
+It's not much code, and it doesn't do much, but we have to start somewhere. Now build and install the gem as we did in the previous part of this tutorial:
+
+{% highlight ruby %}
+$ gem build sudoku.gemspec
+$ gem install sudoku-0.0.0.gem
+{% endhighlight %}
+
+If you check the installation path for your gem in the rubygems folder, you will still find it empty. This is because rubygems doesn't know what files to package into our gem. To fix that, let's tell the gemspec what files need to be added.
+
+{% highlight ruby %}
+Gem::Specification.new do |s|
+ # rest of the stuff
+ s.files = Dir.glob("lib/**/*.rb")
+end
+{% endhighlight %}
+
+Build and install the gem again, and this time you'll find lib/sudoku.rb in the gem installation directory. 
+
+Gem authors often use a version.rb file to store the version information. It's always prudent to use a separate directory within the lib directory to put your code. This is because <code>require 'yourgem'</code> causes rubygems to add your gem's lib/ to the load path. Now every require statement will also look at the files in your lib/ and it's possible that the names might clash with some other gem.
+
+The convention is to have a directory within lib/ with the same name as the gem. This way only sudoku.rb will be loaded from the load path and we can safely <code>require 'sudoku/version'</code> within sudoku.rb to access version.rb.
+
+
+# 3. Publishing to Rubygems.org
+
+If you're planning to share your gem with everyone, you have to publish the gem to two places - <a href="http://rubygems.org/">rubygems.org</a> and <a href="http://github.com/">github</a>.
+
+Rubygems.org is the place where most Ruby gems are hosted. Whenever you do "gem install some_gem" you're most likely installing a gem hosted on rubygems.org. Rubygems makes it incredibly easy to make your gem available for anyone to install. Once we have pushed our sudoku gem to rubygems, anyone can install the gem with "gem install sudoku".
+
+If you don't already have an account on rubygems.org, create one. Once you have an account, go back to your gem directory and do this:
+
+{% highlight ruby %}
+$ gem push sudoku-0.0.0.gem
+Enter your RubyGems.org credentials.
+Don't have an account yet? Create one at http://rubygems.org/sign_up
+ Email:   example@gmail.com
+ Password:
+Signed in.
+Pushing gem to RubyGems.org...
+Successfully registered gem: sudoku (0.0.0)
+{% endhighlight %}
+
+That's it! Your gem is now available for anyone to install from rubygems. go on, try installing it:
+
+{% highlight ruby %}
+$ gem install sudoku
+Successfully installed sudoku-0.0.0
+1 gem installed
+Installing ri documentation for sudoku-0.0.0...
+Installing RDoc documentation for sudoku-0.0.0...
+{% endhighlight %}
+
+There... you've published your gem to rubygems.org!
+
+Apart from rubygems.org, it's always a good idea to share your gem's code on github. Most Ruby programmers are on github and it makes it easy for people to contribute to your gem.
+
+
+# 4. Setting up Test::Unit
+
+So far in this tutorial we haven't written any code that would be useful in solving Sudoku. The reason is that I didn't want to start writing any code until we have a test framework set up for testing our code.
+
+Test::Unit is the unit testing framework that ships with Ruby, so we will first set up our gem to run unit tests with the "rake test" command. However, I prefer another testing framework, Rspec, for writing the tests. (We'll set up Rspec in the next part of the tutorial and then continue using that rather than Test::Unit for testing.)
+
+We will write a simple method in the sudoku module that will return a string "Sudoku: version 0.0.0" (the version number will obviously have to be taken from lib/sudoku/version.rb).
+
+We will put all our unit tests in a directory called test. We will now add a rake task called "test" to run all the unit tests. To create this, we will first need to create a Rakefile that looks like this:
+
+{% highlight ruby %}
+require 'rake/testtask'
+
+Rake::TestTask.new do |t|
+ t.libs << 'test'
+end
+
+desc "Run tests"
+task :default => :test
+{% endhighlight %}
+
+Rake already provides a task called test, so we are making use of that and have configured the task to use the test/ directory with <code>t.libs &lt;&lt; 'test'</code>. We will also configure rake to make the test task the default when rake is run. Running "rake" without a task name would now be the same as running "rake test". (In the next post, we'll change this to run our Rspec specs rather than the unit tests.)
+
+Now let's add a test file test/test_sudoku.rb and add a silly test that we know will fail.
+
+{% highlight ruby %}
+require 'test/unit'
+require 'sudoku'
+
+class TestSudoku &lt; Test::Unit::TestCase
+  def test_silly_example
+    assert_equal 2+2, 5
+  end
+end
+{% endhighlight %}
+
+2+2 isn't equal to 5, so this test should fail. Run the rake task:
+
+{% highlight ruby %}
+$ rake test
+Loaded suite /home/nithin/.rvm/gems/ruby-1.9.2-p180/gems/rake-0.9.2/lib/rake/rake_test_loader
+Started
+F
+Finished in 0.000950 seconds.
+
+ 1) Failure:
+test_silly_example(TestSudoku) [/home/nithin/work/sudoku/test/test_sudoku.rb:7]:
+&lt;4&gt; expected but was &lt;5&gt;.
+
+1 tests, 1 assertions, 1 failures, 0 errors, 0 skips
+
+Test run options: --seed 21001
+rake aborted!
+Command failed with status (1): [/home/nithin/.rvm/rubies/ruby-1.9.2-p180/b...]
+
+Tasks: TOP =&gt; test
+(See full trace by running task with --trace)
+{% endhighlight %}
+
+Now change the assertion to make the the test pass.
+
+{% highlight ruby %}
+$ rake test
+Loaded suite /home/user/.rvm/gems/ruby-1.9.2-p180/gems/rake-0.9.2/lib/rake/rake_test_loader
+Started
+.
+Finished in 0.000544 seconds.
+
+1 tests, 1 assertions, 0 failures, 0 errors, 0 skips
+
+Test run options: --seed 23369
+{% endhighlight %}
+
+If you try running rake without the task name, you will see that the output is exactly the same.
+
+Now let's remove the silly test and write a test that acually tests the <code>version_string</code> method that we're adding.
+
+{% highlight ruby %}
+  def test_version_string
+    assert_equal Sudoku.version_string, "Sudoku version #{Sudoku::VERSION}"
+  end
+{% endhighlight %}
+
+Now if you run rake you will get an error with the message: <code>"NameError: uninitialized constant TestSudoku::Sudoku"</code>. To fix this, we need to add the code for the version_string method in lib/sudoku.rb.
+
+
+{% highlight ruby %}
+require 'sudoku/version'
+
+module Sudoku
+  def self.version_string
+    "Sudoku version #{Sudoku::VERSION}"
+  end
+end
+{% endhighlight %}
+
+Now rake will run the test successfully. Let's rebuild our gem and install it with the generated sudoku-0.0.0.gem file to see that it installs correctly.
+
+However, we're not done yet. If you check the gem directory in the gem installation path, you will see that our test/ directory is missing. To tell rubygems to include that code in the package, we'll add the following line in the gemspec:
+
+{% highlight ruby %}
+Gem::Specification.new do |s|
+  # other stuff
+  s.test_files = Dir.glob("test/**/*.rb")
+end
+{% endhighlight %}
+
+Rebuild and install the gem again and you'll see the test directory in the installed gem path.
+
+In the next part of the tutorial we'll set up Rspec for testing the gem and along with that start adding some real code for the sudoku solver.
+
+
+# 5. Setting up Rspec
+
+In this part, we will replace Test::Unit by another testing framework, Rspec.
+
+Test::Unit is a great testing framework, but I personally prefer using Rspec for its syntactic sugar. At the end of this part of the tutorial, we will have set up both Rspec and Test::Unit, so you can choose whichever framework you feel comfortable with.
+
+First of all, let's change the Rakefile to add the following two lines to the Rakefile:
+
+{% highlight ruby %}
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new('spec')
+{% endhighlight %}
+
+This adds a rake task called 'spec' and you will be able to run the specs in the <code>spec/</code> directory. If you wish to run your specs as the default rake task instead of Test::Unit tests, replace <code>task :default =&gt; 'test'</code> to <code>task :default =&gt; :spec</code>.
+
+The next thing we need to do is to tell rubygems that you want Rspec as a development dependency.
+
+{% highlight ruby %}
+  s.add_development_dependency 'rspec', '~> 2.5'
+{% endhighlight %}
+
+If anyone installs the gem using <code>gem install sudoku --development</code>, Rubygems will install rspec when installing sudoku.
+
+Now we need to add a spec directory and create spec_helper.rb before we start writing the specs. The spec_helper will look like this:
+
+{% highlight ruby %}
+require 'rspec'
+require 'sudoku'
+
+RSpec.configure do |config|
+  config.color_enabled = true
+  config.formatter     = 'documentation'
+end
+{% endhighlight %}
+
+The Rspec.configure block will contain the options to configure Rspec, and we have used the color_enabled and formatter configurations.
+
+Next, we'll add a spec similar to the test we wrote using Test::Unit. Add the following code to a file sudoku_spec.rb:
+
+{% highlight ruby %}
+require 'spec_helper'
+
+describe Sudoku do
+  it 'should return correct version string' do
+    Sudoku.version_string.should == "Sudoku version #{Sudoku::VERSION}"
+  end
+end
+{% endhighlight %}
+
+Now run <code>rake spec</code> (or even simply <code>rake</code>, if you've changed the default task to rspec) and you'll see the output looks something like this:
+
+{% highlight ruby %}
+$ rake
+/home/username/.rvm/rubies/ruby-1.9.2-p180/bin/ruby -S rspec ./spec/sudoku_spec.rb
+
+Sudoku
+  should return correct version string
+
+Finished in 0.00051 seconds
+1 example, 0 failures
+{% endhighlight %}
+
+The passing spec will be displayed in green because we have set the color_enabled option to true. And, because we have set the formatter option to 'documentation', the documentation string 'should return correct version string' is also displayed in the output.
+
+Let's now build and install the gem, and check the directory where the gem is installed. You'll see that the spec folder is missing from the installed gem. To include the specs in the package, we need to change the following line in the gemspec:
+
+{% highlight ruby %}  s.test_files  = Dir.glob("test/**/*.rb")
+{% endhighlight %}
+
+to:
+
+{% highlight ruby %}  s.test_files  = Dir.glob("{spec,test}/**/*.rb")
+{% endhighlight %}
+
+We have added the spec/ directory in addition to the test/ directory as the source of test files. Now if you build and install the gem again, the spec files will be present in the installed gem.
+
+You now have the option of using Rspec or Test::Unit for writing the tests for the sudoku solver. You also have the option of <i>not</i> writing any tests, but try not to take that path if you are making a gem that lots of people might find useful. Nobody wants to use an untested library.

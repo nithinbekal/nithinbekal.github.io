@@ -1,0 +1,6 @@
+name: Nithin Bekal
+description: ''
+url: http://nithinbekal.com
+pygments: true
+permalink: /posts/:title
+exclude: [deploy.sh]

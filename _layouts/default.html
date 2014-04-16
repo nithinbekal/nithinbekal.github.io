@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header'>
+        <h1 class='title'><a href="/">{{ site.name }}</a></h1>
+        <span class='links align-right'>
+          <a href='http://twitter.com/nithinbekal' target='_blank'>Tweets</a>
+          <a href='http://github.com/nithinbekal' target='_blank'>Code</a>
+        </span>
+      </div>
+      <div class='site'>
+
+        {{ content }}
+
+      </div> <!-- /site -->
+      <div class='footer'>Powered by <a href='http://jekyllrb.com'>Jekyll</a>.</div>
+    </div> <!-- /container -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2095438-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </body>
+</html>
