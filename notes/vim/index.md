@@ -14,6 +14,8 @@ Blog posts, links, etc.
 * [Vim, Tmux and system clipboard](https://coderwall.com/p/j9wnfw)
 * [Extending Rails.vim with custom commands](http://robots.thoughtbot.com/extending-rails-vim-with-custom-commands)
 * [An Extremely Quick and Simple Introduction to the Vi Text Editor](http://heather.cs.ucdavis.edu/~matloff/UnixAndC/Editors/ViIntro.html)
+* [Vim for Rubyists](http://www.vimninjas.com/2012/08/28/vim-for-rubyists-part-1/)
+* [Vim Revisited](http://mislav.uniqpath.com/2011/12/vim-revisited/), a post by Mislav Marohnić
 
 Books
 
