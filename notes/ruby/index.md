@@ -32,3 +32,9 @@ installed on Windows.
 * [Ruby Inside](http://www.rubyinside.com/)
 * [Ruby Flow](http://www.rubyflow.com/)
 
+**Rails application servers**
+
+* [A Comparison of Popular Ruby Application Servers](https://blog.engineyard.com/2014/ruby-app-server-arena-pt1)
+  on the Engine Yard blog (Passenger, Unicorn, Thin, Puma)
+* [Ruby on Rails Server Options](http://stackoverflow.com/questions/4113299/ruby-on-rails-server-options/4113570#4113570)
+  (StackOverflow question)
