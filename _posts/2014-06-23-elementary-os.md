@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Review: Elementary OS (Luna)"
+title:  "Elementary OS (Luna)"
 date:   2014-06-23 12:00:00
 categories: operating-systems
 ---
