@@ -17,6 +17,7 @@ Blog posts, links, etc.
 * [Vim for Rubyists](http://www.vimninjas.com/2012/08/28/vim-for-rubyists-part-1/)
 * [Vim Revisited](http://mislav.uniqpath.com/2011/12/vim-revisited/), a post by Mislav Marohnić
 * [Vim After 11 Years](http://statico.github.io/vim.html)
+* [Best of Vim Tips](http://zzapper.co.uk/vimtips.html)
 
 Books
 
