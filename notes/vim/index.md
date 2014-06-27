@@ -6,6 +6,7 @@ date:   2014-06-07 12:00:00
 
 Blog posts, links, etc.
 
+* [Vim Awesome](http://vimawesome.com/) - Search for vim plugins
 * [Vim and Ctags](http://andrew.stwrt.ca/posts/vim-ctags)
 * [Vim Splits - Move Faster and More Naturally](http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally)
 * [Vim as your IDE](http://haridas.in/vim-as-your-ide.html)
