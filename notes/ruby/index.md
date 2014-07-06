@@ -38,3 +38,8 @@ installed on Windows.
   on the Engine Yard blog (Passenger, Unicorn, Thin, Puma)
 * [Ruby on Rails Server Options](http://stackoverflow.com/questions/4113299/ruby-on-rails-server-options/4113570#4113570)
   (StackOverflow question)
+
+**Rails metrics**
+
+* [Pssst... your Rails application has a secret to tell you](http://signalvnoise.com/posts/3091-pssst-your-rails-application-has-a-secret-to-tell-you) on 37signals blog
+* [ActiveSupport::Notifications, statistics and using facts to improve your site](http://www.reinteractive.net/posts/141-activesupport-notifications-statistics-and-using-facts-to-improve-your-site)
