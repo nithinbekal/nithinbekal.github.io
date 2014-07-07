@@ -30,3 +30,7 @@ Videos:
 * [Ben Orenstein - Write code faster: expert-level vim (Railsberry 2012)](https://www.youtube.com/watch?v=SkdrYWhh-8s)
 * [tpope's vim config and plugins](https://www.youtube.com/watch?v=MGmIJyTf8pg)
 * [Impressive Ruby Productivity with Vim and Tmux by Chris Hunt](https://www.youtube.com/watch?v=gB-JSh1EVME)
+
+**Plugins**
+
+* [Ctrl-P](http://github.com/kien/ctrlp.vim) - Using this because it takes the least amount of configuration. [Command-T](https://github.com/wincent/Command-T) seems like a better option, but depends on Ruby and is a pain to set up. ([More comparisons](http://www.reddit.com/r/vim/comments/wb0t5/commandt_vs_ctrlpvim_vs_fuzzyfinder_go/)).
