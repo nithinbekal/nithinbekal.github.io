@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Ruby'
+title: 'Usability'
 date:   2014-07-08 12:00:00
 ---
 
