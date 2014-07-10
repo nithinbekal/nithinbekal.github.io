@@ -32,6 +32,11 @@ installed on Windows.
 * [Ruby Inside](http://www.rubyinside.com/)
 * [Ruby Flow](http://www.rubyflow.com/)
 
+**Rails Testing**
+
+* [Testing Client Side Views in Rails Apps](http://blog.arkency.com/2013/09/testing-client-side-views-in-rails-apps/)
+* [Writing Deterministic and Performant Specs with Capybara](http://blog.carbonfive.com/2013/07/26/writing-deterministic-performant-specs-with-capybara/)
+
 **Rails application servers**
 
 * [A Comparison of Popular Ruby Application Servers](https://blog.engineyard.com/2014/ruby-app-server-arena-pt1)
