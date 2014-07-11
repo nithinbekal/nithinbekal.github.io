@@ -48,3 +48,12 @@ installed on Windows.
 
 * [Pssst... your Rails application has a secret to tell you](http://signalvnoise.com/posts/3091-pssst-your-rails-application-has-a-secret-to-tell-you) on 37signals blog
 * [ActiveSupport::Notifications, statistics and using facts to improve your site](http://www.reinteractive.net/posts/141-activesupport-notifications-statistics-and-using-facts-to-improve-your-site)
+* [Using Statsd and Graphite from a Rails App](http://www.spacevatican.org/2012/9/18/using-statsd-and-graphite-from-a-rails-app/)
+* Setup Statsd and Graphite: [1](http://www.kinvey.com/blog/89/how-to-set-up-metric-collection-using-graphite-and-statsd-on-ubuntu-1204-lts) [2](http://the.randomengineer.com/2014/05/04/monitor-application-events-in-real-time/)
+* [Practical Guide to Statsd/Graphite Monitoting](http://matt.aimonetti.net/posts/2013/06/26/practical-guide-to-graphite-monitoring/)
+* [Docker Image for Graphite and Statsd](https://github.com/hopsoft/docker-graphite-statsd)
+
+**Rails Deployment**
+
+* [capistrano-ec2tag](https://github.com/douglasjarquin/capistrano-ec2tag) - A Capistrano plugin to deploy to Amazon EC2 instances based on their tags
+* [Capistrano 3 Upgrade Guide](https://semaphoreapp.com/blog/2013/11/26/capistrano-3-upgrade-guide.html)
