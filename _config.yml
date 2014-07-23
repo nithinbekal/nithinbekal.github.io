@@ -1,6 +1,6 @@
 name: Nithin Bekal
 description: ''
 url: http://nithinbekal.com
-pygments: true
+highlighter: pygments
 permalink: /posts/:title
 markdown: kramdown
