@@ -4,10 +4,9 @@ title: 'Notes and bookmarks'
 date:   2014-06-07 12:00:00
 ---
 
+- **Lang**: [JavaScript](/notes/programming/lang/js/), [Ruby](/notes/programming/lang/ruby/)
 - [Compilers](/notes/compilers/)
-- [JavaScript](/notes/js/)
 - [Product design](/notes/product-design/)
 - [Programming concepts](/notes/programming/)
-- [Ruby](/notes/ruby/)
 - [Tmux](/notes/tmux/)
 - [Vim](/notes/vim/)
