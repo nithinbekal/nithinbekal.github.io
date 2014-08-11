@@ -14,4 +14,4 @@ brew install erlang elixir
 
 - [Elixir - A modern approach to programming for the Erlang VM on Vimeo](https://vimeo.com/53221562), Jose Valim
 - [Introduction to Elixir](http://www.youtube.com/watch?v=a-off4Vznjs&feature=youtu.be), Dave Thomas
-
+- [Think Different](https://www.youtube.com/watch?v=5hDVftaPQwY), Dave Thomas keynote at Elixir Conf 2014
