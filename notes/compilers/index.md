@@ -14,6 +14,7 @@ Blog posts, tutorials, etc:
   (using Haskell)
 * [Writing your own toy compiler using Flex, Bison and LLVM](http://gnuu.org/2009/09/18/writing-your-own-toy-compiler/)
 * [Let's build a compiler](http://compilers.iecc.com/crenshaw/) by Jack Crenshaw
+* [Reconstructing Ruby](http://www.halogenandtoast.com/reconstructing-ruby-an-introduction/) 
 
 Languages written in [Parslet](http://kschiess.github.io/parslet/):
 
