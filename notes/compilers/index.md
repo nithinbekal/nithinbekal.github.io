@@ -6,7 +6,7 @@ date:   2014-06-07 12:00:00
 
 Blog posts, tutorials, etc:
 
-* [Build Your Own Lisp](http://www.buildyourownlisp.com/) - Teaches C programming by building a minimal lisp.
+* [Build Your Own Lisp](http://www.buildyourownlisp.com/) - Teaches C programming by building a minimal lisp. This [HN discussion(https://news.ycombinator.com/item?id=7530427) has some more interesting references.
 * [Writing a compiler in Ruby, bottom up](http://www.hokstad.com/compiler)
 * [Building a Lisp to Javascript compiler](http://honza.ca/2013/05/building-a-lisp-to-javascript-compiler)
 * [7 simple steps to implementing a programming language](http://kjetilvalle.com/posts/implement-a-programming-language.html)
