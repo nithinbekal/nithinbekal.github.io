@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 { font-family: Georgia, serif; }
   padding: 40px;
 }
 
-.site #bio {
+.site #page-description {
   border: 1px solid #ddd;
   color: #666;
   font-size: 0.8em;

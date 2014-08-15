@@ -1,0 +1,97 @@
+---
+layout: revealjs
+title: 'Law of Demeter'
+date:  2014-07-20 14:00:00
+---
+
+<section>
+  <h2>Law of Demeter</h2>
+</section>
+
+<section>
+  <h3>Talk only to friends, not to strangers</h3>
+</section>
+
+<section>
+  <h2>Which methods can you call?</h2>
+</section>
+
+<section>
+  <ol>
+    <li>The method's arguments</li>
+    <li>The object itself</li>
+    <li>Locally instantiated objects</li>
+    <li>Object's attributes</li>
+  </ol>
+</section>
+
+<section>
+  <h2>An example</h2>
+  <h3>Paper boy, Customer and Wallet</h3>
+</section>
+
+
+<section>
+  <pre><code class='ruby'>
+class PaperBoy
+  def collect_money(customer, amount)
+    if customer.wallet.cash > amount
+      customer.wallet.withdraw(amount)
+    else
+      come_back_later
+    end
+  end
+end
+  </code></pre>
+</section>
+
+<section>
+  <pre><code class='ruby'>
+class PaperBoy
+  def collect_money(customer, amount)
+    if customer.request_payment(amount)
+      puts 'Thanks!'
+    else
+      come_back_later
+    end
+  end
+end
+  </code></pre>
+</section>
+
+<section>
+  <pre><code class='ruby'>
+class Customer
+  def request_payment(amount)
+    @wallet.withdraw(amount)
+  end
+end
+  </code></pre>
+</section>
+
+<section>
+  <pre><code class='ruby'>
+class Wallet
+  def withdraw(amount)
+    return false if @balance < amount
+    @balance -= amount
+    true
+  end
+end
+  </code></pre>
+</section>
+
+<section>
+  <h2>Counting dots...</h2>
+  <pre><code class='ruby'>
+# Not OK
+customer.wallet.withdraw(amount)
+
+# OK - but why?
+Post.published.last_week
+  </code></pre>
+</section>
+
+<section> 
+  <img src="https://dl.dropboxusercontent.com/u/13430809/assets/slides.nithinbekal.com/tmux-vim/slide-7.jpg" />
+</section>
