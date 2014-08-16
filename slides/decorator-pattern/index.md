@@ -172,8 +172,8 @@ large_burger = LargeBurger.new(burger)
 
 <section>
   <pre><code class="ruby">
-xl_burger = LargeBurger.new(large_burger)
-xl_cheese_burger = BurgerWithCheese.new(xl_burger)
+jumbo_burger = LargeBurger.new(large_burger)
+jumbo_cheese_burger = BurgerWithCheese.new(jumbo_burger)
   </code></pre>
 </section>
 
