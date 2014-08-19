@@ -20,6 +20,11 @@ Blog posts, links, etc.
 * [Vim After 11 Years](http://statico.github.io/vim.html)
 * [Best of Vim Tips](http://zzapper.co.uk/vimtips.html)
 
+Other vim implementations
+
+* [Vim Refined](http://vimr.org/)
+* [NeoVim](http://neovim.org/)
+
 Books
 
 * [A Byte of Vim](http://files.swaroopch.com/vim/byte_of_vim_v051.pdf)
