@@ -11,3 +11,4 @@ This a collections of bookmarks to interesting programming books that are availa
 - [Programming Languages: Application and Interpretation](http://cs.brown.edu/~sk/Publications/Books/ProgLangs/2007-04-26/), by Shriram Krishnamurthi
 - [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/current/index.html)
 - [Learn Haskell Fast and Hard](http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/)
+- [Programming in Scala](http://www.artima.com/pins1ed/), by Martin Odersky, Lex Spoon, and Bill Venners
