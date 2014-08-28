@@ -12,3 +12,4 @@ This a collections of bookmarks to interesting programming books that are availa
 - [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/current/index.html)
 - [Learn Haskell Fast and Hard](http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/)
 - [Programming in Scala](http://www.artima.com/pins1ed/), by Martin Odersky, Lex Spoon, and Bill Venners
+- [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
