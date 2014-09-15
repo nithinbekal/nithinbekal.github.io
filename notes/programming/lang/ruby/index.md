@@ -58,3 +58,7 @@ installed on Windows.
 
 * [capistrano-ec2tag](https://github.com/douglasjarquin/capistrano-ec2tag) - A Capistrano plugin to deploy to Amazon EC2 instances based on their tags
 * [Capistrano 3 Upgrade Guide](https://semaphoreapp.com/blog/2013/11/26/capistrano-3-upgrade-guide.html)
+
+**Rails Internals**
+
+* [Diving in Rails - The request handling](http://blog.siami.fr/diving-in-rails-the-request-handling)
