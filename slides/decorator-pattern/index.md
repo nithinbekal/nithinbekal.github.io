@@ -1,7 +1,7 @@
 ---
 layout: revealjs
 title: 'Decorator Pattern'
-date: 2014-08-17 14:00:00
+date: 2014-09-21 14:00:00
 ---
 <section>
   <h2 class='color-red'>Decorator Pattern</h2>
