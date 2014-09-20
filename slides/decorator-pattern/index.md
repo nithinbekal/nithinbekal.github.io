@@ -110,7 +110,7 @@ end
 
 <section>
   <pre><code class="ruby">
-burger
+burger = Burger.new
 burger.extend(Large)
 p burger.cost #=> 65
 
