@@ -20,7 +20,7 @@ programmers into 4 categories:
 4. People who don't indent
 
 Did I hear you mutter "That 4th type are NOT programmers"? Of course they
-aren't. In fact, in my book they are right up there alongside Suaron's minions,
+aren't. In fact, in my book they are right up there alongside Sauron's minions,
 Lord Voldemort's Death-Eaters, and Darth Vader and the Sith as the most evil
 creatures that ever walked on the earth.
 
