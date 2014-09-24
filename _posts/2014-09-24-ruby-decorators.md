@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Decorator Pattern in Ruby"
-date:  2014-09-22 21:28:17
+date:  2014-09-24 21:28:17
 categories: design-patterns, programming
 ---
 
