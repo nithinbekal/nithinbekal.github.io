@@ -34,6 +34,7 @@ installed on Windows.
 
 **Rails Testing**
 
+* [Golden Master Testing](http://www.sitepoint.com/golden-master-testing-refactor-complicated-views/) (Katrina Owen)
 * [High Low Testing](http://mikepackdev.com/blog_posts/39-high-low-testing)
 * [Testing Client Side Views in Rails Apps](http://blog.arkency.com/2013/09/testing-client-side-views-in-rails-apps/)
 * [Writing Deterministic and Performant Specs with Capybara](http://blog.carbonfive.com/2013/07/26/writing-deterministic-performant-specs-with-capybara/)
