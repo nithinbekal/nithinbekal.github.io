@@ -129,3 +129,4 @@ This pattern can also be used to extract logic out of a complex class into other
 * Slides from my talk on [decorators and presenters](/slides/decorator-pattern/) at Kochi Ruby meetup
 * [Decorator Design Pattern](http://sourcemaking.com/design_patterns/decorator)
 * [Ruby Decorators](http://codebrahma.com/design/patterns/2014/04/28/ruby-decorators.html)
+* [Evaluating Alternative Decorator Implementations in Ruby](http://robots.thoughtbot.com/evaluating-alternative-decorator-implementations-in) on the Thoughtbot blog
