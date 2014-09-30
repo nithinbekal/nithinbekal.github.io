@@ -99,7 +99,7 @@ extra_large_burger = LargeBurger.new(large_burger)
 
 We can similarly represent cheese burgers using a `BurgerWithCheese` decorator. Using just three classes, we are no able to represent 6 types of burgers.
 
-# SimleDelegator
+# SimpleDelegator
 
 Our decorator implementation has one disadvantage: if `Burger` has a `#calories` method, it will no longer be exposed after a decorator has been applied on it. To solve this problem, we will use Ruby's `SimpleDelegator` class. First of all, we will implement a `BurgerDecorator` base class that all our decorator classes will inherit from.
 
