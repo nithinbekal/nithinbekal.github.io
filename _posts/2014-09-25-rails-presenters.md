@@ -9,7 +9,7 @@ When your models are bloated with methods that are only used in views, it might 
 
 Presenters give you an object oriented way to approach view helpers. In this post, I will walk through how we refactored our views to use presenters instead of helper methods or even methods in the model.
 
-Ryan Bates' excellent Railscasts has an episode on writing [presenters from scratch](railscasts.com/episodes/287-presenters-from-scratch) that guided me through this refactor. It's dives a bit deeper than what I'm covering here, so go check it out after you've read this.
+Ryan Bates' excellent Railscasts has an episode on writing [presenters from scratch](http://railscasts.com/episodes/287-presenters-from-scratch) that guided me through this refactor. It's dives a bit deeper than what I'm covering here, so go check it out after you've read this.
 
 # Refactoring the views
 
@@ -155,7 +155,7 @@ Using presenters has been a great win for us in maintaining the views. They also
 
 # Links
 
-* Ryan Bates' [Presenters from Scratch Railscast](railscasts.com/episodes/287-presenters-from-scratch)
+* Ryan Bates' [Presenters from Scratch Railscast](http://railscasts.com/episodes/287-presenters-from-scratch)
 * [Draper gem](https://github.com/drapergem/draper)
 * [Jay Fields' article about presenters](blog.jayfields.com/2007/03/rails-presenter-pattern.html) was one of the early mentions of presenters in the Rails community
 * In my previous post, I wrote about [the decorator pattern in Ruby](/posts/ruby-decorators/). Presenters can be seen as a kind of decorator that resides closer to the view layer.
