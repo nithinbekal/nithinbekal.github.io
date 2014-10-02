@@ -13,7 +13,7 @@ layout: default
   <div id='prev-next-nav'>
     <div class='prev'>
     {% if page.previous.url %}
-      <a href='{{page.previous.url}}'>Previous post</a>
+    <a href='{{page.previous.url}}'>&#8592; {{page.previous.title}}</a>
     {% endif %}
     &nbsp;
     </div>
@@ -22,7 +22,7 @@ layout: default
     </div>
     <div class='next'>
     {% if page.next.url %}
-    <a href='{{page.next.url}}'>Next post</a>
+    <a href='{{page.next.url}}'>{{ page.next.title }} &#8594;</a>
     {% endif %}
     </div>
   </div>
