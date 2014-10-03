@@ -27,7 +27,7 @@ class BurgerWithCheese < Burger
 end
 {% endhighlight %}
 
-Next, we need to represent a large buger that adds 15 to the cost of a normal burger. We can represent this using a `LargeBurger` subclass of `Burger`.
+Next, we need to represent a large burger that adds 15 to the cost of a normal burger. We can represent this using a `LargeBurger` subclass of `Burger`.
 
 {% highlight ruby %}
 class LargeBurger < Burger
@@ -59,7 +59,7 @@ module LargeBurger
 end
 {% endhighlight %}
 
-Now we can extend our buger objects dynamically using the `Object#extend` method.
+Now we can extend our burger objects dynamically using the `Object#extend` method.
 
 {% highlight ruby %}
 burger = Burger.new         #=> cost = 50
