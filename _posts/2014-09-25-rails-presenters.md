@@ -157,7 +157,7 @@ Using presenters has been a great win for us in maintaining the views. They also
 
 * Ryan Bates' [Presenters from Scratch Railscast](http://railscasts.com/episodes/287-presenters-from-scratch)
 * [Draper gem](https://github.com/drapergem/draper)
-* [Jay Fields' article about presenters](blog.jayfields.com/2007/03/rails-presenter-pattern.html) was one of the early mentions of presenters in the Rails community
+* [Jay Fields' article about presenters](http://blog.jayfields.com/2007/03/rails-presenter-pattern.html) was one of the early mentions of presenters in the Rails community
 * In my previous post, I wrote about [the decorator pattern in Ruby](/posts/ruby-decorators/). Presenters can be seen as a kind of decorator that resides closer to the view layer.
 * Slides from my [Decorators and Presenters](/slides/decorator-pattern/) talk at the Kochi Ruby meetup
 * This [pull request on Github](https://github.com/justin808/fat-code-refactoring-techniques/pull/11) by Justin Gordon has some interesting discussion on presenters. His [Railsconf talk](https://www.youtube.com/watch?v=bHpVdOzrvkE) also covers decorators and presenters using Draper.
