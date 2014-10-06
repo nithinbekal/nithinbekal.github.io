@@ -114,7 +114,7 @@ end
 To simplify things further, we could avoid instantiating the presenter object in the controller and instead add a helper method that allows us to wrap the ActiveRecord object inside a presenter directly in the view.
 
 {% highlight ruby %}
-module Application_helper
+module ApplicationHelper
   def present(model)
     klass = "#{model.class}Presenter".contantize
     presenter = klass.new(model, self)
