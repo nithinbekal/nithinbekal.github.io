@@ -1,7 +1,7 @@
 ---
 layout: revealjs
 title: "Fun With Ruby Metaprogramming"
-date:  2014-10-18 21:14:29
+date:  2014-10-19 14:00:00
 ---
 
 <section>
