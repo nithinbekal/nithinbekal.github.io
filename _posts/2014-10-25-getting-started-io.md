@@ -7,7 +7,7 @@ categories: io
 
 Io is a prototype-based langauge that has been around since 2002. What stood out to me about it is that it has a great deal of flexibility despite its remarkably simple syntax.
 
-The easiest way to get started with Io is to play around with it on the REPL. Download the binary for your OS from [iolanguage.org](iolanguage.org) (you can do `brew install io` on OSX) and start the repl with the `io` command.
+The easiest way to get started with Io is to play around with it on the REPL. Download the binary for your OS from [iolanguage.org](http://iolanguage.org) (you can do `brew install io` on OSX) and start the repl with the `io` command.
 
 In the interest of following the traditions of programming language tutorials, let me start off with the Hello World example:
 
