@@ -59,7 +59,7 @@ class Person
 end
 {% endhighlight %}
 
-In the above example, the `#older_than?` method needs to access `other_person`'s age, but we don't want age to be public. When `age` method is public, `foo.older_than?(bar)` works as long as `bar` belongs to `Person` class or any of its subclasses (ie. `bar.is_a?(Person)` is true).
+In the above example, the `#older_than?` method needs to access `other_person`'s age, but we don't want age to be public. When `age` method is protected, `foo.older_than?(bar)` works as long as `bar` belongs to `Person` class or any of its subclasses (ie. `bar.is_a?(Person)` is true).
 
 I don't remember ever having to use `protected` in all these years, but it's good to finally know where it could be used.
 
