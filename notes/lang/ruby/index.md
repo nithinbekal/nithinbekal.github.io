@@ -29,6 +29,7 @@ installed on Windows.
 
 **Blogs**
 
+* [Practicing Ruby](https://practicingruby.com/)
 * [Ruby Inside](http://www.rubyinside.com/)
 * [Ruby Flow](http://www.rubyflow.com/)
 
