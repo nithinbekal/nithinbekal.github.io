@@ -17,6 +17,7 @@ Blog posts, tutorials, etc:
 * [Let's build a compiler](http://compilers.iecc.com/crenshaw/) by Jack Crenshaw
 * [Reconstructing Ruby](http://www.halogenandtoast.com/reconstructing-ruby-an-introduction/) 
 * [Interpreting Lisp](http://www.civilized.com/getlisp.html)
+* [Compiler Design in C](http://www.holub.com/software/compiler.design.in.c.html), by Allen Holub
 
 Languages written in [Parslet](http://kschiess.github.io/parslet/):
 
