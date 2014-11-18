@@ -15,6 +15,9 @@ This a collections of bookmarks to interesting programming books that are availa
 - [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
 - [Interpreting Lisp](Interpreting Lisp)
 
+* [The Design and Implementation of Probabilistic Programming Languages](http://dippl.org/) - Noah D. Goodman and Andreas Stuhlmüller
+* [Probabilistic Models of Cognition](https://probmods.org/) - by Noah D. Goodman and Joshua B. Tenenbaum
+
 Some interesting reading lists:
 
 * [James Edward Gray II - One Programmer's Library](http://graysoftinc.com/book-reviews/one-programmers-library)
