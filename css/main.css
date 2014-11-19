@@ -51,15 +51,6 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
   padding: 50px;
 }
 
-.site #page-description {
-  border: 1px solid #ddd;
-  color: #666;
-  font-size: 0.8em;
-  font-style: italic;
-  line-height: 1.8em;
-  padding: 15px;
-}
-
 .site .posts {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
