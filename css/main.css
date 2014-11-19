@@ -132,23 +132,6 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
   padding: 20px;
 }
 
-#prev-next-nav {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  line-height: 25px;
-  overflow: hidden;
-  padding: 15px 0;
-  width: 100%;
-}
-#prev-next-nav div {
-  display: block;
-  float: left;
-  width: 33%;
-}
-#prev-next-nav a { color: #666; }
-#prev-next-nav .next { text-align: right; }
-#prev-next-nav .archives { text-align: center; }
-
 .container > .footer {
   color: #aaa;
   font-size: 0.6em;
