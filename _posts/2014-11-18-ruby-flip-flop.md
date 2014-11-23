@@ -75,7 +75,7 @@ There is an [open issue in Ruby's issue tracker](https://bugs.ruby-lang.org/issu
 
 I'm not a big fan of the syntax, and have never had to use it any of my code. If it were to be removed in the future, it wouldn't be missed too much.
 
-There has't been any activity on this issue in the past year, so there's no decision yet about whether or not it will disappear some day. But it's good to be aware of the syntax in case you come across the syntax when reading other people's code.
+There hasn't been any activity on this issue in the past year, so there's no decision yet about whether or not it will disappear some day. But it's good to be aware of the syntax in case you come across the syntax when reading other people's code.
 
 # Links
 
