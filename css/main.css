@@ -132,6 +132,15 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
   padding: 20px;
 }
 
+.site .post .post-nav {
+  border-top: 1px solid #ddd;
+  color: #eee;
+  font-family: 'Helvetica Neueu', Helvetica, Arial, sans-serif;
+  padding: 15px;
+  text-align: center;
+}
+.site .post .post-nav a { color: #888; }
+
 .container > .footer {
   color: #aaa;
   font-size: 0.6em;
