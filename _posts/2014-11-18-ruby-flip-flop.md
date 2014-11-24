@@ -13,7 +13,7 @@ The flip flop operator is a range (`..`) operator used between two conditions in
 
 {% highlight ruby %}
 (1..20).each do |x|
-  puts x if x == 5 .. x == 10
+  puts x if (x == 5) .. (x == 10)
 end
 {% endhighlight %}
 
