@@ -19,6 +19,8 @@ end
 
 The condition evalutaes to false every time it is evaluated until the first part evaluates to true. Then it evaluates to true until the second part evaluates to true. In the above example, the flip-flop is turned on when `x == 5` and stays on until `x == 10`, so the numbers from 5 to 10 are printed.
 
+The flip flop operator only works inside ifs and ternary conditions. Everywhere else, Ruby considers it to be the range operator.
+
 # Another example
 
 Let's take another example that sheds more light on this operator's behavior. Imagine you're parsing a file which has markers called `indent` and `dedent` in it. Whenever you encounter a line that contains `indent` you need to turn ON indentation for all lines after that, and turn it OFF when you come across a line that contains `dedent`.
