@@ -3,20 +3,14 @@ layout: default
 title: Slides
 ---
 
-<div id='page-description'>
-  These are slides for talks I gave at various meetups and workshops.
-</div>
-
-<br>
-
 <div class='posts'>
-{% assign slides = (site.pages | where: 'layout', 'revealjs' | sort: 'date' | reverse) %}
+  {% assign slides = (site.pages | where: 'layout', 'revealjs' | sort: 'date' | reverse) %}
 
-{% for page in slides %}
-    <a href='{{ page.url }}'>
-	  <span class='title'>{{ page.title }}</span>
-	  <span class='published-on'>{{ page.date | date_to_string }}</span>
-    </a>
-{% endfor %}
+  {% for page in slides %}
+    <div class='post-listing'>
+      <h2 class='title'><a href='{{ page.url }}'>{{ page.title }}</a></h2>
+      <span class='published-on'>{{ page.date | date: "%-d %B %Y" }}</span>
+    </div>
+  {% endfor %}
 </div>
 
