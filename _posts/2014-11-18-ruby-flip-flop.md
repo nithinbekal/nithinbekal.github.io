@@ -17,7 +17,7 @@ The flip flop operator is a range (`..`) operator used between two conditions in
 end
 {% endhighlight %}
 
-The condition evalutaes to false every time it is evaluated until the first part evaluates to true. Then it evaluates to true until the second part evaluates to true. In the above example, the flip-flop is turned on when `x == 5` and stays on until `x == 10`, so the numbers from 5 to 10 are printed.
+The condition evaluates to false every time it is evaluated until the first part evaluates to true. Then it evaluates to true until the second part evaluates to true. In the above example, the flip-flop is turned on when `x == 5` and stays on until `x == 10`, so the numbers from 5 to 10 are printed.
 
 The flip flop operator only works inside ifs and ternary conditions. Everywhere else, Ruby considers it to be the range operator.
 
