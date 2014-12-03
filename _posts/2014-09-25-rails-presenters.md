@@ -116,7 +116,7 @@ To simplify things further, we could avoid instantiating the presenter object in
 {% highlight ruby %}
 module ApplicationHelper
   def present(model)
-    klass = "#{model.class}Presenter".contantize
+    klass = "#{model.class}Presenter".constantize
     presenter = klass.new(model, self)
     yield(presenter) if block_given?
   end
