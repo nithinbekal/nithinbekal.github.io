@@ -14,6 +14,8 @@ This a collections of bookmarks to interesting programming books that are availa
 - [Programming in Scala](http://www.artima.com/pins1ed/), by Martin Odersky, Lex Spoon, and Bill Venners
 - [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
 - [Interpreting Lisp](Interpreting Lisp)
+* [Programming and Programming Languages](http://papl.cs.brown.edu/2014/)
+* [Learn You an Agda](http://williamdemeo.github.io/2014/02/27/learn-you-an-agda/)
 
 * [The Design and Implementation of Probabilistic Programming Languages](http://dippl.org/) - Noah D. Goodman and Andreas Stuhlmüller
 * [Probabilistic Models of Cognition](https://probmods.org/) - by Noah D. Goodman and Joshua B. Tenenbaum
