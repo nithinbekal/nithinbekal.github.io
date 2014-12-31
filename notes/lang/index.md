@@ -13,6 +13,7 @@ date:   2014-10-26 12:00:00
 Other interesting languages:
 
 * [Elm](http://elm-lang.org/)
+  - [Getting started with Elm](http://pragmaticstudio.com/blog/2014/12/19/getting-started-with-elm)
 * [Fancy](http://www.fancy-lang.org/)
 * [Idris](http://www.idris-lang.org/example/)
 * [Io](http://iolanguage.org/scm/io/docs/IoGuide.html)
