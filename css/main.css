@@ -110,8 +110,6 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 
 .site .post .content pre code { background: none; border: none; padding: 0; }
 
-.site .post .content a { font-weight: bold; }
-
 .site .post .content blockquote {
   background: #fff;
   border: 1px solid #ddd;
