@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Programming Humor"
-date:  2014-08-29  0:42:36
+date:  2014-08-29  00:42:36
 ---
 
 ### [Greenspun's Tenth Rule of Programming](http://en.wikipedia.org/wiki/Greenspun%27s_tenth_rule)

@@ -26,6 +26,7 @@ installed on Windows.
 * [Learn advanced rake in 7 episodes](http://devblog.avdi.org/2014/04/30/learn-advanced-rake-in-7-episodes/) (by Advi Grimm)
 * [15 things for a Ruby beginner](http://www.jasimabasheer.com/posts/meta_introduction_to_ruby.html)
 * [Why Ruby blocks exist](http://programming.oreilly.com/2014/02/why-ruby-blocks-exist.html)
+* [Awesome Ruby](http://awesome-ruby.com/) - A collection of awesome Ruby libraries, tools, frameworks and software
 
 **Blogs**
 
