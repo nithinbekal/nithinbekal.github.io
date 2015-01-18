@@ -82,4 +82,5 @@ There hasn't been any activity on this issue in the past year, so there's no dec
 # Links
 
 * [Feature #5400 - Remove flip-flops in 2.0](https://bugs.ruby-lang.org/issues/5400) - the discussion on the Ruby issue tracker
+* [Deconstructing Fizz Buzz With Flip-Flops in Ruby](https://juliansimioni.com/blog/2014/12/03/deconstructing-fizz-buzz-with-flip-flops-in-ruby/), by Julian Simioni. Walks through a piece of obfucated fizzbuzz program using flip-flops, posted on the [discussion of this post on reddit](http://www.reddit.com/r/ruby/comments/2n987g/the_flip_flop_operator_in_ruby/cmbiwt8?context=1).
 
