@@ -167,6 +167,10 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
+  body { font-size: 16px; }
+  .site { padding: 20px; }
   .site .posts a .published-on { float: none; }
   .site .posts .year { text-align: left; }
+
+  .site .post h2.title { font-size: 1.5em; }
 }
