@@ -143,3 +143,4 @@ Io has some interesting concurrency features, but I haven't explored it much yet
 * [Io Programming Guide](http://iolanguage.org/scm/io/docs/IoGuide.html)
 * [Blame it on Io! A slow-paced introduction to the Io language](http://ozone.wordpress.com/2006/03/15/blame-it-on-io/)
 * [Little manual of cloning for Io programmers](http://ozone.wordpress.com/2006/03/20/little-manual-of-cloning-for-io-programmers/)
+* [Io Has A Very Clean Mirror](http://viewsourcecode.org/why/hackety.org/2008/01/05/ioHasAVeryCleanMirror.html) - by _why.
