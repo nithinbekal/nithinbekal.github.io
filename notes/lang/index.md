@@ -17,6 +17,7 @@ Other interesting languages:
 * [Fancy](http://www.fancy-lang.org/)
 * [Idris](http://www.idris-lang.org/example/)
 * [Io](http://iolanguage.org/scm/io/docs/IoGuide.html)
+  - [HN discussion](https://news.ycombinator.com/item?id=8867575)
 * [Miranda](http://miranda.org.uk/)
 * [Nimrod](http://nimrod-lang.org/documentation.html)
 * OCaml - [FuConf workshop exercises](http://gazagnaire.org/fuconf14/)
