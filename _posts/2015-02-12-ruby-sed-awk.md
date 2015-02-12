@@ -30,7 +30,9 @@ simple Ruby one-liners from the command line.
 For example:
 
 {% highlight bash %}
-ruby -e 'puts 42'
+$ ruby -e 'puts 42'
+
+42
 {% endhighlight %}
 
 Running this prints "42" to the console,
@@ -44,18 +46,45 @@ which lets you pipe in text to Ruby,
 and execute some code for each line of text.
 
 {% highlight text %}
-echo 'foo' | ruby -n -e 'puts $_.upcase'
+$ echo 'foo' | ruby -n -e 'puts $_.upcase'
+
+FOO
 {% endhighlight %}
 
 `$_` is a special variable that contains the last line read from STDIN.
 In this case, it prints out 'FOO'.
 This also works with multiple lines of input.
-Say we have a file input.txt
-with the words foo, bar and baz on each line,
-and we want to print them in uppercase.
+Say we have a file foo.txt
+with the words foo, bar and baz on each line:
 
 {% highlight text %}
-cat input.txt | ruby -n -e 'puts $_.upcase'
+$ touch foo.txt
+
+$ echo 'foo' >> foo.txt
+
+$ echo 'bar' >> foo.txt
+
+$ echo 'baz' >> foo.txt
+
+$ cat foo.txt
+
+foo
+
+bar
+
+baz
+{% endhighlight %}
+
+And we want to print them in uppercase.
+
+{% highlight text %}
+$ cat foo.txt | ruby -n -e 'puts $_.upcase'
+
+FOO
+
+BAR
+
+BAZ
 {% endhighlight %}
 
 Here, the `-n` flag takes each line being piped in,
@@ -72,7 +101,13 @@ There are other interesting things we could do with this.
 We could use `BEGIN` and `END` blocks to sort the lines in a file.
 
 {% highlight text %}
-cat input.txt | ruby -ne 'BEGIN{ $x=[] }; $x << $_.chomp; END { puts $x.sort }'
+$ cat foo.txt | ruby -ne 'BEGIN{ $x=[]}; $x << $_.chomp; END { puts $x.sort }'
+
+bar
+
+baz
+
+foo
 {% endhighlight %}
 
 The `BEGIN` block is executed before it starts processing the lines,
@@ -83,12 +118,27 @@ The `END` block is executed after all lines have been processed.
 Now, let's look at the `-a` flag
 that splits the input and stores it in
 a variable `$F`.
-If we have the following text in a file:
+If we put the following text in a file:
 
 {% highlight text %}
+$ touch matz.txt
+
+$ echo 'matz:ruby' >> matz.txt
+
+$ echo 'guido:python' >> matz.txt
+
+$ echo 'brendan:js' >> matz.txt
+
+$ echo 'jose:elixir' >> matz.txt
+
+$ cat matz.txt
+
 matz:ruby
+
 guido:python
+
 brendan:js
+
 jose:elixir
 {% endhighlight %}
 
@@ -96,7 +146,15 @@ and we need to extract the programming language names,
 we could do it like this:
 
 {% highlight text %}
-cat input.txt | ruby -a -F: -ne 'puts $F[1]'
+$ cat matz.txt | ruby -a -F: -ne 'puts $F[1]'
+
+ruby
+
+python
+
+js
+
+elixir
 {% endhighlight %}
 
 That finally brings me to the original problem
@@ -104,7 +162,33 @@ that I was trying to solve -
 remove empty lines from a text file:
 
 {% highlight text %}
-cat input.txt | ruby -ne 'puts $_ unless $_.chomp.empty?'
+$ touch empty_lines.txt
+
+$ echo 'lorem ipsum' >> empty_lines.txt
+
+$ echo '' >> empty_lines.txt
+
+$ echo 'lorem ipsum' >> empty_lines.txt
+
+$ echo '' >> empty_lines.txt
+
+$ echo 'lorem ipsum' >> empty_lines.txt
+
+$ echo '' >> empty_lines.txt
+$ echo 'lorem ipsum' >> empty_lines.txt
+$ cat empty_lines.txt
+lorem ipsum
+
+lorem ipsum
+
+lorem ipsum
+
+lorem ipsum
+$ cat empty_lines.txt | ruby -ne 'puts $_ unless $_.chomp.empty?'
+lorem ipsum
+lorem ipsum
+lorem ipsum
+lorem ipsum
 {% endhighlight %}
 
 Although special purpose tools like awk are very powerful,
