@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby instead of sed and awk"
+title: "How to use Ruby instead of sed and awk"
 date:  2015-02-12 20:47:51
 categories: awk, ruby, sed
 ---
@@ -13,7 +13,7 @@ before I can do anything with them.
 This morning, I needed to remove all the empty lines from a text file.
 Searching for ways to do this using unix tools turned up a few options:
 
-{% highlight text %}
+{% highlight bash %}
 awk 'NF' input.txt
 sed -i '/^$/d' input.txt
 grep -v '^$' input.txt
@@ -31,7 +31,6 @@ For example:
 
 {% highlight bash %}
 $ ruby -e 'puts 42'
-
 42
 {% endhighlight %}
 
@@ -45,9 +44,8 @@ Next, let's look that the `-n` flag
 which lets you pipe in text to Ruby,
 and execute some code for each line of text.
 
-{% highlight text %}
+{% highlight bash %}
 $ echo 'foo' | ruby -n -e 'puts $_.upcase'
-
 FOO
 {% endhighlight %}
 
@@ -57,33 +55,24 @@ This also works with multiple lines of input.
 Say we have a file foo.txt
 with the words foo, bar and baz on each line:
 
-{% highlight text %}
+{% highlight bash %}
 $ touch foo.txt
-
 $ echo 'foo' >> foo.txt
-
 $ echo 'bar' >> foo.txt
-
 $ echo 'baz' >> foo.txt
 
 $ cat foo.txt
-
 foo
-
 bar
-
 baz
 {% endhighlight %}
 
 And we want to print them in uppercase.
 
-{% highlight text %}
+{% highlight bash %}
 $ cat foo.txt | ruby -n -e 'puts $_.upcase'
-
 FOO
-
 BAR
-
 BAZ
 {% endhighlight %}
 
@@ -100,13 +89,10 @@ end
 There are other interesting things we could do with this.
 We could use `BEGIN` and `END` blocks to sort the lines in a file.
 
-{% highlight text %}
+{% highlight bash %}
 $ cat foo.txt | ruby -ne 'BEGIN{ $x=[]}; $x << $_.chomp; END { puts $x.sort }'
-
 bar
-
 baz
-
 foo
 {% endhighlight %}
 
@@ -120,40 +106,28 @@ that splits the input and stores it in
 a variable `$F`.
 If we put the following text in a file:
 
-{% highlight text %}
+{% highlight bash %}
 $ touch matz.txt
-
 $ echo 'matz:ruby' >> matz.txt
-
 $ echo 'guido:python' >> matz.txt
-
 $ echo 'brendan:js' >> matz.txt
-
 $ echo 'jose:elixir' >> matz.txt
 
 $ cat matz.txt
-
 matz:ruby
-
 guido:python
-
 brendan:js
-
 jose:elixir
 {% endhighlight %}
 
 and we need to extract the programming language names,
 we could do it like this:
 
-{% highlight text %}
+{% highlight bash %}
 $ cat matz.txt | ruby -a -F: -ne 'puts $F[1]'
-
 ruby
-
 python
-
 js
-
 elixir
 {% endhighlight %}
 
@@ -161,21 +135,16 @@ That finally brings me to the original problem
 that I was trying to solve -
 remove empty lines from a text file:
 
-{% highlight text %}
+{% highlight bash %}
 $ touch empty_lines.txt
-
+$ echo 'lorem ipsum' >> empty_lines.txt
+$ echo ''            >> empty_lines.txt
+$ echo 'lorem ipsum' >> empty_lines.txt
+$ echo ''            >> empty_lines.txt
+$ echo 'lorem ipsum' >> empty_lines.txt
+$ echo ''            >> empty_lines.txt
 $ echo 'lorem ipsum' >> empty_lines.txt
 
-$ echo '' >> empty_lines.txt
-
-$ echo 'lorem ipsum' >> empty_lines.txt
-
-$ echo '' >> empty_lines.txt
-
-$ echo 'lorem ipsum' >> empty_lines.txt
-
-$ echo '' >> empty_lines.txt
-$ echo 'lorem ipsum' >> empty_lines.txt
 $ cat empty_lines.txt
 lorem ipsum
 
@@ -184,11 +153,23 @@ lorem ipsum
 lorem ipsum
 
 lorem ipsum
+{% endhighlight %}
+
+And now, all we need to do to remove those empty lines is:
+
+{% highlight bash %}
 $ cat empty_lines.txt | ruby -ne 'puts $_ unless $_.chomp.empty?'
 lorem ipsum
 lorem ipsum
 lorem ipsum
 lorem ipsum
+{% endhighlight %}
+
+And if we wanted to write it to a file,
+we can just pipe the output.
+
+{% highlight bash %}
+$ cat empty_lines.txt | ruby -ne 'puts $_ unless $_.chomp.empty?' >> out.txt
 {% endhighlight %}
 
 Although special purpose tools like awk are very powerful,
