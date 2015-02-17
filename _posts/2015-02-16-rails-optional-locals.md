@@ -53,8 +53,30 @@ For instance, we could pass in an optional author object:
 {% endhighlight %}
 
 Sadly, Rails documentation seems to be
-missing details about this useful feature.
+missing details about this useful feature. <strike>
 I'm not sure if this is because
 it has been deprecated since Rails 4.
-Do leave a comment below if you know why.
+Do leave a comment below if you know why.</strike>
+
+**Update**:
+In earlier versions of Rails,
+using `defined?` did no work reliably in the views.
+This is not the case in 4.2,
+so the part of the ActionView::Base docs
+that mentioned `defined?` and `local_assigns` was removed.
+You can use `defined?` like this:
+
+{% highlight erb %}
+<% if defined?(:author) %>
+  <%= render 'author_bio', locals: { author: author } %>
+<% end %>
+{% endhighlight %}
+
+`local_assigns` is still available though,
+and is still useful in cases
+where you need to access the locals as a hash.
+
+# Links
+
+* [Commit where local_assigns was removed from docs](https://github.com/rails/rails/commit/3dfcae6afa24b641bd838b9044c5ce9aa2a1a6db)
 
