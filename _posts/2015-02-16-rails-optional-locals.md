@@ -76,6 +76,23 @@ You can use `defined?` like this:
 and is still useful in cases
 where you need to access the locals as a hash.
 
+**Update 2**:
+I went ahead and submitted a
+[pull request](https://github.com/rails/rails/pull/18970)
+adding documentation for `local_assigns`.
+There's also another open issue for the same
+([#15700](https://github.com/rails/rails/pull/15700))
+that also added documentation.
+Hopefully we will soon have documentation for `local_assigns`.
+
+DHH also opened an issue
+([#18962](https://github.com/rails/rails/issues/18962))
+about this yesterday,
+and had an interesting comment to make about this feature. ;-)
+
+> These f***ing Rails people have thought of everything!
+> `local_assigns` is exactly this and already available.
+
 # Links
 
 * [Commit where local_assigns was removed from docs](https://github.com/rails/rails/commit/3dfcae6afa24b641bd838b9044c5ce9aa2a1a6db)
