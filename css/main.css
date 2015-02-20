@@ -5,7 +5,7 @@ html, body { height: 100%; }
 body {
   background: #f7f7f7;
   color: #444;
-  font-family: Georgia, serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
@@ -25,7 +25,6 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 }
 
 .container > .header {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
   padding: 20px 40px;
 }
 
@@ -87,7 +86,11 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
   font-size: 0.9em;
 }
 
-.site .post .content    { line-height: 1.8em; margin: 60px 0; }
+.site .post .content    {
+  font-family: Georgia, serif;
+  line-height: 1.8em;
+  margin: 60px 0;
+}
 .site .post .content p  { margin: 20px 0; }
 .site .post .content h1 { margin: 20px 0 0 0; }
 .site .post .content h2 { font-size: 0.9em; }
@@ -143,11 +146,9 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
   margin: 0 10px;
 }
 
-
 #prev-next-nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  font-family: 'Helvetica Neueu', Helvetica, Arial, sans-serif;
   font-size: 0.8em;
   line-height: 25px;
   overflow: hidden;
@@ -161,14 +162,22 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
   width: 33%;
 }
 
-#prev-next-nav a { color: #666; }
+#post-footer a { color: #666; }
 #prev-next-nav .next { text-align: right; }
 #prev-next-nav .archives { text-align: center; }
+
+#related-posts { margin: 30px 0; }
+#related-posts h3 { font-size: 0.9em; padding: 20px 0; }
+#related-posts ul {
+  font-size: 0.8em;
+  line-height: 1.4em;
+  padding: 0 30px;
+}
 
 .container > .footer {
   color: #aaa;
   font-size: 0.6em;
-  padding: 20px 0;
+  padding: 10px 0 40px 0;
   text-align: center;
 }
 

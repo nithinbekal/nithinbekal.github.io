@@ -10,6 +10,11 @@ layout: default
   {{ content }}
   </div>
 
+  <div class='social-share'>
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}" data-via='nithinbekal' data-count="horizontal">Share on Twitter</a>
+  </div>
+
+  <div id='post-footer'>
   <div class='post-nav'>
     <a href='/'>Home</a>
     <a href='/about/'>About</a>
@@ -33,8 +38,16 @@ layout: default
     </div>
   </div>
 
-  <div class='social-share'>
-    <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}" data-via='nithinbekal' data-count="horizontal">Share on Twitter</a>
+  <div id='related-posts'>
+    <h3>Related posts</h3>
+    <ul>
+      {% for post in site.related_posts limit:5 %}
+      <li>
+        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
   </div>
 
   <div id="disqus_thread"></div>
