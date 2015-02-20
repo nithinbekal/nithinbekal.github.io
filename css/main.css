@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 }
 
 .container > .header {
-  padding: 20px 40px;
+  padding: 20px 50px;
 }
 
 .container > .header h1.title {
@@ -46,36 +46,35 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 
 .site {
   margin: 0 auto;
-  padding: 50px;
+  padding: 20px 50px;
 }
 
-.site .posts {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.site .posts .post-group {
+  padding: 30px 0 0 0;
+}
+
+.site .posts .month {
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 20px 0;
 }
 
 .site .posts .post-listing {
-  border-bottom: 1px solid #eee;
-  padding: 30px 0;
+  font-size: 0.8em;
+  padding: 10px 0;
 }
 
-.site .posts h2 {
-  font-size: 1.3em;
-  font-weight: normal;
-  padding: 0 0 10px 0;
-}
 .site .posts .published-on {
   color: #aaa;
-  font-family: Georgia, serif;
+  font-weight: normal;
   font-size: 0.75em;
   font-style: italic;
-  font-weight: normal;
 }
 
 .site .posts a { color: #666; }
 .site .posts a:hover { color: #000; text-decoration: none; }
 
 .site .post h2.title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 2.5em;
   font-weight: normal;
   line-height: 1.4em;
@@ -198,8 +197,6 @@ hr {
 @media screen and (max-width: 500px) {
   body { font-size: 16px; }
   .site { padding: 20px; }
-  .site .posts a .published-on { float: none; }
-  .site .posts .year { text-align: left; }
-
+  .site .posts .post-listing { font-size: 0.9em; }
   .site .post h2.title { font-size: 1.5em; }
 }
