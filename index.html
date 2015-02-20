@@ -14,6 +14,11 @@ title: Nithin Bekal
     <div class='month' id="{{ this_year }}-ref">{{this_year}}</div>
     {% endif %}
 
+    <div class='post-listing'>
+      <a href='{{ post.url }}'>{{ post.title }}</a>
+      <span class='published-on'>{{ post.date | date: "%-d %b" }}</span>
+    </div>
+
     {% if forloop.last %}
       </div>
     {% else %}
@@ -23,11 +28,6 @@ title: Nithin Bekal
         <div class='month' id="{{ next_year }}-ref">{{next_year}}</div>
         {% endif %}
     {% endif %}
-
-    <div class='post-listing'>
-      <a href='{{ post.url }}'>{{ post.title }}</a>
-      <span class='published-on'>{{ post.date | date: "%-d %b" }}</span>
-    </div>
 
   {% endfor %}
 </div>
