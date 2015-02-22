@@ -15,7 +15,7 @@ As an example, you have a `_post` partial
 which you render like this:
 
 {% highlight erb %}
-<%= render 'post', locals: { post: post } %>
+<%= render 'post', post: post %>
 {% endhighlight %}
 
 And now you want to render the same partial from another view,
@@ -23,7 +23,7 @@ but this time you want to pass a boolean flag
 to tell the partial to render the author bio as well.
 
 {% highlight erb %}
-<%= render 'post', locals: { post: post, show_author_bio: true } %>
+<%= render 'post', post: post, show_author_bio: true %>
 {% endhighlight %}
 
 If we now used the `show_author_bio` local in the partial,
@@ -36,7 +36,7 @@ the `local_assigns` hash.
 <h1><%= post.title %></h1>
 
 <% if local_assigns[:show_author_bio] %>
-  <%= render 'author_bio', locals: { author: post.author } %>
+  <%= render 'author_bio', author: post.author %>
 <% end %>
 
 <%= post.body %>
@@ -48,7 +48,7 @@ For instance, we could pass in an optional author object:
 
 {% highlight erb %}
 <% if local_assigns.has_key?(:author) %>
-  <%= render 'author_bio', locals: { author: author } %>
+  <%= render 'author_bio', author: author %>
 <% end %>
 {% endhighlight %}
 
@@ -68,7 +68,7 @@ You can use `defined?` like this:
 
 {% highlight erb %}
 <% if defined?(:author) %>
-  <%= render 'author_bio', locals: { author: author } %>
+  <%= render 'author_bio', author: author %>
 <% end %>
 {% endhighlight %}
 
