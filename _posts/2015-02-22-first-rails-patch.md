@@ -37,6 +37,27 @@ here's how you can do it in 4 simple steps:
    or accept the changes and merge the PR.
    Congratulations, you now have your first commit on Rails!
 
+# Docrails
+
+There's another project,
+[docrails](https://github.com/rails/docrails),
+that exists specifically to help make it easier
+to contribute to Rails documentation.
+That repo used to have an open commit policy,
+ie. anybody could commit directly to it,
+but these days you need to ask the Rails team
+to grant you commit access.
+
+Going through docrails lets you contribute directly
+without going through the pull request workflow.
+This is the easier option if you're planning
+to make a lot of documentation changes.
+But if you aren't sure about the changes you're proposing,
+it's better to go via the main Rails repo
+where others can discuss the changes before merging it.
+
+# Keeping your repo up-to-date
+
 There are lots of open issues in Rails,
 so it might take some time for your patch to be merged.
 In the meanwhile,
