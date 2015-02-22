@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Complex has_many :through associations"
+title:  "Complex has_many :through associations in Rails"
 date:   2014-04-16 12:00:00
 categories: programming, rails
 ---
