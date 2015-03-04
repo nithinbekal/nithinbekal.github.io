@@ -132,41 +132,44 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
   padding: 20px;
 }
 
-.site .post .post-nav {
-  border-top: 1px solid #ddd;
-  color: #eee;
-  font-family: 'Helvetica Neueu', Helvetica, Arial, sans-serif;
-  padding: 15px;
-  text-align: center;
+#author-bio {
+  border: 1px solid #ddd;
+  font-size: 0.65em;
+  line-height: 1.7em;
+  overflow: hidden;
+  padding: 20px;
 }
-.site .post .post-nav a {
-  color: #888;
-  font-size: 0.8em;
-  margin: 0 10px;
+#author-bio .gravatar { float: left; }
+#author-bio .gravatar img {
+  border-radius: 50%;
+  height: 75px;
+  margin: 0 20px 0 0;
+  width: 75px;
 }
+#author-bio .bio a { color: #007499; }
+#author-bio .links { text-align: center; }
+#author-bio .links a { padding: 0 5px; }
 
 #prev-next-nav {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  font-size: 0.8em;
-  line-height: 25px;
   overflow: hidden;
   padding: 15px 0;
   width: 100%;
 }
 
 #prev-next-nav div {
-  display: block;
+  display: inline-block;
+  font-size: 0.8em;
   float: left;
-  width: 33%;
+  margin: 25px 0 0 0;
+}
+#prev-next-nav .next {
+  float: right;
+  padding: 0 0 0 5px;
+  text-align: right;
 }
 
-#post-footer a { color: #666; }
-#prev-next-nav .next { text-align: right; }
-#prev-next-nav .archives { text-align: center; }
-
-#related-posts { margin: 30px 0; }
-#related-posts h3 { font-size: 0.9em; padding: 20px 0; }
+#related-posts { margin: 20px 0 30px 0; }
+#related-posts h3 { font-size: 0.8em; padding: 20px 0; }
 #related-posts ul {
   font-size: 0.8em;
   line-height: 1.4em;
@@ -188,7 +191,6 @@ hr {
 }
 
 .social-share { margin: 40px 0; }
-
 
 @media screen and (max-width: 820px) {
   .container { width: 99%; }

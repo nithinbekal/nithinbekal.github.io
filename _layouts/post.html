@@ -15,39 +15,53 @@ layout: default
   </div>
 
   <div id='post-footer'>
-  <div class='post-nav'>
-    <a href='/'>Home</a>
-    <a href='/about/'>About</a>
-    <a href='/subscribe/'>Subscribe</a>
-  </div>
 
-  <div id='prev-next-nav'>
-    <div class='prev'>
-    {% if page.previous.url %}
-    <a href='{{page.previous.url}}'>&#8592; {{page.previous.title}}</a>
-    {% endif %}
-    &nbsp;
+    <div id='author-bio'>
+      <div class='gravatar'>
+        <img class="hide-500" src="http://www.gravatar.com/avatar/04fd01b158b5ca07858d023533b01b24?s=75">
+      </div>
+      <div class='bio'>
+        Hi, there! I’m Nithin Bekal.
+        I write code
+        <a href='http://crowdstudio.in/'>CrowdStudio.in</a>.
+        I write here about things I learned about programming.
+        I mostly use Ruby at work,
+        so you'll find a lot of posts about it.
+        You can find me on Twitter as
+        <a href='https://twitter.com/nithinbekal'>@nithinbekal</a>.
+        <br>
+        <br>
+        <div class='links'>
+          <a href='/'>Archives</a>
+          <a href='/subscribe/'>Subscribe</a>
+          <a href='/about/'>About</a>
+        </div>
+      </div>
     </div>
-    <div class='archives'>
-      <a href='/'>All Posts</a>
-    </div>
-    <div class='next'>
-    {% if page.next.url %}
-    <a href='{{page.next.url}}'>{{ page.next.title }} &#8594;</a>
-    {% endif %}
-    </div>
-  </div>
 
-  <div id='related-posts'>
-    <h3>Related posts</h3>
-    <ul>
-      {% for post in site.related_posts limit:5 %}
-      <li>
-        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+    <div id='prev-next-nav'>
+      <div class='prev'>
+        {% if page.previous.url %}
+        <a href='{{page.previous.url}}'>&laquo; {{page.previous.title}}</a>
+        {% endif %}
+      </div>
+      <div class='next'>
+        {% if page.next.url %}
+        <a href='{{page.next.url}}'>{{ page.next.title }} &raquo;</a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div id='related-posts'>
+      <h3>Found this article interesting? You should check out these:</h3>
+      <ul>
+        {% for post in site.related_posts limit:5 %}
+        <li>
+          <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 
   <div id="disqus_thread"></div>
