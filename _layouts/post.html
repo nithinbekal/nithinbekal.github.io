@@ -18,8 +18,9 @@ layout: default
 
     <div id='author-bio'>
       <div class='gravatar'>
-        <img class="hide-500" src="http://www.gravatar.com/avatar/04fd01b158b5ca07858d023533b01b24?s=75">
+        <img src="http://www.gravatar.com/avatar/04fd01b158b5ca07858d023533b01b24?s=50">
       </div>
+
       <div class='bio'>
         Hi, there! I’m Nithin Bekal.
         I write code
@@ -32,9 +33,9 @@ layout: default
         <br>
         <br>
         <div class='links'>
-          <a href='/'>Archives</a>
-          <a href='/subscribe/'>Subscribe</a>
-          <a href='/about/'>About</a>
+          <a id='bio-home-link' href='/'>Archives</a>
+          <a id='bio-subscribe-link' href='/subscribe/'>Subscribe</a>
+          <a id='bio-about-link' href='/about/'>About</a>
         </div>
       </div>
     </div>
@@ -42,12 +43,13 @@ layout: default
     <div id='prev-next-nav'>
       <div class='prev'>
         {% if page.previous.url %}
-        <a href='{{page.previous.url}}'>&laquo; {{page.previous.title}}</a>
+        <a id='nav-prev-link' href='{{page.previous.url}}'>&laquo; {{page.previous.title}}</a>
         {% endif %}
       </div>
+
       <div class='next'>
         {% if page.next.url %}
-        <a href='{{page.next.url}}'>{{ page.next.title }} &raquo;</a>
+        <a id='nav-next-link' href='{{page.next.url}}'>{{ page.next.title }} &raquo;</a>
         {% endif %}
       </div>
     </div>
@@ -56,8 +58,9 @@ layout: default
       <h3>Found this article interesting? You should check out these:</h3>
       <ul>
         {% for post in site.related_posts limit:5 %}
+        {% assign index = forloop.index %}
         <li>
-          <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+          <a id='related-posts-{{ index }}' href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
         </li>
         {% endfor %}
       </ul>

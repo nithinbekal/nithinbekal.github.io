@@ -13,17 +13,21 @@
   <body>
     <div class='container'>
       <div class='header'>
-        <h1 class='title'><a href="/">{{ site.name }}</a></h1>
+        <h1 class='title'><a id='top-home-link' href='/'>{{ site.name }}</a></h1>
         <span class='links align-right'>
-          <a href='/about/'>About</a>
+          <a id='top-about-link' href='/about/'>About</a>
         </span>
       </div>
+
       <div class='site'>
-
         {{ content }}
-
       </div> <!-- /site -->
-      <div class='footer'>Powered by <a href='http://jekyllrb.com'>Jekyll</a>. Get this theme <a href="https://github.com/nithinbekal/nithinbekal.github.io/">here</a>.</div>
+
+      <div class='footer'>
+        Powered by <a href='http://jekyllrb.com'>Jekyll</a>.
+        Get this theme
+        <a href="https://github.com/nithinbekal/nithinbekal.github.io/">here</a>.
+      </div>
     </div> <!-- /container -->
 <script type="text/javascript">
   var _gaq = _gaq || [];

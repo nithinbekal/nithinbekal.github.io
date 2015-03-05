@@ -134,21 +134,21 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 
 #author-bio {
   border: 1px solid #ddd;
-  font-size: 0.65em;
+  font-size: 0.75em;
   line-height: 1.7em;
   overflow: hidden;
   padding: 20px;
 }
-#author-bio .gravatar { float: left; }
+#author-bio .gravatar { float: left; height: 150px; }
 #author-bio .gravatar img {
   border-radius: 50%;
-  height: 75px;
+  height: 50px;
   margin: 0 20px 0 0;
-  width: 75px;
+  width: 50px;
 }
 #author-bio .bio a { color: #007499; }
 #author-bio .links { text-align: center; }
-#author-bio .links a { padding: 0 5px; }
+#author-bio .links a { padding: 0 10px; }
 
 #prev-next-nav {
   overflow: hidden;
@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 #related-posts h3 { font-size: 0.8em; padding: 20px 0; }
 #related-posts ul {
   font-size: 0.8em;
-  line-height: 1.4em;
+  line-height: 1.7em;
   padding: 0 30px;
 }
 
