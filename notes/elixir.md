@@ -4,12 +4,6 @@ title: 'Elixir'
 date:   2014-06-07 12:00:00
 ---
 
-* [Elixir lang](http://elixir-lang.org/) - website
-* [Phoenix guides](https://github.com/lancehalvorsen/phoenix-guides) - Guides for the Phoenix web framework
-- [Elixir - A modern approach to programming for the Erlang VM on Vimeo](https://vimeo.com/53221562), Jose Valim
-- [Introduction to Elixir](http://www.youtube.com/watch?v=a-off4Vznjs&feature=youtu.be), Dave Thomas
-- [Think Different](https://www.youtube.com/watch?v=5hDVftaPQwY), Dave Thomas keynote at Elixir Conf 2014
-
 {% highlight ruby %}
 brew install elixir
 {% endhighlight %}
@@ -160,6 +154,87 @@ x = 1
 x   # 2
 {% endhighlight %}
 
+# Strings, binaries, char lists
+
+{% highlight elixir %}
+string = "hello"
+is_binary string # true
+
+# UTF8 strings
+s = "hełło"
+byte_size s             # 7
+s |> String.length      # 5
+
+# each character is a 'code point' whose
+# value can be accessed via ? operator
+?ł      # 322
+?a      # 97
+
+# Binaries
+<<1, 2, 3>>     # this is a binary
+<<255>>         # max balue for binary
+<<256>>         # 0  -- truncated
+
+# Char lists
+s = "hełło"
+is_list s       # true
+to_char_list s  # [104, 101, 322, 322, 111]
+{% endhighlight %}
+
+* Char lists are mainly used
+  for interfacing with old
+  Erlang libs
+
+# Keyword lists
+
+* Keyword lists are similar to hashes/dictionaries in other languages
+* They map to arrays of key-value tuples
+* have 3 characteristics
+  - keys must be atoms
+  - keys are ordered
+  - duplicate keys can exist
+
+{% highlight elixir %}
+list = [a: 1, b: 2]
+list == [{:a, 1}, {:b, 2}]  # true  -- same thing
+list[:a]                    # 1
+list ++ [c: 3]              # [a: 1, b: 2, c: 3]
+
+# can have same key repeated
+list2 = [a: 0] ++ list
+list2[:a]               # 0  -- values in front override others
+
+# Keyword list based if macro
+if false, do: 1, else: 2
+
+# Pattern matching requires number of elements and order to match
+[a: a] = [a: 1]
+a  # 1
+{% endhighlight %}
+
+# Maps
+
+* Key value store
+
+{% highlight elixir %}
+map = %{ :a => 1, 2 => :b }
+map[:a]         # 1
+map[2]          # :b
+Map.get map, :a # 1
+map.a           # 1
+
+# pattern match
+%{:a => a} = map
+a               # 1
+
+# updating a map
+%{ map | :a => 2 }      # %{ :a => 2, 2 => :b }
+{% endhighlight %}
+
+# Dict
+
+* API that delegates to underlying implementation
+
 # Modules and functions
 
 * The `defmodule` macro defines a module
@@ -245,3 +320,28 @@ defmodule RLE do
   end
 end
 {% endhighlight %}
+
+Default args:
+
+{% highlight elixir %}
+defmodule Concat do
+  def join(a, b, sep \\ " ") do
+    a <> sep <> b
+  end
+end
+
+IO.puts Concat.join("Hello", "world")      #=> Hello world
+IO.puts Concat.join("Hello", "world", "_") #=> Hello_world
+{% endhighlight %}
+
+# Links
+
+* [Elixir lang](http://elixir-lang.org/) - website
+* [Phoenix guides](https://github.com/lancehalvorsen/phoenix-guides) - Guides for the Phoenix web framework
+* [Elixir Quick Reference](https://github.com/itsgreggreg/elixir_quick_reference)
+
+# Videos
+
+* [Elixir - A modern approach to programming for the Erlang VM on Vimeo](https://vimeo.com/53221562), Jose Valim
+* [Introduction to Elixir](http://www.youtube.com/watch?v=a-off4Vznjs&feature=youtu.be), Dave Thomas
+* [Think Different](https://www.youtube.com/watch?v=5hDVftaPQwY), Dave Thomas keynote at Elixir Conf 2014
