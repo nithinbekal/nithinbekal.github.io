@@ -2,7 +2,7 @@
 layout: post
 title: How to Create a Google Chrome Extension
 date: 2010-12-23 12:00:00
-alias:
+redirect_from:
   - /2010/how-to-create-a-google-chrome-extension/
 ---
 Creating an extension for Google Chrome is incredibly simple. With the knowledge of basic HTML and JavaScript, you can start building useful plugins in a matter of minutes.

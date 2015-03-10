@@ -2,7 +2,8 @@
 layout: post
 title: Set up Git on Windows
 date: 2010-08-31 12:00:00
-alias: [/2010/installing-git-and-pushing-repo-to-github/]
+redirect_from:
+  - /2010/installing-git-and-pushing-repo-to-github/
 categories: git, programming
 ---
 In this post, I will describe the steps to install git on a windows machine, create a local repository, and then push that repo to your github account. This is a beginner level tutorial for those using windows, but except for the part about installation, it is common for all OSes.

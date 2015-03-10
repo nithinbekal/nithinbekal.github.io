@@ -2,7 +2,9 @@
 layout: post
 title:  "A Simple Todo App Using HTML5 and localstorage"
 date:   2010-12-04 12:00:00
-alias: [/2010/a-simple-to-do-list-app-using-html5-and-local-storage/, /2010/12/04/a-simple-to-do-list-app-using-html5-and-local-storage/]
+redirect_from:
+  - /2010/a-simple-to-do-list-app-using-html5-and-local-storage/
+  - /2010/12/04/a-simple-to-do-list-app-using-html5-and-local-storage/
 categories: programming, html, javascript
 ---
 

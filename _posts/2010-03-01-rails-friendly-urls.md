@@ -2,7 +2,9 @@
 layout: post
 title: 'Friendly URLs in Rails using to_param'
 date:   2010-03-01 12:00:00
-alias: [2010/rails-seo-friendly-urls-using-to_param/]
+redirect_from:
+  - /2010/rails-seo-friendly-urls-using-to_param/
+  - /2010/03/01/rails-seo-friendly-urls-using-to_param/
 categories: programming, ruby, rails
 ---
 
