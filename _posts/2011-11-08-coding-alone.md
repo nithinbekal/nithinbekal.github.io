@@ -3,7 +3,7 @@ layout: post
 title:  "Leave me alone when I'm coding"
 date:   2011-11-08 12:00:00
 categories: programming
-alias:
+redirect_from:
   - /2011/leave-me-alone-when-im-coding/
 ---
 

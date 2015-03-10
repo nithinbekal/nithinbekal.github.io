@@ -4,6 +4,9 @@ title:  "Writing Ruby Gems"
 date:   2011-06-17 12:00:00
 redirect_from:
   - /2011/writing-ruby-gems/
+  - /2011/writing-ruby-gems-part-1-gem-specifications
+  - /2011/writing-ruby-gems-part-2-adding-some-code/
+  - /2011/writing-ruby-gems-part-3-publishing-to-rubygems-org/
   - /2011/writing-ruby-gems-part-4-setting-up-testunit/
   - /2011/writing-ruby-gems-part-5-setting-up-rspec/
 categories: programming

@@ -2,6 +2,8 @@
 layout: post
 title: 'Review: Eloquent Ruby (Russ Olsen)'
 date:   2011-02-28 12:00:00
+redirect_from:
+  - /2011/review-eloquent-ruby-russ-olsen/
 ---
 If you are new to Ruby programming, Eloquent Ruby should be the book you read right after you finish your introductory Ruby book. It's not a beginner's tutorial, but with a little background on Ruby, it would be easy to follow.
 
