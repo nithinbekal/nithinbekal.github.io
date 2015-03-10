@@ -4,3 +4,5 @@ url: http://nithinbekal.com
 highlighter: pygments
 permalink: /posts/:title
 markdown: kramdown
+gems:
+  - jekyll-redirect-from

@@ -2,7 +2,10 @@
 layout: post
 title:  "Writing Ruby Gems"
 date:   2011-06-17 12:00:00
-alias: [/2011/writing-ruby-gems/, /2011/writing-ruby-gems-part-5-setting-up-rspec/]
+redirect_from:
+  - /2011/writing-ruby-gems/
+  - /2011/writing-ruby-gems-part-4-setting-up-testunit/
+  - /2011/writing-ruby-gems-part-5-setting-up-rspec/
 categories: programming
 ---
 
