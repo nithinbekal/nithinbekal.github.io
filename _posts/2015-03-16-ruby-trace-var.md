@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tracing global variables in Ruby using trace_var"
-date:  2015-03-12 00:33:13
+date:  2015-03-16 00:33:13
 categories: ruby
 ---
 
