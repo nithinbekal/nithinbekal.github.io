@@ -339,6 +339,8 @@ IO.puts Concat.join("Hello", "world", "_") #=> Hello_world
 * [Elixir lang](http://elixir-lang.org/) - website
 * [Phoenix guides](https://github.com/lancehalvorsen/phoenix-guides) - Guides for the Phoenix web framework
 * [Elixir Quick Reference](https://github.com/itsgreggreg/elixir_quick_reference)
+* [Jose Valim - How I Start](https://howistart.org/posts/elixir/1)
+* [Elixir Resources](http://connettiva.eu/rubyday/)
 
 # Videos
 

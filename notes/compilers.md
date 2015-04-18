@@ -18,6 +18,7 @@ Blog posts, tutorials, etc:
 * [Reconstructing Ruby](http://www.halogenandtoast.com/reconstructing-ruby-an-introduction/) 
 * [Interpreting Lisp](http://www.civilized.com/getlisp.html)
 * [Compiler Design in C](http://www.holub.com/software/compiler.design.in.c.html), by Allen Holub
+* [Make A Lisp](https://github.com/kanaka/mal) - implementing a Lisp in various langauges
 
 Languages written in [Parslet](http://kschiess.github.io/parslet/):
 
