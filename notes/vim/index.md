@@ -20,6 +20,12 @@ Blog posts, links, etc.
 * [Vim After 11 Years](http://statico.github.io/vim.html)
 * [Best of Vim Tips](http://zzapper.co.uk/vimtips.html)
 
+Screencasts
+
+* [Vimcasts](http://vimcasts.org/)
+* [Vim.watch](http://vim.watch/)
+* [Derek Wyatt's Vim Tutorial Videos](http://derekwyatt.org/vim/tutorials/)
+
 Other vim implementations
 
 * [Vim Refined](http://vimr.org/)
@@ -35,7 +41,6 @@ Videos:
 * [Ben Orenstein - Write code faster: expert-level vim (Railsberry 2012)](https://www.youtube.com/watch?v=SkdrYWhh-8s)
 * [tpope's vim config and plugins](https://www.youtube.com/watch?v=MGmIJyTf8pg)
 * [Impressive Ruby Productivity with Vim and Tmux by Chris Hunt](https://www.youtube.com/watch?v=gB-JSh1EVME)
-* [Derek Wyatt's Vim Tutorial Videos](http://derekwyatt.org/vim/tutorials/)
 
 **Plugins**
 
