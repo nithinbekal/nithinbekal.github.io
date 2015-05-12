@@ -137,7 +137,7 @@ Your app might run fine despite these warnings,
 but fixing them now would save you a lot of time
 during the next upgrade.
 
-# Finishing up
+# Wrapping up
 
 This guide covered the general guidelines
 to be followed for an upgrade to any version of Rails.
