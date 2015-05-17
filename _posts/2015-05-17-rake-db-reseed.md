@@ -71,8 +71,8 @@ is not a great idea,
 especially when you're working in teams,
 but I find this works fine
 in the first few days of development
-when you don't have a public version of the app
-in production.
+when you don't yet have
+a public version of the app in production.
 Once you've got the app in production,
 you should definitely not
 be editing migration files.
