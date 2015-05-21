@@ -3,11 +3,11 @@ layout: page
 title: "Phoenix Framework"
 ---
 
-git clone https://github.com/phoenixframework/phoenix.git
-cd phoenix
-git checkout v0.10.0
-mix do deps.get, compile
+Creating a new Phoenix project:
 
-mix phoenix.new ../test-app
-
+{% highlight bash %}
+mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v0.13.1/phoenix_new-0.13.1.ez
+mix phoenix.new test_app
+cd test_app
 mix phoenix.server
+{% endhighlight %}
