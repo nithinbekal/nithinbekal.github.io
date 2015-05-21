@@ -59,3 +59,6 @@ Favorite books of the year lists are here:
 1. Theory of Everything (Stephen Hawking)
 1. Surely, You're Joking, Mr. Feynman (Richard Feynman)
 
+### Recommended books lists
+
+1. [The Best SF Books (according to reddit)](http://blamcast.net/articles/best-science-fiction-books)
