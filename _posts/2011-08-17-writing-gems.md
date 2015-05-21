@@ -12,7 +12,21 @@ redirect_from:
 categories: programming
 ---
 
-Writing a Ruby gem is a lot easier than it sounds. Many tutorials about writing gems recommend using something like [Jeweler](https://github.com/technicalpickles/jeweler) or [Hoe](https://github.com/seattlerb/hoe) to create the structure of the gem for you.
+_This article is about building a gem from scratch.
+The recommended way to create a gem today
+is to use bundler's `bundle new <gemname>` command.
+This article is meant to take
+a closer look at all the parts of a gem
+by building it by hand._
+
+---
+
+Writing a Ruby gem is a lot easier than it sounds.
+Many tutorials about writing gems recommend using something like <strike>
+(<a href='https://github.com/technicalpickles/jeweler'>Jeweler</a> or
+<a href='https://github.com/seattlerb/hoe'>Hoe</a>)</strike>
+[bundler](http://bundler.io/v1.9/rubygems.html)
+to create the structure of the gem for you.
 
 Using such tools will make it much easier to get started with a gem, but building a gem from scratch will help you figure out how exactly those tools organize your gem's structure. Here, we will walk through creating a gem from scratch, without generating any code.
 
