@@ -11,3 +11,8 @@ mix phoenix.new test_app
 cd test_app
 mix phoenix.server
 {% endhighlight %}
+
+## Bookmarks
+
+* [Let's Build a Web App With Phoenix and Ecto](http://www.elixirdose.com/post/elixirdose_intro_to_phoenix)
+
