@@ -42,14 +42,14 @@ we create a new task, `db:reseed`.
 # lib/tasks/db.rake
 namespace :db do
   desc 'Drop, create, migrate then seed the development database'
-  task reseed: [ 'db:drop', 'db:migrate', 'db:seed' ] do
+  task reseed: [ 'db:drop', 'db:create', 'db:migrate', 'db:seed' ] do
     puts 'Reseeding completed.'
   end
 end
 {% endhighlight %}
 
 This describes a `db:reseed` task
-which is dependent on the 3 other tasks.
+which is dependent on the 4 other tasks.
 The dependencies get executed first
 and then the given block.
 The block is optional,
