@@ -61,4 +61,5 @@ Favorite books of the year lists are here:
 
 ### Recommended books lists
 
-1. [The Best SF Books (according to reddit)](http://blamcast.net/articles/best-science-fiction-books)
+* [The Best SF Books (according to reddit)](http://blamcast.net/articles/best-science-fiction-books)
+* [Ask HN: What are your recommended reads that are available for free?](https://news.ycombinator.com/item?id=9611219)
