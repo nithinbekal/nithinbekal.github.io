@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting Started With Phoenix: Building a Simple CRUD App"
+title: "Getting Started With Phoenix: Building a Scaffolded CRUD App"
 date:  2015-05-30 13:00:00
 categories: elixir, phoenix
 ---
