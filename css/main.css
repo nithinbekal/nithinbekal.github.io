@@ -3,10 +3,9 @@
 html, body { height: 100%; }
 
 body {
-  background: #f7f7f7;
   color: #444;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-rendering: optimizeLegibility;
 }
 
@@ -18,8 +17,6 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 .align-right { float: right; }
 
 .container {
-  background: #fff;
-  border: 1px solid #ddd;
   margin: 0 auto;
   width: 800px;
 }
@@ -44,24 +41,15 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
   padding: 0 10px;
 }
 
-.site {
-  margin: 0 auto;
-  padding: 20px 50px;
-}
+.site { margin: 0 auto; padding: 20px 50px; }
 
-.site .posts .post-group {
-  padding: 30px 0 0 0;
-}
-
-.site .posts .month {
-  font-size: 0.9em;
-  font-weight: bold;
-  padding: 20px 0;
-}
+.site .posts .post-group { padding: 30px 0 0 0; }
+.site .posts .month { color: #aaa; padding: 30px 0; }
 
 .site .posts .post-listing {
-  font-size: 0.8em;
-  padding: 10px 0;
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: bold;
+  padding: 15px 0;
 }
 
 .site .posts .published-on {
@@ -86,7 +74,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 }
 
 .site .post .content    {
-  font-family: Georgia, serif;
+  font-family: 'Merriweather', Georgia, serif;
   line-height: 1.8em;
   margin: 60px 0;
 }
@@ -115,7 +103,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 .site .post .content blockquote {
   background: #fff;
   border: 1px solid #ddd;
-  font-family: Georgia, serif;
+  font-family: 'Merriweather', Georgia, serif;
   font-size: 1.05em;
   font-style: italic;
   line-height: 1.8em;
@@ -134,12 +122,13 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 
 #author-bio {
   border: 1px solid #ddd;
-  font-size: 0.75em;
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 0.8em;
   line-height: 1.7em;
   overflow: hidden;
   padding: 20px;
 }
-#author-bio .gravatar { float: left; height: 150px; }
+#author-bio .gravatar { float: left; height: 120px; }
 #author-bio .gravatar img {
   border-radius: 50%;
   height: 50px;
@@ -198,6 +187,7 @@ hr {
 
 @media screen and (max-width: 500px) {
   body { font-size: 16px; }
+  .container > .header { padding: 20px; }
   .site { padding: 20px; }
   .site .posts .post-listing { font-size: 0.9em; }
   .site .post h2.title { font-size: 1.5em; }
