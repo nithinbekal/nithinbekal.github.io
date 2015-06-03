@@ -189,6 +189,6 @@ hr {
   body { font-size: 16px; }
   .container > .header { padding: 20px; }
   .site { padding: 20px; }
-  .site .posts .post-listing { font-size: 0.9em; }
+  .site .posts .post-listing { font-size: 0.9em; line-height: 1.8em; }
   .site .post h2.title { font-size: 1.5em; }
 }
