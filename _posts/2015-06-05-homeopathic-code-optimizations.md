@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Demystifying @tenderlove's homeopathic code optimizations"
-date:  2015-06-06 23:00:00
+date:  2015-06-05 23:00:00
 categories: ruby
 ---
 
