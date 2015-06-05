@@ -6,7 +6,7 @@ categories: ruby
 ---
 
 At the [Keep Ruby Weird](http://keeprubyweird.com) conference,
-Aaron patterson, aka [@tenderlove](http://twitter.com/tenderlove),
+Aaron Patterson, aka [@tenderlove](http://twitter.com/tenderlove),
 gave a hilarious keynote talk
 where he mentioned
 [homeopathic code optimizations](https://youtu.be/9N31ay425GI?t=1983).
