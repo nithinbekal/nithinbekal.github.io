@@ -125,15 +125,20 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
   font-family: 'Merriweather', Georgia, serif;
   font-size: 0.8em;
   line-height: 1.7em;
-  overflow: hidden;
-  padding: 20px;
+  padding: 60px 20px 20px 20px;
+  position: relative;
 }
-#author-bio .gravatar { float: left; height: 120px; }
+#author-bio .gravatar {
+  margin: -42px 0 0 -42px;
+  position: absolute; top: 0; left: 50%;
+}
 #author-bio .gravatar img {
+  background: #fff;
+  border: 1px solid #ccc;
   border-radius: 50%;
-  height: 50px;
-  margin: 0 20px 0 0;
-  width: 50px;
+  height: 80px;
+  padding: 4px;
+  width: 80px;
 }
 #author-bio .bio a { color: #007499; }
 #author-bio .links { text-align: center; }
