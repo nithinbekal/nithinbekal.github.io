@@ -2,7 +2,9 @@
 layout: post
 title: "Making Vim Play Nice With ZSH and RVM"
 date:  2015-01-18 20:50:31
-categories: vim, zsh
+categories:
+  - vim
+  - zsh
 ---
 
 Over the past few months of using vim, I've been annoyed by the fact that it keeps using the wrong version of Ruby when using plugins like [rails.vim](https://github.com/tpope/vim-rails). I fixed the problem with this:

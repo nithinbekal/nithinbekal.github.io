@@ -5,7 +5,8 @@ date:   2010-12-04 12:00:00
 redirect_from:
   - /2010/a-simple-to-do-list-app-using-html5-and-local-storage/
   - /2010/12/04/a-simple-to-do-list-app-using-html5-and-local-storage/
-categories: programming, html, javascript
+categories:
+  - javascript
 ---
 
 HTML5 has brought great potential to the web applications of the future. But what about simple apps that don't even need internet, such as your to-do list? Now that local storage is implemented by all major browsers, you can easily leverage this feature to build simple apps for personal use.

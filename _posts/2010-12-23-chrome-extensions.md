@@ -4,7 +4,10 @@ title: How to Create a Google Chrome Extension
 date: 2010-12-23 12:00:00
 redirect_from:
   - /2010/how-to-create-a-google-chrome-extension/
+category:
+  - programming
 ---
+
 Creating an extension for Google Chrome is incredibly simple. With the knowledge of basic HTML and JavaScript, you can start building useful plugins in a matter of minutes.
 
 This article will focus on creating the extension, and not on building the application. We will be using the todo list app I created in a previous tutorial. <a href="http://nithinbekal.com/2010/a-simple-to-do-list-app-using-html5-and-local-storage/">Read the tutorial here</a>, and <a href="http://demo.nithinbekal.com/html5todo/v1/">see the demo here</a>.

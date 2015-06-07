@@ -2,7 +2,8 @@
 layout: post
 title: "Presenters in Rails"
 date:  2014-09-25 22:00:50
-categories: ruby, rails, programming
+categories:
+  - rails
 ---
 
 When your models are bloated with methods that are only used in views, it might be a good time to refactor them. Moving that logic into helper modules might be OK in some cases, but as the complexity of your views grows, you might want to look at presenters.

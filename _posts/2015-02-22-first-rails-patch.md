@@ -2,7 +2,9 @@
 layout: post
 title: "How I submitted my first patch to Rails (and you can too!)"
 date:  2015-02-23 19:34:10
-categories: rails, open-source
+categories:
+  - rails
+  - open-source
 ---
 
 Making your first contribution

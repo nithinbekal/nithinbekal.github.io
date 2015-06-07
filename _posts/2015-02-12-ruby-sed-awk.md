@@ -2,7 +2,10 @@
 layout: post
 title: "How to use Ruby instead of sed and awk"
 date:  2015-02-12 20:47:51
-categories: awk, ruby, sed
+categories:
+  - awk
+  - ruby
+  - sed
 ---
 
 Many unix utilities like sed, awk and grep

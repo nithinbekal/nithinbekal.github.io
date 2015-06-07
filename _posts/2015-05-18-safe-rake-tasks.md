@@ -2,7 +2,9 @@
 layout: post
 title: "Disable unsafe rake tasks in Rails production environment"
 date:  2015-05-18 22:01:16
-categories: ruby, rails
+categories:
+  - ruby
+  - rails
 ---
 
 In my previous post,

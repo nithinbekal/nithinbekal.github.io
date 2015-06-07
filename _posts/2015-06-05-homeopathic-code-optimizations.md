@@ -2,7 +2,8 @@
 layout: post
 title: "Demystifying @tenderlove's homeopathic code optimizations"
 date:  2015-06-05 23:00:00
-categories: ruby
+categories:
+  - ruby
 ---
 
 At the [Keep Ruby Weird](http://keeprubyweird.com) conference,

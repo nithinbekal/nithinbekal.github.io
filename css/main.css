@@ -43,24 +43,32 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 
 .site { margin: 0 auto; padding: 20px 50px; }
 
-.site .posts .post-group { padding: 30px 0 0 0; }
+.site .posts { padding: 50px 0 0 0; }
 .site .posts .month { color: #aaa; padding: 30px 0; }
 
 .site .posts .post-listing {
   font-family: 'Merriweather', Georgia, serif;
   font-weight: bold;
-  padding: 15px 0;
+  line-height: 1.8em;
+  padding: 25px 0;
 }
-
+.site .posts .post-listing .title { font-size: 1.4em; }
 .site .posts .published-on {
   color: #aaa;
   font-weight: normal;
-  font-size: 0.75em;
+  font-size: 0.6em;
   font-style: italic;
+  padding: 0 20px 0 0;
 }
 
 .site .posts a { color: #666; }
 .site .posts a:hover { color: #000; text-decoration: none; }
+.site .posts .category {
+  color: #666;
+  font-size: 0.6em;
+  font-weight: normal;
+  padding: 0 10px 0 5px;
+}
 
 .site .post h2.title {
   font-size: 2.5em;
@@ -194,6 +202,5 @@ hr {
   body { font-size: 16px; }
   .container > .header { padding: 20px; }
   .site { padding: 20px; }
-  .site .posts .post-listing { font-size: 0.9em; line-height: 1.8em; }
   .site .post h2.title { font-size: 1.5em; }
 }

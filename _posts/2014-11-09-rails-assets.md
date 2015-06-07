@@ -2,7 +2,8 @@
 layout: post
 title: "Better Asset Management in Rails Using Rails Assets"
 date:  2014-11-10 18:18:18
-categories: ruby
+categories:
+  - rails
 ---
 
 I've been looking for better ways to manage the JavaScript asset dependencies in a Rails app. It's easy to find gems that package many client side JS libraries, but a lot of them are unmaintained. It becomes a pain when you're trying to upgrade Rails, but are blocked by these gems.

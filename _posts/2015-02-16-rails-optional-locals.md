@@ -2,7 +2,9 @@
 layout: post
 title: "Passing optional locals to Rails partials"
 date:  2015-02-16 13:05:42
-categories: ruby, rails
+categories:
+  - ruby
+  - rails
 ---
 
 When passing locals to Rails partials,

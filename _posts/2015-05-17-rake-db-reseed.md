@@ -2,7 +2,8 @@
 layout: post
 title: "Rake task to drop and reseed database in Rails"
 date:  2015-05-17 19:56:17
-categories: ruby, rails
+categories:
+  - rails
 ---
 
 When working on a Rails app,

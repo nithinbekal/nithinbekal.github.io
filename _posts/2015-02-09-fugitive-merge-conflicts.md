@@ -2,7 +2,9 @@
 layout: post
 title: "Fixing git merge conflicts from vim using vim-fugitive"
 date:  2015-02-09 11:40:21
-categories: git, vim
+categories:
+  - git
+  - vim
 ---
 
 The [vim-fugitive](https://github.com/tpope/vim-fugitive)

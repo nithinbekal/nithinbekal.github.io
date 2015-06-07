@@ -2,7 +2,10 @@
 layout: post
 title: "Working With MongoDB's Aggregation Pipelines in Ruby"
 date:  2015-04-11 17:54:26
-categories: mongodb, ruby, rails
+categories:
+  - mongodb
+  - ruby
+  - rails
 ---
 
 If you needed to create a report

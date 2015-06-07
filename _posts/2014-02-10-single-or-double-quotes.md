@@ -2,6 +2,8 @@
 layout: post
 title: 'Single quotes or double quotes?'
 date: 2014-02-04 12:00:00
+categories:
+  - programming
 ---
 The single quote has been under attack today. (In my team, at least). I saw this in the our team chatroom this morning:
 

@@ -2,7 +2,8 @@
 layout: post
 title:  "Complex has_many :through associations in Rails"
 date:   2014-04-16 12:00:00
-categories: programming, rails
+categories:
+  - rails
 ---
 
 `has_many :through` associations can get a bit complicated when they involve self-referential relationships. Let's take Twitter as an example to state this problem. User A follows users B and C, but not D. This is represented by the `Follow` model. Each User also has may tweets.

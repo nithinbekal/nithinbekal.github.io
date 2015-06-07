@@ -2,7 +2,9 @@
 layout: post
 title: "Haskell Quicksort"
 date:  2014-10-30 23:46:41
-categories: haskell, functional-programming
+categories:
+  - haskell
+  - functional-programming
 ---
 
 After three days of conversations about functional programming at Functional Conf in Bangalore this month, I wanted to give functional languages a closer look, so I signed up for [Eric Meijer's FP101 course on edX](https://courses.edx.org/courses/DelftX/FP101x/3T2014/info). Two weeks into the course, Haskell is looking quite interesting.

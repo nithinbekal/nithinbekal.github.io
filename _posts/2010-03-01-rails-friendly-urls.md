@@ -5,7 +5,8 @@ date:   2010-03-01 12:00:00
 redirect_from:
   - /2010/rails-seo-friendly-urls-using-to_param/
   - /2010/03/01/rails-seo-friendly-urls-using-to_param/
-categories: programming, ruby, rails
+categories:
+  - rails
 ---
 
 I've wondered about how rails websites like <a href="http://railscasts.com/">Railscasts</a> created SEO friendly URLs. I read <a href="http://www.jroller.com/obie/entry/seo_optimization_of_urls_in">this post by Obie Fernandez</a> which explains how to do this.

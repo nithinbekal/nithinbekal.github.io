@@ -6,28 +6,14 @@ title: Nithin Bekal
 <div class='posts'>
   {% for post in site.posts %}
 
-    {% capture this_year %}{{ post.date | date: "%b %Y" }}{% endcapture %}
-    {% capture next_year %}{{ post.previous.date | date: "%b %Y" }}{% endcapture %}
-
-    {% if forloop.first %}
-    <div class='post-group'>
-    <div class='month' id="{{ this_year }}-ref">{{this_year}}</div>
-    {% endif %}
-
     <div class='post-listing'>
-      <a href='{{ post.url }}'>{{ post.title }}</a>
-      <span class='published-on'>{{ post.date | date: "%-d %b" }}</span>
+      <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
+      <br>
+      <span class='published-on'>{{ post.date | date: "%-d %B %Y" }}</span>
+      {% for category in post.categories %}
+      <span class='category'> #{{ category }} </span>
+      {% endfor %}
     </div>
-
-    {% if forloop.last %}
-      </div>
-    {% else %}
-        {% if this_year != next_year %}
-        </div>
-        <div class='post-group'>
-        <div class='month' id="{{ next_year }}-ref">{{next_year}}</div>
-        {% endif %}
-    {% endif %}
 
   {% endfor %}
 </div>

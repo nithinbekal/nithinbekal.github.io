@@ -2,7 +2,8 @@
 layout: post
 title: 'Export to CSV in Rails'
 date:   2014-02-01 12:00:00
-categories: programming, ruby, rails
+categories:
+  - rails
 ---
 
 Exporting data to CSV from a Rails app is as simple as adding a respond_to block to the controller action and setting the proper response headers.

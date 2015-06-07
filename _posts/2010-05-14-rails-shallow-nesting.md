@@ -4,7 +4,8 @@ title:  "Avoid Deeply Nested Routes in Rails"
 date:   2010-05-14 12:00:00
 redirect_from:
   - /2010/rails-avoid-multiple-level-nested-resource-routes/
-categories: programming, ruby, rails
+categories:
+  - rails
 ---
 
 *UPDATE: Code examples have been updated for Rails 3/4. Rails 2 was the latest version when this post was originally written. Also edited some of the content for clarity.*
