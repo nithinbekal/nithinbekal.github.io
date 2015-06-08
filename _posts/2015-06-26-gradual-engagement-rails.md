@@ -40,7 +40,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user!
 
   def create
-    @post = current_user.posts.new(post_params)
+    @post = current_user.posts.build(post_params)
     if post.save
       redirect_to @post, notice: 'Post saved'
     else
