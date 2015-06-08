@@ -142,7 +142,7 @@ class ApplicationController
   # other stuff ...
 
   def guest_user
-    Guest.where(token: guest_token).first_or_initialize
+    Guest.where(token: guest_token).first_or_create
   end
 
   private
