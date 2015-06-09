@@ -16,3 +16,8 @@ mix phoenix.server
 
 * [Let's Build a Web App With Phoenix and Ecto](http://www.elixirdose.com/post/elixirdose_intro_to_phoenix)
 
+## Example apps
+
+* [Simple Chat Example, by Chris McCord](https://github.com/chrismccord/phoenix_chat_example)
+* [Phoenix demo app with authentication, admin/user scopes and a websocket chat](https://github.com/pmontrasio/phoenix-demo-app)
+* [A simple CRUD application using Elixir and the Phoenix framework](https://github.com/gogogarrett/phoenix_crud)
