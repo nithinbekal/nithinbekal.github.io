@@ -17,9 +17,9 @@ $ rm -rf about notes slides _posts keybase.txt CNAME
 $ mkdir _posts
 ```
 
-* Edit the details from `_config.yml`
+* Edit the details from `_config.yml`. Make sure you leave the Disqus and
+  Google Analytics configs blank if you don't use them.
 * Change title in `index.html`
-* Remove Google Analytics code at the end of `_layouts/default.html`
 
 ### Rake tasks
 

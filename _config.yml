@@ -8,6 +8,7 @@ markdown: kramdown
 
 theme:
   disqus_shortname: nithinbekal
+  google_analytics: UA-2095438-7
 
 gems:
   - jekyll-redirect-from
