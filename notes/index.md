@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Notes and bookmarks'
+title: 'My Wiki'
 date:   2014-06-07 12:00:00
 ---
 

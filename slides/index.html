@@ -8,7 +8,8 @@ title: Slides
 
   {% for page in slides %}
     <div class='post-listing'>
-      <h2 class='title'><a href='{{ page.url }}'>{{ page.title }}</a></h2>
+      <a class='title' href='{{ page.url }}'>{{ page.title }}</a>
+      <br/>
       <span class='published-on'>{{ page.date | date: "%-d %B %Y" }}</span>
     </div>
   {% endfor %}
