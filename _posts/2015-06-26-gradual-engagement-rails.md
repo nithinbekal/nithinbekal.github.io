@@ -73,7 +73,7 @@ class Post < ActiveRecord::Base
 end
 
 # app/models/guest.rb
-class Post < ActiveRecord::Base
+class Guest < ActiveRecord::Base
   has_many :posts
 end
 {% endhighlight %}
