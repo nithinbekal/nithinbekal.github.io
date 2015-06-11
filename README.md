@@ -7,15 +7,15 @@ This repository contains the Jekyll theme and content of my blog.
 
 * Remove the existing content
 
-{% highlight bash %}
+```
 $ rm -rf about notes slides _posts keybase.txt CNAME
-{% endhighlight %}
+```
 
 * Create new posts directory
 
-{% highlight bash %}
+```
 $ mkdir _posts
-{% endhighlight %}
+```
 
 * Edit the details from `_config.yml`
 * Change title in `index.html`
