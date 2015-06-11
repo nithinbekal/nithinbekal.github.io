@@ -1,4 +1,5 @@
 
+{% if site.theme.disqus_shortname %}
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   var disqus_loaded = false;
@@ -14,4 +15,4 @@
   setTimeout(load_disqus, 1000);
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+{% endif %}
