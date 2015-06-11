@@ -1,9 +1,14 @@
+
 name: Nithin Bekal
 description: ''
 url: http://nithinbekal.com
 highlighter: pygments
 permalink: /posts/:title
 markdown: kramdown
+
+theme:
+  disqus_shortname: nithinbekal
+
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
