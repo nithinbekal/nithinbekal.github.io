@@ -14,6 +14,7 @@ mix phoenix.server
 
 ## Bookmarks
 
+* [Phoenix Guides](https://github.com/phoenixframework/phoenix_guides)
 * [Let's Build a Web App With Phoenix and Ecto](http://www.elixirdose.com/post/elixirdose_intro_to_phoenix)
 
 ## Example apps
