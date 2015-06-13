@@ -8,6 +8,7 @@ date:   2014-10-26 12:00:00
 * [Clojure](/notes/clojure.html)
 * [Elixir](/notes/elixir.html)
 * [Elm](/notes/elm.html)
+* [Erlang](/notes/erlang.html)
 * [JavaScript](/notes/js.html)
 * [Io](/notes/io.html)
 * [Ruby](/notes/ruby.html)
