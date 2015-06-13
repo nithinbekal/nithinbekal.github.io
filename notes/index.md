@@ -12,8 +12,9 @@ date:   2014-06-07 12:00:00
 Other links:
 
 * [Compilers](/notes/compilers.html)
+* [Favorite books lists](/notes/books.html)
 * [Mac OS X](/notes/osx.html)
-- [Operating systems](/notes/os.html)
+* [Operating systems](/notes/os.html)
 * [Product design](/notes/product-design.html)
 * [Postgres](/notes/postgres.html)
 * [Systems programming](/notes/systems-programming.html)

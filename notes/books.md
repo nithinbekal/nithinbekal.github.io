@@ -9,7 +9,6 @@ Favorite books of the year lists are here:
 [2014](/posts/favorite-books-2014/),
 [2013](/posts/favorite-books-2013/).
 
-
 ### Fantasy
 
 1. Harry Potter (J K Rowling)
