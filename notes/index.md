@@ -4,7 +4,7 @@ title: 'My Wiki'
 date:   2014-06-07 12:00:00
 ---
 
-**[Languages](/notes/langs.html)
+**[Languages](/notes/lang.html)
 &mdash; [Programming](/notes/programming.html)
 &mdash; [Ruby](/notes/ruby.html)
 &mdash; [Vim](/notes/vim.html)**
