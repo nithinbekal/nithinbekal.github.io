@@ -11,31 +11,37 @@ Contributing to Rails
 - Clone rails-dev-box - https://github.com/rails/rails-dev-box
 - git clone https://github.com/rails/rails-dev-box.git
 
+{% highlight bash %}
 cd rails-dev-box
 vagrant up
+{% endhighlight %}
 
 This will take a lot of time the first time. A LOT.
 
+{% highlight bash %}
 git clone git@github.com:nithinbekal/rails.git
+{% endhighlight %}
 
 The current directory will be mounted as /vagrant in the vagrant box.
 
+{% highlight bash %}
 vagrant ssh
 cd /vagrant/rails
 bundle
+{% endhighlight %}
 
+Get the latest changes from upstream rails:
 
-# Get the latest changes from upstream rails
+{% highlight bash %}
 git remote add rails git://github.com/rails/rails.git
 git fetch rails
 git checkout master
 git rebase rails/master
 
-# Update your fork with changes from upstream
 git push origin master
 
-# Run tests
 bundle exec rake test
+{% endhighlight %}
 
 - takes long long time to run
 
