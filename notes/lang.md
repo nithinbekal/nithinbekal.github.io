@@ -11,7 +11,7 @@ date:   2014-10-26 12:00:00
 * [Erlang](/notes/erlang.html)
 * [JavaScript](/notes/js.html)
 * [Io](/notes/io.html)
-* [Ruby](/notes/ruby.html)
+* [Ruby](/notes/ruby.html) - [Rails](/notes/rails.html)
 
 Other interesting languages:
 
