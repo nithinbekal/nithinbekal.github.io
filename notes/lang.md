@@ -6,7 +6,7 @@ date:   2014-10-26 12:00:00
 
 * [C and C++](/notes/c.html)
 * [Clojure](/notes/clojure.html)
-* [Elixir](/notes/elixir.html)
+* [Elixir](/notes/elixir.html) - [Phoenix](/notes/phoenix.html)
 * [Elm](/notes/elm.html)
 * [Erlang](/notes/erlang.html)
 * [JavaScript](/notes/js.html)
