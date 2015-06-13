@@ -14,3 +14,4 @@ Patterns:
 Random:
 
 * [Humor](/notes/programming-humor.html)
+* [Programming books online](/notes/programming-books.html)
