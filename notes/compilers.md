@@ -20,6 +20,7 @@ Blog posts, tutorials, etc:
 * [Compiler Design in C](http://www.holub.com/software/compiler.design.in.c.html), by Allen Holub
 * [Make A Lisp](https://github.com/kanaka/mal) - implementing a Lisp in various langauges
 * [Implementing a VM in C](https://news.ycombinator.com/item?id=9516656)
+* [Let's Build a Simple Interpreter](http://ruslanspivak.com/lsbasi-part1/)
 
 Languages written in [Parslet](http://kschiess.github.io/parslet/):
 
