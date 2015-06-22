@@ -16,6 +16,7 @@ mix phoenix.server
 
 * [Phoenix Guides](https://github.com/phoenixframework/phoenix_guides)
 * [Let's Build a Web App With Phoenix and Ecto](http://www.elixirdose.com/post/elixirdose_intro_to_phoenix)
+* [A hands-on intro to building modern web applications with Elixir and Phoenix](http://phoenix.thefirehoseproject.com)
 
 ## Example apps
 
