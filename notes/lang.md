@@ -12,6 +12,7 @@ date:   2014-10-26 12:00:00
 * [JavaScript](/notes/js.html)
 * [Io](/notes/io.html)
 * [Ruby](/notes/ruby.html) - [Rails](/notes/rails.html)
+* [Smalltalk](/notes/smalltalk.html)
 
 Other interesting languages:
 
