@@ -233,3 +233,4 @@ of the users of your web apps.
 * [Gradual engagement with Rails and Devise](http://www.codediode.io/lessons/364-gradual-engagement-with-rails-and-devise) -
   goes into building this feature in detail
   and uses a similar approach to the one used here.
+* [A cookie based approach to handling guest users](http://craftingruby.com/posts/2015/06/20/cookie-based-approach-to-guest-users.html)
