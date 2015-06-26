@@ -21,5 +21,6 @@ mix phoenix.server
 ## Example apps
 
 * [Simple Chat Example, by Chris McCord](https://github.com/chrismccord/phoenix_chat_example)
+* [Blox - a simple blog application](https://github.com/drewolson/blox)
 * [Phoenix demo app with authentication, admin/user scopes and a websocket chat](https://github.com/pmontrasio/phoenix-demo-app)
 * [A simple CRUD application using Elixir and the Phoenix framework](https://github.com/gogogarrett/phoenix_crud)
