@@ -9,7 +9,6 @@
 
     <title>{{ page.title }}</title>
 
-    <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
@@ -20,10 +19,10 @@
       <div class='header'>
         <h1 class='title'><a id='top-home-link' href='/'>{{ site.name }}</a></h1>
         <span class='links align-right'>
-          <a id='top-about-link' href='/about/'>About</a>
-          <a id='top-about-link' href='/subscribe/'>Subscribe</a>
-          <a id='top-about-link' href='/notes/'>My wiki</a>
-          <a id='top-about-link' href='/slides/'>Talks</a>
+          <a class='top-about-link' href='/about/'>About</a>
+          <a class='top-about-link sm-hide' href='/subscribe/'>Subscribe</a>
+          <a class='top-about-link sm-hide' href='/notes/'>My wiki</a>
+          <a class='top-about-link sm-hide' href='/slides/'>Talks</a>
         </span>
       </div>
 
