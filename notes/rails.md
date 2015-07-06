@@ -77,3 +77,35 @@ bundle exec rake test
 **Rails Internals**
 
 * [Diving in Rails - The request handling](http://blog.siami.fr/diving-in-rails-the-request-handling)
+
+# Indexing in Rails
+
+* Always add index for foreign keys
+
+{% highlight ruby %}
+# Bad
+create_table(:tweets) do |t|
+  t.string  :text
+  t.integer :user_id
+end
+
+# OK
+create_table(:tweets) do |t|
+  t.string  :text
+  t.integer :user_id
+end
+add_index :posts, :user_id
+
+# Better - automatically adds user_id field and creates index
+create_table(:tweets) do |t|
+  t.string     :text
+  t.references :user
+end
+{% endhighlight %}
+
+* [When to add indexes in a table in Rails](http://stackoverflow.com/questions/3658859/when-to-add-what-indexes-in-a-table-in-rails)
+* [Using indexes in Rails - Choosing additional indexes](https://tomafro.net/2009/08/using-indexes-in-rails-choosing-additional-indexes)
+* [Add index when the field is used for ordering](http://stackoverflow.com/questions/4445507/rails-created-at-when-user-for-ordering-should-you-add-an-index-to-the-table)
+* [Using indexes in Rails - Index your associations](https://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations)
+* [Rails Guides: Association basics](http://edgeguides.rubyonrails.org/association_basics.html)
+* [Finding and Indexing: You May Be Doing It Wrong](https://railsmachine.com/articles/2012/05/22/finding-and-indexing-you-may-be-doing-it-wrong/)
