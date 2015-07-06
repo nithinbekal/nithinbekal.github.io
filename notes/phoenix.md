@@ -24,3 +24,5 @@ mix phoenix.server
 * [Blox - a simple blog application](https://github.com/drewolson/blox)
 * [Phoenix demo app with authentication, admin/user scopes and a websocket chat](https://github.com/pmontrasio/phoenix-demo-app)
 * [A simple CRUD application using Elixir and the Phoenix framework](https://github.com/gogogarrett/phoenix_crud)
+* [Gaze](https://github.com/ericmj/gaze) - Phoenix with React
+* [phoenix-flux-react - An experiment with Phoenix Channels, GenEvents, React and Flux](http://github.com/fxg42/phoenix-flux-react)
