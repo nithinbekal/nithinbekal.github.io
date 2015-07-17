@@ -342,6 +342,7 @@ IO.puts Concat.join("Hello", "world", "_") #=> Hello_world
 * [Jose Valim - How I Start](https://howistart.org/posts/elixir/1)
 * [Elixir Resources](http://connettiva.eu/rubyday/)
 * [Elixir Style Guide](https://github.com/niftyn8/elixir_style_guide)
+* [Learning Elixir and Erlang - more resources](http://www.phoenixframework.org/docs/learning-elixir-and-erlang)
 
 # Videos
 
