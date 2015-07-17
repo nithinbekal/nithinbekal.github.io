@@ -218,7 +218,7 @@ test: *local
 As I mentioned earlier,
 ActionCable runs in a separate process,
 so it needs its own rackup file,
-which we'll put in `coble/config.ru`.
+which we'll put in `cable/config.ru`.
 
 {% highlight ruby %}
 # cable/config.ru
