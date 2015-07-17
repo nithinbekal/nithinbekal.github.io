@@ -4,10 +4,11 @@ title: 'My Wiki'
 date:   2014-06-07 12:00:00
 ---
 
-**[Languages](/notes/lang.html)
-&mdash; [Programming](/notes/programming.html)
-&mdash; [Ruby](/notes/ruby.html)
-&mdash; [Vim](/notes/vim.html)**
+**[Ruby](/notes/ruby.html)
+&mdash; [Elixir](/notes/elixir.html)
+&mdash; [Vim](/notes/vim.html)
+&mdash; [Languages](/notes/lang.html)
+&mdash; [Programming](/notes/programming.html)**
 
 Other links:
 
