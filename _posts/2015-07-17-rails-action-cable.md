@@ -384,6 +384,8 @@ the next set would be the
 There is a details README,
 and the source is well documented.
 
+* [Code for this example](https://github.com/nithinbekal/actioncable-chat-example)
+  (uses Rails 5)
 * [ActionCable examples](https://github.com/rails/actioncable-examples)
   from the Rails core team
   have some very nice examples
