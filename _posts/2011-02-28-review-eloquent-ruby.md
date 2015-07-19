@@ -5,7 +5,7 @@ date:   2011-02-28 12:00:00
 redirect_from:
   - /2011/review-eloquent-ruby-russ-olsen/
 categories:
-  - book
+  - books
   - reviews
   - ruby
 ---
