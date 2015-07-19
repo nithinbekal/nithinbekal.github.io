@@ -5,7 +5,8 @@ title: "Programming concepts"
 
 Object oriented programming:
 
-- [Law of Demeter](/notes/demeter.html)
+* [Law of Demeter](/notes/demeter.html)
+* [Single Reponsibility Principle](/notes/single-responsibility-principle.html)
 
 Patterns:
 
