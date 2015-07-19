@@ -1,19 +1,30 @@
 ---
 layout: default
-title: Nithin Bekal
 ---
+
+<div class='post page'>
+  <h2 class='title'>{{ page.title }}</h2>
+  <p><small><i>Showing posts tagged with #{{ page.category }}</i></small></p>
+
+  <div class='content'>
+  {{ content }}
+  </div>
+
+</div>
 
 <div class='posts'>
   {% for post in site.posts %}
+  {% if post.categories contains page.category %}
 
     <div class='post-listing'>
       <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
       <br>
       <span class='published-on'>{{ post.date | date: "%-d %B %Y" }}</span>
       {% for category in post.categories %}
-      <a href="/categories/{{ category }}.html" class='category'> #{{ category }} </span>
+      <span class='category'> #{{ category }} </span>
       {% endfor %}
     </div>
 
+  {% endif %}
   {% endfor %}
 </div>
