@@ -20,6 +20,7 @@ This a collections of bookmarks to interesting programming books that are availa
 * [The Design and Implementation of Probabilistic Programming Languages](http://dippl.org/) - Noah D. Goodman and Andreas Stuhlmüller
 * [Probabilistic Models of Cognition](https://probmods.org/) - by Noah D. Goodman and Joshua B. Tenenbaum
 * [Principles of Distributed Computing](http://dcg.ethz.ch/lectures/podc_allstars/lecture/podc.pdf) (Roger Wattenhofer) ([lecture notes](http://dcg.ethz.ch/lectures/podc_allstars/))
+* [Distributed Systems for Fun and Profit](http://book.mixu.net/distsys/)
 
 Some interesting reading lists:
 
