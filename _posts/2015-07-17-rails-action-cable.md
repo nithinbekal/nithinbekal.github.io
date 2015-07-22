@@ -69,7 +69,14 @@ end
 We've added puma because
 ActionCable runs in a separate process
 from our main application server,
-and needs a web server like puma to run.
+and needs a multi-threaded web server
+like Puma or Thin to run.
+We could still use
+a single-threaded server like Unicorn
+for running the web app,
+but the Action Cable app
+will run separately
+using Puma/Thin.
 
 # Adding the views
 
