@@ -506,7 +506,10 @@ def logged_in?(conn), do: !!current_user(conn)
 {% endhighlight %}
 
 Now we can make these available in the views
-by adding this line at the end of `Blog.Web.view/0`.
+by adding this line at the end of
+the `quote do ..` block in
+the `Blog.Web.view/0` function
+in `web/web.ex`:
 
 {% highlight elixir %}
 import Blog.Session, only: [current_user: 1, logged_in?: 1]
