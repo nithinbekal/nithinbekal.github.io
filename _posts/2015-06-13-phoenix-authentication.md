@@ -444,10 +444,9 @@ Let's go ahead and write the code.
 {% highlight elixir %}
 defmodule Blog.Session do
   alias Blog.User
-  alias Blog.Repo
 
-  def login(params) do
-    user = Repo.get_by(User, email: String.downcase(params["email"]))
+  def login(params, repo) do
+    user = repo.get_by(User, email: String.downcase(params["email"]))
     case authenticate(user, params["password"]) do
       true -> {:ok, user}
       _    -> :error
