@@ -4,6 +4,7 @@ title: 'Programming languages'
 date:   2014-10-26 12:00:00
 ---
 
+* [Agda](/notes/agda.html)
 * [C and C++](/notes/c.html)
 * [Clojure](/notes/clojure.html)
 * [Elixir](/notes/elixir.html) - [Phoenix](/notes/phoenix.html)
