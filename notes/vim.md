@@ -41,6 +41,7 @@ Videos:
 * [Ben Orenstein - Write code faster: expert-level vim (Railsberry 2012)](https://www.youtube.com/watch?v=SkdrYWhh-8s)
 * [tpope's vim config and plugins](https://www.youtube.com/watch?v=MGmIJyTf8pg)
 * [Impressive Ruby Productivity with Vim and Tmux by Chris Hunt](https://www.youtube.com/watch?v=gB-JSh1EVME)
+* [Vim for Rails Developers](https://www.youtube.com/watch?v=9J2OjH8Ao_A)
 
 **Plugins**
 
