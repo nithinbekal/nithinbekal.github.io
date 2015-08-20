@@ -3,7 +3,7 @@ title: "Phoenix Tutorial"
 layout: page
 ---
 
-1. Installation
+1. [Introduction](/phoenix/introduction.html)
 1. Creating a project
 1. [Scaffolding a resource](/posts/elixir-phoenix-crud-app/)
 1. Exploring the scaffolded code
