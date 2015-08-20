@@ -10,6 +10,7 @@ date:   2014-10-26 12:00:00
 * [Elixir](/notes/elixir.html) - [Phoenix](/notes/phoenix.html)
 * [Elm](/notes/elm.html)
 * [Erlang](/notes/erlang.html)
+* [Haskell](/notes/haskell.html)
 * [JavaScript](/notes/js.html) - [ES6](/notes/es6.html)
 * [Io](/notes/io.html)
 * [Ruby](/notes/ruby.html) - [Rails](/notes/rails.html)

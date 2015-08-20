@@ -3,6 +3,10 @@ layout: page
 title: "Programming concepts"
 ---
 
+* [Software architecture](notes/architecture.html)
+* [Software design principles](notes/design-principles.html)
+* [Testing](/notes/testing.html)
+
 Object oriented programming:
 
 * [Law of Demeter](/notes/demeter.html)
