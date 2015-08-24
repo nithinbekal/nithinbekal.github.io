@@ -4,6 +4,19 @@ title: 'Vim'
 date:   2014-06-07 12:00:00
 ---
 
+*Troubleshooting*
+
+Vim has a problem with
+getting the correct path in OSX.
+This leads to it using system Ruby
+if you run `:!rake test`.
+To fix,
+[run the command](https://github.com/dotphiles/dotzsh#mac-os-x):
+
+{% highlight bash %}
+sudo chmod ugo-x /usr/libexec/path_helper
+{% endhighlight %}
+
 Blog posts, links, etc.
 
 * [Vim Awesome](http://vimawesome.com/) - Search for vim plugins
