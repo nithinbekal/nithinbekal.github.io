@@ -37,3 +37,8 @@ Relative numbering https://github.com/coldnew/linum-relative
 * [Setting up Emacs as Ruby development environment on OSX](http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/)
 * [Vim in Emacs Bootstrap](http://bling.github.io/blog/2013/09/09/vim-in-emacs-bootstrap/)
 * [Configuring emacs and evil mode for Go development](http://jen20.com/2015/02/06/configuring-emacs-for-go-part-1.html)
+
+# Elisp links
+
+* [Emergency Elisp](http://steve-yegge.blogspot.in/2008/01/emergency-elisp.html) -
+  excellent tutorial for elisp by Steve Yegge
