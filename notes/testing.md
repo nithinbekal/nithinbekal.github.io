@@ -40,4 +40,7 @@ Unit testing helps us by
 * Canary test - checks if the test env is setup
 * eg. assert 1 == 1
 
+# Links
 
+* [Getting Testy](http://randycoulman.com//blog/2015/08/04/getting-testy-redux/) -
+  a series of articles on unit testing
