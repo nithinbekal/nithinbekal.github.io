@@ -28,7 +28,7 @@ Installation
 
 {% highlight bash %}
 brew install elixir node
-mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v0.17.0/phoenix_new-0.17.0.ez
+mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v1.0.0/phoenix_new-1.0.0.ez
 mix phoenix.new my_phoenix_app
 cd my_phoenix_app
 mix phoenix.server
