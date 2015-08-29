@@ -18,7 +18,9 @@ we'll be walking through the process of
 building the same app
 step by step.
 
-We'll use Elixir 1.0.5 and Phoenix 0.14.
+We'll use Elixir 1.0.5 and Phoenix 1.0.0.
+(This was originally written for Phenix 0.14,
+but was later updated for 1.0.0.)
 We'll also be using ES6
 instead of Javascript,
 but anyone familiar with JS
@@ -104,7 +106,7 @@ and it is will set up handlers for form submission
 and for receiving messages over the channel.
 
 {% highlight javascript %}
-import {Socket} from "phoenix"
+import {Socket} from "deps/phoenix/web/static/js/phoenix"
 
 class App {
   static init() {
@@ -180,19 +182,17 @@ feature of ES6 in the
 
 # Adding channel routes
 
-Now that we have
-some client side code in place,
-let's start with the Elixir code.
-We'll route the socket to `/ws`.
+A `UserSocket` module
+will be present in
+`web/channels/user_socket.ex`.
+This module is used for
+handling socket authentication
+in a single place.
+
+We just need to add one line to the module.
 
 {% highlight elixir %}
-defmodule Chatter.Router do
-  # ...
-
-  socket "/ws", Chatter do
-    channel "rooms:*", RoomChannel
-  end
-end
+    channel "rooms:*", Chatter.RoomChannel
 {% endhighlight %}
 
 With this route in place,
@@ -212,11 +212,11 @@ on the page load event.
 static init() {
   // var msgBody = ...
 
-  var socket = new Socket("/ws")
+  let socket = new Socket("/socket")
   socket.connect()
   socket.onClose( e => console.log("Closed connection") )
 
-  var channel = socket.chan("rooms:lobby", {})
+  var channel = socket.channel("rooms:lobby", {})
   channel.join()
     .receive( "error", () => console.log("Connection error") )
 
@@ -382,7 +382,7 @@ static init() {
 }
 
 static renderMessage(msg) {
-  messages = $("#messages")
+  var messages = $("#messages")
   messages.append(`<p><b>[${msg.user}]</b>: ${msg.body}</p>`)
 }
 {% endhighlight %}
