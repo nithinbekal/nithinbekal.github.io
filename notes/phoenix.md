@@ -14,9 +14,10 @@ mix phoenix.server
 
 ## Bookmarks
 
-* [Phoenix Guides](https://github.com/phoenixframework/phoenix_guides)
+* [Phoenix Guides](http://www.phoenixframework.org/docs/overview)
 * [Let's Build a Web App With Phoenix and Ecto](http://www.elixirdose.com/post/elixirdose_intro_to_phoenix)
 * [A hands-on intro to building modern web applications with Elixir and Phoenix](http://phoenix.thefirehoseproject.com)
+* [Build and test a blazing fast JSON API with Phoenix, an Elixir framework](https://robots.thoughtbot.com/testing-a-phoenix-elixir-json-api)
 
 ## Example apps
 
