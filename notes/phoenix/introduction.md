@@ -9,7 +9,8 @@ In this tutorial,
 we will build multiple small web apps
 to explore the framework.
 
-Advantages of Phoenix:
+Some of the reasons
+you might want to try out Phoenix are:
 
 * **Concurrency**:
   Elixir runs on top of Erlang's virtual machine,
@@ -19,24 +20,16 @@ Advantages of Phoenix:
   building realtime applications
   as easy as building
   your typical web app.
-* Phoenix creator, Chris McCord
-  explains the pros and cons
-  of Phoenix
-  [here](https://news.ycombinator.com/item?id=8671618).
 
-Installation
+Phoenix creator, Chris McCord
+explains the pros and cons
+of Phoenix
+[here](https://news.ycombinator.com/item?id=8671618).
 
-{% highlight bash %}
-brew install elixir node
-mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v1.0.0/phoenix_new-1.0.0.ez
-mix phoenix.new my_phoenix_app
-cd my_phoenix_app
-mix phoenix.server
-{% endhighlight %}
+_In the
+[next section](/notes/phoenix/installation.html),
+we will install Phoenix
+and generate a barebones application._
 
-Links
-
-* http://phoenix.thefirehoseproject.com/0.html
-* http://www.phoenixframework.org/docs/installation
-* https://robots.thoughtbot.com/testing-a-phoenix-elixir-json-api
+[Table of contents](/notes/phoenix/)
 
