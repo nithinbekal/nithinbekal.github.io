@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rails: Use jquery-timeago instead of time_ago_in_words"
+title: "Avoid time_ago_in_words in Rails"
 date:  2015-07-24 21:36:55
 categories: rails
 ---
