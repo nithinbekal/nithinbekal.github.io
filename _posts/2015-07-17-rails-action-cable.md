@@ -391,7 +391,7 @@ the next set would be the
 There is a details README,
 and the source is well documented.
 
-* [Code for this example](https://github.com/nithinbekal/actioncable-chat-example)
+* [Code for this example](https://github.com/nithinbekal/actioncable-chat-example/tree/basic)
   (uses Rails 5)
 * [ActionCable examples](https://github.com/rails/actioncable-examples)
   from the Rails core team
