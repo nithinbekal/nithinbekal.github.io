@@ -84,7 +84,7 @@ to accomplish this.
 {% highlight ruby %}
 module ApplicationHelper
   def meta_tag(tag, text)
-    content_tag :"meta_#{tag}", text
+    content_for :"meta_#{tag}", text
   end
 
   def yield_meta_tag(tag, default_text='')
