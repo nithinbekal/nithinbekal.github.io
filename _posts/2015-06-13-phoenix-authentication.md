@@ -46,7 +46,7 @@ but in an hashed format.
 Let's generate the model:
 
 {% highlight bash %}
-$ mix phoenix.gen.model User users email crypted_password
+$ mix phoenix.gen.model User users email:unique crypted_password
 {% endhighlight %}
 
 This adds a User model
@@ -227,7 +227,7 @@ to the `changeset/2` function.
 def changeset(model, params \\ :empty) do
   model
   |> cast(params, @required_fields, @optional_fields)
-  |> validate_unique(:email, on: Blog.Repo, downcase: true)
+  |> unique_constraint(:email)
   |> validate_format(:email, ~r/@/)
   |> validate_length(:password, min: 5)
 end
