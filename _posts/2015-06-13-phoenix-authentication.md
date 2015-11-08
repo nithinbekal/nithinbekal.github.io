@@ -73,20 +73,17 @@ $ mix ecto.migrate
 Now that we have added the User model,
 let's move on to creating a registration page.
 Let's add the registration routes to `web/router.ex`.
-Add these routes after
+Add this line after
 the `resources "/posts"` line
 in the file:
 
 {% highlight elixir %}
-get  "/register", RegistrationController, :new
-post "/register", RegistrationController, :create
+resources "/registrations", RegistrationController, only: [:new, :create]
 {% endhighlight %}
 
-The first line
-adds a `/register` route,
-and the second line
-handles the form submission
-as a POST request.
+This adds a `/registrations` route,
+and a `POST /registrations` path
+to handle the form submission.
 
 Add a link to the register page
 in the navigation section of
