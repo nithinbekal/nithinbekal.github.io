@@ -56,6 +56,14 @@ in the database.
 Run the migration
 using the command:
 
+(If you're facing problems with the command,
+you might want to take a look at
+[this issue](https://github.com/phoenixframework/phoenix/issues/1326)
+to solve this.
+The API to define unique contraint
+is only available
+on Phoenix master as of now.)
+
 {% highlight bash %}
 $ mix ecto.migrate
 {% endhighlight %}
