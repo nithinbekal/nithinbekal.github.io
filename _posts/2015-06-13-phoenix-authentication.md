@@ -172,12 +172,11 @@ The function would look like this:
 def create(conn, %{"user" => user_params}) do
   changeset = User.changeset(%User{}, user_params)
 
-  if changeset.valid? do
-    # save new user and sign them in
-  else
-    conn
-    |> put_flash(:info, "Unable to create account")
-    |> render("new.html", changeset: changeset)
+  case Blog.Registration.create(changeset, Blog.Repo) do
+    {:ok, changeset} ->
+      # sign in the user
+    {:error, changeset} ->
+      # show error message
   end
 end
 {% endhighlight %}
@@ -185,14 +184,14 @@ end
 Here we're capturing
 the email and password into `user_params`,
 and creating a `User` changeset using it.
-I've skipped the part
-where we persist the user
-if the changeset is valid.
+
+We will need to create
+the `Blog.Registration` module
+to save the user to database.
 We'll come back to that later.
 First, let's take care
 of adding validations
-and handling the case
-where the chageset is invalid.
+to the `User` model.
 
 ## Validating and persisting `User`
 
@@ -258,15 +257,15 @@ to the database.
 def create(conn, %{"user" => user_params}) do
   changeset = User.changeset(%User{}, user_params)
 
-  if changeset.valid? do
-    user = Blog.Registration.create(changeset, Blog.Repo)
-    conn
-    |> put_flash(:info, "Your account was created")
-    |> redirect(to: "/")
-  else
-    conn
-    |> put_flash(:info, "Unable to create account")
-    |> render("new.html", changeset: changeset)
+  case Blog.Registration.create(changeset, Blog.Repo) do
+    {:ok, changeset} ->
+      conn
+      |> put_flash(:info, "Your account was created")
+      |> redirect(to: "/")
+    {:error, changeset} ->
+      conn
+      |> put_flash(:info, "Unable to create account")
+      |> render("new.html", changeset: changeset)
   end
 end
 {% endhighlight %}
