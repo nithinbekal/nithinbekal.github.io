@@ -37,7 +37,7 @@ Create an erb file at app/views/users/index.csv.erb with the CSV data. Let's onl
 <%- headers = ['Name', 'Email'] -%>
 <%= CSV.generate_line headers %>
 <%- @users.each do |user| -%>
-  <%= CSV.generate_line([user.name, user.email]) %>
+<%= CSV.generate_line([user.name, user.email]) -%>
 <%- end -%>
 {% endhighlight %}
 
