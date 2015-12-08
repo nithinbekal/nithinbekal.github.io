@@ -118,7 +118,7 @@ dict = {
 
 dict.dig(:a, :x) #=> 23
 dict.dig(:b, :z) #=> 37
-dict.dig(:b, :x) #=> nil
+dict.dig(:b, :y) #=> nil
 dict.dig(:c, :x) #=> nil
 {% endhighlight %}
 
