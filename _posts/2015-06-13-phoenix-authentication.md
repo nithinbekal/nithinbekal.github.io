@@ -49,20 +49,19 @@ Let's generate the model:
 $ mix phoenix.gen.model User users email:unique crypted_password
 {% endhighlight %}
 
+(Note: If you're facing problems with the command,
+you might want to take a look at
+[this issue](https://github.com/phoenixframework/phoenix/issues/1326)
+to solve this.
+The API to define unique contraint
+is not available in Phoenix < v1.0.4.)
+
 This adds a User model
 and a migration
 to create a `users` table
 in the database.
 Run the migration
 using the command:
-
-(If you're facing problems with the command,
-you might want to take a look at
-[this issue](https://github.com/phoenixframework/phoenix/issues/1326)
-to solve this.
-The API to define unique contraint
-is only available
-on Phoenix master as of now.)
 
 {% highlight bash %}
 $ mix ecto.migrate
@@ -78,6 +77,7 @@ the `resources "/posts"` line
 in the file:
 
 {% highlight elixir %}
+# web/router.ex
 resources "/registrations", RegistrationController, only: [:new, :create]
 {% endhighlight %}
 
@@ -96,6 +96,7 @@ in the navigation section of
 Next we add a `RegistrationController`:
 
 {% highlight elixir %}
+# web/controllers/registration_controller.ex
 defmodule Blog.RegistrationController do
   use Blog.Web, :controller
   alias Blog.User
@@ -110,17 +111,17 @@ end
 When we try to load the `/register` page,
 Phoenix shows us an error page
 complaining about a missing `RegistrationView`.
-Let's add one an empty view module in
-`web/views/registration_view`.
+Let's add an empty view module.
 
 {% highlight elixir %}
+# web/views/registration_view.ex
 defmodule Blog.RegistrationView do
   use Blog.Web, :view
 end
 {% endhighlight %}
 
-Now, we are ready to add the HTML view
-to app/templates/registration/new.html.eex:
+Now, we are ready to add the HTML view to
+`app/templates/registration/new.html.eex`:
 
 {% highlight elixir %}
 <h1>Create an account</h1>
@@ -153,13 +154,13 @@ to app/templates/registration/new.html.eex:
 <% end %>
 {% endhighlight %}
 
-Now if we go to the path `/register`,
+Now if we go to the path `/registrations/new`,
 we will find a signup form.
 If we submit the form,
 we will get this error:
 
 {% highlight elixir %}
-UndefinedFunctionError at POST /register
+UndefinedFunctionError at POST /registrations
 undefined function: Blog.RegistrationController.create/2
 {% endhighlight %}
 
@@ -169,6 +170,8 @@ to handle this request.
 The function would look like this:
 
 {% highlight elixir %}
+# web/controllers/registration_controller.ex
+
 def create(conn, %{"user" => user_params}) do
   changeset = User.changeset(%User{}, user_params)
 
@@ -207,6 +210,8 @@ but it will not be persisted.
 The schema block should now look like this:
 
 {% highlight elixir %}
+# web/models/user.ex
+
 schema "users" do
   field :email, :string
   field :crypted_password, :string
@@ -228,6 +233,8 @@ We also need to add some validations
 to the `changeset/2` function.
 
 {% highlight elixir %}
+# web/models/user.ex
+
 def changeset(model, params \\ :empty) do
   model
   |> cast(params, @required_fields, @optional_fields)
@@ -254,6 +261,8 @@ and need to persist the user
 to the database.
 
 {% highlight elixir %}
+# web/controllers/registration_controller.ex
+
 def create(conn, %{"user" => user_params}) do
   changeset = User.changeset(%User{}, user_params)
 
@@ -289,6 +298,7 @@ and then save the changeset to the database.
 
 {% highlight elixir %}
 # web/models/registration.ex
+
 defmodule Blog.Registration do
   import Ecto.Changeset, only: [put_change: 3]
 
@@ -310,9 +320,11 @@ For this, we will use the
 [comeonin](https://github.com/elixircnx/comeonin) library
 which provides functions
 to hash passwords using bcrypt.
-Add comeonin to `mix/exs`:
+Add comeonin to `mix.exs`:
 
 {% highlight diff %}
+# mix.exs
+
   defp deps do
     [{:phoenix, "~> 0.13.1"},
       {:phoenix_ecto, "~> 0.4"},
@@ -329,6 +341,8 @@ Once this has been installed,
 we can implement the `hashed_password/2` function like this:
 
 {% highlight elixir %}
+# web/models/registration.ex
+
 defp hashed_password(password) do
   Comeonin.Bcrypt.hashpwsalt(password)
 end
@@ -346,11 +360,12 @@ Now that we have added
 the ability to create an account,
 let's add the login/logout feature.
 The first thing is to add the routes.
-Add these routes
-immediately after the register page routes
-in `web/router.ex`.
+Add these routes immediately after the registration page routes in
+`web/router.ex`.
 
 {% highlight elixir %}
+# web/router.ex
+
 get    "/login",  SessionController, :new
 post   "/login",  SessionController, :create
 delete "/logout", SessionController, :delete
@@ -360,6 +375,8 @@ Next, let's add the SessionController
 and create the login page.
 
 {% highlight elixir %}
+# web/controllers/session_controller.ex
+
 defmodule Blog.SessionController do
   use Blog.Web, :controller
 
@@ -400,6 +417,8 @@ Let's add an empty module
 as we did with `RegistrationController`.
 
 {% highlight elixir %}
+# web/views/session_view.ex
+
 defmodule Blog.SessionView do
   use Blog.Web, :view
 end
@@ -415,6 +434,8 @@ to handle submission of this form.
 This is what the `create` function looks like:
 
 {% highlight elixir %}
+# web/controllers/session_controller.ex
+
 def create(conn, %{"session" => session_params}) do
   case Blog.Session.login(session_params, Blog.Repo) do
     {:ok, user} ->
@@ -446,6 +467,8 @@ We haven't added the `Blog.Session` module yet.
 Let's go ahead and write the code.
 
 {% highlight elixir %}
+# web/models/session.ex
+
 defmodule Blog.Session do
   alias Blog.User
 
@@ -494,6 +517,7 @@ we set during login.
 
 {% highlight elixir %}
 # web/models/session.ex
+
 def current_user(conn) do
   id = Plug.Conn.get_session(conn, :current_user)
   if id, do: Repo.get(User, id)
@@ -505,6 +529,8 @@ to add another helper function, `logged_in?`,
 to `Blog.Session`.
 
 {% highlight elixir %}
+# web/models/session.ex
+
 def logged_in?(conn), do: !!current_user(conn)
 {% endhighlight %}
 
@@ -515,13 +541,15 @@ the `Blog.Web.view/0` function
 in `web/web.ex`:
 
 {% highlight elixir %}
+# web/web.ex
+
 import Blog.Session, only: [current_user: 1, logged_in?: 1]
 {% endhighlight %}
 
 We can now replace the register page link
-with the following code
-that shows the login and register links
+with code that shows the login and register links
 only when the user isn't signed in.
+Let's edit `web/templates/layout/app.html.eex`:
 
 {% highlight elixir %}
 <%= if logged_in?(@conn) do %>
@@ -529,7 +557,7 @@ only when the user isn't signed in.
   <li><%= link "Logout", to: session_path(@conn, :delete), method: :delete %></li>
 <% else %>
   <li><%= link "Login",    to: "/login" %></li>
-  <li><%= link "Register", to: "/register" %></li>
+  <li><%= link "Register", to: registration_path(@conn, :new) %></li>
 <% end %>
 {% endhighlight %}
 
@@ -545,6 +573,8 @@ we can add the following `delete` function
 to `SessionController`:
 
 {% highlight elixir %}
+# web/controllers/session_controller.ex
+
 def delete(conn, _) do
   conn
   |> delete_session(:current_user)
@@ -565,12 +595,14 @@ We will add the following line
 in `Blog.RegistrationController.create/2`:
 
 {% highlight diff %}
-  if changeset.valid? do
-    user = Blog.Registration.create(changeset, Blog.Repo)
-    conn
-+   |> put_session(:current_user, user.id)
-    |> put_flash(:info, "Your account was created")
-    |> redirect(to: "/")
+# web/controllers/registration_controller.ex
+
+  case Blog.Registration.create(changeset, Blog.Repo) do
+    {:ok, changeset} ->
+      conn
++     |> put_session(:current_user, user.id)
+      |> put_flash(:info, "Your account was created")
+      |> redirect(to: "/")
   else
 {% endhighlight %}
 
