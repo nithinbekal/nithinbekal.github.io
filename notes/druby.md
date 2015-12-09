@@ -24,6 +24,45 @@ Rules for passing objects between client and server:
 * serializable objects are passed by value
 * non-serializable - by reference
 
+### Example code
+
+{% highlight ruby %}
+# server.rb
+require 'drb/drb'
+
+queue = SizedQueue.new(100)
+DRb.start_service('druby://localhost:9999', queue)
+DRb.thread.join
+{% endhighlight %}
+
+
+{% highlight ruby %}
+# publisher.rb
+require 'drb/drb'
+
+DRb.start_service
+q = DRbObject.new_with_uri('druby://localhost:9999')
+
+100.times do |n|
+  sleep(rand)
+  q.push(n)
+end
+{% endhighlight %}
+
+{% highlight ruby %}
+# consumer.rb
+require 'drb/drb'
+
+DRb.start_service
+q = DRbObject.new_with_uri('druby://localhost:9999')
+
+100.times do |n|
+  sleep(rand)
+  puts q.pop
+end
+{% endhighlight %}
+
+
 ### Articles
 
 * [dRuby and Rinda: Implementation and application of distributed Ruby and its parallel coordination mechanism](http://www.druby.org/imaco_doc/ijpp_text_en.html)
