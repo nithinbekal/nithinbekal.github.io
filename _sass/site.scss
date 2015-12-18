@@ -1,18 +1,18 @@
 
+$main-font-stack: 'Open Sans', Arial, sans-serif;
+
 * { margin: 0; padding: 0; }
 html, body { height: 100%; }
 
 body {
   color: #444;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 18px;
+  font-family: $main-font-stack;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
 }
 
 a { color: #007499; text-decoration: none; }
 a:hover { text-decoration: underline; }
-
-h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 .align-right { float: right; }
 
@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 
 .container > .header h1.title {
   display: inline-block;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 1em;
 }
 
@@ -37,7 +36,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 
 .container > .header .links a {
   color: #888;
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding: 0 10px;
 }
 
@@ -47,7 +46,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 .site .posts .month { color: #aaa; padding: 30px 0; }
 
 .site .posts .post-listing {
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: $main-font-stack;
   font-weight: bold;
   line-height: 1.8em;
   padding: 25px 0;
@@ -71,8 +70,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 }
 
 .site .post h2.title {
-  font-size: 2.5em;
-  font-weight: normal;
+  font-size: 2em;
   line-height: 1.4em;
   padding: 30px 0 20px 0;
 }
@@ -82,7 +80,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 }
 
 .site .post .content    {
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: $main-font-stack;
   line-height: 1.8em;
   margin: 60px 0;
 }
@@ -111,7 +109,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 .site .post .content blockquote {
   background: #fff;
   border: 1px solid #ddd;
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: $main-font-stack;
   font-size: 1.05em;
   font-style: italic;
   line-height: 1.8em;
@@ -130,7 +128,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-s
 
 #author-bio {
   border: 1px solid #ddd;
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: $main-font-stack;
   font-size: 0.8em;
   line-height: 1.7em;
   padding: 60px 20px 20px 20px;
