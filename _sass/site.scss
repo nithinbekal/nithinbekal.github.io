@@ -118,12 +118,11 @@ a:hover { text-decoration: underline; }
 }
 
 .site .post .content .highlight {
-  background: #fdfdfd;
-  border: 1px solid #ccc;
   font-size: 13px;
-  line-height: 1.6em;
+  line-height: 1.5em;
   margin: 20px 0;
-  padding: 20px;
+  
+  pre { padding: 20px; }
 }
 
 #author-bio {
