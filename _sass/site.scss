@@ -15,6 +15,14 @@ a { color: #007499; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .align-right { float: right; }
+.text-lg { font-size: 1.1em; }
+.text-sm { font-size: 0.9em; }
+
+.clearfix {
+  &:before, &:after { content: ' '; display: table; }
+  &:after { clear: both; }
+  *zoom: 1;
+}
 
 .container {
   margin: 0 auto;
@@ -125,29 +133,62 @@ a:hover { text-decoration: underline; }
   pre { padding: 20px; }
 }
 
+#post-footer { margin-bottom: 50px; }
+
 #author-bio {
-  border: 1px solid #ddd;
-  font-family: $main-font-stack;
-  font-size: 0.8em;
-  line-height: 1.7em;
-  padding: 60px 20px 20px 20px;
+  border-top: 3px solid #eee;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  padding: 60px 0px;
   position: relative;
+
+  .gravatar {
+    margin: -42px 0 0 -42px;
+    position: absolute; top: 0; left: 50%;
+  }
+
+  .gravatar img {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    height: 80px;
+    padding: 4px;
+    width: 80px;
+  }
+  .bio a { color: #007499; }
+  .links { text-align: center; }
+  .links a { padding: 0 10px; }
 }
-#author-bio .gravatar {
-  margin: -42px 0 0 -42px;
-  position: absolute; top: 0; left: 50%;
+
+.subscribe {
+  background: #f9f9fa;
+  color: #888;
+  padding: 30px 20px;
 }
-#author-bio .gravatar img {
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  height: 80px;
-  padding: 4px;
-  width: 80px;
+
+.subscribe-form {
+  clear: both;
+  padding: 20px 0;
+
+  input { font-size: 13px; }
 }
-#author-bio .bio a { color: #007499; }
-#author-bio .links { text-align: center; }
-#author-bio .links a { padding: 0 10px; }
+
+.subscribe-email {
+  padding: 8px;
+  width: 50%;
+
+  &:focus { outline: 0; }
+}
+
+.subscribe-submit {
+  background: #eee;
+  border: 1px solid #bbb;
+  color: #777;
+  height: 36px;
+  width: 25%;
+
+  &:hover { background: #ddd; }
+}
 
 #prev-next-nav {
   overflow: hidden;
