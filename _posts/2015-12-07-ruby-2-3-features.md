@@ -10,15 +10,13 @@ and the first preview release was made available a few weeks ago.
 I've been playing around with it
 and looking at what new features have been introduced.
 
-To install the preview version:
-
 {% highlight bash %}
-# Using RVM
-rvm install 2.3.0-preview1
+# Install using RVM
+rvm install 2.3.0
 
 # Using Rbenv
 brew upgrade ruby-build --HEAD
-rbenv install 2.3.0-preview1
+rbenv install 2.3.0
 {% endhighlight %}
 
 # Safe navigation operator
