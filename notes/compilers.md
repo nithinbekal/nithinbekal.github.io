@@ -21,9 +21,14 @@ Blog posts, tutorials, etc:
 * [Make A Lisp](https://github.com/kanaka/mal) - implementing a Lisp in various langauges
 * [Implementing a VM in C](https://news.ycombinator.com/item?id=9516656)
 * [Let's Build a Simple Interpreter](http://ruslanspivak.com/lsbasi-part1/)
+* [Making a mini-lisp - Introduction to transpilers](https://angularclass.com/making-a-mini-lisp-introduction-to-transpilers/)
 
 Languages written in [Parslet](http://kschiess.github.io/parslet/):
 
 * [reak](https://github.com/rkh/Reak) - Smalltalk on Rubinius
 * [wt](https://github.com/kschiess/wt) - Compiles to postscript
 
+Simple interpreters
+
+- [Trump](https://github.com/jcinnamond/trump) -
+  simple programming language to demonstrate how to write a static type analyser
