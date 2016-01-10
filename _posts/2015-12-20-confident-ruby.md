@@ -2,7 +2,10 @@
 layout: post
 title: "Confident Ruby (Avdi Grimm)"
 date:  2015-12-20 22:30:00
-categories: ruby, books, book-reviews
+categories:
+  - reviews
+  - books
+  - ruby
 ---
 
 The book is about patterns for structuring your code.
