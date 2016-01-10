@@ -37,3 +37,7 @@ More on the topic:
 Other bookmarks:
 
 * [How to Read a Book](https://www.farnamstreetblog.com/how-to-read-a-book/)
+
+Reading lists
+
+- [Science Fiction Stories with Good Astronomy & Physics: A Topical Index](http://www.astrosociety.org/education/astronomy-resource-guides/science-fiction-stories-with-good-astronomy-physics-a-topical-index/)
