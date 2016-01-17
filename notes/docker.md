@@ -15,29 +15,37 @@ boot2docker init
 
 Start it by:
 
-    boot2docker start
+{% highlight ruby %}
+boot2docker start
+{% endhighlight %}
 
 You will see this:
 
-    Waiting for VM and Docker daemon to start...
-    .......................ooooooooooooooooooooo
-    Started.
-    Writing /Users/nithin/.boot2docker/certs/boot2docker-vm/ca.pem
-    Writing /Users/nithin/.boot2docker/certs/boot2docker-vm/cert.pem
-    Writing /Users/nithin/.boot2docker/certs/boot2docker-vm/key.pem
+{% highlight text %}
+Waiting for VM and Docker daemon to start...
+.......................ooooooooooooooooooooo
+Started.
+Writing /Users/nithin/.boot2docker/certs/boot2docker-vm/ca.pem
+Writing /Users/nithin/.boot2docker/certs/boot2docker-vm/cert.pem
+Writing /Users/nithin/.boot2docker/certs/boot2docker-vm/key.pem
 
-    To connect the Docker client to the Docker daemon, please set:
-        export DOCKER_HOST=tcp://192.168.59.103:2376
-        export DOCKER_CERT_PATH=/Users/nithin/.boot2docker/certs/boot2docker-vm
-        export DOCKER_TLS_VERIFY=1
+To connect the Docker client to the Docker daemon, please set:
+    export DOCKER_HOST=tcp://192.168.59.103:2376
+    export DOCKER_CERT_PATH=/Users/nithin/.boot2docker/certs/boot2docker-vm
+    export DOCKER_TLS_VERIFY=1
+{% endhighlight %}
 
 To have launchd start boot2docker at login:
 
-    ln -sfv /usr/local/opt/boot2docker/*.plist ~/Library/LaunchAgents
+{% highlight text %}
+ln -sfv /usr/local/opt/boot2docker/*.plist ~/Library/LaunchAgents
+{% endhighlight %}
 
 Then to load boot2docker now:
 
-    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.boot2docker.plist
+{% highlight text %}
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.boot2docker.plist
+{% endhighlight %}
 
 ### Bookmarks
 
