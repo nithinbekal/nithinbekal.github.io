@@ -147,7 +147,14 @@ which is then sent to the clients via websockets.
 
 ## Turbolinks 3
 
-The latest version of Turbolinks introduces partial replacement,
+__Update (19 Jan, 2016):__
+_From the looks of it, Turbolinks 3 will not ship with Rails 5.
+Instead, a complete rewrite, Turbolinks 5, will be included
+when the final version of Rails 5 ships.
+([Follow the discussion here](https://github.com/rails/turbolinks/issues/628).)
+I will update this section when more information is available about TL5._
+
+Turbolinks 3 introduces partial replacement,
 which allows you to replace only specific divs on a page.
 Using `data-turbolinks-permanent`, you can also transfer DOM elements
 from page to page along with the states.
