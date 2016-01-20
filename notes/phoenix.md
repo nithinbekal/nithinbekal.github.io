@@ -6,7 +6,14 @@ title: "Phoenix Framework"
 Creating a new Phoenix project:
 
 {% highlight bash %}
-mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v0.13.1/phoenix_new-0.13.1.ez
+# Needs node >= 5.0
+nvm install 5.4
+
+# Install phoenix
+mix local.hex
+mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v1.1.2/phoenix_new-1.1.2.ez
+
+# Create phoenix project
 mix phoenix.new test_app
 cd test_app
 mix phoenix.server
