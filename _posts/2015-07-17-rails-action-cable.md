@@ -258,7 +258,7 @@ Now, you can see the messages being rendered with the username.
 
 # Next steps
 
-* [Code for this example](https://github.com/nithinbekal/actioncable-chat-example/tree/basic)
+* [Code for this example](https://github.com/nithinbekal/actioncable-chatter)
 * [ActionCable screencast by DHH](https://www.youtube.com/watch?v=n0WUjGkDFS0)
 * [ActionCable examples](https://github.com/rails/actioncable-examples)
   from the Rails core team have some very nice examples
