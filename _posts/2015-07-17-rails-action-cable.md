@@ -16,8 +16,12 @@ we won't have to add the `--pre` flag to the gem install command.
 
 {% highlight bash %}
 gem install rails --pre
-rails new chatter
+rails new chatter --skip-spring
 {% endhighlight %}
+
+(ActionCable isn't working well with Spring in 5.0.0.beta1,
+which is why I'm using the `--skip-spring` option.
+This should be fixed in future versions of Rails.)
 
 # Adding the views
 
