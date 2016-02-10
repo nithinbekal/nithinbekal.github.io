@@ -2,7 +2,7 @@
 name: Nithin Bekal
 description: ''
 url: http://nithinbekal.com
-highlighter: pygments
+highlighter: rouge
 permalink: /posts/:title
 markdown: kramdown
 
