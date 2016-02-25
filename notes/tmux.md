@@ -11,6 +11,11 @@ Blog posts, links, etc.
 * [Tmux for Ruby on Rails](http://www.psteiner.com/2012/05/tmux-for-ruby-on-rails.html)
 * [Practical Tmux](http://mutelight.org/practical-tmux)
 
+Working with vim
+
+- [Vim + Tmux + Mac OS X Clipboard (pbcopy) integration](https://gist.github.com/stephenmckinney/4197891)
+- [tmux Copy & Paste on OS X: A Better Future](https://robots.thoughtbot.com/tmux-copy-paste-on-os-x-a-better-future)
+
 Videos:
 
 * [Impressive Ruby Productivity with Vim and Tmux by Chris Hunt](https://www.youtube.com/watch?v=gB-JSh1EVME)
