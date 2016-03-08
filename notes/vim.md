@@ -32,6 +32,7 @@ Blog posts, links, etc.
 * [Vim Revisited](http://mislav.uniqpath.com/2011/12/vim-revisited/), a post by Mislav Marohnić
 * [Vim After 11 Years](http://statico.github.io/vim.html)
 * [Best of Vim Tips](http://zzapper.co.uk/vimtips.html)
+* [Supercharge Your Vim Into an IDE With Ctags](http://blog.sensible.io/2014/05/09/supercharge-your-vim-into-ide-with-ctags.html)
 
 Screencasts
 
@@ -56,6 +57,3 @@ Videos:
 * [Impressive Ruby Productivity with Vim and Tmux by Chris Hunt](https://www.youtube.com/watch?v=gB-JSh1EVME)
 * [Vim for Rails Developers](https://www.youtube.com/watch?v=9J2OjH8Ao_A)
 
-**Plugins**
-
-* [Ctrl-P](http://github.com/kien/ctrlp.vim) - Using this because it takes the least amount of configuration. [Command-T](https://github.com/wincent/Command-T) seems like a better option, but depends on Ruby and is a pain to set up. ([More comparisons](http://www.reddit.com/r/vim/comments/wb0t5/commandt_vs_ctrlpvim_vs_fuzzyfinder_go/)).
