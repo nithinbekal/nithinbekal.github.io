@@ -109,3 +109,9 @@ end
 * [Using indexes in Rails - Index your associations](https://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations)
 * [Rails Guides: Association basics](http://edgeguides.rubyonrails.org/association_basics.html)
 * [Finding and Indexing: You May Be Doing It Wrong](https://railsmachine.com/articles/2012/05/22/finding-and-indexing-you-may-be-doing-it-wrong/)
+
+### Authentication from scratch
+
+- [Railscasts: Authentication from scratch](http://railscasts.com/episodes/250-authentication-from-scratch?view=asciicast)
+- [A Basic User Authentication Model in Rails 4](http://nycda.com/blog/basic-user-authentication-model-in-rails-4/)
+- [User Authentication from Scratch](http://www.emilyplatzer.io/2014/06/29/user-authentication.html)
