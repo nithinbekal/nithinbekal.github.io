@@ -344,6 +344,10 @@ IO.puts Concat.join("Hello", "world", "_") #=> Hello_world
 * [Elixir Style Guide](https://github.com/niftyn8/elixir_style_guide)
 * [Learning Elixir and Erlang - more resources](http://www.phoenixframework.org/docs/learning-elixir-and-erlang)
 
+OTP
+
+- [Process registry in Elixir: A practical example](https://m.alphasights.com/process-registry-in-elixir-a-practical-example-4500ee7c0dcc#.klz5c0gqo)
+
 # Videos
 
 * [Elixir - A modern approach to programming for the Erlang VM on Vimeo](https://vimeo.com/53221562), Jose Valim
