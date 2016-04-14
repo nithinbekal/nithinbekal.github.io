@@ -44,3 +44,46 @@ Unit testing helps us by
 
 * [Getting Testy](http://randycoulman.com//blog/2015/08/04/getting-testy-redux/) -
   a series of articles on unit testing
+
+# Notes from TDD: By Example (Kent Beck)
+
+Rules for TDD:
+
+- Write new code only if an automated test has failed
+- Eliminate duplication
+
+Red-Green-Refactor
+
+- Red: Write a failing test (might not even compile)
+- Green: Make the test work
+- Refactor: Eliminate all the duplication
+
+TDD cycle:
+
+- Quickly add a test
+- Run all tests and see one fail
+- make a little change
+- run all tests and see them all succeed
+- refactor to remove duplication
+
+Strategies for getting from Red to Green:
+
+- Fake It: Return a constant and gradually replace constants with variables
+  until you have the real code
+- Use Obvious Implementation: Type in the real implementation
+- Triangulation: Only generalize code when a new test example demands a more
+  generalized solution
+  - useful when there isn't an immediate path for refactoring
+  - add examples that change different axes of variability to make the solution
+    clearer
+
+When you have an objection to the design of the code
+
+- translate that objection into a failing test
+- get the code to compile with a stub implementation
+- make the test work by typing in what seems like the right code
+
+The red-green-refactor cycle can help you when you aren't sure about the design
+- use shorter steps when you aren't confident about the overall design, and
+longer ones when you know where you're going.
+
