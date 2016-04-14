@@ -46,6 +46,22 @@ $ ./hello
 Hello, world!
 {% endhighlight %}
 
+## Creating a crystal project
+
+{% highlight bash %}
+$ crystal init lib Foo
+      create  Foo/.gitignore
+      create  Foo/LICENSE
+      create  Foo/README.md
+      create  Foo/.travis.yml
+      create  Foo/shard.yml
+      create  Foo/src/Foo.cr
+      create  Foo/src/Foo/version.cr
+      create  Foo/spec/spec_helper.cr
+      create  Foo/spec/Foo_spec.cr
+Initialized empty Git repository in ~/Foo/.git/
+{% endhighlight %}
+
 ## Basic data types
 
 - Number
