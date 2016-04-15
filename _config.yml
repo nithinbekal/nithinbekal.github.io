@@ -3,7 +3,7 @@ name: Nithin Bekal
 description: ''
 url: http://nithinbekal.com
 highlighter: rouge
-permalink: /posts/:title
+permalink: /posts/:title/
 markdown: kramdown
 
 theme:
