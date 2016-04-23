@@ -87,3 +87,16 @@ The red-green-refactor cycle can help you when you aren't sure about the design
 - use shorter steps when you aren't confident about the overall design, and
 longer ones when you know where you're going.
 
+Three steps in a test:
+
+- Arrange: create some objects
+- Act: stimulate them
+- Assert: check the results
+
+Test coupling
+
+- for performance, it might make sense to couple some tests - we could keep the
+  Arrange stage constant, and vary the Act and Assert stages
+- makes order of tests important, so changing the order could fail tests,
+  or they could pass despite the code being incorrect
+
