@@ -27,7 +27,7 @@ of Phoenix
 [here](https://news.ycombinator.com/item?id=8671618).
 
 _In the
-[next section](/notes/phoenix/installation.html),
+[next section](/notes/phoenix/installation/),
 we will install Phoenix
 and generate a barebones application._
 

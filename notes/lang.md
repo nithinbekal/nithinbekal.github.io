@@ -4,17 +4,17 @@ title: 'Programming languages'
 date:   2014-10-26 12:00:00
 ---
 
-* [Agda](/notes/agda.html)
-* [C and C++](/notes/c.html)
-* [Clojure](/notes/clojure.html)
-* [Elixir](/notes/elixir.html) - [Phoenix](/notes/phoenix.html)
-* [Elm](/notes/elm.html)
-* [Erlang](/notes/erlang.html)
-* [Haskell](/notes/haskell.html)
-* [JavaScript](/notes/js.html) - [ES6](/notes/es6.html)
-* [Io](/notes/io.html)
-* [Ruby](/notes/ruby.html) - [Rails](/notes/rails.html)
-* [Smalltalk](/notes/smalltalk.html)
+* [Agda](/notes/agda/)
+* [C and C++](/notes/c/)
+* [Clojure](/notes/clojure/)
+* [Elixir](/notes/elixir/) - [Phoenix](/notes/phoenix/)
+* [Elm](/notes/elm/)
+* [Erlang](/notes/erlang/)
+* [Haskell](/notes/haskell/)
+* [JavaScript](/notes/js/) - [ES6](/notes/es6/)
+* [Io](/notes/io/)
+* [Ruby](/notes/ruby/) - [Rails](/notes/rails/)
+* [Smalltalk](/notes/smalltalk/)
 
 Other interesting languages:
 

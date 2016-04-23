@@ -196,7 +196,7 @@ For this, we can edit `web/router.ex`:
 Now `localhost:4000/` shows the list of posts.
 
 *In the
-[next chapter](/notes/phoenix/authentication.html),
+[next chapter](/notes/phoenix/authentication/),
 we will build a user authentication system
 from scratch for our blog app.*
 

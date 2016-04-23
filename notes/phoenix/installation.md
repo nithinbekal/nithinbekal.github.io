@@ -67,7 +67,7 @@ you will see a "Welcome to Phoenix"
 message at localhost:3000.
 
 *In the
-[next section](/notes/phoenix/chat-example.html),
+[next section](/notes/phoenix/chat-example/),
 we will explore
 the most interesting feature of Phoenix -
 channels -

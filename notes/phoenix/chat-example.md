@@ -377,7 +377,7 @@ and see the messages
 displayed in the page.
 
 _In the
-[next chapter](/notes/phoenix/crud-example.html),
+[next chapter](/notes/phoenix/crud-example/),
 we will build a simple blog application
 by letting letting Phoenix
 generate the code for us._
