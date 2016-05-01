@@ -12,28 +12,15 @@ In my
 we built a very simple blog app.
 We only added the ability to post content,
 but there's no user authentication system.
-In this post,
-we will add user authentication
-to the app.
+In this post, we will add user authentication to the app.
 
-There are excellent
-authentication libraries
-out there like
+There are excellent authentication libraries out there like
 [passport](https://github.com/opendrops/passport) and
 [addict](https://github.com/trenpixster/addict),
-but here we'll be
-writing code from scratch
-for authentication,
-so that we can get more familiar
-with the framework.
+but here we'll be writing authentication code from scratch,
+so that we can get more familiar with the framework.
 
-NOTE:
-I'm using Elixir 1.0.5
-with Phoenix 0.14
-for this example.
-If you're on Phoenix 0.13.x,
-[follow these instructions](https://gist.github.com/chrismccord/57805158f463d3369103)
-to upgrade.
+NOTE: I'm using Elixir 1.2.4 with Phoenix 1.1.4 for this example.
 
 ## Add a user model
 
@@ -130,22 +117,19 @@ Now, we are ready to add the HTML view to
   <%= if f.errors != [] do %>
     <div class="alert alert-danger">
       <p>Oops, something went wrong! Please check the errors below:</p>
-      <ul>
-        <%= for {attr, message} <- f.errors do %>
-          <li><%= humanize(attr) %> <%= message %></li>
-        <% end %>
-      </ul>
     </div>
   <% end %>
 
   <div class="form-group">
     <label>Email</label>
     <%= email_input f, :email, class: "form-control" %>
+    <%= error_tag f, :email %>
   </div>
 
   <div class="form-group">
     <label>Password</label>
     <%= password_input f, :password, class: "form-control" %>
+    <%= error_tag f, :password %>
   </div>
 
   <div class="form-group">
@@ -520,7 +504,7 @@ we set during login.
 
 def current_user(conn) do
   id = Plug.Conn.get_session(conn, :current_user)
-  if id, do: Repo.get(User, id)
+  if id, do: Blog.Repo.get(User, id)
 end
 {% endhighlight %}
 
