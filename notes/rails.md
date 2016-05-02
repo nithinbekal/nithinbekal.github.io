@@ -45,6 +45,93 @@ bundle exec rake test
 
 - takes long long time to run
 
+### Some testing patterns
+
+*Write the assertions first, and then work backwards.*
+For example, when writing tests for products#show,
+start by writing what you expect.
+
+{% highlight ruby %}
+describe 'GET #show' do
+  it 'returns JSON product information' do
+    #
+
+    expect(json['title']).to eq 'Product 42'
+    expect(json['price']).to eq 100
+    expect(response.status).to eq 200
+  end
+end
+{% endhighlight %}
+
+In the above test, we don't have the variable `json` yet,
+or even the `get :show` call that calls the method.
+but we can start filling in the details. 
+
+{% highlight ruby %}
+describe 'GET #show' do
+  it 'returns JSON product information' do
+    get :show, id: product.id
+
+    json = JSON.parse(response.body)
+
+    # expectations
+  end
+end
+{% endhighlight %}
+
+Now that we have filled in the details within the test,
+we still don't have the `product` variable,
+which we can add in a let block.
+
+{% highlight ruby %}
+describe 'GET show' do
+  let(:product) { Product.create!(title: 'Product 42', price: 100) }
+
+  # it '...'
+end
+{% endhighlight %}
+
+*Use bang version of AR::Base#create in the tests.*
+In case where validations fails, this immediately raises an exception,
+rather than letting invalid data to pass through.
+
+{% highlight ruby %}
+describe 'GET show' do
+  let(:product) { Product.create!(title: 'Product 42', price: 100) }
+
+  it 'returns product information' do
+    get :show, id: product.id
+
+    res = JSON.parse(response.body)
+    expect(res['title']).to eq 'Product 42'
+    expect(response.status).to eq 200
+  end
+end
+{% endhighlight %}
+
+In the above example, if the Product validation were to fail for some reason,
+`Product#create` would return an unpersisted instance of `Product`.
+As a result, we would get a routing error for products#show with id=nil,
+which tells us nothing about the actual cause of failure.
+
+Take the case when you were to add a new validation to Product.
+Suddenly you see a lot of tests failing with routing error.
+It would make things a lot easier if you could know
+what vaildation is causing the failure.
+
+Instead, if we're using `#create!`, we get an exception at that line,
+and we know immediately what to fix.
+
+*Use Enumerable#fetch.*
+Same reason as above - this causes immediate exception
+rather than propagating nils through the test.
+
+*Leave a failing/pending test when you take a break.*
+This is great advice from Kent Beck's excellent TDD By Example.
+It gives you a starting point when you come back to the code,
+rather than having to think about what to do next.
+
+
 **Rails Testing**
 
 * [Golden Master Testing](http://www.sitepoint.com/golden-master-testing-refactor-complicated-views/) (Katrina Owen)
