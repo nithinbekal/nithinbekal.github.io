@@ -584,7 +584,7 @@ in `Blog.RegistrationController.create/2`:
   case Blog.Registration.create(changeset, Blog.Repo) do
     {:ok, changeset} ->
       conn
-+     |> put_session(:current_user, user.id)
++     |> put_session(:current_user, changeset.id)
       |> put_flash(:info, "Your account was created")
       |> redirect(to: "/")
   else
