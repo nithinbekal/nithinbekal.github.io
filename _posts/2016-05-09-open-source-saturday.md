@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Notes from Open Source Saturday"
-date:  2016-05-08 19:02:10
+date:  2016-05-10 19:02:10
 categories:
   - community
   - open-source
