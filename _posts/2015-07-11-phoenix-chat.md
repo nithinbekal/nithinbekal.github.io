@@ -451,6 +451,7 @@ take a look at the links below.
 
 # Links
 
+* [Source code for this example](https://github.com/nithinbekal/chatter)
 * [Phoenix Guides: Channels](http://www.phoenixframework.org/docs/channels)
 * [Phoenix Channels Docs](http://hexdocs.pm/phoenix/Phoenix.Channel.html)
 * [How to build a chat app with Phoenix](http://www.chrismccord.com/blog/2014/05/06/how-to-build-an-elixir-chat-app-with-phoenix/) - Chris McCord
