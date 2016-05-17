@@ -242,3 +242,7 @@ ReactDOM.render(
 
 * [Learn React JS](http://videos.bigbinary.com/categories/react) (BigBinary)
 * [Tiny React.js concepts](http://videos.bigbinary.com/categories/tiny-reactjs-concepts) (BigBinary)
+
+React with Rails
+
+- [Building a CRUD interface with React and Ruby on Rails](http://tutorials.pluralsight.com/ruby-ruby-on-rails/building-a-crud-interface-with-react-and-ruby-on-rails)
