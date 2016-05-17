@@ -18,13 +18,67 @@ Add `'use strict;'` directive at the top of the file to enable ES6 features.
 * [ES6](http://justicen.com/#/posts/74046fea9a4c61477db9) -
   explanation of ES6 features by Nick Justice
 
-Destructuring in ES6:
+## Objects and Prototypes
+
+{% highlight javascript %}
+var foo = {} // is the same as...
+var foo = new Object()
+
+function Car(model, miles) {
+  this.model = model
+  this.miles = miles
+}
+
+var x = new Car("Tesla Model X", 0)
+x.model // Tesla Model X
+x.miles // 0
+
+x.miles += 10
+
+// Can also access like a hash
+x["miles"] // 10
+{% endhighlight %}
+
+Functions on an object can be declared in two ways:
+
+{% highlight javascript %}
+function Car(...) { ... }
+function Car.prototype.drive(distance) {
+  this.miles += distance
+}
+
+// Or...
+
+function Car(model, miles) {
+  this.model = model
+  this.miles = miles
+
+  this.drive = function(distance) {
+    this.miles += distance
+  }
+}
+{% endhighlight %}
+
+## Arrays
+
+{% highlight javascript %}
+var a = ["a", "b", "c"]
+a.length // 3
+
+// length is 1 more that highest index
+a[4] = "e"
+a        // ['a', 'b', 'c', , 'e']
+a.length // 5
+a[3]     //undefined
+{% endhighlight %}
+
+## Destructuring in ES6
 
 {% highlight javascript %}
 var [a, b, c] = [1, 2, 3]
 
 var x = { foo: 2, bar: 4, baz: 8 }
-var { foo: a, bar: b }
+var { foo: a, bar: b } = x
 // Now a = 2, b = 4. Wow!
 {% endhighlight %}
 
