@@ -49,6 +49,11 @@ $(document).on('ready page:change', function() {
 });
 {% endhighlight %}
 
+NOTE:
+The above code is for Turbolinks 2.x.
+As Michael mentions in the comments below,
+replace `page:change` with `turbolinks:load` if you're using Turbolinks 5.0.
+
 This triggers a pageview request every time Turbolinks loads a page.
 Switching over to this approach has fixed our problem with incorrect reporting.
 
