@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Adding user authentication to a Phoenix app"
+title: "User Authentication from Scratch in Elixir and Phoenix"
 date:  2015-06-30 23:00:00
 categories:
   - elixir
