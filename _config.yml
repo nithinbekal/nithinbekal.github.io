@@ -1,6 +1,6 @@
 
 name: Nithin Bekal
-description: ''
+description: "Nithin Bekal's blog about programming - Ruby, Rails, Vim, Elixir."
 url: http://nithinbekal.com
 highlighter: rouge
 permalink: /posts/:title/
