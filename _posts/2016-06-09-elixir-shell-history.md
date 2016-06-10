@@ -17,7 +17,7 @@ so this also works for IEx.
 To start using it, clone the github repo and run `make install`:
 
 {% highlight bash %}
-git clone git@github.com:ferd/erlang-history.git
+git clone https://github.com/ferd/erlang-history.git
 cd erlang-history
 sudo make install
 {% endhighlight %}
