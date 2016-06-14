@@ -44,7 +44,7 @@ We'll put that in a JS file which is part of the asset pipeline.
 
 {% highlight javascript %}
 // app/assets/javascripts/analytics.js
-$(document).on('ready page:change', function() {
+$(document).on('page:change', function() {
   ga('send', 'pageview', window.location.pathname);
 });
 {% endhighlight %}
