@@ -231,10 +231,6 @@ a               # 1
 %{ map | :a => 2 }      # %{ :a => 2, 2 => :b }
 {% endhighlight %}
 
-# Dict
-
-* API that delegates to underlying implementation
-
 # Modules and functions
 
 * The `defmodule` macro defines a module
