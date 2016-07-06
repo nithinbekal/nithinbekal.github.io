@@ -4,6 +4,17 @@ title: "Clojure"
 date:  2014-09-28 21:13:10
 ---
 
+Installation:
+
+- [Setting up Clojure on OS X](https://gist.github.com/technomancy/2395913)
+- [Setup notes from Nilenso Clojure workshop](https://github.com/nilenso/clojure-workshop/blob/master/preparation.md)
+  (includes editor setup)
+
+{% highlight bash %}
+brew install leiningen
+lein repl
+{% endhighlight %}
+
 Example code:
 
 (ref: [Stuart Holloway: Introduction to Clojure](https://vimeo.com/68375202))
