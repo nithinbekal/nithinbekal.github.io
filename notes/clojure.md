@@ -9,6 +9,7 @@ Installation:
 - [Setting up Clojure on OS X](https://gist.github.com/technomancy/2395913)
 - [Setup notes from Nilenso Clojure workshop](https://github.com/nilenso/clojure-workshop/blob/master/preparation.md)
   (includes editor setup)
+- [Screencast: Clojure+Vim Basics](https://hashrocket.com/blog/posts/screencast-clojure-and-vim-basics)
 
 {% highlight bash %}
 brew install leiningen
