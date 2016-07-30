@@ -3,7 +3,32 @@ layout: page
 title: "Python"
 ---
 
-*Flask*
+Python 2.7.10 comes packages with OS X El Capitan.
+To install the latest version from homebrew:
+
+{% highlight bash %}
+brew install python
+
+# pip and setuptools are already installed
+pip install --upgrade pip setuptools
+
+# Install virtualenv
+pip install virtualenv
+{% endhighlight %}
+
+Scikit learn
+
+{% highlight bash %}
+pip install -U scikit-learn
+brew install homebrew/python/numpy
+brew install homebrew/python/scipy
+{% endhighlight %}
+
+Numpy depends on gcc, and if it isn't installed, homebrew will try to download
+and compile it from source, which could take an hour or more to compile.
+
+
+### Flask
 
 sudo easy_install pip
 
