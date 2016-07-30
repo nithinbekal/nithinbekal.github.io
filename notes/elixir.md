@@ -330,6 +330,13 @@ IO.puts Concat.join("Hello", "world")      #=> Hello world
 IO.puts Concat.join("Hello", "world", "_") #=> Hello_world
 {% endhighlight %}
 
+# Processes
+
+- Achieves concurrency by making use of actors.
+- Actors are processes that can perform a specific task.
+- We can send messages to an actor to ask it to do something,
+  and it can respond by sending back a message.
+
 # Links
 
 * [Elixir lang](http://elixir-lang.org/) - website
