@@ -15,10 +15,9 @@ One way to do this is to use Rails'
 [`time_zone_select`](http://api.rubyonrails.org/classes/ActionView/Helpers/FormOptionsHelper.html#method-i-time_zone_select)
 tag and ask the user to save their time zone during sign up.
 However, we can skip this step by automatically reading the timezone information
-from the browser.
-
-To do this, we will read the timezone from the browser using Javascript,
-and set the value inside a cookie.
+from the browser, and set it in a cookie.
+This cookie can then be accessed in our Rails controller
+and we can save the timezone in the User model.
 
 ### Install `jsTimezoneDetect`
 
