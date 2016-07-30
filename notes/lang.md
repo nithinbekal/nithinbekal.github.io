@@ -11,10 +11,11 @@ date:   2014-10-26 12:00:00
 * [Elm](/notes/elm/)
 * [Erlang](/notes/erlang/)
 * [Haskell](/notes/haskell/)
-* [JavaScript](/notes/js/) - [ES6](/notes/es6/)
 * [Io](/notes/io/)
+* [JavaScript](/notes/js/) - [ES6](/notes/es6/)
 * [Ruby](/notes/ruby/) - [Rails](/notes/rails/)
 * [Smalltalk](/notes/smalltalk/)
+* [Standard ML](/notes/sml/)
 
 Other interesting languages:
 
