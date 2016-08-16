@@ -77,3 +77,7 @@ Elixir
 
 * [Emergency Elisp](http://steve-yegge.blogspot.in/2008/01/emergency-elisp.html) -
   excellent tutorial for elisp by Steve Yegge
+
+# org-mode
+
+- [Getting Started With org-mode](https://www.youtube.com/watch?v=SzA2YODtgK4)
