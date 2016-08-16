@@ -24,24 +24,35 @@
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 14px;
         margin: 20px auto;
-        line-height: 1.3em;
-        max-width: 600px;
+        line-height: 1.4em;
+        max-width: 650px;
         padding: 20px 40px;
       }
+
+      .page-break { page-break-after: always; }
 
       #header h2 { margin: 0; padding: 0 0 5px 0; }
       #header a { color: #666; text-decoration: none; }
 
-      #experience h3,
-      .community h3 {
+      .overview {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        padding-top: 0.5em;
+      }
+
+      .experience-list { margin: 0 0 30px 0; }
+
+      .experience-list h3 {
         border-bottom: 1px solid #ddd;
         color: #666;
         padding: 0 0 5px 0;
         text-transform: uppercase;
       }
 
+      .experience-list ul li { margin: 5px 0; }
+
       .experience { margin: 30px 0; }
-      .experience .details { padding: 0 0 10px 0; }
+      .experience .details { padding: 0 0 5px 0; }
 
       .experience .company {
         display: inline-block;
@@ -78,7 +89,23 @@
 
       <div id="content">
 
-        <div id="experience">
+        <p class="overview text-muted">
+          Software craftsman with over 7 years of experience in shipping web applications
+          using <b>Ruby on Rails</b>.
+          Currently co-founder of CrowdStudio.in, and helping organize Rubyconf India.
+        </p>
+
+        <div class="experience-list">
+          <h3>Skills</h3>
+          <ul>
+            <li><b>Proficient</b>: Ruby, Ruby on Rails, Test Driven Development, Git, Vim.</li>
+            <li><b>Actively used</b>: MongoDB, Javascript, PostgreSQL, front-end development.</li>
+            <li><b>Currently learning</b>: Elixir, Phoenix framework.</li>
+            <li><b>Previously used</b>: C, PL/SQL, MySQL.</li>
+          </ul>
+        </div>
+
+        <div class="experience-list">
           <h3>Experience</h3>
 
           <div class="experience">
@@ -89,8 +116,8 @@
             </div>
             <p>
               CrowdStudio.in is a curated logo and graphic design marketplace for startups and small businesses.
-              As lead developer, I manage the product development and also the AWS based server infrastructure.
-              The application was developed using Ruby on Rails and MongoDB.
+              Developed the website using Rails, improved its usability and SEO performance and deployed the application on AWS.
+              The application uses Rails and MongoDB.
             </p>
           </div>
 
@@ -98,13 +125,13 @@
             <div class="details clearfix">
               <b class="company">Tech Mahindra</b>
               <span class="role">Application Developer</span>
-              <span class="when">May 2010 - Jan 2012</span>
+              <span class="when">Jun 2010 - Jan 2012</span>
             </div>
             <p>
               Worked with the application development team at Ford on adding new functionality
-              to an inventory management and order processing system built used internally by Ford dealers.
-              Was involved in customizing the application for deployment to a new region.
-              The application was developed using C, PL/SQL, and Oracle Forms and Reports.
+              to an inventory management and order processing system used internally by Ford dealers.
+              Was involved in adding new features and customizing the application for deployment to a new region.
+              Used C, PL/SQL, and Oracle Forms and Reports in the project.
             </p>
           </div>
 
@@ -115,12 +142,9 @@
               <span class="when">Jun 2009 - May 2010</span>
             </div>
             <p>
-              Worked on Fedena, a web based campus management and student information system.
-              Involved in the initial design of the application, database schema design, development and deployment.
-            </p>
-            <p>
-              The source code of the project is now available under an open source license.
-              Technologies used: Ruby, Rails, MySQL database, front end development.
+              Worked on Fedena, an open source school management system.
+              Involved in the design, development and deployment of the early versions of the application.
+              Worked with Ruby, Rails, MySQL and front end development on the project.
             </p>
           </div>
 
@@ -130,17 +154,31 @@
               <span class="role">System Engineer</span>
               <span class="when">Oct 2008 - Jan 2009</span>
             </div>
-            <p>Joined as a trainee and completed the 3 month long introductory training program on software development.</p>
+            <p>Joined as a trainee and completed a 3 month long introductory training program on software development.</p>
           </div>
         </div> <!-- #experience -->
 
-        <div class="community">
+        <div class="page-break"></div>
+
+        <div class="experience-list">
           <h3>Community</h3>
           <ul>
-            <li><b>Rubyconf India</b> - Volunteer organizer of the conference in Kochi in 2016.</li>
-            <li><b>Kerala Ruby</b> - Started Kochi Ruby Meetups in 2012, and have been helping organize meetups and other Ruby events since then.</li>
-            <li><b>Chennai.rb</b> - Helped organize the Chennai Ruby meetups between 2011-12.</li>
+            <li><b>Rubyconf India</b>: Helped organize the conference in Kochi in 2016. Also helping with the 2017 edition of the conference.</li>
+            <li><b>Kerala Ruby</b>: Started Kochi Ruby Meetups in 2012, and have been helping organize meetups and other Ruby events since then.</li>
+            <li><b>Chennai.rb</b>: Helped organize the Chennai Ruby meetups between 2011-12.</li>
           </ul>
+        </div>
+
+        <div class="experience-list">
+          <h3>Education</h3>
+          <div class="experience">
+            <div class="details clearfix">
+              <b class="company">P A College of Engineering, Mangalore</b>
+              <span class="role"></span>
+              <span class="when">2004 - 2008</span>
+            </div>
+            <p>Completed Bachelor of Engineering in Electronics and Communication Engineering.</p>
+          </div>
         </div>
 
       </div><!--content -->
