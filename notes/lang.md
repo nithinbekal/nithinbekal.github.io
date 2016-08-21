@@ -4,18 +4,29 @@ title: 'Programming languages'
 date:   2014-10-26 12:00:00
 ---
 
-* [Agda](/notes/agda/)
-* [C and C++](/notes/c/)
-* [Clojure](/notes/clojure/)
-* [Elixir](/notes/elixir/) - [Phoenix](/notes/phoenix/)
-* [Elm](/notes/elm/)
-* [Erlang](/notes/erlang/)
-* [Haskell](/notes/haskell/)
-* [Io](/notes/io/)
-* [JavaScript](/notes/js/) - [ES6](/notes/es6/)
-* [Ruby](/notes/ruby/) - [Rails](/notes/rails/)
-* [Smalltalk](/notes/smalltalk/)
-* [Standard ML](/notes/sml/)
+- [Ruby](/notes/ruby/)
+  - [Rails](/notes/rails/)
+  - [Testing](/notes/ruby-testing/)
+  - [Rubymotion](/notes/rubymotion/)
+  - [dRuby](/notes/druby/)
+- [Elixir](/notes/elixir/)
+  - [Phoenix](/notes/phoenix/)
+- [JavaScript](/notes/js/)
+  - [ES6](/notes/es6/)
+  - [React.js](/notes/react/)
+
+Notes and bookmarks
+
+- [Agda](/notes/agda/)
+- [C and C++](/notes/c/)
+- [Clojure](/notes/clojure/)
+- [Elm](/notes/elm/)
+- [Erlang](/notes/erlang/)
+- [Haskell](/notes/haskell/)
+- [Io](/notes/io/)
+- [Lisp](/notes/lisp/)
+- [Smalltalk](/notes/smalltalk/)
+- [Standard ML](/notes/sml/)
 
 Other interesting languages:
 

@@ -29,3 +29,7 @@ Some interesting reading lists:
 
 - [James Edward Gray II - One Programmer's Library](http://graysoftinc.com/book-reviews/one-programmers-library)
 - [Coding Horror - Recommended Reading for Developers](http://blog.codinghorror.com/recommended-reading-for-developers/)
+
+Lists of freely available books
+
+- [vhf/free-programming-books on Github](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)
