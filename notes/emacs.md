@@ -69,15 +69,21 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 * [Configuring emacs and evil mode for Go development](http://jen20.com/2015/02/06/configuring-emacs-for-go-part-1.html)
 
 
-Elixir
+### Elixir
 
 - [Spacemacs and Alchemist to make Elixir of immortality](http://www.zohaib.me/spacemacs-and-alchemist-to-make-elixir-of-immortality/)
 
-# Elisp links
+### Elisp links
 
 * [Emergency Elisp](http://steve-yegge.blogspot.in/2008/01/emergency-elisp.html) -
   excellent tutorial for elisp by Steve Yegge
 
-# org-mode
+### org-mode
 
 - [Getting Started With org-mode](https://www.youtube.com/watch?v=SzA2YODtgK4)
+
+### Paredit
+
+- [The Animated Guide to Paredit](http://danmidwood.com/content/2014/11/21/animated-paredit.html)
+- [Paredit refcard](http://pub.gajendra.net/src/paredit-refcard.pdf)
+
