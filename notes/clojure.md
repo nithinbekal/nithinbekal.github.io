@@ -28,14 +28,14 @@ Example code:
   [name]
   (str "Hello, " name))
 
-# vectors
+;; vectors
 (def v [42 :rabbit [1 2 3]])
 (v 1) -> :rabbit
 (peek v) -> [1 2 3]
 (pop v) -> [42 :rabbit]
 (subvec 1) -> [:rabbit [1 2 3]]
 
-maps
+;; maps
 (def m { :a 1 :b 2 :c 3 })
 (m :b) -> 2
 (:b m) -> 2
@@ -53,10 +53,27 @@ maps
 
 Clojure related bookmarks:
 
-* [Try Clojure](http://tryclj.com/) - browser based REPL
-* [Clojure for the Brave and True](http://www.braveclojure.com/) - beginner level Clojure book
-* [Clojure From the Ground Up](http://aphyr.com/posts/301-clojure-from-the-ground-up-welcome)
-* [Clojure Koans](http://clojurekoans.com/)
-* [4Clojure](http://www.4clojure.com/) - interactive problems similar to Project Euler
-* [Clojure Distilled](http://yogthos.github.io/ClojureDistilled.html)
+- [Try Clojure](http://tryclj.com/) - browser based REPL
+- [Grimoire - Community Clojure Documentation](https://www.conj.io)
+- [The Clojure Toolbox](http://www.clojure-toolbox.com) -
+  A categorised directory of libraries and tools for Clojure
+- [Clojure Styleguide by @bbatsov](https://github.com/bbatsov/clojure-style-guide)
+- [Clojure Koans](http://clojurekoans.com/)
+- [4Clojure](http://www.4clojure.com/) - interactive problems similar to Project Euler
+
+Books and tutorials
+
+- [Clojure for the Brave and True](http://www.braveclojure.com/) - beginner level Clojure book
+- [Clojure From the Ground Up](http://aphyr.com/posts/301-clojure-from-the-ground-up-welcome)
+- [Clojure Distilled](http://yogthos.github.io/ClojureDistilled.html)
+
+Videos:
+
+- [Rich Hickey's Greates Hits](https://changelog.com/rich-hickeys-greatest-hits/)
+- [Timothy Baldridge's Clojure Videos](https://www.youtube.com/channel/UCLxWPHbkxjR-G-y6CVoEHOw/videos)
+
+Emacs integration
+
+- [Clojure, Emacs and Cider](https://mping.github.io/2015/11/17/clojure-emacs-cider.html)
+- [Cider - Using the REPL](https://github.com/clojure-emacs/cider/blob/master/doc/using_the_repl.md)
 
