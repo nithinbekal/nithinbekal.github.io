@@ -1,0 +1,25 @@
+<div id='prev-next-nav'>
+  <div class='prev'>
+    {% if page.previous.url %}
+    <a id='nav-prev-link' href='{{page.previous.url}}'>&laquo; {{page.previous.title}}</a>
+    {% endif %}
+  </div>
+
+  <div class='next'>
+    {% if page.next.url %}
+    <a id='nav-next-link' href='{{page.next.url}}'>{{ page.next.title }} &raquo;</a>
+    {% endif %}
+  </div>
+</div>
+
+<div id='related-posts'>
+  <h3>Found this article interesting? You should check out these:</h3>
+  <ul>
+    {% for post in site.related_posts limit:5 %}
+    {% assign index = forloop.index %}
+    <li>
+      <a id='related-posts-{{ index }}' href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
