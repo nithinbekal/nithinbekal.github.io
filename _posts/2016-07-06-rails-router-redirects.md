@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rails - Handling Redirects in the Router"
+title: "Rails: Handling Redirects in the Router"
 date:  2016-07-06 18:34:59 +05:30
 categories: rails
 ---
