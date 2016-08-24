@@ -6,7 +6,7 @@ highlighter: rouge
 permalink: /posts/:title/
 markdown: kramdown
 
-theme:
+theme_options:
   disqus_shortname: nithinbekal
   google_analytics: UA-2095438-7
 

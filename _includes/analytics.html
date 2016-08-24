@@ -1,9 +1,9 @@
-{% if site.theme.google_analytics %}
+{% if site.theme_options.google_analytics %}
 <script type="text/javascript">
   var _gaq = _gaq || [];
   var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
   _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', '{{ site.theme.google_analytics }}']);
+  _gaq.push(['_setAccount', '{{ site.theme_options.google_analytics }}']);
   _gaq.push(['_trackPageview']);
 
   (function() {
