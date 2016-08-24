@@ -8,13 +8,7 @@ This repository contains the Jekyll theme and content of my blog.
 * Remove the existing content
 
 ```
-$ rm -rf about notes slides _posts keybase.txt CNAME
-```
-
-* Create new posts directory
-
-```
-$ mkdir _posts
+$ rm -rf about notes slides _posts/*.md keybase.txt CNAME resume.html
 ```
 
 * Edit the details from `_config.yml`. Make sure you leave the Disqus and
