@@ -352,3 +352,8 @@ on modeling recurring events using temporal expressions.
 - [Recurring Events for Calendars](http://martinfowler.com/apsupp/recurring.pdf)
 - [Recurrence gem](https://github.com/fnando/recurrence)
 - [Recurring events](http://blog.plataformatec.com.br/2010/04/recurring-events/) article on Plataformatec blog
+
+Update:
+As Swanand points out in the comments, the
+[recurrence rules section in iCalendar specification (RFC 5545)](https://tools.ietf.org/html/rfc5545#section-3.3.10)
+is an interesting read if you're interested in exploring further.
