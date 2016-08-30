@@ -53,7 +53,7 @@ we can use it to install Phoenix
 like this:
 
 {% highlight bash %}
-mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v0.13.1/phoenix_new-0.13.1.ez
+mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
 {% endhighlight %}
 
 It appears that future versions of Phoenix
