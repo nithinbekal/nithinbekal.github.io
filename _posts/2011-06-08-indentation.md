@@ -106,3 +106,7 @@ I certainly won't disagree with that. The second part, especially.
 
 * Jeff Atwood (Coding Horror): [Death to the Space Infidels](http://www.codinghorror.com/blog/2009/04/death-to-the-space-infidels.html)
 * Jamie Zawinski: [Tabs v/s Spaces: An Eternal Holy War](http://www.jwz.org/doc/tabs-vs-spaces.html)
+* [400,000 GitHub repositories, 1 billion files, 14 terabytes of code: Spaces or Tabs?](https://medium.com/@hoffa/400-000-github-repositories-1-billion-files-14-terabytes-of-code-spaces-or-tabs-7cfe0b5dd7fd#.vdnrrzikp) -
+  provides some interesting data.
+  98.67% of Ruby files on Github are indented with spaces,
+  making it the most consistent language in this regard.
