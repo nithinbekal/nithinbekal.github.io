@@ -6,6 +6,7 @@ date:  2015-04-23 14:36:07
 
 List of books I enjoyed, by genre.
 Favorite books of the year lists are here:
+[2015](/posts/favorite-books-2015/),
 [2014](/posts/favorite-books-2014/),
 [2013](/posts/favorite-books-2013/).
 
@@ -19,6 +20,7 @@ Favorite books of the year lists are here:
 
 ### Science fiction
 
+1. The Martian (Andy Weir)
 1. Foundation (Isaac Asimov)
 1. I, Robot (Isaac Asimov)
 1. Cryptonomicon (Neal Stephenson)
@@ -28,7 +30,6 @@ Favorite books of the year lists are here:
 1. 20,000 Leagues Under the Sea (Jules Verne)
 1. The Invisible Man (H G Wells)
 1. Jurassic Park (Michael Crichton)
-1. The Time Traveler's Wife (Audrey Niffeneger)
 
 ### Programming
 
@@ -38,6 +39,8 @@ Favorite books of the year lists are here:
    only read 2 of 5 chapters, but there's so much awesome in there already.
 1. Apprenticeship Patterns (Dave Hoover, Adewale Oshineye)
 1. Practical Object Oriented Design in Ruby (Sandi Metz)
+1. Confident Ruby (Avdi Grimm)
+1. Elixir in Action (Sasa Juric)
 1. Why's Poignant Guide to Ruby (Why The Lucky Stiff)
 1. Understanding Computation (Tom Stuart)
 1. Eloquent Ruby (Russ Olsen)
