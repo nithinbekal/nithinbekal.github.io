@@ -73,8 +73,8 @@ Now we run into the problem of needing a `#title` method since that is also need
 {% highlight ruby %}
 class BasePresenter < SimpleDelegator
   def initialize(model, view)
-    @model, @view = model, view
-    super(@model)
+    @view = view
+    super(model)
   end
 
   def h
