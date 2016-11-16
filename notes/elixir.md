@@ -337,6 +337,26 @@ IO.puts Concat.join("Hello", "world", "_") #=> Hello_world
 - We can send messages to an actor to ask it to do something,
   and it can respond by sending back a message.
 
+# Flow example
+
+[From Jose's Elixirconf 2016 Keynote](https://www.youtube.com/watch?v=srtMWzyqdp8):
+
+{% highlight elixir %}
+Flow.stream("file_name", :line)
+|> Flow.from_enumerable()
+|> Flow.flat_map(&String.split/1)
+|> Flow.partition()
+|> Flow.reduce(%{}, fn word, map ->
+  Map.update(map, word, 1, &(&1 + 1))
+end)
+|> Enum.into(%{})
+{% endhighlight %}
+
+# Ecto
+
+- [An Introduction to Elixir’s Ecto Library](https://www.sitepoint.com/introduction-to-elixirs-ecto-library/)
+- [Meet Ecto, The No-Compromise Database Wrapper For Concurrent Elixir Apps](https://www.toptal.com/elixir/meet-ecto-database-wrapper-for-elixir)
+
 # Links
 
 * [Elixir lang](http://elixir-lang.org/) - website
