@@ -352,6 +352,10 @@ end)
 |> Enum.into(%{})
 {% endhighlight %}
 
+# Umbrella apps
+
+- [acme_bank: An example umbrella app](https://github.com/wojtekmach/acme_bank)
+
 # Ecto
 
 - [An Introduction to Elixir’s Ecto Library](https://www.sitepoint.com/introduction-to-elixirs-ecto-library/)
