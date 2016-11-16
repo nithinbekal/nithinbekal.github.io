@@ -236,7 +236,9 @@ read(Key) ->
 
 **Bookmarks**
 
-* [Chat app with OTP - code example from FnConf15 B'lore](https://github.com/bernardd/OTPworkshop)
+- [BEAM Wisdoms](http://beam-wisdoms.clau.se/en/latest/) -
+  collection of easy to read (ELI5) articles as well as in-depth knowledge such as VM internals, memory layout, opcodes etc.
+- [Chat app with OTP - code example from FnConf15 B'lore](https://github.com/bernardd/OTPworkshop)
 
 **Books:**
 
