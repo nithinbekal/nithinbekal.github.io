@@ -108,7 +108,7 @@ end
 {% endhighlight %}
 
 Now, we are ready to add the HTML view to
-`app/templates/registration/new.html.eex`:
+`web/templates/registration/new.html.eex`:
 
 {% highlight elixir %}
 <h1>Create an account</h1>
