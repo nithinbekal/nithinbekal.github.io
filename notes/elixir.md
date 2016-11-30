@@ -360,6 +360,7 @@ end)
 
 - [An Introduction to Elixir’s Ecto Library](https://www.sitepoint.com/introduction-to-elixirs-ecto-library/)
 - [Meet Ecto, The No-Compromise Database Wrapper For Concurrent Elixir Apps](https://www.toptal.com/elixir/meet-ecto-database-wrapper-for-elixir)
+- [Building Many-To-Many Associations with Embedded Schemas in Ecto and Phoenix](https://medium.com/@abitdodgy/building-many-to-many-associations-with-embedded-schemas-in-ecto-and-phoenix-e420abc4c6ea#.xn6kmyrw9)
 
 # Links
 
