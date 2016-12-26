@@ -210,7 +210,7 @@ Returns a hash representing information about the named captures.
 __`Enumerable#sum`__
 
 {% highlight ruby %}
-(1..5).sum         #=> 5
+(1..5).sum         #=> 15
 %w(a b c).sum('')  #=> "abc"
 {% endhighlight %}
 
