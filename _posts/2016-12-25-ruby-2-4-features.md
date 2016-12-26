@@ -258,6 +258,8 @@ but if you're interested in the complete list of changes, take a look at the
 
 Here are some more articles covering the new release:
 
+- [Ruby 2.4 Released: Faster Hashes, Unified Integers and Better Rounding](https://blog.heroku.com/ruby-2-4-features-hashes-integers-rounding)
+  on the Heroku blog
 - [What's new in Ruby 2.4](https://jobandtalent.engineering/whats-new-in-ruby-2-4-f6e4fdd1a2b4#.kdibuxdoj)
   on the Jobandtalent Engineering team blog
 - [Behavior changes in Ruby 2.4](https://wyeworks.com/blog/2016/6/22/behavior-changes-in-ruby-2.4)
