@@ -219,9 +219,9 @@ __`Enumerable#sum`__
 The `#empty?` method was added to `Dir`, `File` and `Pathname`.
 
 {% highlight ruby %}
-Dir.empty?('path/to/some/dir')    #=> true
-File.empty?('path/to/some/file')  #=> true
-Pathname.empty?('file-or-dir')    #=> true
+Dir.empty?('path/to/some/dir')     #=> true
+File.empty?('path/to/some/file')   #=> true
+Pathname.new('file-or-dir').empty? #=> true
 {% endhighlight %}
 
 ### Language features
