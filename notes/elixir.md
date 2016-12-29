@@ -362,6 +362,10 @@ end)
 - [Meet Ecto, The No-Compromise Database Wrapper For Concurrent Elixir Apps](https://www.toptal.com/elixir/meet-ecto-database-wrapper-for-elixir)
 - [Building Many-To-Many Associations with Embedded Schemas in Ecto and Phoenix](https://medium.com/@abitdodgy/building-many-to-many-associations-with-embedded-schemas-in-ecto-and-phoenix-e420abc4c6ea#.xn6kmyrw9)
 
+# Plug
+
+- [New Router Features in Plug 1.3](https://christopheradams.io/articles/2016/11/new-router-features-in-plug-1-3/)
+
 # Links
 
 * [Elixir lang](http://elixir-lang.org/) - website
