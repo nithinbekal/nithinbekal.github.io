@@ -21,6 +21,13 @@ installed on Windows.
 * [_Mr Neighborly's Humble Little Ruby Book_](http://humblelittlerubybook.com/)
 * Michael Hartl's [_Learn Rails by Example_](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book)
 
+## Debugging tips
+
+- [I am a puts debuggerer](https://tenderlovemaking.com/2016/02/05/i-am-a-puts-debuggerer.html) -
+  some useful debugging tips from tenderlove
+- [Ruby Debugging Cheat Sheet](http://www.schneems.com/2016/01/25/ruby-debugging-magic-cheat-sheet.html)
+  by Schneems
+
 **Bookmarked articles**
 
 * [Learn advanced rake in 7 episodes](http://devblog.avdi.org/2014/04/30/learn-advanced-rake-in-7-episodes/) (by Advi Grimm)
