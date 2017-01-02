@@ -162,7 +162,8 @@ rather than having to think about what to do next.
 
 ### Rails Internals
 
-* [Diving in Rails - The request handling](http://blog.siami.fr/diving-in-rails-the-request-handling)
+- [Examining The Internals Of The Rails Request/Response Cycle](http://www.rubypigeon.com/posts/examining-internals-of-rails-request-response-cycle/)
+- [Diving in Rails - The request handling](http://blog.siami.fr/diving-in-rails-the-request-handling)
 
 ### Rails and Databases
 
