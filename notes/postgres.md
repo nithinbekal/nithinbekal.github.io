@@ -44,3 +44,37 @@ UPDATE pg_database SET datistemplate = TRUE WHERE datname = 'template1';
 VACUUM FREEZE;
 {% endhighlight %}
 
+If you see this error: `FATAL:  role "postgres" does not exist`
+
+{% highlight sql %}
+CREATE USER postgres SUPERUSER;
+{% endhighlight %}
+
+
+# Upgrading to 9.6
+
+I was using 9.5.3 and upgrading to 9.6.1.
+
+- <https://keita.blog/2016/01/09/homebrew-and-postgresql-9-5/>
+
+{% highlight bash %}
+initdb /usr/local/var/postgres9.6 -E utf8
+
+pg_upgrade \
+  -d /usr/local/var/postgres \
+  -D /usr/local/var/postgres9.6 \
+  -b /usr/local/Cellar/postgresql/9.5.3/bin/ \
+  -B /usr/local/Cellar/postgresql/9.6.1/bin/ \
+  -v
+
+mv /usr/local/var/postgres /usr/local/var/postgres9.5
+
+mv /usr/local/var/postgres9.6 /usr/local/var/postgres
+
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+
+gem uninstall pg
+bundle install
+
+{% endhighlight %}
+
