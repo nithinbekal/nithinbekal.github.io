@@ -205,6 +205,6 @@ Happy reading!
 
 ## Links
 
-* Previous lists:
-  [2015](/posts/favorite-books-2015/),
-  [2014](/posts/favorite-books-2014/)
+- Previous lists:
+  [2014](/posts/favorite-books-2014/),
+  [2013](/posts/favorite-books-2013/)
