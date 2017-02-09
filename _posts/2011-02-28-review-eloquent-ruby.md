@@ -11,7 +11,8 @@ categories:
 ---
 If you are new to Ruby programming, Eloquent Ruby should be the book you read right after you finish your introductory Ruby book. It's not a beginner's tutorial, but with a little background on Ruby, it would be easy to follow.
 
-<iframe src="http://rcm.amazon.com/e/cm?t=nitsblo-20&o=1&p=8&l=as1&asins=0321584104&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;margin:0 0 0 20px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" align="right"></iframe>
+<iframe style="width:120px;height:240px;margin-left:20px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" align="right"
+src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=bukluv-21&marketplace=amazon&region=IN&placement=B004MMEJ36&asins=B004MMEJ36&linkId=c7f9ce11046d9b61f3c9f087904eb87a&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
 
 This is one of the better programming books I've read. It has plenty of short and clear example code snippets, a very conversational and humorous writing style and most importantly, covers exactly the kind of topics a newbie should understand about Ruby.
 
