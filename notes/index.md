@@ -21,3 +21,4 @@ Other links:
 * [Systems programming](/notes/systems-programming/)
 * [Terminal shortcuts](/notes/terminal-shortcuts/)
 * [Tmux](/notes/tmux/)
+- [Machine learning](/notes/machine-learning/)
