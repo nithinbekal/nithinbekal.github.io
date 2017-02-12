@@ -24,6 +24,9 @@ This a collections of bookmarks to interesting programming books that are availa
 - [Distributed Systems for Fun and Profit](http://book.mixu.net/distsys/)
 - [Introduction to Computing: Explorations in Language, Logic, and Machines](http://www.computingbook.org) - David Evans
 - [Read Eval Print Love](https://leanpub.com/readevalprintlove003/read) - Michael Fogus
+- [Game Programming Patterns](http://gameprogrammingpatterns.com/contents.html) - Robert Nystrom
+- [Crafting Interpreters](http://www.craftinginterpreters.com) - Robert Nystrom
+- [Beautiful Racket](http://beautifulracket.com) - Matthew Butterick
 
 Some interesting reading lists:
 
