@@ -27,9 +27,9 @@ brew install homebrew/python/scipy
 Numpy depends on gcc, and if it isn't installed, homebrew will try to download
 and compile it from source, which could take an hour or more to compile.
 
-
 ### Flask
 
+{% highlight python %}
 sudo easy_install pip
 
 brew install python
@@ -42,4 +42,9 @@ virtualenv venv
 . venv/bin/activate
 
 python app.py
+{% endhighlight %}
 
+### Numpy
+
+- [Guide to Numpy](http://csc.ucdavis.edu/~chaos/courses/nlp/Software/NumPyBook.pdf) [PDF]
+  by Travis E. Oliphant

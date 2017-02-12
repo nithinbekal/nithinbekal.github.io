@@ -9,5 +9,5 @@ Download from: <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-dow
 Add this to zshrc:
 
 {% highlight bash %}
-export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home"
 {% endhighlight %}

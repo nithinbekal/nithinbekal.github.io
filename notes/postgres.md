@@ -77,4 +77,3 @@ gem uninstall pg
 bundle install
 
 {% endhighlight %}
-

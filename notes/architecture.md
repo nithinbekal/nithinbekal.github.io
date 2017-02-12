@@ -40,12 +40,11 @@ How do we deal with architecture?
   - The last responsible moment for choice of DB
     is just before deployment
 * Follow YAGNI
+* Minimize libs and frameworks usage
 
 Extensibility
 
 - Make things extensible is to solve problems
   that we really need to solve today
 - Make things usable first. Reusability comes later.
-
-Minimize libs and frameworks usage
 

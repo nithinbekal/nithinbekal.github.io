@@ -11,7 +11,7 @@ date:  2015-05-29 15:18:19
 - enable es6/babel
 - add library - react with addons
 
-{% highlight es6 %}
+{% highlight javascript %}
 ReactDOM.render( <h1>Hello, world!</h1>,
                document.body);
 {% endhighlight %}
@@ -34,7 +34,7 @@ ReactDOM.render( <h1>Hello, world!</h1>,
 
 ## Create a component
 
-{% highlight es6 %}
+{% highlight javascript %}
 var HelloWorld = React.createClass({
   render() {
     return (
@@ -50,7 +50,7 @@ ReactDOM.render(<HelloWorld/>, document.body);
 
 ## Using custom methods in the component
 
-{% highlight es6 %}
+{% highlight javascript %}
 var HelloWorld = React.createClass({
   sayHello() { return "Hello, world!" },
 
@@ -68,7 +68,7 @@ It's better to avoid rendering to document.body directly.
 There is no guarantee that it will not be manipulated by other js libs.
 Always use an element that is only used by react.
 
-{% highlight es6 %}
+{% highlight javascript %}
 ReactDOM.render(<HelloWorld/>,
   document.getElementById("container"));
 {% endhighlight %}
@@ -77,7 +77,7 @@ ReactDOM.render(<HelloWorld/>,
 
 ## Props
 
-{% highlight es6 %}
+{% highlight javascript %}
 var FruitList = React.createClass({
   renderFruits() {
     var fruits = this.props.fruits.map( (fruit) =>
@@ -104,7 +104,7 @@ ReactDOM.render(
 
 ## PropTypes
 
-{% highlight es6 %}
+{% highlight javascript %}
 var FruitList = React.createClass({
   propTypes: {
     fruits: React.PropTypes.array.isRequired
@@ -115,7 +115,7 @@ var FruitList = React.createClass({
 
 ## State
 
-{% highlight es6 %}
+{% highlight javascript %}
 var Form = React.createClass({
   getInitialState() {
     return(
@@ -154,7 +154,7 @@ ReactDOM.render(
 
 ## FruitListContainer
 
-{% highlight es6 %}
+{% highlight javascript %}
 
 
 var FruitList = React.createClass({
@@ -196,7 +196,7 @@ ReactDOM.render(
 
 ## Clock tick
 
-{% highlight es6 %}
+{% highlight javascript %}
 var ClockTick = React.createClass({
   getInitialState() {
     return this.timeDict();

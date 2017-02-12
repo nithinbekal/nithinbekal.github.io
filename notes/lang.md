@@ -4,20 +4,21 @@ title: 'Programming languages'
 date:   2014-10-26 12:00:00
 ---
 
-- [Ruby](/notes/ruby/)
-  - [Rails](/notes/rails/)
-  - [Testing](/notes/ruby-testing/)
-  - [Rubymotion](/notes/rubymotion/)
-  - [dRuby](/notes/druby/)
-- [Elixir](/notes/elixir/)
-  - [Phoenix](/notes/phoenix/)
-- [JavaScript](/notes/js/)
-  - [ES6](/notes/es6/)
-  - [React.js](/notes/react/)
+- **[Ruby](/notes/ruby/)**
+  &mdash; [Rails](/notes/rails/)
+  &mdash; [Testing](/notes/ruby-testing/)
+  &mdash; [Rubymotion](/notes/rubymotion/)
+  &mdash; [dRuby](/notes/druby/)
+- **[Elixir](/notes/elixir/)**
+  &mdash; [Phoenix](/notes/phoenix/)
+- **[JavaScript](/notes/js/)**
+  &mdash; [ES6](/notes/es6/)
+  &mdash; [React.js](/notes/react/)
 
 Notes and bookmarks
 
 - [Agda](/notes/agda/)
+- [Assembly](/notes/assembly/)
 - [C and C++](/notes/c/)
 - [Clojure](/notes/clojure/)
 - [Elm](/notes/elm/)

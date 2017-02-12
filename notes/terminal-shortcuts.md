@@ -23,4 +23,8 @@ Esc-U   Make current word uppercase
 
 **Links**
 
-* http://lifehacker.com/5743814/become-a-command-line-ninja-with-these-time-saving-shortcuts
+- [Mastering Bash and Terminal](https://www.blockloop.io/mastering-bash-and-terminal)
+  and some more useful tips on the
+  [HN discussion](https://news.ycombinator.com/item?id=13400350)
+  on the article
+- [Become a command line ninja with these time saving shortcuts](http://lifehacker.com/5743814/become-a-command-line-ninja-with-these-time-saving-shortcuts)
