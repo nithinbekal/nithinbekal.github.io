@@ -131,6 +131,10 @@ This is great advice from Kent Beck's excellent TDD By Example.
 It gives you a starting point when you come back to the code,
 rather than having to think about what to do next.
 
+### Rails setup
+
+- [GoRails: Setup Ruby On Rails on Ubuntu 16.10 Yakkety Yak](https://gorails.com/setup/ubuntu/16.10) - Detailed installation instructions. Also contains setup instructions for other OSes.
+
 ### Rails Testing
 
 * [Golden Master Testing](http://www.sitepoint.com/golden-master-testing-refactor-complicated-views/) (Katrina Owen)
