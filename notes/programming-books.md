@@ -12,7 +12,6 @@ This a collections of bookmarks to interesting programming books that are availa
 - [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/current/index.html)
 - [Learn Haskell Fast and Hard](http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/)
 - [Programming in Scala](http://www.artima.com/pins1ed/), by Martin Odersky, Lex Spoon, and Bill Venners
-- [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
 - [Interpreting Lisp](http://www.civilized.com/files/lispbook.pdf) [PDF]
 - [Programming and Programming Languages](http://papl.cs.brown.edu/2014/)
 - [Learn You an Agda](http://williamdemeo.github.io/2014/02/27/learn-you-an-agda/)
@@ -27,6 +26,11 @@ This a collections of bookmarks to interesting programming books that are availa
 - [Game Programming Patterns](http://gameprogrammingpatterns.com/contents.html) - Robert Nystrom
 - [Crafting Interpreters](http://www.craftinginterpreters.com) - Robert Nystrom
 - [Beautiful Racket](http://beautifulracket.com) - Matthew Butterick
+
+Operating Systems
+
+- [Operating System: From 0 to 1](https://tuhdo.github.io/os01/)
+- [How to Make a Computer Operating System](https://samypesse.gitbooks.io/how-to-create-an-operating-system/)
 
 Some interesting reading lists:
 
