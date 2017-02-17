@@ -50,14 +50,16 @@ Next, we will set up Ruby 2.3.3 on the server.
 Replace 2.3.3 below with whichever version you're using.
 
 {% highlight bash %}
-apt install -y build-essential git-core curl nodejs
+apt install -y curl bison build-essential zlib1g-dev libssl-dev \
+               libreadline5-dev libxml2-dev git-core nodejs
 
+
+su jenkins # switch to jenkins user
 curl -L https://get.rvm.io | bash -s stable --ruby=2.3.3
 
 echo 'source "/var/lib/jenkins/.rvm/scripts/rvm"' >> /var/lib/jenkins/.bashrc
-chmod 755 /var/lib/jenkins/.bashrc
+source ~/.bashrc
 
-su jenkins # switch to jenkins user
 rvm install 2.3.3
 gem install bundler
 {% endhighlight %}
