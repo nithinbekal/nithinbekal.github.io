@@ -144,7 +144,7 @@ server {
     listen 443;
     server_name ci.example.com;
 
-    ssl_certificate           /etc/letsencrypt/live/ci.example.com/cert.pem;
+    ssl_certificate           /etc/letsencrypt/live/ci.example.com/fullchain.pem;
     ssl_certificate_key       /etc/letsencrypt/live/ci.example.com/privkey.pem;
 
     ssl on;
