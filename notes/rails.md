@@ -39,6 +39,10 @@ date:  2015-02-19 14:20:05
 
 - [Rails Database Best Practices](http://blog.carbonfive.com/2016/11/16/rails-database-best-practices/)
 
+### Rails API applications
+
+- [Learn how to build a modern API on Michael Hartl's Rails 5 tutorial](https://github.com/vasilakisfil/rails5_api_tutorial)
+
 #### Indexing in Rails
 
 * Always add index for foreign keys
