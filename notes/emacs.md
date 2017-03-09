@@ -80,6 +80,7 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 ### org-mode
 
+- [Emacs org-mode examples and cookbook](http://ehneilsen.net/notebook/orgExamples/org-examples.html)
 - [Getting Started With org-mode](https://www.youtube.com/watch?v=SzA2YODtgK4)
 
 ### Paredit
