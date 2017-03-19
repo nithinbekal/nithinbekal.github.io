@@ -32,6 +32,10 @@ Operating Systems
 - [Operating System: From 0 to 1](https://tuhdo.github.io/os01/)
 - [How to Make a Computer Operating System](https://samypesse.gitbooks.io/how-to-create-an-operating-system/)
 
+Mathematics
+
+- [Immersive Linear Algebra](http://immersivemath.com/ila/index.html)
+
 Some interesting reading lists:
 
 - [James Edward Gray II - One Programmer's Library](http://graysoftinc.com/book-reviews/one-programmers-library)
