@@ -6,6 +6,8 @@ date:  2014-08-26 17:34:47
 
 This a collections of bookmarks to interesting programming books that are available online.
 
+- [Teach Yourself Computer Science](https://teachyourselfcs.com) -
+  A collection of resources for learning CS.
 - [The Nature of Code](http://natureofcode.com/book/), by Daniel Schiffman
 - [High Performance Browser Networking](http://chimera.labs.oreilly.com/books/1230000000545/index.html), by Ilya Grigorik
 - [Programming Languages: Application and Interpretation](http://cs.brown.edu/~sk/Publications/Books/ProgLangs/2007-04-26/), by Shriram Krishnamurthi
@@ -29,6 +31,8 @@ This a collections of bookmarks to interesting programming books that are availa
 
 Operating Systems
 
+- [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/) -
+  by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
 - [Operating System: From 0 to 1](https://tuhdo.github.io/os01/)
 - [How to Make a Computer Operating System](https://samypesse.gitbooks.io/how-to-create-an-operating-system/)
 
