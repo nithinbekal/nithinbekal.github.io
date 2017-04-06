@@ -19,6 +19,12 @@ cd test_app
 mix phoenix.server
 {% endhighlight %}
 
+## Open source codebases
+
+- [Evercam](https://github.com/evercam/evercam-server)
+  ([deep dive into the codebase](https://hackernoon.com/elixir-deep-dive-evercam-a-10k-loc-phoenix-app-bd84bc20345d))
+- [ElixirStatus](https://github.com/rrrene/elixirstatus-web)
+
 ## Bookmarks
 
 * [Phoenix Guides](http://www.phoenixframework.org/docs/overview)
