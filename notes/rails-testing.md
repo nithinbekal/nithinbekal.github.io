@@ -79,6 +79,13 @@ This is great advice from Kent Beck's excellent TDD By Example.
 It gives you a starting point when you come back to the code,
 rather than having to think about what to do next.
 
+**Start with a failing test.**
+Add something like `assert false`
+that will always fail
+if you are writing tests for existing code.
+Then, after seeing the failing test,
+you can remove that line and write the proper test.
+
 ## Bookmarks
 
 - [High Low Testing](http://mikepackdev.com/blog_posts/39-high-low-testing)
