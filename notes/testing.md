@@ -3,6 +3,10 @@ layout: page
 title: "Testing"
 ---
 
+## Test doubles
+
+- [Test Doubles – Fakes, Mocks and Stubs](http://pragmatists.pl/blog/2017/03/test-doubles-fakes-mocks-or-stubs/)
+
 # TDD
 
 Bob Martin defines test driven development as comprised of 3 rules:
