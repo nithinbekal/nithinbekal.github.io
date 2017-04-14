@@ -25,6 +25,11 @@ mix phoenix.server
   ([deep dive into the codebase](https://hackernoon.com/elixir-deep-dive-evercam-a-10k-loc-phoenix-app-bd84bc20345d))
 - [ElixirStatus](https://github.com/rrrene/elixirstatus-web)
 
+## Deployment
+
+- [Elixir Phoenix App deployed into a Load Balanced DigitalOcean setup](http://www.akitaonrails.com/2016/12/23/elixir-phoenix-app-deployed-into-a-load-balanced-digitalocean-setup)
+- [Deploying Phoenix on Ubuntu with Gatling](https://dennisreimann.de/articles/phoenix-deployment-gatling-ubuntu-digital-ocean.html)
+
 ## Bookmarks
 
 * [Phoenix Guides](http://www.phoenixframework.org/docs/overview)
