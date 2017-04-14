@@ -19,6 +19,8 @@ cd test_app
 mix phoenix.server
 {% endhighlight %}
 
+- [Phoenix 1.2.x to 1.3.0 Upgrade Instructions](https://gist.github.com/chrismccord/71ab10d433c98b714b75c886eff17357)
+
 ## Open source codebases
 
 - [Evercam](https://github.com/evercam/evercam-server)
