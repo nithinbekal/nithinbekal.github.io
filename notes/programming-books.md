@@ -39,6 +39,8 @@ Operating Systems
 Mathematics
 
 - [Immersive Linear Algebra](http://immersivemath.com/ila/index.html)
+- [Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf)
+  by Eric Lehman, F Thomson Leighton, Albert R Meyer (PDF)
 
 Some interesting reading lists:
 
