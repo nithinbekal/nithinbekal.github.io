@@ -14,8 +14,9 @@ nvm alias default 5.1
 
 Add `'use strict;'` directive at the top of the file to enable ES6 features.
 
-* [Exploring ES6](https://leanpub.com/exploring-es6/read) (Book)
-* [ES6](http://justicen.com/#/posts/74046fea9a4c61477db9) -
+- [ES7 in 7 Days](https://getgood.at/js/es7-in-7-days)
+- [Exploring ES6](https://leanpub.com/exploring-es6/read) (Book)
+- [ES6](http://justicen.com/#/posts/74046fea9a4c61477db9) -
   explanation of ES6 features by Nick Justice
 
 ## Objects and Prototypes
