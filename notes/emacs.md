@@ -60,6 +60,7 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 ### Vim to evil-mode
 
+- [Evil Guide: Emacs/Evil for Vim Users](https://github.com/noctuid/evil-guide)
 - [Towards a vim-like Emacs](http://nathantypanski.com/blog/2014-08-03-a-vim-like-emacs-config.html)
 - [From Vim to Emacs in Fourteen Days](http://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html)
 - [My Descent Into Evil](https://medium.com/@bryangarza/my-descent-into-evil-98f7017475b6)
