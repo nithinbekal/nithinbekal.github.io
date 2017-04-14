@@ -242,5 +242,8 @@ read(Key) ->
 
 **Books:**
 
-* [Learn You Some Erlang for Great Good](http://learnyousomeerlang.com)
-* [Stuff Goes Bad: Erlang in Anger](http://www.erlang-in-anger.com)
+- [Learn You Some Erlang for Great Good](http://learnyousomeerlang.com)
+- [The BEAM Book](https://github.com/happi/theBeamBook) -
+  A description of the Erlang Runtime System ERTS and the virtual Machine BEAM.
+  (By Erik Stenman)
+- [Stuff Goes Bad: Erlang in Anger](http://www.erlang-in-anger.com)
