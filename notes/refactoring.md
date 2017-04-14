@@ -17,3 +17,7 @@ How to refactor effectively
 - have a test suite - run it as often as possible
 - take short, deliberate steps
 
+## Links
+
+- [Refactoring section on sourcemaking.com](https://sourcemaking.com/refactoring)
+- [Antipatterns section on sourcemaking.com](https://sourcemaking.com/antipatterns)

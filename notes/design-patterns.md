@@ -13,5 +13,6 @@ Design patterns notes:
 
 Links:
 
+- [Design Patterns on sourcemaking.com](https://sourcemaking.com/design_patterns)
 - [GoF Design Patterns in Ruby](https://github.com/davidgf/design-patterns-in-ruby) -
   A github repo with examples of 14 of the GoF patterns.
