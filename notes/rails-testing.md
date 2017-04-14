@@ -92,6 +92,7 @@ you can remove that line and write the proper test.
 - [Thoughtbot: How We Test Rails Applications](https://robots.thoughtbot.com/how-we-test-rails-applications)
 - [Five Tips for Testing Rails](http://www.thechrisoshow.com/2008/05/04/five-tips-for-testing-rails/)
 - [A Guide for Writing Maintainable Rails Tests](https://littlelines.com/blog/2013/12/17/a-guide-for-writing-maintainable-rails-tests)
+- [7 Reasons I'm Sticking With Minitest and Fixtures in Rails](http://brandonhilkert.com/blog/7-reasons-why-im-sticking-with-minitest-and-fixtures-in-rails/)
 
 Rspec
 
