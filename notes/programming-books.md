@@ -29,6 +29,11 @@ This a collections of bookmarks to interesting programming books that are availa
 - [Crafting Interpreters](http://www.craftinginterpreters.com) - Robert Nystrom
 - [Beautiful Racket](http://beautifulracket.com) - Matthew Butterick
 
+- [Engineering a Safer World](http://sunnyday.mit.edu/safer-world.pdf) -
+  Systems Thinking Applied to Safety
+  (Nancy G Levenson)
+  [PDF]
+
 Operating Systems
 
 - [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/) -
