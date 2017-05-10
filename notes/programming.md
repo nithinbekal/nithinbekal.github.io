@@ -6,6 +6,7 @@ title: "Programming concepts"
 - [Software architecture](/notes/architecture/)
 - [Software design principles](/notes/design-principles/)
 - [Testing](/notes/testing/)
+- [Code reviews](/notes/code-reviews/)
 
 Object oriented programming:
 
