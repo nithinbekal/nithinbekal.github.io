@@ -111,7 +111,11 @@ Because the gem builds an array when the bit array is initialized,
 it takes a lot of memory if you're building a huge bit array.
 I tried initializing a bit array with size 1 trillion,
 and the memory usage grew into many GBs before the program crashed.
-If you need such large arrays, you should probably use a compiled language.
+~~If you need such large arrays,
+you should probably use a compiled language.~~
+(As Albert Smit points out in the comments,
+1 trillion bits is 116GB memory,
+so such a large bit array is impractical.)
 
 ## Links
 
