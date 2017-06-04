@@ -4,6 +4,8 @@ title: 'Tmux'
 date:   2014-06-07 12:00:00
 ---
 
+- [Tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
+
 Blog posts, links, etc.
 
 - [The Tao of Tmux](https://leanpub.com/the-tao-of-tmux/read)
