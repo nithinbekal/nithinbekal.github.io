@@ -221,6 +221,8 @@ The `#empty?` method was added to `Dir`, `File` and `Pathname`.
 {% highlight ruby %}
 Dir.empty?('path/to/some/dir')     #=> true
 File.empty?('path/to/some/file')   #=> true
+
+require 'pathname' # Needed to use Pathname class
 Pathname.new('file-or-dir').empty? #=> true
 {% endhighlight %}
 
