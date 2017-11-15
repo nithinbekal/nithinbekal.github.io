@@ -114,7 +114,20 @@ a:hover { text-decoration: underline; }
   padding: 0 5px;
 }
 
-.site .post .content pre code { background: none; border: none; padding: 0; }
+.site .post .content {
+  pre { padding: 20px; }
+
+  pre > code {
+    background: none;
+    border: none; padding: 0;
+  }
+
+  .highlight {
+    font-size: 13px;
+    line-height: 1.5em;
+    margin: 20px 0;
+  }
+}
 
 .site .post .content blockquote {
   background: #fff;
@@ -127,13 +140,6 @@ a:hover { text-decoration: underline; }
   padding: 0 40px;
 }
 
-.site .post .content .highlight {
-  font-size: 13px;
-  line-height: 1.5em;
-  margin: 20px 0;
-  
-  pre { padding: 20px; }
-}
 
 #post-footer { margin-bottom: 50px; }
 
