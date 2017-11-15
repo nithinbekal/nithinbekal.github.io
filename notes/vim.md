@@ -59,3 +59,51 @@ Videos:
 - [Impressive Ruby Productivity with Vim and Tmux by Chris Hunt](https://www.youtube.com/watch?v=gB-JSh1EVME)
 - [Vim for Rails Developers](https://www.youtube.com/watch?v=9J2OjH8Ao_A)
 
+### Vimscript
+
+- [Five Minute Vimscript](http://andrewscala.com/vimscript/)
+
+```vim
+function HelloWorld()
+  echo "Hello, world!"
+endfunction
+
+call HelloWorld()
+
+
+function ReturnSomethign()
+  return "Something"
+endfunction
+
+echo ReturnSomethign()
+
+function Foo()
+endfunction
+" Returns 0 by default
+
+function TooBigEh(foo)
+  if a:foo > 10
+    return 1
+  end
+endfunction
+" Returns 1 if cond matches, falls back to 0 otherwise
+" a:foo is for variable scoping - tells vimscript that it's the argument foo
+
+
+" Truthiness
+"  'hey' is coerced in to 0, so falsey
+"  '8 hello' is coerced to 8 because it starts with a number, so truthy
+
+
+" Local vars
+function Foo()
+  let bar = 'baz'
+  return bar
+endfunction
+
+
+" Match url in the following line:
+" foo bar http://hello.baz hai
+" Matches string starting with http, until it runs into spaces
+matchstr(getline('.', "http[^ ]*"))
+```
