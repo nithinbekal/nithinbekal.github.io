@@ -4,26 +4,20 @@ title: "About"
 date:  2014-11-19 21:50:53
 ---
 
-My name is Nithin Bekal and
-I'm a software craftsman from Kochi, India.
-I've been shipping web applications for over 7 years.
-Ruby and Rails are my tools of choice,
-and I'm also exploring Elixir and the Phoenix framework right now.
+#### Hi, I'm Nithin!
 
-I'm part of the Rubyconf India organizing team.
-Until recently, I've been helping organize the Kochi Ruby meetups,
-and prior to that, the Chennai.rb meetups as well.
+I'm a programmer living in Ottawa, Canada,
+and I work at [Shopify](https://www.shopify.com/).
 
-I started working with [WowMakers](http://www.wowmakers.com/) in 2012,
-and co-founded [CrowdStudio.in](https://www.crowdstudio.in/) with the team there.
-Before that, I worked in the enterprise software trenches,
-working with Ford's IT division while I was at Tech Mahindra.
-I was also one of the first devs to work on
-[Project Fedena](http://projectfedena.org),
-an open source school management software.
-[My resume is available here](/resume).
+Before joining Shopify, I co-founded
+[WowMakers](http://www.wowmakers.com/) and
+[CrowdStudio.in](https://www.crowdstudio.in/)
+in Kochi, India.
+There I was part of the Rubyconf India team in 2016 and 2017,
+and also used to help organize the Kochi Ruby meetups &mdash;
+and the Chennai.rb meetups when I lived in Chennai.
 
-On the interwebs, you can find me on these places:
+On the interwebs, you can find me here:
 [Github](http://github.com/nithinbekal),
 [Twitter](http://twitter.com/nithinbekal),
 [LinkedIn](https://www.linkedin.com/in/nithinbekal),
