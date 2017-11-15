@@ -22,3 +22,4 @@ date:  2017-05-09 12:25:26
 
 **Add pronto**
 
+**Add rack-mini-profiler**
