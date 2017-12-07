@@ -62,7 +62,7 @@ but you can use this to start using Yarn with older Rails versions.
 
 I have [previously mentioned Rails Assets](/posts/rails-assets/),
 which is also a great option.
-There were [cencerns about its future](https://github.com/tenex/rails-assets/issues/291)
+There were [concerns about its future](https://github.com/tenex/rails-assets/issues/291)
 at one point, but the team have done a great job maintaining it so far.
 If you wish to avoid depending on Yarn now, it is a great option.
 However, Yarn is set to become a part of Omakase Rails stack,
