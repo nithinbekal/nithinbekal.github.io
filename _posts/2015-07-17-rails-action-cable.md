@@ -178,6 +178,13 @@ Nest stop: writing the client side code corresponding to this.
 
 # Client side code
 
+*Update:
+This code uses jquery,
+which is not included by default
+in Rails 5.1 and above.
+Refer to Adam Narel's comment below
+on how to include jquery.*
+
 Rails has already generated some client side code for us.
 Let's start by handling the event when enter is pressed in the chat input field.
 Add this at the end of `app/assets/javascripts/channels/chat.coffee`:
