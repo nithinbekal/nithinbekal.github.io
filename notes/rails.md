@@ -86,6 +86,13 @@ end
 - [A Basic User Authentication Model in Rails 4](http://nycda.com/blog/basic-user-authentication-model-in-rails-4/)
 - [User Authentication from Scratch](http://www.emilyplatzer.io/2014/06/29/user-authentication.html)
 
+### Rate limiting
+
+- [Prop](https://github.com/zendesk/prop)
+- [sidekiq-throttler](https://github.com/gevans/sidekiq-throttler)
+- [sidekiq-rate-limiter](https://github.com/enova/sidekiq-rate-limiter)
+- [redlock-rb](https://github.com/leandromoreira/redlock-rb)
+
 ### Contributing to Rails
 
 - Install Virtualbox - https://www.virtualbox.org/wiki/Downloads

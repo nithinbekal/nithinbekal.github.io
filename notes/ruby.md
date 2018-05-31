@@ -40,3 +40,8 @@ installed on Windows.
 * [Practicing Ruby](https://practicingruby.com/)
 * [Ruby Inside](http://www.rubyinside.com/)
 * [Ruby Flow](http://www.rubyflow.com/)
+
+### Contributing to Ruby
+
+- [How to Contribute to Ruby](http://www.sihui.io/how-to-contribute-to-ruby/) -
+  resources that can help you get started in contributing to Ruby

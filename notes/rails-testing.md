@@ -86,6 +86,28 @@ if you are writing tests for existing code.
 Then, after seeing the failing test,
 you can remove that line and write the proper test.
 
+**Avoid instance variables in `assert_equal`**
+Instance variables do not raise an exception
+when you have a typo.
+In the below example,
+if you typed `@title` inside the test,
+that would be nil,
+and if `post.update` always sets title to nil,
+this test would still pass.
+
+{% highlight ruby %}
+setup do
+  @new_title = 'New article title'
+end
+
+test 'post updates title' do
+  post.update(title: @title)
+  assert_equal @title, post.title
+end
+{% endhighlight %}
+
+**Avoid `Hash#dig` - use `#fetch` or `#[]`**
+
 ## Bookmarks
 
 - [High Low Testing](http://mikepackdev.com/blog_posts/39-high-low-testing)
