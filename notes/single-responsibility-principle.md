@@ -4,8 +4,20 @@ title: "Single Responsibility Principle"
 date:  2015-07-19 22:17:50
 ---
 
-Some quick notes based on
-[Uncle Bob's talk on SRP](https://vimeo.com/43592685):
+* "Every piece of code must have a single purpose to exist"
+* Encourages higher cohesion
+* Only keep things together if they really belong together
+* Don't put multiple classes in a single file
+* Long methods are bad because
+  - hard to read
+  - hard to test
+  - hard to reuse
+  - leads to duplication
+  - hard to maintain
+  - tight coupling
+
+**Some quick notes based on
+[Uncle Bob's talk on SRP](https://vimeo.com/43592685)**:
 
 Things that change for the same reasons
 should be grouped together.

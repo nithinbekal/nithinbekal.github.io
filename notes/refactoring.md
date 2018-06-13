@@ -19,5 +19,8 @@ How to refactor effectively
 
 ## Links
 
+- [Refactoring.guru](https://refactoring.guru/refactoring) -
+  website with lots of resources on
+  refactoring, design patterns, SOLID principles, etc.
 - [Refactoring section on sourcemaking.com](https://sourcemaking.com/refactoring)
 - [Antipatterns section on sourcemaking.com](https://sourcemaking.com/antipatterns)
