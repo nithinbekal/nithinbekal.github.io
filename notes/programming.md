@@ -1,11 +1,10 @@
 ---
 layout: page
-title: "Programming concepts"
+title: "Programming"
 ---
 
 - [SOLID principles](/notes/solid)
 - [Design Patterns](/notes/design-patterns)
-- [Software architecture](/notes/architecture/)
 - [Testing](/notes/testing/)
 - [Code reviews](/notes/code-reviews/)
 
@@ -21,6 +20,7 @@ Other programming concepts
 - [Don't Repeat Yourself](/notes/dry/)
 - [Coupling](/notes/coupling/)
 - [Code smells](/notes/code-smells)
+- [Software architecture](/notes/architecture/)
 
 Misc topics
 
