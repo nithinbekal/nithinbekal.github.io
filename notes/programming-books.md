@@ -55,3 +55,7 @@ Some interesting reading lists:
 Lists of freely available books
 
 - [vhf/free-programming-books on Github](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)
+
+System programming:
+
+* [System Programming wiki-book by students of University of Illinois](https://github.com/angrave/SystemProgramming/wiki)

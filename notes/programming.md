@@ -28,7 +28,6 @@ Misc topics
 - [Operating systems](/notes/os/)
 - [Product design](/notes/product-design/)
 - [Postgres](/notes/postgres/)
-- [Systems programming](/notes/systems-programming/)
 - [Terminal shortcuts](/notes/terminal-shortcuts/)
 - [Tmux](/notes/tmux/)
 - [Machine learning](/notes/machine-learning/)
