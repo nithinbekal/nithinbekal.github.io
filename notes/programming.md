@@ -25,12 +25,13 @@ Other programming concepts
 Misc topics
 
 - [Compilers](/notes/compilers/)
+- [GraphQL](/notes/graphql/)
+- [Machine learning](/notes/machine-learning/)
 - [Operating systems](/notes/os/)
-- [Product design](/notes/product-design/)
 - [Postgres](/notes/postgres/)
+- [Product design](/notes/product-design/)
 - [Terminal shortcuts](/notes/terminal-shortcuts/)
 - [Tmux](/notes/tmux/)
-- [Machine learning](/notes/machine-learning/)
 - [Programming Humor](/notes/programming-humor/)
 - [Programming books online](/notes/programming-books/)
 

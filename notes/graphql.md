@@ -12,6 +12,8 @@ date:  2018-01-16  9:50:45
 - [Introduction to GraphQL](http://graphql.org/learn/)
 - [Awesome GraphQL](https://github.com/chentsulin/awesome-graphql) -
   list of GraphQL resources
+- [Designing a GraphQL API](https://gist.github.com/swalkinshaw/3a33e2d292b60e68fcebe12b62bbb3e2) -
+  the public version of the GraphQL API design tutorial used at Shopify.
 
 Interfaces and unions:
 
