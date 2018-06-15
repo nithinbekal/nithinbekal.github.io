@@ -4,6 +4,9 @@ title: "Tell Don't Ask"
 date:  2017-01-14 20:10:10
 ---
 
+- Tell your code to do something, don't ask it for internal state
+- Avoid low level details
+
 >  Procedural code gets information then makes decisions. Object-oriented code tells objects to do things.
 
 -- Alec Sharpe, Smalltalk by Example
@@ -39,5 +42,3 @@ end
 {% endhighlight %}
 
 Checking `is_a?` in Ruby is another type of tell-dont-ask violation.
-
-
