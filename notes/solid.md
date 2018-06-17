@@ -6,7 +6,7 @@ date:  2018-06-12 22:56:23
 
 - [Single Responsibility Principle](/notes/single-responsibility-principle/)
 - [Open Close Principle](/notes/open-close-principle/)
-- [Liskov Substitution Principle](notes/liskov-substitution/)
+- [Liskov Substitution Principle](/notes/liskov-substitution/)
 - [Interface Segregation Principle](/notes/interface-segregation-principle/)
 - [Dependency Inversion Principle](/notes/dependency-inversion)
 

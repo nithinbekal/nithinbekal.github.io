@@ -108,3 +108,26 @@ Test coupling
 - makes order of tests important, so changing the order could fail tests,
   or they could pass despite the code being incorrect
 
+### Testing Objects
+
+Some quick notes from Sandi Metz' talk,
+[The Magic Tricks of Testing](https://www.youtube.com/watch?v=URSWYvyc42M):
+
+What to test:
+
+- incoming messages
+  - assert on result for query messages
+  - assert on side effect for command messages
+
+- message to self
+  - don't test private commands
+  - don't test private method
+    - verifying that the private method is called binds you to existing implementation
+    - discourages people from improving them
+
+- messages to other objects
+  - don't test outgoing query messages
+  - testing outgoing commands
+    - don't assert on state of the other object
+    - inject a mock and verify that it receives the expected message
+

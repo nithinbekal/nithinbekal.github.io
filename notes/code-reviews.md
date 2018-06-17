@@ -15,8 +15,8 @@ date:  2017-02-24 23:52:22
 - Are the variables, functions and modules well named?
 - Is there unnecessary complexity?
 - Does it have test coverage?
-- Do the object follow
-  [single responsibility principle](notes/single-responsibility-principle)?
+- Do the objects follow
+  [single responsibility principle](/notes/single-responsibility-principle)?
 
 ## How to do a good code review
 

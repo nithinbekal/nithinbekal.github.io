@@ -77,3 +77,9 @@ Before that point, design costs money - after, it saves.
 
 - Provides vocabulary for communicating intent
 - Help build better quality software
+
+
+### Links
+
+- [The Principles of OOD](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
+
