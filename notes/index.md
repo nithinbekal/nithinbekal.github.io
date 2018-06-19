@@ -4,11 +4,11 @@ title: 'My Wiki'
 date:   2014-06-07 12:00:00
 ---
 
-- [SOLID principles](/notes/solid/)
 - [Object Oriented Design](/notes/object-oriented-design/)
-- [Design Patterns](/notes/design-patterns/)
-- [Testing](/notes/testing/)
 - [Code reviews](/notes/code-reviews/)
+- [SOLID principles](/notes/solid/)
+- [Testing](/notes/testing/)
+- [Design Patterns](/notes/design-patterns/)
 - [Programming Languages](/notes/lang/)
 - [Ruby](/notes/ruby/)
 - [Elixir](/notes/elixir/)

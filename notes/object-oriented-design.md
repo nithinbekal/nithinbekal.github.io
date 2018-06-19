@@ -65,21 +65,13 @@ a book by Steve Freeman and Nat Pryce:
   - _Viscosity of environment_: dev environment is slow and inefficient.
   e.g. slow compile times, long CI cycle.
 
-**[Design stamina hypothesis](https://www.martinfowler.com/bliki/DesignStaminaHypothesis.html)**
-
-Proposed by Martin Fowler.
-Design has lower payoff early in the lifecycle,
-but there is an inflection point at which design starts paying off.
-Before that point, design costs money - after, it saves.
-
 **[Venkat Subramaniam - Core Software Design Principles](https://vimeo.com/97541185)**
 (video)
 
 - Provides vocabulary for communicating intent
 - Help build better quality software
 
-
 ### Links
 
 - [The Principles of OOD](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
-
+  on Robert C Martin's blog.
