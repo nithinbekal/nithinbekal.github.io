@@ -54,7 +54,7 @@ dog slotNames
 #==> list()
 
 dog description
-#==> An animal
+#==> Man's best friend
 {% endhighlight %}
 
 From the above snippet, you can see that when you create an instance of `Dog`, the type is `Dog` - the name of the prototype from which it was created. You can also see that no slots are set on the object, but you can still access the description slot you set on `Dog`.
