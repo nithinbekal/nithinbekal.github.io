@@ -99,7 +99,7 @@ large_burger = LargeBurger.new(burger)
 extra_large_burger = LargeBurger.new(large_burger)
 {% endhighlight %}
 
-We can similarly represent cheese burgers using a `BurgerWithCheese` decorator. Using just three classes, we are no able to represent 6 types of burgers.
+We can similarly represent cheese burgers using a `BurgerWithCheese` decorator. Using just three classes, we are now able to represent 6 types of burgers.
 
 # SimpleDelegator
 
