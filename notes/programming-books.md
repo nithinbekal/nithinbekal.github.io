@@ -4,6 +4,56 @@ title: "Programming Books"
 date:  2014-08-26 17:34:47
 ---
 
+### Recommended Books
+
+Object Oriented Design
+
+- Practical Object Oriented Design in Ruby (Sandi Metz)
+- 99 Bottles of OOP (Sandi Metz, Katrina Owen)
+- Confident Ruby (Avdi Grimm)
+
+TDD:
+
+- Test-Driven Development, By Example (Kent Beck)
+
+Computing:
+
+- Structure and Interpretation of Computer Programs
+- Understanding Computation
+
+There are books that I think are worth reading,
+but couldn't categorize them:
+
+- Pragmatic Programmer (Dave Thomas, Andy Hunt)
+- Apprenticeship Patterns
+- Programming Pearls
+
+Ruby:
+
+- Programming Ruby (Dave Thomas)
+- Eloquent Ruby (Russ Olsen)
+- Confident Ruby (Avdi Grimm)
+- Why’s Poignant Guide to Ruby (Why The Lucky Stiff)
+
+Elixir:
+
+- Elixir in Action (Sasa Juric)
+- Programming Elixir (Dave Thomas)
+- Programming Phoenix
+
+Other excellent intros to programming langugages:
+
+- The C Programming Languge (Dennis Ritchie, Brian Kernighan)
+- JavaScript: The Good Parts (Douglas Crockford)
+- Seven Languages in Seven Weeks (Bruce A Tate)
+
+### Some interesting reading lists
+
+- [James Edward Gray II - One Programmer's Library](http://graysoftinc.com/book-reviews/one-programmers-library)
+- [Coding Horror - Recommended Reading for Developers](http://blog.codinghorror.com/recommended-reading-for-developers/)
+
+### Books available online
+
 This a collections of bookmarks to interesting programming books that are available online.
 
 - [Teach Yourself Computer Science](https://teachyourselfcs.com) -
@@ -47,15 +97,10 @@ Mathematics
 - [Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf)
   by Eric Lehman, F Thomson Leighton, Albert R Meyer (PDF)
 
-Some interesting reading lists:
+System programming:
 
-- [James Edward Gray II - One Programmer's Library](http://graysoftinc.com/book-reviews/one-programmers-library)
-- [Coding Horror - Recommended Reading for Developers](http://blog.codinghorror.com/recommended-reading-for-developers/)
+* [System Programming wiki-book by students of University of Illinois](https://github.com/angrave/SystemProgramming/wiki)
 
 Lists of freely available books
 
 - [vhf/free-programming-books on Github](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)
-
-System programming:
-
-* [System Programming wiki-book by students of University of Illinois](https://github.com/angrave/SystemProgramming/wiki)
