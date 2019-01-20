@@ -3,25 +3,27 @@ task :post do
   meta = get_metadata(:title, :slug, :categories)
   filename = "#{Time.now.strftime '%Y-%m-%d'}-#{meta[:slug]}.md"
   path = File.join('_posts', filename)
-  text = "---
-layout: post
-title: \"#{meta[:title]}\"
-date:  #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
-categories: #{meta[:categories]}
----"
+  text = <<~EOF
+    ---
+    layout: post
+    title: \"#{meta[:title]}\"
+    date:  #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
+    categories: #{meta[:categories]}
+    ---
+  EOF
   File.open(path, 'w') { |f| f << text }
 end
 
 task :page do
   meta = get_metadata(:title, :slug)
   path = File.join('.', "#{meta[:slug]}.md")
-  text = <<EOF
----
-layout: page
-title: \"#{meta[:title]}\"
-date:  #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
----
-EOF
+  text = <<~EOF
+    ---
+    layout: page
+    title: \"#{meta[:title]}\"
+    date:  #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
+    ---
+  EOF
   File.open(path, 'w') { |f| f << text }
 end
 
