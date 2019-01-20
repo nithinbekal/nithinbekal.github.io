@@ -1,5 +1,6 @@
 
 name: Nithin Bekal
+title: Nithin Bekal
 description: "Nithin Bekal's blog about programming - Ruby, Rails, Vim, Elixir."
 url: http://nithinbekal.com
 highlighter: rouge
@@ -14,7 +15,7 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-sitemap
