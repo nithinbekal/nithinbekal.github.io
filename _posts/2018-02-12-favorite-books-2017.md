@@ -14,7 +14,8 @@ to that long to-read list.
 
 ## Non fiction
 
-**The Ascent of Man (Jacob Bronowski)**
+**[The Ascent of Man](https://amzn.to/2Wgr0Of)
+(Jacob Bronowski)**
 
 This is a remarkable book
 that uses the evolution of science
@@ -24,7 +25,8 @@ all the way to quantum physics,
 this is a fascinating picture of the rise of civilization.
 Quite a bit like what Carl Sagan's Cosmos is to the history of the Universe.
 
-**The Selfish Gene (Richard Dawkins)**
+**[The Selfish Gene](https://amzn.to/2Mu67dO)
+(Richard Dawkins)**
 
 An absorbing read on evolutionary biology
 from the perspective of individual genes.
@@ -32,7 +34,8 @@ Especially loved the game theory based explanations
 that explain natural selection.
 One of the most engaging science books I've read.
 
-**Astrophysics for People in a Hurry (Neil deGrasse Tyson)**
+**[Astrophysics for People in a Hurry](https://amzn.to/2Td8cgS)
+(Neil deGrasse Tyson)**
 
 As a long time listener of Tyson's Startalk podcast,
 I've heard a lot of this stuff covered on the show.
@@ -41,7 +44,8 @@ in a way that could get anyone interested in the topic.
 My only complaint is the use of imperial units over metric,
 making it confusing for us non-Americans.
 
-**Made in Japan (Akio Morita)**
+**[Made in Japan](https://amzn.to/2Ta7jWc)
+(Akio Morita)**
 
 The story of the founding and growth of Sony.
 The book traces Morita's early life during WW2,
@@ -53,10 +57,10 @@ and more like a book about business.
 Excellent read if you want to read about
 how Japanese management styles compare to those of other countries.
 
-
 ## Fiction
 
-**Animal Farm (George Orwell)**
+**[Animal Farm](https://amzn.to/2MwLJbO)
+(George Orwell)**
 
 A book with talking animals may not sound serious,
 but it's a very accurate representation of the political class.
@@ -67,7 +71,8 @@ I can think of one or two world leaders
 whose brazen distortion of reality
 isn't too far off the behavior of the pig leaders on Animal Farm.
 
-**Mistborn: The Final Empire (Brandon Sanderson)**
+**[Mistborn: The Final Empire](https://amzn.to/2Mu6lla)
+(Brandon Sanderson)**
 
 I've wanted to read Sanderson's books
 ever since I read his fantastic conclusion to the Wheel of Time series,
@@ -81,7 +86,8 @@ I'm usually bored by long descriptions of fights,
 but Sanderson is especially skilled
 at keeping you hanging on to every word.
 
-**Fuzzy Nation (John Scalzi)**
+**[Fuzzy Nation](https://amzn.to/2MwMsd2)
+(John Scalzi)**
 
 My favorite scifi novel of the year.
 The characters are complex, funny and memorable
@@ -90,7 +96,8 @@ like the protagonist's pet dog.
 Towards the end it turns into something of a legal thriller
 that debates what it means to be sentient.
 
-**Seveneves (Neal Stephenson)**
+**[Seveneves](https://amzn.to/2Ud3AqZ)
+(Neal Stephenson)**
 
 Intriguing premise &ndash;
 the moon mysteriously explodes,
@@ -114,19 +121,21 @@ which has a lot of details about space technology.
 Despite the disappointing final third,
 I think it was a terrific sci fi novel overall.
 
-**Name of the Wind (Patrick Rothfuss)**
+**[The Name of the Wind](https://amzn.to/2MsxfK6)
+(Patrick Rothfuss)**
 
 First person narrative in an epic fantasy novel is unusual,
 but here it works.
 Has some great world building,
-although doesn't depart from the typical Tolkienian fantasy style much. 
+although doesn't depart from the typical Tolkienian fantasy style much.
 Sadly, there are few supporting characters that are well fleshed out.
 There are also some chapters
 that would be better off in a bad romance novel.
 Not as good as I was expecting based on the reviews,
 but a decent fantasy novel all the same.
 
-**Inkheart (Cornelia Funke)**
+**[Inkheart](https://amzn.to/2TbXqav)
+(Cornelia Funke)**
 
 What if someone had the power
 to literally bring characters to life by reading a book?
@@ -135,7 +144,8 @@ This is technically a children's book,
 but like most good children's novels,
 it can be enjoyed by adults as well.
 
-**All You Need is Kill (Hiroshi Sakurazaka)**
+**[All You Need is Kill](https://amzn.to/2Mw0gVf)
+(Hiroshi Sakurazaka)**
 
 Nice, fast paced scifi thriller with a great premise -
 a soldier who is fighting alien invaders
@@ -144,7 +154,8 @@ and wakes up the previous day.
 I'm glad that the movie adaptation (Edge of Tomorrow)
 changed the plot enough that it didn't spoil this book too much.
 
-**Ready Player One (Ernest Cline)**
+**[Ready Player One](https://amzn.to/2Wj9Uzk)
+(Ernest Cline)**
 
 Set in 2044, people are using a massive virtual reality universe
 to escape the bleakness of the real world.
@@ -159,7 +170,8 @@ Someone who grew up around the 80s geek culture might appreciate this more,
 and that probably explains the massive fan following.
 Entertaining read, nonetheless.
 
-**Dune (Frank Herbert)**
+**[Dune](https://amzn.to/2MtNdDP)
+(Frank Herbert)**
 
 It's great in so many levels &ndash;
 you can read it for the fast paced epic adventure,
