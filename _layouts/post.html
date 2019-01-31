@@ -10,6 +10,15 @@ layout: default
   {{ content }}
   </div>
 
+  {% if page.categories %}
+  <p>
+  Categories:
+  {% for category in page.categories %}
+  <a href="/categories/{{ category }}/" class='category'> #{{ category }} </a>
+  {% endfor %}
+  </p>
+  {% endif %}
+
   <div class='social-share'>
     <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}" data-via='nithinbekal' data-count="horizontal">Share on Twitter</a>
   </div>

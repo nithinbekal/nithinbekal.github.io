@@ -73,12 +73,16 @@ a:hover { text-decoration: underline; }
 
 .site .posts a { color: #666; }
 .site .posts a:hover { color: #000; text-decoration: none; }
+
+.site .post .category,
 .site .posts .category {
   color: #666;
-  font-size: 0.6em;
   font-weight: normal;
-  padding: 0 10px 0 5px;
+  padding: 0 5px;
+  text-transform: uppercase;
 }
+.site .posts .category { font-size: 0.6em; }
+.site .post .category { font-size: 0.8em; }
 
 .site .post h2.title {
   font-size: 2em;
