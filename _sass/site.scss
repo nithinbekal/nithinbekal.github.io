@@ -5,6 +5,7 @@ $main-font-stack: 'Open Sans', Arial, sans-serif;
 html, body { height: 100%; }
 
 body {
+  background-color: #f8f8f8;
   color: #444;
   font-family: $main-font-stack;
   font-size: 16px;
@@ -25,6 +26,8 @@ a:hover { text-decoration: underline; }
 }
 
 .container {
+  background-color: #fff;
+  border: 1px solid #eee;
   margin: 0 auto;
   width: 800px;
 }
@@ -109,9 +112,8 @@ a:hover { text-decoration: underline; }
 
 .site .post .content code {
   background: #f7f7f7;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 0 5px;
+  border-radius: 3px;
+  padding: 3px;
 }
 
 .site .post .content {
@@ -119,7 +121,8 @@ a:hover { text-decoration: underline; }
 
   pre > code {
     background: none;
-    border: none; padding: 0;
+    border: none;
+    padding: 0;
   }
 
   .highlight {
