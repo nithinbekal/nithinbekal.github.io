@@ -1,15 +1,15 @@
 
 name: Jerry Thiesen
-title: Jerry Thiesen
+title: Jerry's Dev/Tech/Ops Blog
 description: "Jerry's blog about programming - Go, Python, Powershell, Ansible, and DevOps."
-url:https://0hostus.github.io/
+url: http://0hostus.github.io/
 highlighter: rouge
 permalink: /posts/:title/
 markdown: kramdown
 
 theme_options:
-  disqus_shortname: nithinbekal
-  google_analytics: UA-2095438-7
+  # disqus_shortname: nithinbekal
+  # google_analytics: UA-2095438-7
 
 sass:
   sass_dir: _sass
