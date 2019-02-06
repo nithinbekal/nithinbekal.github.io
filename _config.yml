@@ -1,8 +1,8 @@
 
-name: Nithin Bekal
-title: Nithin Bekal
-description: "Nithin Bekal's blog about programming - Ruby, Rails, Vim, Elixir."
-url: http://nithinbekal.com
+name: Jerry Thiesen
+title: Jerry Thiesen
+description: "Jerry's blog about programming - Go, Python, Powershell, Ansible, and DevOps."
+url:https://0hostus.github.io/
 highlighter: rouge
 permalink: /posts/:title/
 markdown: kramdown
