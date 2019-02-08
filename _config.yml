@@ -2,7 +2,7 @@
 name: Nithin Bekal
 title: Nithin Bekal
 description: "Nithin Bekal's blog about programming - Ruby, Rails, Vim, Elixir."
-url: http://nithinbekal.com
+url: https://nithinbekal.com
 highlighter: rouge
 permalink: /posts/:title/
 markdown: kramdown
