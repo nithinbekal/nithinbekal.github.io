@@ -6,6 +6,8 @@ date:  2018-01-16  9:50:45
 
 ### GraphQL resources
 
+- [Principled GraphQL](https://principledgraphql.com/) -
+  best practices and principles from the Apollo team.
 - [How To GraphQL](https://www.howtographql.com/) -
   Lots of resources to learn GraphQL,
   including tutorials for various backend and frontend stacks.
@@ -14,6 +16,8 @@ date:  2018-01-16  9:50:45
   list of GraphQL resources
 - [Designing a GraphQL API](https://gist.github.com/swalkinshaw/3a33e2d292b60e68fcebe12b62bbb3e2) -
   the public version of the GraphQL API design tutorial used at Shopify.
+- [GraphQL Mutation Design: Anemic Mutations](https://medium.com/@__xuorig__/graphql-mutation-design-anemic-mutations-dd107ba70496):
+  a great article on mutation design by Marc-André Giroux.
 
 Interfaces and unions:
 
