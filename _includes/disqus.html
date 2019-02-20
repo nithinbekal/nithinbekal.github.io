@@ -1,17 +1,14 @@
-{% if site.theme_options.disqus_shortname %}
+{%- if site.theme_options.disqus_shortname -%}
 <div id="disqus_thread"></div>
 <script>
-  var disqus_loaded = false;
-  function load_disqus()
-  {
-    disqus_loaded = true;
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = "https://{{ site.theme_options.disqus_shortname }}.disqus.com/embed.js";
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    var ldr = document.getElementById('disqus_loader');
-    ldr.parentNode.removeChild(ldr);
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = "https://{{ site.theme_options.disqus_shortname }}.disqus.com/embed.js";
+    s.setAttribute('data-timestamp', +new Date());
+    s.async = true;
+    d.body.appendChild(s);
   }
-  setTimeout(load_disqus, 1000);
+  setTimeout(loadComments, 5000);
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
+{%- endif -%}
