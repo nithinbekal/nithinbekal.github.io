@@ -1,0 +1,5 @@
+{%- if page.categories -%}
+{%- for category in page.categories -%}
+<a href="/categories/{{ category }}/" class='category'> {{ category }} </a>
+{%- endfor -%}
+{%- endif -%}
