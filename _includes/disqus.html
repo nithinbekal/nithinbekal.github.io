@@ -5,11 +5,9 @@
     this.page.url = "{{ site.url }}{{ page.url | replace:'index.html',''}}";
     this.page.identifier = "{{ page.url }}";
     this.callbacks.onNewComment = [function(comment) {
-      ga('send', {
-        'hitType': 'event',
-        'eventCategory': 'Comments',
-        'eventAction': 'New Comment',
-        'eventLabel': 'New Comment'
+      gtag('event', 'comment', {
+        'event_category': 'Comments',
+        'event_label': 'New Comment'
       });
     }];
   };

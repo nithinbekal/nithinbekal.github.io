@@ -1,11 +1,9 @@
 <div class='subscribe'>
   <script>
   function submitFeedburnerForm() {
-    ga('send', {
-      'hitType': 'event',
-      'eventCategory': 'Feedburner',
-      'eventAction': 'Subscribe',
-      'eventLabel': 'Email Subscription'
+    gtag('event', 'subscription', {
+      'event_category': 'Feedburner',
+      'event_label': 'Email Subscription'
     });
     window.open(
       'https://feedburner.google.com/fb/a/mailverify?uri=nithinbekal',
