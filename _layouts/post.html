@@ -13,6 +13,7 @@ layout: default
   <div class="social-share">
   {% if page.categories %}
     <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.theme_options.twitter_handle }}&related={{ site.theme_options.twitter_handle }}"
+      onclick="ga('send', { 'hitType': 'event', 'eventCategory': 'Social Share', 'eventAction': 'Tweet', 'eventLabel': 'New Tweet' });"
       class="tweet-button" rel="nofollow" target="_blank" title="Share on Twitter">
     <i></i> Tweet
     </a>
