@@ -46,7 +46,7 @@ a:hover { text-decoration: underline; }
 .container > .header .links { padding: 0 0 0 20px; }
 
 .container > .header .links a {
-  color: #888;
+  color: #666;
   font-size: 0.9em;
   padding: 0 10px;
 }
@@ -286,5 +286,5 @@ hr {
   body { font-size: 16px; }
   .site { padding: 20px; }
   .site .post h2.title { font-size: 1.5em; }
-  .top-about-link { padding: 0 5px; }
+  .top-nav-link { padding: 0 5px; }
 }
