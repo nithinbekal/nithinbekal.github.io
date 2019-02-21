@@ -10,17 +10,17 @@ layout: default
   {{ content }}
   </div>
 
+  <div class="social-share">
   {% if page.categories %}
-  <p>
+    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.theme_options.twitter_handle }}&related={{ site.theme_options.twitter_handle }}"
+      class="tweet-button" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i></i> Tweet
+    </a>
   Categories:
   {% for category in page.categories %}
   <a href="/categories/{{ category }}/" class='category'> #{{ category }} </a>
   {% endfor %}
-  </p>
   {% endif %}
-
-  <div class='social-share'>
-    <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}" data-via='nithinbekal' data-count="horizontal">Share on Twitter</a>
   </div>
 
   <div id='post-footer'>
@@ -34,8 +34,6 @@ layout: default
 
   {% include disqus.html %}
 </div>
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 {% if page.onelink %}
 <div id="amzn-assoc-ad-d9a5a519-de10-4b95-9fa6-846684197605"></div>

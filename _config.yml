@@ -10,6 +10,7 @@ markdown: kramdown
 theme_options:
   disqus_shortname: nithinbekal
   google_analytics: UA-2095438-7
+  twitter_handle: nithinbekal
 
 sass:
   sass_dir: _sass
