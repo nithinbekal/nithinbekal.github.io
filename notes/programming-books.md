@@ -2,6 +2,7 @@
 layout: page
 title: "Programming Books"
 date:  2014-08-26 17:34:47
+onelink: true
 ---
 
 ### Recommended Books
@@ -40,6 +41,18 @@ Elixir:
 - Elixir in Action (Sasa Juric)
 - Programming Elixir (Dave Thomas)
 - Programming Phoenix
+
+Vim:
+
+- [Practical Vim (Drew Neil)](https://amzn.to/2U3OtjW)
+  is a fantastic book for getting better at Vim,
+  once you've learned the basics of navigating.
+  It is organized as 100+ tips,
+  so it's easy to read and incorporate
+  one tip at a time in your workflow.
+- [A Byte of Vim](http://files.swaroopch.com/vim/byte_of_vim_v051.pdf)
+  (PDF link - freely available)
+  is an excellent intro for a beginner.
 
 Other excellent intros to programming langugages:
 

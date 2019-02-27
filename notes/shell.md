@@ -4,23 +4,6 @@ title: "Shell"
 date:  2017-10-25 22:21:11
 ---
 
-- tail
-- head
-  - `head -n 5 foo.txt`
-
-- grep
-  - `grep foo bar.txt`
-  - `grep -i foo bar.txt` (case insensitive)
-  - `grep -E '[Ff]oo' bar.txt` (regex)
-  - `grep -v foo bar.txt` (exclude matches)
-  - `grep -r foo some/dir`
-    - Result: "some/dir/file.txt:foo"
-
-- sed
-  - `sed 's/hello/bye/' greetings.txt` (doesn't change the file)
-  - `sed -i 's/hello/bye/' greetings.txt` (changes the file)
-  - `sed -i '.bkp' 's/hello/bye/' greetings.txt` (writes original file to greetings.txt.bkp)
-
 ### Pipes
 
 ```sh
@@ -46,9 +29,6 @@ sort hello.txt | grep Hello | sed 's/Hello/Hey/'
 ```
 
 ### Scripting
-
-
-- http://redsymbol.net/articles/unofficial-bash-strict-mode/
 
 ```sh
 #! /bin/sh
@@ -126,6 +106,16 @@ for file in $1/*.service; do
 end
 ```
 
-Bookmarks:
+- [Use the Unofficial Bash Strict Mode (Unless You Looove Debugging)](http://redsymbol.net/articles/unofficial-bash-strict-mode/)
 
+### Other zsh tips
+
+Inserting last argument in zsh:
+
+- Use `!$` to insert last command's arg or `ESC-.`
+- `!*` inserts all args
+
+### Bookmarks
+
+- [10 fresh zsh tricks you may not know](http://chneukirchen.org/blog/archive/2013/03/10-fresh-zsh-tricks-you-may-not-know.html)
 * [Master Your Z Shell with These Outrageously Useful Tips](http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/)
