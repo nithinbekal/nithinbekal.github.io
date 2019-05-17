@@ -37,6 +37,7 @@ Other notes related to Rails:
 
 ### Rails Internals
 
+- [A Visual Trace of How Rails Responds to a Request](https://rails-trace.chriszetter.com/)
 - [Examining The Internals Of The Rails Request/Response Cycle](http://www.rubypigeon.com/posts/examining-internals-of-rails-request-response-cycle/)
 - [Diving in Rails - The request handling](http://blog.siami.fr/diving-in-rails-the-request-handling)
 

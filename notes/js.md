@@ -10,6 +10,17 @@ layout: page
 - [JavaScript Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) (by Addy Osmani)
 - [Exploring ES6](https://leanpub.com/exploring-es6/read)
 
+## Cheatsheet
+
+Make Ajax requests:
+
+```js
+request = new XMLHttpRequest()
+request.open('GET', 'http://example.com/')
+request.send()
+request.responseText
+```
+
 ## Random notes
 
 {% highlight javascript %}

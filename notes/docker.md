@@ -107,4 +107,4 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.boot2docker.plist
 - [Rails on Docker](http://robots.thoughtbot.com/rails-on-docker)
 - [How to use Docker on OSX: The Missing Guide](http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide)
 - [Build Podcast - Docker](http://build-podcast.com/docker/)
-
+- [Dokku cheat sheet](https://cheat.readthedocs.io/en/latest/django/dokku.html)

@@ -45,3 +45,11 @@ installed on Windows.
 
 - [How to Contribute to Ruby](http://www.sihui.io/how-to-contribute-to-ruby/) -
   resources that can help you get started in contributing to Ruby
+
+
+### Performance
+
+- [Fast Ruby](https://github.com/JuanitoFatas/fast-ruby):
+  collection of fast Ruby idioms
+- [Fasterer](https://github.com/DamirSvrtan/fasterer) 
+  suggests speed improvements in your code
