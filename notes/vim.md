@@ -59,6 +59,26 @@ Videos:
 - [Impressive Ruby Productivity with Vim and Tmux by Chris Hunt](https://www.youtube.com/watch?v=gB-JSh1EVME)
 - [Vim for Rails Developers](https://www.youtube.com/watch?v=9J2OjH8Ao_A)
 
+## Cheatsheet
+
+
+[Vim filters tips](https://dev.to/rpalo/vim-filters-1p33);
+in command mode:
+
+```vim
+" Read results of a command to cursor location:
+r !pwd
+
+" Read results of a command to line 42:
+42r !pwd
+
+" Use ruby to upcase entire file
+%!ruby -ne 'puts $_.upcase'
+
+" Use ruby to upcase current line (also works for visually selected line)
+!!ruby -ne 'puts $_.upcase'
+```
+
 ### Vimscript
 
 - [Five Minute Vimscript](http://andrewscala.com/vimscript/)
