@@ -61,7 +61,6 @@ Videos:
 
 ## Cheatsheet
 
-
 [Vim filters tips](https://dev.to/rpalo/vim-filters-1p33);
 in command mode:
 
@@ -78,6 +77,15 @@ r !pwd
 " Use ruby to upcase current line (also works for visually selected line)
 !!ruby -ne 'puts $_.upcase'
 ```
+
+### Diff
+
+Compare and diff a file on current branch with master branch version:
+- Open foo.rb right tab
+- Open foo.rb from master in the left tab
+  - `:Gedit master:foo.rb`
+- Diff the files using `:windo diffthis`
+- Close diff view with `:diffoff`
 
 ### Vimscript
 
