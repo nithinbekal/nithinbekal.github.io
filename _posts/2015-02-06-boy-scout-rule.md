@@ -8,7 +8,7 @@ categories: refactoring
 The boy scouts have a rule -
 "Always leave the campground cleaner than you found it."
 Uncle Bob Martin proposed
-[the programming equivalent of the rule](http://programmer.97things.oreilly.com/wiki/index.php/The_Boy_Scout_Rule):
+the programming equivalent of the rule:
 
 > Always check a module in cleaner than when you checked it out.
 
