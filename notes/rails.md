@@ -13,6 +13,10 @@ Other notes related to Rails:
 
 - [GoRails: Setup Ruby On Rails on Ubuntu 16.10 Yakkety Yak](https://gorails.com/setup/ubuntu/16.10) - Detailed installation instructions. Also contains setup instructions for other OSes.
 
+### Debugging techniques
+
+- [Debugging Action Callbacks (aka Filters) in Rails](https://hashrocket.com/blog/posts/debugging-action-callbacks-aka-filters-in-rails)
+
 ### Rails application servers
 
 * [A Comparison of Popular Ruby Application Servers](https://blog.engineyard.com/2014/ruby-app-server-arena-pt1)

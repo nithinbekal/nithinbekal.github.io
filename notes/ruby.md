@@ -51,5 +51,5 @@ installed on Windows.
 
 - [Fast Ruby](https://github.com/JuanitoFatas/fast-ruby):
   collection of fast Ruby idioms
-- [Fasterer](https://github.com/DamirSvrtan/fasterer) 
+- [Fasterer](https://github.com/DamirSvrtan/fasterer)
   suggests speed improvements in your code

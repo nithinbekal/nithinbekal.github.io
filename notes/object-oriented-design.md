@@ -71,6 +71,23 @@ a book by Steve Freeman and Nat Pryce:
 - Provides vocabulary for communicating intent
 - Help build better quality software
 
+**Object calisthenics**
+
+This is a programming exercise suggested by Jeff Bay,
+in the book Thoughtworks Anthology.
+In it, he suggests following 9 "rules of thumb"
+that push you towards better object oriented programming.
+
+1. One level of indentation per method
+2. Don't use `else`
+3. Wrap all primitives and strings
+4. First class collections
+5. One dot per line
+6. Don't abbreviate
+7. Keep all entities small
+8. No classes with > 2 instance variables
+9. No getters, setters, properties
+
 ### Links
 
 - [The Principles of OOD](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)

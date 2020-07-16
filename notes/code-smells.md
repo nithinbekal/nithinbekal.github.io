@@ -39,3 +39,4 @@ dispensables
 - [Get a Whiff of This](https://www.youtube.com/watch?v=PJjHfa5yxlU)
   Sandi Metz talk at Railsconf 2017
 - [Code Smells on Refactoring.guru](https://refactoring.guru/refactoring/smells)
+- [List of code smells on Reek documentation](https://github.com/troessner/reek/blob/master/docs/Code-Smells.md)

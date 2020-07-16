@@ -115,6 +115,13 @@ Inserting last argument in zsh:
 - Use `!$` to insert last command's arg or `ESC-.`
 - `!*` inserts all args
 
+`fc` or “fix command”: if you make a mistake in a command, like `git pull orgiin master`, run `fc`
+it will open the command in an editor where you can fix the typo. once you save and close, the new command will run
+
+When you find yourself typing a long command (like a `curl` request) and it becomes hard to navigate on the terminal’s readline, you can hold `⌃` (control) and then type `x e`.
+This will open up your $EDITOR and allow to edit your command more conveniently. When you save and close, the text will show up on the readline and will not be executed automatically. So you can still review it before hitting Enter.
+
+
 ### Bookmarks
 
 - [10 fresh zsh tricks you may not know](http://chneukirchen.org/blog/archive/2013/03/10-fresh-zsh-tricks-you-may-not-know.html)
