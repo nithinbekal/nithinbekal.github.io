@@ -81,10 +81,19 @@ In this tutorial, we're creating a blog app,
 and we will rather unimaginatively call it `blog`.
 SSH into the dokku host and create the app:
 
-```ruby
+```bash
 dokku apps:create blog
+```
+
+After this we need to set up some environment variables.
+For the `SECRET_KEY_BASE` variable,
+you can generate a value locally from your phoenix app
+by running `mix phx.gen.secret`.
+
+```bash
 dokku config:set blog LC_ALL=en_US.utf8
 dokku config:set blog MIX_ENV=prod
+dokku config:set blog SECRET_KEY_BASE=some_secret_key
 ```
 
 ##### Postgres setup
