@@ -11,15 +11,3 @@
     {% endif %}
   </div>
 </div>
-
-<div id='related-posts'>
-  <p class="text-lg">Found this article interesting? You should check out these:</p>
-  <ul>
-    {% for post in site.related_posts limit:5 %}
-    {% assign index = forloop.index %}
-    <li>
-      <a id='related-posts-{{ index }}' href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
