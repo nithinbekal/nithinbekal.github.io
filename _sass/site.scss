@@ -33,7 +33,7 @@ a:hover { text-decoration: underline; }
 }
 
 .container > .header {
-  padding: 20px 10px 10px 10px;
+  padding: 20px 0;
 }
 
 .container > .header h1.title {
@@ -52,9 +52,7 @@ a:hover { text-decoration: underline; }
 }
 
 .site {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 20px 50px;
+  padding: 20px 0;
 }
 
 .site-title > a { color: #666; font-weight: bold; }
