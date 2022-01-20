@@ -134,11 +134,11 @@ a:hover { text-decoration: underline; }
     padding: 0;
   }
 
-  .highlighter-rouge {
+  div.highlight {
     font-size: 13px;
     line-height: 1.5em;
     margin: 40px 0;
-    overflow: scroll;
+    overflow: auto;
   }
 }
 
