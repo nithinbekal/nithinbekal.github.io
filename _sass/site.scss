@@ -18,8 +18,6 @@ a { color: #007499; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .align-right { float: right; }
-.text-lg { font-size: 1.1em; }
-.text-sm { font-size: 0.9em; }
 
 .clearfix {
   &:before, &:after { content: ' '; display: table; }
@@ -119,6 +117,12 @@ a:hover { text-decoration: underline; }
 .site .post .content h5 { font-size: 1.2em; margin: 1.2em 0 0.2em 0; }
 .site .post .content h6 { font-size: 1.1em; margin: 1.1em 0 0.1em 0; }
 
+.site .post .content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
 .site .post .content code {
   background: #f7f7f7;
   border-radius: 3px;
@@ -179,36 +183,6 @@ a:hover { text-decoration: underline; }
   .bio a { color: #007499; }
   .links { text-align: center; }
   .links a { padding: 0 10px; }
-}
-
-.subscribe {
-  background: #f9f9fa;
-  color: #888;
-  padding: 30px 20px;
-}
-
-.subscribe-form {
-  clear: both;
-  padding: 20px 0;
-
-  input { font-size: 13px; }
-}
-
-.subscribe-email {
-  padding: 8px;
-  width: 50%;
-
-  &:focus { outline: 0; }
-}
-
-.subscribe-submit {
-  background: #eee;
-  border: 1px solid #bbb;
-  color: #777;
-  height: 36px;
-  width: 25%;
-
-  &:hover { background: #ddd; }
 }
 
 #prev-next-nav {
