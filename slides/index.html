@@ -4,7 +4,7 @@ title: Slides
 ---
 
 <div class='posts'>
-  {% assign slides = (site.pages | where: 'layout', 'revealjs' | sort: 'date' | reverse) %}
+  {% assign slides = site.pages | where: 'layout', 'revealjs' | sort: 'date' | reverse %}
 
   {% for page in slides %}
     <div class='post-listing'>
