@@ -3,7 +3,6 @@ layout: post
 title: "Favorite Books of 2017"
 date:  2018-02-12 12:27:33 -05:00
 categories: books
-onelink: true
 ---
 
 I read 28 books, and over 10,000 pages in 2017
