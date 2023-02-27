@@ -60,26 +60,24 @@ a:hover { text-decoration: underline; }
 .site .posts { padding: 50px 0 0 0; }
 .site .posts .month { color: #aaa; padding: 30px 0; }
 
-.site .posts .post-listing {
-  font-weight: bold;
-  line-height: 1.8em;
-  padding: 25px 0;
-}
-.site .posts .post-listing .title { font-size: 1.4em; }
+.site .posts .post-listing { line-height: 2em; }
+.site .posts .post-listing .year { margin: 30px 0; }
+.site .posts .post-listing ul { padding: 20px 30px; }
+.site .posts .post-listing ul li { list-style-type: none; }
 .site .posts .published-on {
-  font-weight: normal;
-  font-size: 0.7em;
-  font-style: italic;
+  font-size: 0.8em;
   padding: 0 20px 0 0;
 }
 
 .site .post .category,
 .site .posts .category {
-  font-weight: normal;
   padding: 0 5px;
   text-transform: uppercase;
 }
-.site .posts .category { font-size: 0.6em; }
+.site .posts .category {
+  font-size: 0.7em;
+  color: #b8b8b8;
+}
 .site .post .category { font-size: 0.8em; }
 
 .site .post h1.title {
@@ -227,5 +225,11 @@ hr {
   body { font-size: 16px; }
   .container > .header, .site { padding: 20px; }
   .site .post h2.title { font-size: 1.5em; }
+  .post-listing .published-on, .post-listing .category { display: none; }
+  .post-listing li { list-style-type: defaults }
+  .site .posts .post-listing ul li { list-style-type: disc; }
   .top-nav-link { padding: 0 5px; }
+}
+
+@media screen and (max-width: 400px) {
 }

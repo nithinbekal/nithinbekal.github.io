@@ -4,16 +4,26 @@ title: Nithin Bekal
 ---
 
 <div class='posts'>
-  {% for post in site.posts %}
+  <div class='post-listing'>
+    {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
-    <div class='post-listing'>
-      <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
-      <br>
-      <span class='published-on'>{{ post.date | date: "%-d %B %Y" }}</span>
-      {% for category in post.categories %}
-      <a href="/categories/{{ category }}/" class='category'> {{ category }} </a>
-      {% endfor %}
-    </div>
+    {% for year in years %}
+      <div class="year">
+        <h3>{{ year.name }}</h3>
 
-  {% endfor %}
+        <ul>
+          {% for post in year.items %}
+          <li>
+            <code class='published-on'>{{ post.date | date: "%d %b" }}</code>
+            <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
+
+            {% for category in post.categories %}
+              <a href="/categories/{{ category }}/" class='category'> {{ category }} </a>
+            {% endfor %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
 </div>
