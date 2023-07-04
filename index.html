@@ -3,6 +3,19 @@ layout: default
 title: Nithin Bekal
 ---
 
+<div class="about-me">
+  <h2>Hi, I'm Nithin.</h2>
+
+  <p class="description">
+    I am a software developer based in Ottawa, Canada.
+    This is my blog about programming.
+    Ruby is my programming language of choice
+    and the topic of most of the posts here,
+    but I occasionally also write about Elixir,
+    and sometimes about the books I read.
+  </p>
+</div>
+
 <div class='posts'>
   <div class='post-listing'>
     {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
