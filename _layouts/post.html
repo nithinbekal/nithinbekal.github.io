@@ -10,14 +10,14 @@ layout: default
   {{ content }}
   </div>
 
-  <div class="social-share">
-    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.theme_options.twitter_handle }}&related={{ site.theme_options.twitter_handle }}"
-      onclick="gtag('event', 'tweet', { 'event_category': 'Social', 'event_label': 'New Tweet' });"
-      class="tweet-button" rel="nofollow" target="_blank" title="Share on Twitter">
-    <i></i> Tweet
-    </a>
-    {% include category_links.html %}
-  </div>
+  {%- if page.categories -%}
+    <div class="categories-links">
+      Tags:
+      {%- for category in page.categories -%}
+      <a href="/categories/{{ category }}/" class='category'> {{ category }} </a>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
 
   <div id='post-footer'>
     {% include bio.html %}
