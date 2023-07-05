@@ -209,6 +209,9 @@ hr {
   .site .post h2.title { font-size: 1.5em; }
   .post-listing .published-on, .post-listing .category { display: none; }
   .post-listing li { list-style-type: defaults }
-  .site .posts .post-listing ul li { list-style-type: disc; }
+  .site .posts .post-listing ul li {
+    list-style-type: disc;
+    margin: 0 0 0 1em;
+  }
   .top-nav-link { padding: 0 5px; }
 }
