@@ -13,18 +13,20 @@ layout: default
 </div>
 
 <div class='posts'>
-  {% for post in site.posts %}
-  {% if post.categories contains page.category %}
+  <div class='post-listing'>
+    <ul>
+      {% for post in site.posts %}
+        {% if post.categories contains page.category %}
+          <li>
+            <code class="published-on">{{ post.date | date: "%d %b %Y" }}</code>
+            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
 
-    <div class='post-listing'>
-      <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
-      <br>
-      <span class='published-on'>{{ post.date | date: "%-d %B %Y" }}</span>
-      {% for category in post.categories %}
-      <span class='category'> #{{ category }} </span>
+            {% for category in post.categories %}
+              <a href="/categories/{{ category }}/" class='category'> {{ category }} </a>
+            {% endfor %}
+          </li>
+        {% endif %}
       {% endfor %}
-    </div>
-
-  {% endif %}
-  {% endfor %}
+    </ul>
+  </div>
 </div>
