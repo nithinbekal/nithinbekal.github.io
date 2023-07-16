@@ -1,4 +1,4 @@
-{% if site.theme_options.google_analytics %}
+{% if site.theme_options.google_analytics and jekyll.environment != "development" %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.theme_options.google_analytics }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
