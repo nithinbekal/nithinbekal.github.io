@@ -68,6 +68,22 @@ a:hover { text-decoration: underline; }
   font-size: 1.1em;
   line-height: 2em;
 }
+.about-me .social-icons {
+  margin-top: 2em;
+  text-align: center;
+}
+.about-me .social-icons .screen-readers-only {
+  display: none;
+}
+.about-me .social-icons a {
+  display: inline-block;
+  padding: 18px;
+}
+.about-me .social-icons a:hover {
+  filter: brightness(150%);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
 
 .site .posts { padding: 50px 0 0 0; }
 .site .posts .month { color: #aaa; padding: 30px 0; }
