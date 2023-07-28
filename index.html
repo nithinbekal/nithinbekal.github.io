@@ -11,8 +11,10 @@ title: Nithin Bekal
     This is my blog about programming.
     Ruby is my programming language of choice
     and the topic of most of the posts here,
-    but I occasionally also write about Elixir,
-    and sometimes about the books I read.
+    but I occasionally also write
+    about the books I read,
+    or other technologies
+    that I'm tinkering with.
   </p>
 
   <div class="social-icons">
@@ -65,6 +67,9 @@ title: Nithin Bekal
           {% for post in year.items %}
           <li>
             <code class='published-on'>{{ post.date | date: "%d %b" }}</code>
+            {% if post.draft %}
+            <small>Draft</small>
+            {% endif %}
             <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
 
             {% for category in post.categories %}
