@@ -67,9 +67,6 @@ title: Nithin Bekal
           {% for post in year.items %}
           <li>
             <code class='published-on'>{{ post.date | date: "%d %b" }}</code>
-            {% if post.draft %}
-            <small>Draft</small>
-            {% endif %}
             <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
 
             {% for category in post.categories %}
