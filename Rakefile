@@ -1,6 +1,7 @@
 
 require "nokogiri"
 
+desc "Create a new post"
 task :post do
   meta = get_metadata(:title, :slug, :categories)
   filename = "#{Time.now.strftime '%Y-%m-%d'}-#{meta[:slug]}.md"
@@ -16,6 +17,7 @@ task :post do
   File.open(path, 'w') { |f| f << text }
 end
 
+desc "Create a new page"
 task :page do
   meta = get_metadata(:title, :slug)
   path = File.join('.', "#{meta[:slug]}.md")
