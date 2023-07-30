@@ -46,8 +46,8 @@ task :stats do
     .sum
 
   puts ""
-  puts "Total posts: #{total_posts}"
-  puts "Total words: #{total_words}"
+  puts "Total posts: #{total_posts.to_s.rjust(8)}"
+  puts "Total words: #{number_to_human(total_words).rjust(8)}"
   puts ""
 
   puts "Yearly stats"
@@ -56,6 +56,8 @@ task :stats do
   yearly_stats.each do |year, count|
     puts "#{year}\t#{count.to_s.rjust(4)}\t#{"|" * count}"
   end
+
+  puts ""
 end
 
 def get_metadata(*keys)
@@ -75,4 +77,14 @@ def word_count(file)
 
   post_content = post_div.text.strip
   total_words = post_content.split.count
+end
+
+def number_to_human(n)
+  n.to_s
+    .split("")
+    .reverse
+    .each_slice(3)
+    .map(&:join)
+    .join(",")
+    .reverse
 end
