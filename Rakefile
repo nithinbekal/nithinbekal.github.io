@@ -42,8 +42,7 @@ task :stats do
   total_posts = yearly_stats.values.map(&:to_i).sum
 
   total_words = Dir["_site/posts/*/index.html"]
-    .map(&method(:word_count))
-    .sum
+    .sum(&method(:word_count))
 
   puts ""
   puts "Total posts: #{total_posts.to_s.rjust(8)}"
@@ -73,7 +72,7 @@ end
 
 def word_count(file)
   doc = File.open(file) { |f| Nokogiri::HTML(f) }
-  post_div = doc.at_css('.post')
+  post_div = doc.at_css('.post .content')
 
   post_content = post_div.text.strip
   total_words = post_content.split.count
