@@ -131,7 +131,7 @@ Now, we really have to stop.
 If you're curious
 what it took to print this line,
 you can always look up
-[the markdown code for this post](https://github.com/nithinbekal/nithinbekal.github.io/blob/master/_posts/2023-08-02-jekyll-liquid-highlight.md).
+[the markdown code for this post](https://github.com/nithinbekal/nithinbekal.github.io/blob/7f85a0c4a8fe1597c6bc08e1cb49b7bde46461c1/_posts/2023-08-02-jekyll-liquid-highlight.md).
 
 Here are a couple of other articles
 that helped me figure out
