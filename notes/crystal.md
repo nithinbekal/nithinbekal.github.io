@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Crystal Programming Language"
+title: "Crystal"
 date:  2016-03-08 20:44:45
 ---
 

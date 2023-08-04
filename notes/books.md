@@ -4,32 +4,10 @@ title: "Books"
 date:  2015-04-23 14:36:07
 ---
 
-List of books I enjoyed, by genre.
-Favorite books of the year lists are here:
-[2015](/posts/favorite-books-2015/),
-[2014](/posts/favorite-books-2014/),
-[2013](/posts/favorite-books-2013/).
-
-### Fantasy
-
-1. Harry Potter (J K Rowling)
-1. A Song of Ice and Fire (George R R Martin)
-1. Wheel of Time (Robert Jordan)
-1. Lord of the Rings (JRR Tolkier)
-1. Bartimaeus Trilogy (Jonathan Stroud)
-
-### Science fiction
-
-1. The Martian (Andy Weir)
-1. Foundation (Isaac Asimov)
-1. I, Robot (Isaac Asimov)
-1. Cryptonomicon (Neal Stephenson)
-1. Around the World in 80 Days (Jules Verne)
-1. The Time Machine (H G Wells)
-1. War of the Worlds (H G Wells)
-1. 20,000 Leagues Under the Sea (Jules Verne)
-1. The Invisible Man (H G Wells)
-1. Jurassic Park (Michael Crichton)
+Thoroughly outdated
+list of books I enjoyed, by genre.
+Favorite books of the year lists are
+[here](/categories/books/).
 
 ### Programming
 
@@ -60,6 +38,28 @@ Favorite books of the year lists are here:
 1. A Brief History of Time (Stephen Hawking)
 1. Theory of Everything (Stephen Hawking)
 1. Surely, You're Joking, Mr. Feynman (Richard Feynman)
+
+### Fantasy
+
+1. Wheel of Time (Robert Jordan)
+1. Stormlight Archive (Brandon Sanderson)
+1. A Song of Ice and Fire (George R R Martin)
+1. Lord of the Rings (JRR Tolkier)
+1. Harry Potter (J K Rowling)
+
+### Science fiction
+
+1. The Martian (Andy Weir)
+1. Foundation (Isaac Asimov)
+1. I, Robot (Isaac Asimov)
+1. Cryptonomicon (Neal Stephenson)
+1. Around the World in 80 Days (Jules Verne)
+1. The Time Machine (H G Wells)
+1. War of the Worlds (H G Wells)
+1. 20,000 Leagues Under the Sea (Jules Verne)
+1. The Invisible Man (H G Wells)
+1. Jurassic Park (Michael Crichton)
+
 
 ### Recommended books lists
 
