@@ -3,7 +3,12 @@ layout: default
 ---
 
 <div class='post page'>
-  <h1 class='title'>{{ page.title }}</h2>
+  <h1 class='title'>
+    {% if page.url contains "/notes/" %}
+      <a href="/notes/">Notes</a> /
+    {% endif %}
+    {{ page.title }}
+    </h2>
 
   <div class='content'>
   {{ content }}
