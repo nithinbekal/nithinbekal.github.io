@@ -2,7 +2,9 @@
 layout: post
 title: "Ruby and Jupyter Notebooks"
 date:  2023-08-01
-categories: ruby, ai
+categories:
+- ruby
+- ai
 ---
 
 Today, I was working through
