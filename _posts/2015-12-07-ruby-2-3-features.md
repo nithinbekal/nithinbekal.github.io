@@ -232,3 +232,5 @@ and now have been included in Ruby.
 # Links
 
 * [Ruby 2.3.0-preview1 announcement](https://www.ruby-lang.org/en/news/2015/11/11/ruby-2-3-0-preview1-released/)
+
+{% include rubynew.html %}

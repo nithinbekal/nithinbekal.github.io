@@ -268,3 +268,5 @@ Here are some more articles covering the new release:
   on the Wyeworks blog
 - [9 New Features in Ruby 2.4](http://www.blackbytes.info/2016/12/new-ruby-features/)
   on the Black Bytes blog
+
+{% include rubynew.html %}

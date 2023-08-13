@@ -189,3 +189,5 @@ and has now been removed from stdlib.
 
 - [NEWS for Ruby 2.5.0](https://github.com/ruby/ruby/blob/trunk/doc/NEWS-2.5.0).
 - [Ruby trunk docs](https://docs.ruby-lang.org/en/trunk/index.html)
+
+{% include rubynew.html %}
