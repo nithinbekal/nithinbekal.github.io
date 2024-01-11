@@ -132,10 +132,4 @@ and hope to read one of Brandon Sanderson's [Mistborn](http://amzn.to/2kSXhe4) b
 I have 44 unread books now, 30 of them ebooks.
 Those should keep me busy through 2017.
 
-## Links
-
-- Previous lists:
-  [2015](/posts/favorite-books-2015/),
-  [2014](/posts/favorite-books-2014/),
-  [2013](/posts/favorite-books-2013/)
-- [Other books lists](/notes/books/)
+{% include favbooks.html %}

@@ -203,8 +203,4 @@ from the Farnam Street blog.
 
 Happy reading!
 
-## Links
-
-- Previous lists:
-  [2014](/posts/favorite-books-2014/),
-  [2013](/posts/favorite-books-2013/)
+{% include favbooks.html %}

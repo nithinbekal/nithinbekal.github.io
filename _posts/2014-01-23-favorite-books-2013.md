@@ -66,3 +66,5 @@ Michael Crichton's _State of Fear_. Having a terrible plot is one thing, but thi
 If I had to pick one book from that list to recommend, I'd pick [_Quiet_](http://www.amazon.in/Quiet-power-introverts-world-talking/dp/0141029196/). I wish everyone would read that book, and make things just a little bit easier for those of us on the introverted end of the spectrum. ;) I can't recommend it enough.
 
 Reading 100 books in a year was fun, but I'll probably not do that again anytime soon. With books like _Cryptonomicon_, _Structure and Interpretation of Computer Programs_ and the rest of the _Wheel of Time_ series up next on [my to-read list](https://www.goodreads.com/review/list/1059476?shelf=tbr-2014), I'd be lucky to be able to find time for much else in 2014.
+
+{% include favbooks.html %}

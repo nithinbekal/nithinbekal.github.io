@@ -58,3 +58,5 @@ I still don't understand most of the topics that the book covers, but reading it
 For this year, there are a bunch of technical books sitting on my desk, waiting to be read: SICP, Programming Pearls, Seven Languages in Seven Weeks, and Patterns of Enterprise Application Architecture. There's also the Wheel of Time series that I've been meaning to finish off since last year.
 
 So many books. So little time. [sigh]
+
+{% include favbooks.html %}

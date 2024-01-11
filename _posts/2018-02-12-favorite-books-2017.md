@@ -193,11 +193,4 @@ I've missed a few days already.
 I didn't read a lot of programming books in 2017,
 so I'm hoping to pick up more of those this year.
 
-### Links
-
-- Previous lists:
-  [2016](/posts/favorite-books-2016/),
-  [2015](/posts/favorite-books-2015/),
-  [2014](/posts/favorite-books-2014/),
-  [2013](/posts/favorite-books-2013/)
-- [Other books lists](/notes/books/)
+{% include favbooks.html %}
