@@ -4,6 +4,7 @@
   --text-color: #ccc;
   --main-link-color: #79a7b5;
   --author-bio-border-color: #7c7c7c;
+  --heading-border-color: #444;
 }
 
 * { margin: 0; padding: 0; }
@@ -131,7 +132,12 @@ a:hover { text-decoration: underline; }
 .site .post .content ul ul { margin: 5px 0 10px 20px; }
 
 .site .post .content h1 { font-size: 1.6em; margin: 1.6em 0 0.6em 0; }
-.site .post .content h2 { font-size: 1.5em; margin: 1.5em 0 0.5em 0; }
+.site .post .content h2 {
+  border-bottom: 1px solid var(--heading-border-color);
+  font-size: 1.5em;
+  margin: 1.5em 0 1em 0;
+  padding-bottom: 0.5em;
+}
 .site .post .content h3 { font-size: 1.4em; margin: 1.4em 0 0.4em 0; }
 .site .post .content h4 { font-size: 1.3em; margin: 1.3em 0 0.3em 0; }
 .site .post .content h5 { font-size: 1.2em; margin: 1.2em 0 0.2em 0; }
