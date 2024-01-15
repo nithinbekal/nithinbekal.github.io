@@ -119,13 +119,11 @@ a:hover { text-decoration: underline; }
   font-size: 0.9em;
 }
 
-.site .post .content    {
+.site .post .content {
   line-height: 1.8em;
   margin: 60px 0;
 }
 .site .post .content p  { margin: 20px 0; }
-.site .post .content h1 { margin: 20px 0 0 0; }
-.site .post .content h2 { font-size: 0.9em; }
 .site .post .content ul,
 .site .post .content ol { margin: 20px 30px; }
 
