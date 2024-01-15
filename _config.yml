@@ -11,10 +11,6 @@ theme_options:
   disqus_shortname: nithinbekal
   google_analytics: G-241HN9TB7S
 
-sass:
-  sass_dir: _sass
-  style: :compressed
-
 plugins:
   - jekyll-feed
   - jekyll-redirect-from

@@ -21,6 +21,11 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    {%- if page.balloon_css -%}
+    <link rel="stylesheet" href="/css/balloon.css">
+    {%- endif -%}
+
     {% include analytics.html %}
   </head>
   <body>
