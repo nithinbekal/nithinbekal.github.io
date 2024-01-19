@@ -11,14 +11,13 @@
       });
     }];
   };
-  function loadComments() {
+  (function() {
     var d = document, s = d.createElement('script');
     s.src = "https://{{ site.theme_options.disqus_shortname }}.disqus.com/embed.js";
     s.setAttribute('data-timestamp', +new Date());
     s.async = true;
     d.body.appendChild(s);
-  }
-  setTimeout(loadComments, 5000);
+  })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {%- endif -%}
