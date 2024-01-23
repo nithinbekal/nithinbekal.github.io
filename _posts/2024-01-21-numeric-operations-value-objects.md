@@ -174,3 +174,8 @@ you can see them here:
 
 - [Original Python implementation](https://github.com/karpathy/micrograd/blob/master/micrograd/engine.py)
 - [Ruby implementation](https://github.com/nithinbekal/micrograd/blob/main/lib/micrograd/value.rb)
+
+I looked around to find real life usage of `coerce`,
+and found that the
+[the money gem uses coerce](https://github.com/RubyMoney/money/blob/092ecc7a711263208ae12fd62e7538f3d7a6348a/lib/money/money/arithmetic.rb#L326)
+to allow adding numbers and `Money` objects.
