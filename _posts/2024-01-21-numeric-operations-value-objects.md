@@ -3,6 +3,7 @@ layout: post
 title: "Numeric operations on value objects in Ruby"
 date:  2024-01-21
 categories: ruby
+og_image: numeric-operations-value-objects-ruby.png
 ---
 
 Here's a little Ruby puzzle.
