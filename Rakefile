@@ -39,24 +39,22 @@ task :stats do
     .sort_by { |k, _v| k }
     .to_h
 
-  total_posts = yearly_stats.values.map(&:to_i).sum
+  total_posts = yearly_stats.values.sum(&:to_i)
 
   total_words = Dir["_site/posts/*/index.html"]
     .sum(&method(:word_count))
 
-  puts ""
-  puts "Total posts: #{total_posts.to_s.rjust(8)}"
-  puts "Total words: #{number_to_human(total_words).rjust(8)}"
-  puts ""
+  puts <<~STATS
+    Total posts: #{total_posts.to_s.rjust(8)}
+    Total words: #{number_to_human(total_words).rjust(8)}
 
-  puts "Yearly stats"
-  puts "------------"
+    Yearly stats
+
+  STATS
 
   yearly_stats.each do |year, count|
     puts "#{year}\t#{count.to_s.rjust(4)}\t#{"|" * count}"
   end
-
-  puts ""
 end
 
 def get_metadata(*keys)
@@ -71,16 +69,17 @@ def ask(qn)
 end
 
 def word_count(file)
-  doc = File.open(file) { |f| Nokogiri::HTML(f) }
-  post_div = doc.at_css('.post .content')
-
-  post_content = post_div.text.strip
-  total_words = post_content.split.count
+  File.open(file) { |f| Nokogiri::HTML(f) }
+    .at_css(".post .content")
+    .text
+    .strip
+    .split
+    .count
 end
 
 def number_to_human(n)
   n.to_s
-    .split("")
+    .chars
     .reverse
     .each_slice(3)
     .map(&:join)
