@@ -1,4 +1,4 @@
-{%- if site.theme_options.disqus_shortname -%}
+{%- if site.theme_options.disqus_shortname and jekyll.environment != "development" -%}
 <div id="disqus_thread"></div>
 <script>
   var disqus_config = function () {
