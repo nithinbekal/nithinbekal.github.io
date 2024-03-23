@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby and Jupyter Notebooks"
+title: "Ruby and Jupyter notebooks"
 date:  2023-08-01
 categories:
 - ruby

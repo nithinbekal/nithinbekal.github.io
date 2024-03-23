@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Create a Google Chrome Extension
+title: How to create a Google Chrome extension
 date: 2010-12-23 12:00:00
 redirect_from:
   - /2010/how-to-create-a-google-chrome-extension/

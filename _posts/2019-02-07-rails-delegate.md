@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Make Delegated Methods Private in Rails"
+title: "Make delegated methods private in Rails"
 date:  2019-02-07 18:00:00
 categories:
   - ruby

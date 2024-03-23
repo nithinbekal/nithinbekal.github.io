@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Favorite Books of 2017"
+title: "Favorite books of 2017"
 date:  2018-02-12 12:27:33 -05:00
 categories: books
 ---

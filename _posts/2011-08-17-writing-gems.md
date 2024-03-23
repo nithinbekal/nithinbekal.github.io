@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Writing Ruby Gems"
+title:  "Writing Ruby gems"
 date:   2011-06-17 12:00:00
 redirect_from:
   - /2011/writing-ruby-gems/

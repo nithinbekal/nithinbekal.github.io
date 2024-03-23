@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Boy Scout Rule"
+title: "The boy scout rule"
 date:  2015-02-06 21:21:53
 categories: refactoring
 ---

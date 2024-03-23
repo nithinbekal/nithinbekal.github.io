@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting Started With Io"
+title: "Getting started with Io"
 date:  2014-10-25 23:50:43
 categories: io
 ---

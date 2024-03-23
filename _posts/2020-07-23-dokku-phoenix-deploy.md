@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deploying a Phoenix App With Dokku"
+title: "Deploying a Phoenix app with Dokku"
 date:  2020-07-23 19:14:00
 categories:
   - elixir

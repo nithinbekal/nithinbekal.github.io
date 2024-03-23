@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bit Array Data Structure in Ruby"
+title: "Bit array data structure in Ruby"
 date:  2016-08-24 22:56:33 +05:30
 categories: ruby
 ---

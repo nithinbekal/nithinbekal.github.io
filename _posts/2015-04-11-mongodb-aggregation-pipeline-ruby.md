@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Working With MongoDB's Aggregation Pipelines in Ruby"
+title: "Working with MongoDB's aggregation pipelines in Ruby"
 date:  2015-04-11 17:54:26
 categories:
   - mongodb

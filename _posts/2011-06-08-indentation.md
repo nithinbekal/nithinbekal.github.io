@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tabs vs. Spaces for Indentation"
+title:  "Tabs vs. spaces for indentation"
 date:   2011-06-08 12:00:00
 redirect_from:
   - /2011/tabs-vs-spaces-for-indentation/

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Feature Flags in Phoenix Projects Using Laboratory"
+title: "Feature flags in Phoenix projects using laboratory"
 date:  2016-08-30 21:11:58 +05:30
 categories:
   - elixir

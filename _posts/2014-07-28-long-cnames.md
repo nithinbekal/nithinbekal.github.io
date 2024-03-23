@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Problem Resolving Long CNAME DNS Records"
+title: "Problem resolving long CNAME DNS records"
 date:  2014-08-03 16:27:52
 categories: programming
 ---

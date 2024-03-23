@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Memoization in Ruby Using Metaprogramming"
+title: "Memoization in Ruby using metaprogramming"
 date:  2014-10-27 23:37:45
 categories: ruby
 ---

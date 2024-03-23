@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setting Up Jenkins on Ubuntu 16.04 for Ruby on Rails CI"
+title: "Setting up jenkins on Ubuntu 16.04 for Ruby on Rails CI"
 date:  2017-02-12 20:20:00 +05:30
 categories: rails
 ---

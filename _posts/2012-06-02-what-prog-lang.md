@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What's This Programming Language?"
+title: "What's this programming language?"
 date: 2012-06-02 12:00:00
 redirect_from:
   - /2012/whats-this-programming-language/

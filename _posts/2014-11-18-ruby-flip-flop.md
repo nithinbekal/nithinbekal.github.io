@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Flip Flop Operator in Ruby"
+title: "Flip flop operator in Ruby"
 date:  2014-11-21 17:27:41
 categories: ruby
 ---

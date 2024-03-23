@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vim: Search and Replace Across All Project Files"
+title: "Vim: Search and replace across all project files"
 date:  2019-05-25 12:00:00
 categories: vim
 ---

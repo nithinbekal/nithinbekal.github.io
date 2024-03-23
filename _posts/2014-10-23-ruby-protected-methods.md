@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "When to Use Protected Methods in Ruby"
+title: "When to use protected methods in Ruby"
 date:  2014-10-23 20:44:27
 categories: ruby
 ---

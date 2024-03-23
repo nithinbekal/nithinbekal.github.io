@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Writing and Publishing an Elixir Library"
+title: "Writing and publishing an Elixir library"
 date:  2016-06-13 18:13:29 +05:30
 categories: elixir
 ---

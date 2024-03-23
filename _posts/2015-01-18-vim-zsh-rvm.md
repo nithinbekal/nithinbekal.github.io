@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Making Vim Play Nice With ZSH and RVM"
+title: "Making vim play nice with ZSH and RVM"
 date:  2015-01-18 20:50:31
 categories:
   - vim

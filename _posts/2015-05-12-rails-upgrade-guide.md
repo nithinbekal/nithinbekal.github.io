@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby on Rails Upgrade Guide"
+title: "Ruby on Rails upgrade guide"
 date:  2015-05-12 23:02:21
 categories: rails
 ---

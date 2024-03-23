@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rails: Automatically Set User Timezone During Signup"
+title: "Rails: Automatically set user timezone during signup"
 date:  2016-07-30 12:32:07 +05:30
 categories: rails
 ---

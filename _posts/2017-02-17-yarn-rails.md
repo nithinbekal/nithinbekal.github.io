@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Start Using Yarn With Rails Today"
+title: "Start using Yarn with Rails today"
 date:  2017-02-17 19:18:50 +05:30
 categories: rails
 ---

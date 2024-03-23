@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Haskell Quicksort"
+title: "Haskell quicksort"
 date:  2014-10-30 23:46:41
 categories:
   - haskell

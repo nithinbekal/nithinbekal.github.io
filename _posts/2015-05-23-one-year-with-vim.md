@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "One Year With Vim"
+title: "One year with vim"
 date:  2015-05-22 21:13:24
 categories: vim
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Recurring Events in Rails"
+title: "Recurring events in Rails"
 date:  2016-08-21 22:51:41 +05:30
 categories: rails
 ---

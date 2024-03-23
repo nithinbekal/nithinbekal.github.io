@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Shell History in Elixir (IEx) and Erlang"
+title: "Shell history in Elixir (IEx) and Erlang"
 date:  2016-06-09 22:31:52 +05:30
 categories: elixir
 ---

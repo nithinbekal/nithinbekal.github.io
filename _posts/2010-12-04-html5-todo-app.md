@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Simple Todo App Using HTML5 and localstorage"
+title:  "A simple todo app using HTML5 and localstorage"
 date:   2010-12-04 12:00:00
 redirect_from:
   - /2010/a-simple-to-do-list-app-using-html5-and-local-storage/

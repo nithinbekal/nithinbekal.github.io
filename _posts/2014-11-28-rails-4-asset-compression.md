@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Enable Asset Compression After Upgrading to Rails 4"
+title: "Enable asset compression after upgrading to Rails 4"
 date:  2014-11-28 20:35:18
 categories:
   - rails

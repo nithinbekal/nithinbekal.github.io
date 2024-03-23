@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set up Git on Windows
+title: Set up git on Windows
 date: 2010-08-31 12:00:00
 redirect_from:
   - /2010/installing-git-and-pushing-repo-to-github/

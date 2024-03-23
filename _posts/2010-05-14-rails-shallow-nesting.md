@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Avoid Deeply Nested Routes in Rails"
+title: "Avoid deeply nested routes in Rails"
 date:   2010-05-14 12:00:00
 redirect_from:
   - /2010/rails-avoid-multiple-level-nested-resource-routes/

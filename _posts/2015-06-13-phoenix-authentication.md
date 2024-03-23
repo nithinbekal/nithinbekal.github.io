@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "User Authentication from Scratch in Elixir and Phoenix"
+title: "User authentication from scratch in Elixir and Phoenix"
 date:  2015-06-30 23:00:00
 categories:
   - elixir

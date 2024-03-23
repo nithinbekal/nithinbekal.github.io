@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Better Asset Management in Rails Using Rails Assets"
+title: "Better asset management in Rails using Rails assets"
 date:  2014-11-10 18:18:18
 categories:
   - rails

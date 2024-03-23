@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Favorite Books of 2015"
+title: "Favorite books of 2015"
 date:  2016-01-02 20:37:47
 categories: books
 ---

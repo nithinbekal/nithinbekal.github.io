@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using Bower with Phoenix"
+title: "Using bower with Phoenix"
 date:  2015-07-04 19:57:57
 categories:
   - elixir

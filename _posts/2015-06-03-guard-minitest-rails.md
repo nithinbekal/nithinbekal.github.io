@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rails tests: Setting up Guard with Minitest for quicker feedback"
+title: "Rails tests: Setting up guard with minitest for quicker feedback"
 date:  2015-06-03 20:24:39
 categories: rails
 ---
