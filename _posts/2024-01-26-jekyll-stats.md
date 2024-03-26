@@ -2,7 +2,9 @@
 layout: post
 title: "Rake task for Jekyll stats"
 date:  2024-01-26
-categories: jekyll, ruby
+categories:
+- jekyll
+- ruby
 og_image: jekyll-stats.png
 ---
 
