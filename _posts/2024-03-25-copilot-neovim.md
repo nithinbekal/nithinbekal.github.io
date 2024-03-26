@@ -3,6 +3,7 @@ layout: post
 title: "Copilot and Neovim"
 date:  2024-03-25
 categories: vim
+og_image: copilot-neovim.png
 ---
 
 Although I've occasionally used
