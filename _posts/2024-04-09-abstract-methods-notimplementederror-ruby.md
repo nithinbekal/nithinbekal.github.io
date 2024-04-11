@@ -231,6 +231,13 @@ class BaseSetting
 end
 ```
 
+**Update**:
+_[Michael Kohl has an interesting suggestion](https://ruby.social/@citizen428@chaos.social/112239323523258221)
+for naming this exception:_
+
+> Smalltalk had the idiom of implementing abstract methods with the body `self subclassResponsibility` which raises an
+> error. So I generally use `SubclassResponsibility` as my exception name for abstract methods.
+
 ### 4. Raise `NoMethodError`
 
 Another alternative is
@@ -331,6 +338,14 @@ With its excellent editor integrations,
 you won't even need to run the command manually
 to see the typechecker results.
 
+**Update**:
+_Ironically,
+Sorbet uses `NotImplementedError` internally
+([see here](https://github.com/sorbet/sorbet/blob/8f772843bfefecc59cfd2bb5ff5b565d6b048a6f/gems/sorbet-runtime/lib/types/private/methods/_methods.rb?#L272))
+when you define abstract methods!
+Thanks <a href="https://ufuk.dev/">Ufuk</a>
+for pointing this out!_
+
 ## Closing thoughts
 
 Although we've looked at a few altenatives
@@ -348,3 +363,10 @@ that everyone is familiar with.
 However, if you want to change their minds,
 you can always send them
 a link to this post. ;)
+
+**Update**:
+_After writing this post,
+I found
+[this proposal on the Ruby bug tracker](https://bugs.ruby-lang.org/issues/18915)
+to introduce a new exception class
+to replace `NotImplementedError`._
