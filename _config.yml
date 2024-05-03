@@ -8,7 +8,6 @@ permalink: /posts/:title/
 markdown: kramdown
 
 theme_options:
-  disqus_shortname: nithinbekal
   google_analytics: G-241HN9TB7S
 
 plugins:

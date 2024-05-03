@@ -11,8 +11,9 @@ This repository contains the Jekyll theme and content of my blog.
 $ rm -rf about notes slides _posts/*.md keybase.txt CNAME resume.html
 ```
 
-* Edit the details from `_config.yml`. Make sure you leave the Disqus and
-  Google Analytics configs blank if you don't use them.
+* Edit the details from `_config.yml`.
+  Make sure you leave the Google Analytics config blank
+  if you don't use it.
 * Change title in `index.html`
 
 ### Rake tasks
