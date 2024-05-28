@@ -3,6 +3,7 @@ layout: post
 title: "Comparing Llama3, Phi3 and Gemma performance on different machines"
 date:  2024-05-21
 categories: ai
+og_image: comparing-llama3-phi3-gemma.png
 ---
 
 After playing around with ollama a couple of weeks ago,
