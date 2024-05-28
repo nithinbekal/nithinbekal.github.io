@@ -5,6 +5,7 @@ date: 2024-05-25
 categories:
 - ai
 - jekyll
+og_image: jekyll-ai-scraping.png
 ---
 
 Although I don't think this blog is popular enough

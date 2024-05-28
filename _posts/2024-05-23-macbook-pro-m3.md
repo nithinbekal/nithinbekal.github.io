@@ -3,6 +3,7 @@ layout: post
 title: 'Review: Macbook Pro 14" (M3 Pro)'
 date: 2024-05-23
 categories: reviews
+og_image: macbook-pro-m3.png
 ---
 
 I've been using the new 14" Macbook Pro
