@@ -1,6 +1,7 @@
 
 :root {
   --background-color: #111;
+  --bold-text-color: #ddd;
   --text-color: #ccc;
   --main-link-color: #79a7b5;
   --author-bio-border-color: #7c7c7c;
@@ -23,6 +24,7 @@ body {
 
 a { color: var(--main-link-color); text-decoration: none; }
 a:hover { text-decoration: underline; }
+h1, h2, h3, h4, h5, h6, strong { color: var(--bold-text-color); }
 
 .align-right { float: right; }
 
