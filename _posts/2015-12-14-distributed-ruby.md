@@ -145,5 +145,5 @@ if you're using DRb, when many processes are working with the same object.
 ## Further reading
 
 * My notes on [Distributed Ruby](/notes/druby/), which contains many more links
-* [dRuby documentation](http://ruby-doc.org/stdlib-2.3.0_preview1/libdoc/drb/rdoc/DRb.html)
+* [dRuby documentation](https://docs.ruby-lang.org/en/3.0/DRb.html)
 * [dRuby and Rinda: Implementation and application of distributed Ruby and its parallel coordination mechanism](http://www.druby.org/imaco_doc/ijpp_text_en.html)

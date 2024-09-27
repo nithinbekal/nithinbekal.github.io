@@ -32,7 +32,7 @@ What are those global variables doing?
 
 Let's start by looking at this `trace_var` thing.
 The `Kernel#trace_var`
-[documentation says](http://ruby-doc.org/core-2.2.1/Kernel.html#method-i-trace_var):
+[documentation says](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-trace_var):
 
 > Controls tracing of assignments to global variables.
 >
@@ -122,7 +122,7 @@ maybe it's a good time to get rid of those global variables.
 `trace_var` only works with global variables.
 If you need a more flexible tool
 you might want to look at Ruby 2.0's new
-[TracePoint API](http://ruby-doc.org/core-2.2.1/TracePoint.html).
+[TracePoint API](https://docs.ruby-lang.org/en/master/TracePoint.html).
 
 # More weird Ruby
 
@@ -139,4 +139,4 @@ or
 # Links
 
 * ["99 bottles of beer" solutions on Rosetta Code](http://rosettacode.org/wiki/99_Bottles_of_Beer#Ruby)
-* [Kernel#trace_var documentation](http://ruby-doc.org/core-2.2.1/Kernel.html#method-i-trace_var)
+* [Kernel#trace_var documentation](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-trace_var)
