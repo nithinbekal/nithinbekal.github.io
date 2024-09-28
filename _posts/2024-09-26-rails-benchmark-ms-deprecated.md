@@ -23,6 +23,13 @@ time_in_ms = Benchmark.ms { sleep 0.5 }
 This will no longer work in Rails 8.1
 (8.0 beta was just released today,
 so it will still work for some time).
+However, if you use it,
+you will see this deprecation warning in the logs:
+
+```
+`Benchmark.ms` is deprecated and will be removed in Rails 8.1 without replacement.
+```
+
 But if you look at the original implementation,
 all it does is call `Benchmark.realtime`,
 and multiply the time in seconds by `1000`.
