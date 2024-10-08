@@ -7,7 +7,6 @@ date:  2015-02-19 14:20:05
 Other notes related to Rails:
 
 - [Rails Testing](/notes/rails-testing/)
-- [Things to do on a new Rails project](/notes/rails-new/)
 
 ### Rails setup
 
