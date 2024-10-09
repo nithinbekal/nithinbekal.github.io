@@ -65,7 +65,7 @@ make html
 ```
 
 This will display a link to the generated documentation.
-We can now make changes to the inline YARD docs
+We can now make changes to the inline RDoc docs
 for methods and classes,
 and run the `make html` command
 to update the generated docs
