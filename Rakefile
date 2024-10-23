@@ -9,8 +9,8 @@ task :post do
   text = <<~EOF
     ---
     layout: post
-    title: \"#{meta[:title]}\"
-    date:  #{Time.now.strftime('%Y-%m-%d')}
+    title: "#{meta[:title]}"
+    date: #{Time.now.strftime('%Y-%m-%d')}
     categories: #{meta[:categories].downcase}
     ---
   EOF
@@ -24,8 +24,8 @@ task :page do
   text = <<~EOF
     ---
     layout: page
-    title: \"#{meta[:title]}\"
-    date:  #{Time.now.strftime('%Y-%m-%d')}
+    title: "#{meta[:title]}"
+    date: #{Time.now.strftime('%Y-%m-%d')}
     ---
   EOF
   File.open(path, 'w') { |f| f << text }
