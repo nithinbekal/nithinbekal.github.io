@@ -1,16 +1,35 @@
-<script src="https://giscus.app/client.js"
-        data-repo="nithinbekal/nithinbekal.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkxODgzMjgxNg=="
-        data-category="Comments"
-        data-category-id="DIC_kwDOAR9dsM4CfG1P"
-        data-mapping="pathname"
-        data-strict="1"
-        data-reactions-enabled="0"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="transparent_dark"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
+<div id="comments"></div>
+<script>
+  function loadGiscusComments() {
+      var script = document.createElement('script');
+      script.src = "https://giscus.app/client.js";
+      script.async = true;
+      script.crossOrigin = "anonymous";
+
+      script.setAttribute("data-repo", "nithinbekal/nithinbekal.github.io");
+      script.setAttribute("data-repo-id", "MDEwOlJlcG9zaXRvcnkxODgzMjgxNg==");
+      script.setAttribute("data-category", "Comments");
+      script.setAttribute("data-category-id", "DIC_kwDOAR9dsM4CfG1P");
+      script.setAttribute("data-mapping", "pathname");
+      script.setAttribute("data-strict", "1");
+      script.setAttribute("data-reactions-enabled", "0");
+      script.setAttribute("data-emit-metadata", "0");
+      script.setAttribute("data-input-position", "top");
+      script.setAttribute("data-theme", "transparent_dark");
+      script.setAttribute("data-lang", "en");
+      script.setAttribute("data-loading", "lazy");
+
+      document.getElementById("comments").appendChild(script);
+  }
+
+  var scriptLoaded = false;
+  function loadCommentScriptOnce() {
+    if (!scriptLoaded) {
+      loadGiscusComments();
+      scriptLoaded = true;
+    }
+  }
+
+  setTimeout(loadCommentScriptOnce, 5000);
+  window.addEventListener("scroll", loadCommentScriptOnce);
 </script>
