@@ -2,6 +2,7 @@
 layout: post
 title: "Optimizing page loads for Giscus comments"
 date: 2024-10-30
+og_image: giscus-optimize-pageload.jpg
 categories:
 - jekyll
 - javascript
