@@ -18,6 +18,10 @@ $ rm -rf about notes slides _posts/*.md keybase.txt CNAME resume.html
 
 ### Rake tasks
 
-There are two rake tasks - `rake post` and `rake page` which prompt for
-metadata and generate the markdown files.
-
+- `rake draft`:
+  Creates a draft post in `_drafts`.
+- `rake publish`:
+  Prompts to pick a file from the `_drafts` folder,
+  and publishes that to `_posts`.
+- `rake unpublish`:
+  Moves a file from `_posts` to `_drafts`.
