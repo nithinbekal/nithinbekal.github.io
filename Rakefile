@@ -3,23 +3,21 @@ require "nokogiri"
 
 desc "Create a new draft"
 task :draft do
-  title, slug, categories = get_metadata(:title, :slug, :categories)
-  path = File.join('_drafts', "#{slug}.md")
-  File.write(path, <<~EOF)
-    ---
-    layout: post
-    title: "#{title}"
-    date: #{Time.now.strftime('%Y-%m-%d')}
-    categories:
-      #{categories.split(", ").map{"- #{_1}"}.join("\n  ")}
-    ---
-  EOF
+  fetch_attributes(:title, :slug, :categories)
+    .then { write_to_file(dir: "_drafts", attributes: _1, layout: "post") }
+end
+
+desc "Create a new page"
+task :page do
+  fetch_attributes(:title, :slug)
+    .then { write_to_file(dir: "notes", attributes: _1, layout: "page") }
 end
 
 desc "Publish a draft"
 task :publish do
   draft_files = Dir.glob('_drafts/*.md')
-  draft_file = IO.popen(['fzf', '--prompt=Select a draft to publish: ', '--layout=reverse', '--height=40%'], 'r+') do |fzf|
+  cmd = ['fzf', '--prompt=Select a draft to publish: ', '--layout=reverse', '--height=40%']
+  draft_file = IO.popen(cmd, 'r+') do |fzf|
     fzf.puts draft_files
     fzf.close_write
     fzf.gets&.strip
@@ -59,19 +57,6 @@ task :unpublish do
   puts "Post unpublished as #{new_path}"
 end
 
-desc "Create a new page"
-task :page do
-  title, slug = get_metadata(:title, :slug)
-  path = File.join('.', "#{slug}.md")
-  File.write(path, <<~EOF)
-    ---
-    layout: page
-    title: "#{title}"
-    date: #{Time.now.strftime('%Y-%m-%d')}
-    ---
-  EOF
-end
-
 desc "Print stats about this blog"
 task :stats do
   yearly_stats = Dir["_posts/*"]
@@ -98,8 +83,17 @@ task :stats do
   end
 end
 
-def get_metadata(*keys)
-  keys.map { |k| ask("#{k.capitalize}: ") }
+def fetch_attributes(*keys)
+  keys.to_h { |k| [k.to_s, ask("#{k.capitalize}: ")] }
+end
+
+def write_to_file(dir:, attributes:, layout: "post")
+  attributes["layout"] = layout
+  attributes["date"] = Time.now.strftime("%Y-%m-%d")
+  content = YAML.dump(attributes) + "\n---"
+
+  path = File.join(dir, "#{file}.md")
+  File.write(path, content)
 end
 
 def ask(qn)
