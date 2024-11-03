@@ -60,22 +60,6 @@ task :unpublish do
   puts "Post unpublished as #{new_path}"
 end
 
-desc "Create a new post"
-task :post do
-  meta = get_metadata(:title, :slug, :categories)
-  filename = "#{Time.now.strftime '%Y-%m-%d'}-#{meta[:slug]}.md"
-  path = File.join('_posts', filename)
-  text = <<~EOF
-    ---
-    layout: post
-    title: "#{meta[:title]}"
-    date: #{Time.now.strftime('%Y-%m-%d')}
-    categories: #{meta[:categories].downcase}
-    ---
-  EOF
-  File.open(path, 'w') { |f| f << text }
-end
-
 desc "Create a new page"
 task :page do
   meta = get_metadata(:title, :slug)
