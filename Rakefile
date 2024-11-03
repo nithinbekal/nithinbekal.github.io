@@ -1,5 +1,6 @@
 
 require "nokogiri"
+require "yaml"
 
 desc "Create a new draft"
 task :draft do
@@ -16,24 +17,18 @@ end
 desc "Publish a draft"
 task :publish do
   draft_files = Dir.glob('_drafts/*.md')
-  cmd = ['fzf', '--prompt=Select a draft to publish: ', '--layout=reverse', '--height=40%']
-  draft_file = IO.popen(cmd, 'r+') do |fzf|
-    fzf.puts draft_files
-    fzf.close_write
-    fzf.gets&.strip
-  end
+  file = fzf(draft_files, "Select a draft to publish")
+  next if file.empty?
 
-  next if draft_file.empty?
-
-  filename = File.basename(draft_file)
+  filename = File.basename(file)
   new_filename = "#{Time.now.strftime('%Y-%m-%d')}-#{filename}"
   new_path = File.join('_posts', new_filename)
 
-  content = File.read(draft_file)
+  content = File.read(file)
     .sub(/^date: .+$/, "date: #{Time.now.strftime('%Y-%m-%d')}")
 
-  File.open(draft_file, 'w') { |f| f << content }
-  File.rename(draft_file, new_path)
+  File.open(file, 'w') { |f| f << content }
+  File.rename(file, new_path)
   puts "Draft published as #{new_path}"
 end
 
@@ -41,19 +36,15 @@ desc "Unpublish a post"
 task :unpublish do
   committed_files = `git ls-files _posts/*.md`.split("\n")
   post_files = Dir.glob('_posts/*.md') - committed_files
-  post_file = IO.popen(['fzf', '--prompt=Select a post to unpublish: ', '--layout=reverse', '--height=40%'], 'r+') do |fzf|
-    fzf.puts post_files
-    fzf.close_write
-    fzf.gets&.strip
-  end
 
-  next if post_file.empty?
+  file = fzf(post_files, "Select a post to unpublish")
+  next if file.empty?
 
-  filename = File.basename(post_file)
+  filename = File.basename(file)
   new_filename = filename.sub(/^\d{4}-\d{2}-\d{2}-/, '')
   new_path = File.join('_drafts', new_filename)
 
-  File.rename(post_file, new_path)
+  File.rename(file, new_path)
   puts "Post unpublished as #{new_path}"
 end
 
@@ -99,6 +90,15 @@ end
 def ask(qn)
   STDOUT.print qn
   STDIN.gets.chomp
+end
+
+def fzf(files, prompt)
+  cmd = ['fzf', "--prompt=#{prompt}: ", '--layout=reverse', '--height=40%']
+  IO.popen(cmd, 'r+') do |fzf|
+    fzf.puts files
+    fzf.close_write
+    fzf.gets&.strip
+  end
 end
 
 def word_count(file)
