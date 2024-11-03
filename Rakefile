@@ -3,18 +3,17 @@ require "nokogiri"
 
 desc "Create a new draft"
 task :draft do
-  meta = get_metadata(:title, :slug, :categories)
-  path = File.join('_drafts', "#{meta[:slug]}.md")
-  text = <<~EOF
+  title, slug, categories = get_metadata(:title, :slug, :categories)
+  path = File.join('_drafts', "#{slug}.md")
+  File.write(path, <<~EOF)
     ---
     layout: post
-    title: "#{meta[:title]}"
+    title: "#{title}"
     date: #{Time.now.strftime('%Y-%m-%d')}
     categories:
-      #{meta[:categories].split(", ").map{"- #{_1}"}.join("\n  ")}
+      #{categories.split(", ").map{"- #{_1}"}.join("\n  ")}
     ---
   EOF
-  File.open(path, 'w') { |f| f << text }
 end
 
 desc "Publish a draft"
@@ -62,16 +61,15 @@ end
 
 desc "Create a new page"
 task :page do
-  meta = get_metadata(:title, :slug)
-  path = File.join('.', "#{meta[:slug]}.md")
-  text = <<~EOF
+  title, slug = get_metadata(:title, :slug)
+  path = File.join('.', "#{slug}.md")
+  File.write(path, <<~EOF)
     ---
     layout: page
-    title: "#{meta[:title]}"
+    title: "#{title}"
     date: #{Time.now.strftime('%Y-%m-%d')}
     ---
   EOF
-  File.open(path, 'w') { |f| f << text }
 end
 
 desc "Print stats about this blog"
@@ -101,9 +99,7 @@ task :stats do
 end
 
 def get_metadata(*keys)
-  meta = {}
-  keys.each { |k| meta[k] = ask("#{k.capitalize}: ") }
-  meta
+  keys.map { |k| ask("#{k.capitalize}: ") }
 end
 
 def ask(qn)
