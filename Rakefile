@@ -17,6 +17,49 @@ task :draft do
   File.open(path, 'w') { |f| f << text }
 end
 
+desc "Publish a draft"
+task :publish do
+  draft_files = Dir.glob('_drafts/*.md')
+  draft_file = IO.popen(['fzf', '--prompt=Select a draft to publish: ', '--layout=reverse', '--height=40%'], 'r+') do |fzf|
+    fzf.puts draft_files
+    fzf.close_write
+    fzf.gets&.strip
+  end
+
+  next if draft_file.empty?
+
+  filename = File.basename(draft_file)
+  new_filename = "#{Time.now.strftime('%Y-%m-%d')}-#{filename}"
+  new_path = File.join('_posts', new_filename)
+
+  content = File.read(draft_file)
+    .sub(/^date: .+$/, "date: #{Time.now.strftime('%Y-%m-%d')}")
+
+  File.open(draft_file, 'w') { |f| f << content }
+  File.rename(draft_file, new_path)
+  puts "Draft published as #{new_path}"
+end
+
+desc "Unpublish a post"
+task :unpublish do
+  committed_files = `git ls-files _posts/*.md`.split("\n")
+  post_files = Dir.glob('_posts/*.md') - committed_files
+  post_file = IO.popen(['fzf', '--prompt=Select a post to unpublish: ', '--layout=reverse', '--height=40%'], 'r+') do |fzf|
+    fzf.puts post_files
+    fzf.close_write
+    fzf.gets&.strip
+  end
+
+  next if post_file.empty?
+
+  filename = File.basename(post_file)
+  new_filename = filename.sub(/^\d{4}-\d{2}-\d{2}-/, '')
+  new_path = File.join('_drafts', new_filename)
+
+  File.rename(post_file, new_path)
+  puts "Post unpublished as #{new_path}"
+end
+
 desc "Create a new post"
 task :post do
   meta = get_metadata(:title, :slug, :categories)
