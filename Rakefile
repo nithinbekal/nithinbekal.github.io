@@ -1,6 +1,22 @@
 
 require "nokogiri"
 
+desc "Create a new draft"
+task :draft do
+  meta = get_metadata(:title, :slug, :categories)
+  path = File.join('_drafts', "#{meta[:slug]}.md")
+  text = <<~EOF
+    ---
+    layout: post
+    title: "#{meta[:title]}"
+    date: #{Time.now.strftime('%Y-%m-%d')}
+    categories:
+      #{meta[:categories].split(", ").map{"- #{_1}"}.join("\n  ")}
+    ---
+  EOF
+  File.open(path, 'w') { |f| f << text }
+end
+
 desc "Create a new post"
 task :post do
   meta = get_metadata(:title, :slug, :categories)
