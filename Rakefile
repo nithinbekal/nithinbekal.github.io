@@ -16,18 +16,16 @@ end
 
 desc "Publish a draft"
 task :publish do
-  draft_files = Dir.glob('_drafts/*.md')
+  draft_files = Dir.glob("_drafts/*.md")
   file = fzf(draft_files, "Select a draft to publish")
   next if file.empty?
 
   filename = File.basename(file)
-  new_filename = "#{Time.now.strftime('%Y-%m-%d')}-#{filename}"
-  new_path = File.join('_posts', new_filename)
+  new_path = File.join("_posts", "#{now}-#{filename}")
 
-  content = File.read(file)
-    .sub(/^date: .+$/, "date: #{Time.now.strftime('%Y-%m-%d')}")
+  content = File.read(file).sub(/^date: .+$/, "date: #{now}")
 
-  File.open(file, 'w') { |f| f << content }
+  File.write(file, content)
   File.rename(file, new_path)
   puts "Draft published as #{new_path}"
 end
@@ -35,14 +33,13 @@ end
 desc "Unpublish a post"
 task :unpublish do
   committed_files = `git ls-files _posts/*.md`.split("\n")
-  post_files = Dir.glob('_posts/*.md') - committed_files
+  post_files = Dir.glob("_posts/*.md") - committed_files
 
   file = fzf(post_files, "Select a post to unpublish")
   next if file.empty?
 
-  filename = File.basename(file)
-  new_filename = filename.sub(/^\d{4}-\d{2}-\d{2}-/, '')
-  new_path = File.join('_drafts', new_filename)
+  filename = File.basename(file).sub(/^\d{4}-\d{2}-\d{2}-/, "")
+  new_path = File.join("_drafts", filename)
 
   File.rename(file, new_path)
   puts "Post unpublished as #{new_path}"
@@ -57,9 +54,7 @@ task :stats do
     .to_h
 
   total_posts = yearly_stats.values.sum(&:to_i)
-
-  total_words = Dir["_site/posts/*/index.html"]
-    .sum(&method(:word_count))
+  total_words = Dir["_site/posts/*/index.html"].sum { word_count(_1) }
 
   puts <<~STATS
     Total posts: #{total_posts.to_s.rjust(8)}
@@ -80,12 +75,14 @@ end
 
 def write_to_file(dir:, attributes:, layout: "post")
   attributes["layout"] = layout
-  attributes["date"] = Time.now.strftime("%Y-%m-%d")
+  attributes["date"] = now
   content = YAML.dump(attributes) + "\n---"
 
   path = File.join(dir, "#{file}.md")
   File.write(path, content)
 end
+
+def now = Time.now.strftime("%Y-%m-%d")
 
 def ask(qn)
   STDOUT.print qn
@@ -93,8 +90,8 @@ def ask(qn)
 end
 
 def fzf(files, prompt)
-  cmd = ['fzf', "--prompt=#{prompt}: ", '--layout=reverse', '--height=40%']
-  IO.popen(cmd, 'r+') do |fzf|
+  cmd = ["fzf", "--prompt=#{prompt}: ", "--layout=reverse", "--height=40%"]
+  IO.popen(cmd, "r+") do |fzf|
     fzf.puts files
     fzf.close_write
     fzf.gets&.strip
