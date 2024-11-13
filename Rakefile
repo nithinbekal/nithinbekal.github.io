@@ -74,11 +74,12 @@ def fetch_attributes(*keys)
 end
 
 def write_to_file(dir:, attributes:, layout: "post")
+  slug = attributes.delete("slug")
   attributes["layout"] = layout
   attributes["date"] = now
-  content = YAML.dump(attributes) + "\n---"
+  content = YAML.dump(attributes) + "---"
 
-  path = File.join(dir, "#{file}.md")
+  path = File.join(dir, "#{slug}.md")
   File.write(path, content)
 end
 
