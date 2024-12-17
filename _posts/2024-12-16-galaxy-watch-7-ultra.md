@@ -244,24 +244,32 @@ it will hopefully last for years.
 {
   "@context": "https://schema.org",
   "@type": "Review",
+  "name": "Review: Galaxy Watch 7 Ultra",
   "itemReviewed": {
     "@type": "Product",
     "name": "Galaxy Watch 7 Ultra",
     "brand": {
       "@type": "Brand",
       "name": "Samsung"
+    },
+    "manufacturer": "Samsung",
+    "description": "Samsung Galaxy Watch 7 Ultra smartwatch",
+    "category": "Smartwatches",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4",
+      "reviewCount": "1"
     }
   },
   "author": {
     "@type": "Person",
     "name": "Nithin Bekal"
   },
-  "datePublished": "2024-11-13",
+  "datePublished": "2024-12-16",
   "reviewRating": {
     "@type": "Rating",
     "ratingValue": "4",
     "bestRating": "5"
-  },
-  "name": "Review: Galaxy Watch 7 Ultra"
+  }
 }
 </script>
