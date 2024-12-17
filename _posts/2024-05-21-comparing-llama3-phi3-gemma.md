@@ -51,15 +51,18 @@ but not too much so.
 
 #### Llama 3
 
-<img loading="lazy" alt="Chaudiere Falls long exposure photo" src="https://s3.amazonaws.com/nithinbekal.com/blog/llama3-phi3-gemma-performance/llama3-performance.png">
+<img loading="lazy" alt="Comparing Llama 3 performance on different machines"
+  src="https://s3.amazonaws.com/nithinbekal.com/blog/llama3-phi3-gemma-performance/llama3-performance.png">
 
 #### Phi 3
 
-<img loading="lazy" alt="Chaudiere Falls long exposure photo" src="https://s3.amazonaws.com/nithinbekal.com/blog/llama3-phi3-gemma-performance/phi3-performance.png">
+<img loading="lazy" alt="Comparing Phi3 performance on different machines"
+  src="https://s3.amazonaws.com/nithinbekal.com/blog/llama3-phi3-gemma-performance/phi3-performance.png">
 
 #### Gemma
 
-<img loading="lazy" alt="Chaudiere Falls long exposure photo" src="https://s3.amazonaws.com/nithinbekal.com/blog/llama3-phi3-gemma-performance/gemma-performance.png">
+<img loading="lazy" alt="Comparing Gemma performance on different machines"
+  src="https://s3.amazonaws.com/nithinbekal.com/blog/llama3-phi3-gemma-performance/gemma-performance.png">
 
 ## Why is M3 slower than M1?
 
