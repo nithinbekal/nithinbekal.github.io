@@ -131,3 +131,37 @@ I'm probably going to stick with my 2019 Intel Macbook
 for the next five years,
 because that machine is fast enough
 for most things.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "name": "Review: MacBook Pro 14-inch (M3 Pro)",
+  "itemReviewed": {
+    "@type": "Product",
+    "name": "MacBook Pro 14-inch (M3 Pro)",
+    "brand": {
+      "@type": "Brand",
+      "name": "Apple"
+    },
+    "manufacturer": "Apple",
+    "description": "14-inch MacBook Pro laptop with M3 Pro chip",
+    "category": "Computers & Laptops",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4",
+      "reviewCount": "1"
+    }
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4",
+    "bestRating": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Nithin Bekal"
+  },
+  "datePublished": "2024-05-23"
+}
+</script>
