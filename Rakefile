@@ -36,7 +36,7 @@ task :unpublish do
   post_files = Dir.glob("_posts/*.md") - committed_files
 
   file = fzf(post_files, "Select a post to unpublish")
-  next if file.empty?
+  next unless file
 
   filename = File.basename(file).sub(/^\d{4}-\d{2}-\d{2}-/, "")
   new_path = File.join("_drafts", filename)
