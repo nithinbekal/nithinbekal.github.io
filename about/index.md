@@ -19,9 +19,11 @@ and the Chennai.rb meetups when I lived in Chennai.
 
 On the interwebs, you can find me here:
 [Github](http://github.com/nithinbekal),
-[Twitter](http://twitter.com/nithinbekal),
-[LinkedIn](https://www.linkedin.com/in/nithinbekal),
-[Goodreads](https://www.goodreads.com/user/show/1059476-nithin-bekal).
+[Bluesky](https://bsky.app/profile/nithinbekal.bsky.social),
+[Mastodon](https://ruby.social/@nithinbekal),
+[Instagram](https://www.instagram.com/nithinbekal),
+[Goodreads](https://www.goodreads.com/user/show/1059476-nithin-bekal),
+[LinkedIn](https://www.linkedin.com/in/nithinbekal).
 
 If you're looking for stuff to read on this site,
 you might want to look at some of the more popular Ruby related articles here:
