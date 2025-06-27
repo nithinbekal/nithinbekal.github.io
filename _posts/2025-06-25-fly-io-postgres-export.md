@@ -27,7 +27,7 @@ fly ssh console -C "printenv" | grep DATABASE_URL
 Then, in another terminal window run the `pg_dump` command, and enter the password when prompted:
 
 ```
-pg_dump -h localhost -p 5434 -U devlibrary devlibrary > my-db-dump.sql
+pg_dump -h localhost -p 5434 -U devlibrary devlibrary > devlibrary-dump.sql
 ```
 
 At this point, I wanted to test this by loading the data into my local database:
