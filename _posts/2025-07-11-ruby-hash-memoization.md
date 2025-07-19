@@ -97,6 +97,21 @@ Comparison:
          missing key: 13162501.1 i/s
 memoized missing key: 10852595.0 i/s - 1.21x  slower
 ```
+
+**Update**: As [@phallstorm](https://github.com/phallstrom) mentions in the comments below,
+we could prevent the cache misses by using the `if defined?(@type)` memoization pattern.
+
+```ruby
+def type_memoized_correctly
+  return @type if defined?(@type)
+  @type = @data["type"]
+end
+```
+
+At this point, we've achieved similar performance as the case where the key is present.
+However, the downside is that more than half the method is now memoization logic,
+without too much performance benefit.
+
 ## Nested keys
 
 Finally, let's see what happens when we're dealing with nested hashes:
