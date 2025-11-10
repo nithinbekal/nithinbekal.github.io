@@ -1,15 +1,18 @@
 ---
-title: Logseq to Obsidian
+title: Moving form Logseq to Obsidian
 categories:
 - logseq
 - obsidian
 layout: post
-date: 2025-11-10
+date: '2025-11-10'
+og_image: logseq-to-obsidian.png
 ---
 
 I switched to Obsidian for note taking this week, after over 3 years of using Logseq. Despite loving Logseq's outliner format, I've found the app, especially the mobile app, to be slow and frustrating to use. If you're looking to choose between the two, I hope the notes below help you see some of the tradeoffs.
 
 I considered Obsidian and Notion. I like Notion's features and polish, but Obsidian won because it uses local markdown files, just like Logseq. If I decide to move to another app, the migration should be as easy as this one.!
+
+![My Obsidian layout](https://s3.us-east-1.amazonaws.com/nithinbekal.com/og/obsidian-layout.png)
 
 ## Migrating the notes
 
