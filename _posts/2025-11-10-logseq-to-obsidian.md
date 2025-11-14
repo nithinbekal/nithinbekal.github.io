@@ -12,7 +12,7 @@ I switched to Obsidian for note taking this week, after over 3 years of using Lo
 
 I considered Obsidian and Notion. I like Notion's features and polish, but Obsidian won because it uses local markdown files, just like Logseq. If I decide to move to another app, the migration should be as easy as this one.!
 
-![My Obsidian layout](https://s3.us-east-1.amazonaws.com/nithinbekal.com/og/obsidian-layout.png)
+![My Obsidian layout](https://s3.us-east-1.amazonaws.com/nithinbekal.com/blog/logseq-to-obsidian/obsidian-layout.png)
 
 ## Migrating the notes
 
