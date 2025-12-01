@@ -3,6 +3,7 @@ title: 'Review: Airpods Pro 2 with Android'
 categories: reviews
 layout: post
 date: 2025-11-25
+og_image: airpods-pro-review.png
 ---
 
 I've been using the Airpods Pro 2 with an Android phone for the past few months. Recently, I came across the [Librepods](https://github.com/kavishdevar/librepods) project, which aims to unlock Apple exclusive features available for Android users. This requires rooting the phone, so I'm too keen on installing it, but I was curious about what I'm missing, which prompted this post.
