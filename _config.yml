@@ -10,6 +10,10 @@ markdown: kramdown
 theme_options:
   google_analytics: G-241HN9TB7S
 
+feed:
+  categories:
+    - ruby
+
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
