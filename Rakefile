@@ -61,7 +61,7 @@ task :og_image, [:post_file] do |t, args|
   post_file = args[:post_file]
 
   if post_file.nil? || post_file.empty?
-    post_files = Dir.glob("_posts/*.md")
+    post_files = Dir.glob("_posts/*.md").sort.reverse
     post_file = fzf(post_files, "Select a post to generate OG image for")
     exit if post_file.nil? || post_file.empty?
   end
