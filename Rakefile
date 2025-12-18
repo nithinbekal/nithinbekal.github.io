@@ -4,47 +4,32 @@ require "yaml"
 require "date"
 require "fileutils"
 
-desc "Create a new draft"
-task :draft do
-  fetch_attributes(:title, :slug, :categories)
-    .then { write_to_file(dir: "_drafts", attributes: _1, layout: "post") }
+desc "Create a new post"
+task :post do
+  attributes = fetch_attributes(:title, :slug, :categories)
+  slug = attributes.delete("slug")
+  attributes["layout"] = "post"
+  attributes["date"] = now
+  content = <<~YAML
+    ---
+    title: #{attributes["title"]}
+    layout: post
+    categories: #{attributes["categories"]}
+    date: #{now}
+    og_image: #{slug}.png
+    ---
+  YAML
+
+  path = File.join("_posts", "#{now}-#{slug}.md")
+  File.write(path, content)
+  FileUtils.touch("index.html")
+  puts "Created #{path}"
 end
 
 desc "Create a new page"
 task :page do
   fetch_attributes(:title, :slug)
     .then { write_to_file(dir: "notes", attributes: _1, layout: "page") }
-end
-
-desc "Publish a draft"
-task :publish do
-  draft_files = Dir.glob("_drafts/*.md")
-  file = fzf(draft_files, "Select a draft to publish")
-  next if file.empty?
-
-  filename = File.basename(file)
-  new_path = File.join("_posts", "#{now}-#{filename}")
-
-  content = File.read(file).sub(/^date: .+$/, "date: #{now}")
-
-  File.write(file, content)
-  File.rename(file, new_path)
-  puts "Draft published as #{new_path}"
-end
-
-desc "Unpublish a post"
-task :unpublish do
-  committed_files = `git ls-files _posts/*.md`.split("\n")
-  post_files = Dir.glob("_posts/*.md") - committed_files
-
-  file = fzf(post_files, "Select a post to unpublish")
-  next unless file
-
-  filename = File.basename(file).sub(/^\d{4}-\d{2}-\d{2}-/, "")
-  new_path = File.join("_drafts", filename)
-
-  File.rename(file, new_path)
-  puts "Post unpublished as #{new_path}"
 end
 
 desc "Print stats about this blog"
