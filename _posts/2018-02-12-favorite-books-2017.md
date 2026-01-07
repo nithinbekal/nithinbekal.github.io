@@ -14,7 +14,7 @@ to that long to-read list.
 
 ## Non fiction
 
-**[The Ascent of Man](https://amzn.to/2Wgr0Of)
+**[The Ascent of Man](https://www.amazon.com/dp/1849901155)
 (Jacob Bronowski)**
 
 This is a remarkable book
@@ -25,7 +25,7 @@ all the way to quantum physics,
 this is a fascinating picture of the rise of civilization.
 Quite a bit like what Carl Sagan's Cosmos is to the history of the Universe.
 
-**[The Selfish Gene](https://amzn.to/2Mu67dO)
+**[The Selfish Gene](https://www.amazon.com/dp/0198788606)
 (Richard Dawkins)**
 
 An absorbing read on evolutionary biology
@@ -34,7 +34,7 @@ Especially loved the game theory based explanations
 that explain natural selection.
 One of the most engaging science books I've read.
 
-**[Astrophysics for People in a Hurry](https://amzn.to/2Td8cgS)
+**[Astrophysics for People in a Hurry](https://www.amazon.com/dp/0393609391)
 (Neil deGrasse Tyson)**
 
 As a long time listener of Tyson's Startalk podcast,
@@ -44,7 +44,7 @@ in a way that could get anyone interested in the topic.
 My only complaint is the use of imperial units over metric,
 making it confusing for us non-Americans.
 
-**[Made in Japan](https://amzn.to/2Ta7jWc)
+**[Made in Japan](https://www.amazon.com/dp/1101991054)
 (Akio Morita)**
 
 The story of the founding and growth of Sony.
@@ -59,7 +59,7 @@ how Japanese management styles compare to those of other countries.
 
 ## Fiction
 
-**[Animal Farm](https://amzn.to/2MwLJbO)
+**[Animal Farm](https://www.amazon.com/dp/0451526341)
 (George Orwell)**
 
 A book with talking animals may not sound serious,
@@ -71,7 +71,7 @@ I can think of one or two world leaders
 whose brazen distortion of reality
 isn't too far off the behavior of the pig leaders on Animal Farm.
 
-**[Mistborn: The Final Empire](https://amzn.to/2Mu6lla)
+**[Mistborn: The Final Empire](https://www.amazon.com/dp/0765377136)
 (Brandon Sanderson)**
 
 I've wanted to read Sanderson's books
@@ -86,7 +86,7 @@ I'm usually bored by long descriptions of fights,
 but Sanderson is especially skilled
 at keeping you hanging on to every word.
 
-**[Fuzzy Nation](https://amzn.to/2MwMsd2)
+**[Fuzzy Nation](https://www.amazon.com/dp/1250174643)
 (John Scalzi)**
 
 My favorite scifi novel of the year.
@@ -96,7 +96,7 @@ like the protagonist's pet dog.
 Towards the end it turns into something of a legal thriller
 that debates what it means to be sentient.
 
-**[Seveneves](https://amzn.to/2Ud3AqZ)
+**[Seveneves](https://www.amazon.com/dp/0062334514)
 (Neal Stephenson)**
 
 Intriguing premise &ndash;
@@ -121,7 +121,7 @@ which has a lot of details about space technology.
 Despite the disappointing final third,
 I think it was a terrific sci fi novel overall.
 
-**[The Name of the Wind](https://amzn.to/2MsxfK6)
+**[The Name of the Wind](https://www.amazon.com/dp/0756404746)
 (Patrick Rothfuss)**
 
 First person narrative in an epic fantasy novel is unusual,
@@ -134,7 +134,7 @@ that would be better off in a bad romance novel.
 Not as good as I was expecting based on the reviews,
 but a decent fantasy novel all the same.
 
-**[Inkheart](https://amzn.to/2TbXqav)
+**[Inkheart](https://www.amazon.com/dp/0439709105)
 (Cornelia Funke)**
 
 What if someone had the power
@@ -144,7 +144,7 @@ This is technically a children's book,
 but like most good children's novels,
 it can be enjoyed by adults as well.
 
-**[All You Need is Kill](https://amzn.to/2Mw0gVf)
+**[All You Need is Kill](https://www.amazon.com/dp/1421527618)
 (Hiroshi Sakurazaka)**
 
 Nice, fast paced scifi thriller with a great premise -
@@ -154,7 +154,7 @@ and wakes up the previous day.
 I'm glad that the movie adaptation (Edge of Tomorrow)
 changed the plot enough that it didn't spoil this book too much.
 
-**[Ready Player One](https://amzn.to/2Wj9Uzk)
+**[Ready Player One](https://www.amazon.com/dp/0307887448)
 (Ernest Cline)**
 
 Set in 2044, people are using a massive virtual reality universe
@@ -170,7 +170,7 @@ Someone who grew up around the 80s geek culture might appreciate this more,
 and that probably explains the massive fan following.
 Entertaining read, nonetheless.
 
-**[Dune](https://amzn.to/2MtNdDP)
+**[Dune](https://www.amazon.com/dp/0441172717)
 (Frank Herbert)**
 
 It's great in so many levels &ndash;

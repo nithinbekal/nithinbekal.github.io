@@ -12,7 +12,7 @@ racing through the final 9 books in the series.
 
 # Fiction
 
-**1. [The Martian (Andy Weir)](http://amzn.to/1RTJ6wr)**
+**1. [The Martian (Andy Weir)](https://www.amazon.com/dp/0091956145)**
 
 Easily my favorite novel of the year,
 and probably the best hard science fiction book I've read.
@@ -22,7 +22,7 @@ a horrible situation - being stuck on Mars with almost no hope of survival.
 Superbly written, laugh-out-loud funny,
 and full of interesting bits about space travel, this was hard to put down.
 
-**2. [A Memory of Light (Brandon Sanderson, Robert Jordan)](http://amzn.to/1OIE2gp)**
+**2. [A Memory of Light (Brandon Sanderson, Robert Jordan)](https://www.amazon.com/dp/1841498718)**
 
 I've had Wheel of Time books in my last two lists
 ([2014](/posts/favorite-books-2014/),
@@ -32,7 +32,7 @@ I've finally finished this humongous 14 part series.
 Starting with an epic fantasy series spanning 12,000+ pages
 might seem intimidating, but this one is definitely worth the effort.
 
-**3. [To Kill a Mockingbird (Harper Lee)](http://amzn.to/1WQO3wp)**
+**3. [To Kill a Mockingbird (Harper Lee)](https://www.amazon.com/dp/0099549484)**
 
 Through the eyes of two children,
 this book explores racial prejudice in a fictional Alabama town
@@ -41,7 +41,7 @@ I wondered if Harper Lee's classic will live up to the expectations
 of being considered one of the greatest American novels.
 It certainly does.
 
-**4. [Half of a Yellow Sun (Chimamanda Ngozi Adichie)](http://amzn.to/1RTMZkS)**
+**4. [Half of a Yellow Sun (Chimamanda Ngozi Adichie)](https://www.amazon.com/dp/0007272375)**
 
 This book presents the horrors of the Nigerian civil war of 1967-70
 from the perspective of five different characters.
@@ -49,17 +49,17 @@ Adichie is a wonderful writer -
 the stories of the main characters, the horrors of the war, and life in Nigeria,
 are all captured so vividly.
 
-**5. [World Without End (Ken Follett)](http://amzn.to/1WQO5EI)**
+**5. [World Without End (Ken Follett)](https://www.amazon.com/dp/033045692X)**
 
 Set in the fictional town of Kingsbridge in medieval England,
 this book sometimes feels like Game of Thrones minus the dragons and zombies.
 Fantastic novel and a glimpse into life in feudal England.
 Although it is a sequel to the excellent
-[Pillars of the Earth](http://amzn.to/1kwoCyv),
+[Pillars of the Earth](https://www.amazon.com/dp/045123281X),
 the books have almost no characters in common,
 so this can be read as a standalone book.
 
-**6. [The Book Thief (Markus Zusak)](http://amzn.to/1OIEqeO)**
+**6. [The Book Thief (Markus Zusak)](https://www.amazon.com/dp/B0031R5K72)**
 
 Set in the Germany during World War 2,
 this is a fascinating story narrated by Death himself.
@@ -68,16 +68,16 @@ as she moves into the house of her foster parents.
 Don't be deceived by the Young Adult categorization of the book -
 it's nothing like the typical rubbish that makes up most of that genre.
 
-**7. [The Girl Who Played With Fire (Stieg Larsson)](http://amzn.to/1RTN1sX)**
+**7. [The Girl Who Played With Fire (Stieg Larsson)](https://www.amazon.com/dp/1906694184)**
 
-[The Girl With the Dragon Tattoo](http://amzn.to/1kwp0Nk)
+[The Girl With the Dragon Tattoo](https://www.amazon.com/dp/0857054104)
 was on last year's list, and I think the sequel did even better.
 The three Stieg Larsson novels are highly recommended
 if you enjoy crime thrillers.
 Lisbeth Salander is one of the most interesting characters in the genre,
 and this book explores her backstory.
 
-**8. [Gone Girl (Gillian Flynn)](http://amzn.to/1kwpxyL)**
+**8. [Gone Girl (Gillian Flynn)](https://www.amazon.com/dp/178022866X)**
 
 Despite having seen the movie first and knowing the plot,
 I thoroughly enjoyed this book,
@@ -88,7 +88,7 @@ the husband is suspected of foul play when the wife goes missing.
 The two sides of the story are narrated by the two main characters,
 with neither being completely honest with their story.
 
-**9. [Rendezvous With Rama (Arthur C Clarke)](http://amzn.to/1NQ0MK1)**
+**9. [Rendezvous With Rama (Arthur C Clarke)](https://www.amazon.com/dp/0575077336)**
 
 A group of astronauts explore a gigantic, deserted alien spaceship
 that mysteriously in the solar system.
@@ -96,7 +96,7 @@ Clarke has a knack of turning ideas like this into complelling stories.
 I also read a sequel to this,
 but that one failed to come anywhere near the same level as this.
 
-**10. [Beacon 23 (Hugh Howey)](http://amzn.to/1NQ1CGK)**
+**10. [Beacon 23 (Hugh Howey)](https://www.amazon.com/dp/1516865871)**
 
 A man maintaining a beacon in a remote corner of the galaxy
 suddenly finds himself in the middle of inter-galactic war.
@@ -106,7 +106,7 @@ Howey is an excellent writer.
 
 # Non fiction
 
-**1. [The Design of Everyday Things (Don Norman)](http://amzn.to/1WQOGpK)**
+**1. [The Design of Everyday Things (Don Norman)](https://www.amazon.com/dp/0465055710)**
 
 Don Norman uses examples of everyday things
 (both well designed and poorly designed ones)
@@ -116,7 +116,7 @@ there were also many examples explained that will make you go,
 "so that's why these things are designed that way".
 A must-read if you're interested in usability.
 
-**2. [Traction: A Startup Guide to Getting Customers (Gabriel Weinberg, Justin Mares)](http://amzn.to/1WQOJCb)**
+**2. [Traction: A Startup Guide to Getting Customers (Gabriel Weinberg, Justin Mares)](https://www.amazon.com/dp/B00ZE96ZWY)**
 
 Explains 19 different traction channels which ones you should focus on right now.
 Extremely useful if you're working at a startup.
@@ -124,7 +124,7 @@ Has lots of practical advice.
 
 # Programming
 
-**1. [Practical Object Oriented Design in Ruby (Sandi Metz)](http://amzn.to/1mWME7A)**
+**1. [Practical Object Oriented Design in Ruby (Sandi Metz)](https://www.amazon.com/dp/0321721330)**
 
 Because of Rails, the Ruby community is often accused of
 not following good object oriented design practices.
@@ -133,7 +133,7 @@ this is the book for you.
 There is so much practical wisdom in this book
 that this book seems destined to become a classic in the field.
 
-**2. [Confident Ruby (Avdi Grimm)](http://amzn.to/1mcUut7)**
+**2. [Confident Ruby (Avdi Grimm)](https://www.amazon.com/dp/B00ETE0D2S)**
 
 The book is about patterns for structuring your code.
 Rather than high level design patterns,
@@ -145,7 +145,7 @@ An excellent complement to the Sandi Metz book.
 This is another one of the must-read books for Rubyists.
 ([Read full review.](/posts/confident-ruby/))
 
-**3. [Programming Elixir (Dave Thomas)](http://amzn.to/1mWMHjE)**
+**3. [Programming Elixir (Dave Thomas)](https://www.amazon.com/dp/1937785580)**
 
 Dave Thomas' Pickaxe book is often considered _the_ Ruby book.
 Now he has turned his attention to Elixir
@@ -157,7 +157,7 @@ If you're planning to try Elixir,
 this should be the first stop
 after the Getting Started guide on the Elixir website.
 
-**4. [Programming Pearls (Jon Bentley)](http://amzn.to/1YXikWi)**
+**4. [Programming Pearls (Jon Bentley)](https://www.amazon.com/dp/8177588583)**
 
 A collection of essays about problem solving in software development.
 The essays are mostly about topics like
@@ -167,7 +167,7 @@ when considering the computing power available to us today.
 However, the insights into the thinking process that Bentley describes
 for solving various kinds of problems are valuable to this day.
 
-**5. [Seven Languages in Seven Weeks (Bruce Tate)](http://amzn.to/1mWMOM9)**
+**5. [Seven Languages in Seven Weeks (Bruce Tate)](https://www.amazon.com/dp/9350234327)**
 
 Gives a whirlwind tour of 7 languages -
 Ruby, Io, Prolog, Clojure, Scala, Erlang and Haskell.
@@ -175,7 +175,7 @@ This isn't about the languages themselves
 as about learning some ideas from those languages
 that you can bring back to your everyday work.
 
-**6. [The Nature of Software Development (Ron Jeffries)](http://amzn.to/1YXizka)**
+**6. [The Nature of Software Development (Ron Jeffries)](https://www.amazon.com/dp/1941222374)**
 
 In this short book, Jeffries tries to simplify Agile
 by focusing on one this - delivering value.

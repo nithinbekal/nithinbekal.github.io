@@ -12,7 +12,7 @@ this list will be much shorter than the one from
 
 ## Non fiction
 
-**1. [What If: Serious Scientific Answers to Absurd Hypothetical Questions](http://amzn.to/2kHyGq7) (Randall Munroe)**
+**1. [What If: Serious Scientific Answers to Absurd Hypothetical Questions](https://www.amazon.com/dp/184854958X) (Randall Munroe)**
 
 As a huge fan of the XKCD comics I've always wished for a prose version of XKCD.
 This collection of weird "what if" questions are exactly what I was hoping for.
@@ -22,7 +22,7 @@ is simply incredible.
 One of the funniest books and most entertaining science books I've come across.
 It had me laughing out loud every few pages.
 
-**2. [Cosmos](http://amzn.to/2lkoXcz) (Carl Sagan)**
+**2. [Cosmos](https://www.amazon.com/dp/0349107033) (Carl Sagan)**
 
 I wish I had read this sooner.
 There are few books that have influenced
@@ -31,7 +31,7 @@ On the surface, it is a history of our Universe,
 but it also contains Sagan's reflections on our place in it.
 This goes straight into my list of favorite science books.
 
-**3. [The Ascent of Money](http://amzn.to/2kHDX16) (Niall Ferguson)**
+**3. [The Ascent of Money](https://www.amazon.com/dp/0718194004) (Niall Ferguson)**
 
 An excellent history of financial systems, starting with clay tablets in ancient Mesopotamia
 all the way through currency, stocks, bonds and the housing bubble of 2008.
@@ -39,7 +39,7 @@ There are places where I found the technical details hard to follow,
 and wished there was more explanation of the jargon.
 But it's an excellent read about how the evolution of finance has affected history.
 
-**4. [The Sceptical Patriot](http://amzn.to/2kHLk8H) (Sidin Vadukut)**
+**4. [The Sceptical Patriot](https://www.amazon.com/dp/8129129035) (Sidin Vadukut)**
 
 Fact checks some common "email forward facts" about India,
 like Susruta being the world's first plastic surgeon, or the invention of zero,
@@ -56,10 +56,10 @@ and I find his non fiction a lot more fun than his novels.
 
 ## Programming
 
-**1. [Elixir in Action](http://amzn.to/2krKC0V) (Sasa Juric)**
+**1. [Elixir in Action](https://www.amazon.com/dp/161729201X) (Sasa Juric)**
 
 Elixir has two awesome introductory books -
-this one and Dave Thomas' [Programming Elixir](http://amzn.to/2kLSNDy).
+this one and Dave Thomas' [Programming Elixir](https://www.amazon.com/dp/168050200X).
 Dave's book focused more on the language,
 while this one walks through building an app
 using the power of Elixir and OTP,
@@ -68,7 +68,7 @@ This book is more practical,
 although it skips on some of the language features (macros, testing, etc)
 that are covered in Dave Thomas' book.
 
-**2. [Programming Phoenix](http://amzn.to/2kmo3YP) (Chris McCord, Bruce Tate, Jose Valim)**
+**2. [Programming Phoenix](https://www.amazon.com/dp/1680501453) (Chris McCord, Bruce Tate, Jose Valim)**
 
 Not only is this an excellent introduction to Phoenix,
 but also helped clarify some features of Elixir,
@@ -80,7 +80,7 @@ and that will keep the book relevant for quite a while.
 The second part of the book, which covers the realtime features of Phoenix,
 is something I expect to return to many times in the future.
 
-**3. [Test-Driven Development, By Example](http://amzn.to/2krzKQs) (Kent Beck)**
+**3. [Test-Driven Development, By Example](https://www.amazon.com/dp/8131715957) (Kent Beck)**
 
 Fantastic introduction to TDD.
 The examples are such that they are great
@@ -90,7 +90,7 @@ A must-read for every software developer.
 
 ## Fiction
 
-**1. [New Spring](http://amzn.to/2krxpVY) (Robert Jordan)**
+**1. [New Spring](https://www.amazon.com/dp/0356504751) (Robert Jordan)**
 
 A final chance to revisit the Wheel of Time characters.
 Four years, 15 books and 12,000-odd pages after starting the series, I'm finally done.
@@ -104,16 +104,16 @@ I learned a few things about the Wheel of Time world
 that I hadn't noticed in the other books.
 Definitely worth a read if you liked the series.
 
-**2. [Brave New World](http://amzn.to/2lktZpu) (Aldous Huxley)**
+**2. [Brave New World](https://www.amazon.com/dp/0099477467) (Aldous Huxley)**
 
-It's difficult to talk about this book without mentioning [1984](http://amzn.to/2k830bO).
+It's difficult to talk about this book without mentioning [1984](https://www.amazon.com/dp/B0DVGTLYX2).
 They represent two kinds of totalitarianisms -
 Orwell's is one driven by fear, while Huxley's is driven by conformity,
 and we see a bit of both in the world around us.
 Like 1984, Brave New World is a book worth reading,
 because it makes you think deeply about what kind of world you're living in.
 
-**3. [Ender's Game](http://amzn.to/2krOLBV) (Orson Scott Card)**
+**3. [Ender's Game](https://www.amazon.com/dp/0356500845) (Orson Scott Card)**
 
 The book has its flaws -
 the characters aren't entirely 3 dimensional,
@@ -127,8 +127,8 @@ despite already knowing the plot through the movie.
 
 ## 2017
 
-I've started reading Patrick Rothfuss' [Name of the Wind](http://amzn.to/2kSWeek),
-and hope to read one of Brandon Sanderson's [Mistborn](http://amzn.to/2kSXhe4) books this year.
+I've started reading Patrick Rothfuss' [Name of the Wind](https://www.amazon.com/dp/0575081406),
+and hope to read one of Brandon Sanderson's [Mistborn](https://www.amazon.com/dp/0575089911) books this year.
 I have 44 unread books now, 30 of them ebooks.
 Those should keep me busy through 2017.
 
