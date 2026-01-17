@@ -71,7 +71,9 @@ task :og_image, [:post_file] do |t, args|
     exit 1
   end
 
-  title = File.read(post_file).match(/^title: (.+)$/)&.[](1)
+  title_match = File.read(post_file).match(/^title: (.+)$/)
+  title = YAML.load(title_match[1]) if title_match
+
   unless title
     puts "Could not extract title from #{post_file}"
     exit 1
