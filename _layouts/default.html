@@ -7,11 +7,11 @@
   <meta name="author" content="Nithin Bekal">
   <meta name="description" content="{{ site.description }}">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@nithinbekal">
-  <meta name="twitter:creator" content="@nithinbekal">
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ site.description }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="{% if page.url == '/' %}website{% else %}article{% endif %}">
+  <meta property="og:site_name" content="{{ site.name }}">
 
   {%- if page.og_image %}
   {% assign og_image = page.og_image %}
@@ -19,7 +19,6 @@
   {% assign og_image = "word-cloud.png" %}
   {% endif %}
 
-  <meta name="twitter:image" content="https://s3.amazonaws.com/nithinbekal.com/og/{{og_image}}">
   <meta property="og:image" content="https://s3.amazonaws.com/nithinbekal.com/og/{{og_image}}" />
 
   <title>{{ page.title }}</title>
