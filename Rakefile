@@ -115,6 +115,53 @@ task :og_image, [:post_file] do |t, args|
   puts output_path
 end
 
+desc "Upload an image to S3 for OG images"
+task :og_image_upload do
+  require "aws-sdk-s3"
+
+  files = Dir.glob("tmp/images/*").map { |f| File.basename(f) }
+
+  if files.empty?
+    puts "No files found in tmp/images/"
+    exit 1
+  end
+
+  selected_file = fzf(files, "Select an image to upload")
+
+  if selected_file.nil? || selected_file.empty?
+    puts "No file selected"
+    exit 0
+  end
+
+  local_path = File.join("tmp/images", selected_file)
+
+  credentials = Aws::Credentials.new(
+    ENV.fetch("AWS_ACCESS_KEY_ID"),
+    ENV.fetch("AWS_SECRET_ACCESS_KEY")
+  )
+
+  s3_client = Aws::S3::Client.new(
+    region: "us-east-1",
+    credentials: credentials,
+    ssl_verify_peer: false
+  )
+  bucket_name = "nithinbekal.com"
+  s3_key = "og/#{selected_file}"
+
+  File.open(local_path, "rb") do |file|
+    s3_client.put_object(
+      bucket: bucket_name,
+      key: s3_key,
+      body: file,
+      content_type: "image/png",
+      acl: "public-read"
+    )
+  end
+
+  s3_url = "https://s3.amazonaws.com/#{bucket_name}/#{s3_key}"
+  puts "Uploaded to: #{s3_url}"
+end
+
 def fetch_attributes(*keys)
   keys.to_h { |k| [k.to_s, ask("#{k.capitalize}: ")] }
 end
