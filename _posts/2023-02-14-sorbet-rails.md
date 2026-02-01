@@ -2,7 +2,10 @@
 layout: post
 title: Adding Sorbet to a Rails project
 date:  2023-02-14 12:00:00 -05:00
-categories: ruby
+categories:
+  - rails
+  - ruby
+  - sorbet
 ---
 
 Sorbet is a static type checker for Ruby.

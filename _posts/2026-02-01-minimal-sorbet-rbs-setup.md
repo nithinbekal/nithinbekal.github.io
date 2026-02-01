@@ -1,7 +1,9 @@
 ---
 title: Minimal Sorbet with inline RBS comments
 layout: post
-categories: ruby
+categories:
+  - ruby
+  - sorbet
 date: 2026-02-01
 og_image: minimal-sorbet-rbs-setup.png
 ---
