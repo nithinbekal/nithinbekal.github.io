@@ -117,8 +117,6 @@ end
 
 desc "Upload an image to S3 for OG images"
 task :og_image_upload do
-  require "aws-sdk-s3"
-
   files = Dir.glob("tmp/images/*").map { |f| File.basename(f) }
 
   if files.empty?
@@ -134,6 +132,27 @@ task :og_image_upload do
   end
 
   local_path = File.join("tmp/images", selected_file)
+  upload_to_s3(selected_file, local_path)
+end
+
+desc "Generate and upload OG image for a post"
+task :prepare_publish do
+  post_files = Dir.glob("_posts/*.md").sort.reverse
+  post_file = fzf(post_files, "Select a post to publish")
+
+  slug = File.basename(post_file, ".md").sub(/^\d{4}-\d{2}-\d{2}-/, "")
+  image_file = "#{slug}.png"
+  image_path = File.join("tmp/images", image_file)
+
+  puts "Generating OG image..."
+  Rake::Task["og_image"].execute(Rake::TaskArguments.new([:post_file], [post_file]))
+
+  puts "\nUploading image to S3..."
+  upload_to_s3(image_file, image_path)
+end
+
+def upload_to_s3(filename, local_path)
+  require "aws-sdk-s3"
 
   credentials = Aws::Credentials.new(
     ENV.fetch("AWS_ACCESS_KEY_ID"),
@@ -145,8 +164,9 @@ task :og_image_upload do
     credentials: credentials,
     ssl_verify_peer: false
   )
+
   bucket_name = "nithinbekal.com"
-  s3_key = "og/#{selected_file}"
+  s3_key = "og/#{filename}"
 
   File.open(local_path, "rb") do |file|
     s3_client.put_object(
