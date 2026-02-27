@@ -1,5 +1,5 @@
 ---
-title: Minimal Sorbet with inline RBS comments
+title: Minimal Sorbet setup with inline RBS comments
 layout: post
 categories:
   - ruby
