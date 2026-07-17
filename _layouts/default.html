@@ -57,7 +57,10 @@
     </div>
   </div> <!-- /container -->
   {% include footer-analytics.html %}
+  {%- assign rendered_content = content | downcase -%}
+  {%- if rendered_content contains 'href="https://www.amazon.' or rendered_content contains 'href="http://www.amazon.' or rendered_content contains 'href="https://amazon.' or rendered_content contains 'href="http://amazon.' or rendered_content contains 'href="https://amzn.to/' or rendered_content contains 'href="http://amzn.to/' -%}
   <script src="/js/amazon_localize.js" defer></script>
+  {%- endif -%}
 </body>
 
 </html>
