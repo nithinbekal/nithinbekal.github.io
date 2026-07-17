@@ -24,6 +24,10 @@ body {
 
 a { color: var(--main-link-color); text-decoration: none; }
 a:hover { text-decoration: underline; }
+a:focus-visible {
+  outline: 2px solid var(--main-link-color);
+  outline-offset: 3px;
+}
 h1, h2, h3, h4, h5, h6, strong { color: var(--bold-text-color); }
 
 .align-right { float: right; }
@@ -123,6 +127,10 @@ h1, h2, h3, h4, h5, h6, strong { color: var(--bold-text-color); }
 
 .site .post .content {
   margin: 60px 0;
+}
+.site .post .content a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 .site .post .content p  { margin: 20px 0; }
 .site .post .content ul,
