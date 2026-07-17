@@ -1,6 +1,12 @@
 <div id="comments"></div>
 <script>
+  var comments = document.getElementById("comments");
+  var scriptLoaded = false;
+
   function loadGiscusComments() {
+      if (scriptLoaded) return;
+
+      scriptLoaded = true;
       var script = document.createElement('script');
       script.src = "https://giscus.app/client.js";
       script.async = true;
@@ -19,17 +25,29 @@
       script.setAttribute("data-lang", "en");
       script.setAttribute("data-loading", "lazy");
 
-      document.getElementById("comments").appendChild(script);
+      comments.appendChild(script);
   }
 
-  var scriptLoaded = false;
-  function loadCommentScriptOnce() {
-    if (!scriptLoaded) {
-      loadGiscusComments();
-      scriptLoaded = true;
+  if ("IntersectionObserver" in window) {
+    var commentsObserver = new IntersectionObserver(function(entries) {
+      if (entries.some(function(entry) { return entry.isIntersecting; })) {
+        loadGiscusComments();
+        commentsObserver.disconnect();
+      }
+    }, { rootMargin: "800px 0px" });
+
+    commentsObserver.observe(comments);
+  } else {
+    function loadCommentsWhenNearViewport() {
+      var commentsTop = comments.getBoundingClientRect().top;
+
+      if (commentsTop <= window.innerHeight + 800) {
+        loadGiscusComments();
+        window.removeEventListener("scroll", loadCommentsWhenNearViewport);
+      }
     }
-  }
 
-  setTimeout(loadCommentScriptOnce, 5000);
-  window.addEventListener("scroll", loadCommentScriptOnce);
+    window.addEventListener("scroll", loadCommentsWhenNearViewport, { passive: true });
+    loadCommentsWhenNearViewport();
+  }
 </script>
