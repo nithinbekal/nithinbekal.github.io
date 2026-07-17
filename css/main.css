@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6, strong { color: var(--bold-text-color); }
   margin: 50px 0 0 0;
   font-family: Georgia, serif;
 }
-.about-me h2 {
+.about-me h1 {
   font-size: 2em;
   font-weight: bolder;
   margin: 0 0 30px 0;
@@ -94,6 +94,7 @@ h1, h2, h3, h4, h5, h6, strong { color: var(--bold-text-color); }
 
 .site .posts .post-listing { line-height: 2em; }
 .site .posts .post-listing .year { margin: 30px 0; }
+.site .posts .post-listing .year h2 { font-size: 1.17em; }
 .site .posts .post-listing ul { padding: 20px 0; }
 .site .posts .post-listing ul li { list-style-type: none; }
 .site .posts .published-on {
