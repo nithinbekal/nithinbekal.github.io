@@ -12,7 +12,7 @@ Although Devise is a fantastic authentication library, I've been reaching for [R
 
 Recently, I finally removed devise from an old project and replaced it with the generated authentication code. This turned out to be far easier than expected. Here are my notes:
 
-### Run the generator
+## Run the generator
 
 The first thing to do is to run the generator:
 
@@ -22,7 +22,7 @@ rails generate authentication
 
 This creates a bunch of files and overwrites some of our existing code, especially the `User` model. ([Here's an excellent walkthrough of the generated code](https://www.bigbinary.com/blog/rails-8-introduces-a-basic-authentication-generator).)
 
-### Create a new migration for users table
+## Create a new migration for users table
 
 The generator creates a `CreateUsers` migration, but we already have a users table. I deleted the generated migration, and created a new one that updates the table to match what the generated code expects.
 
@@ -46,7 +46,7 @@ end
 
 The generator uses `email_address` instead of Devise's `email` column. Keeping the name could have worked, but I decided to switch to the new name for the sake of consistency across projects.
 
-### Restore the `User` model
+## Restore the `User` model
 
 The generator overwrote `app/models/user.rb`. Keep the generated `has_secure_password`, `has_many :sessions`, and `normalizes :email_address` lines, then restore all the other validations, associations, or any methods that you might have.
 
@@ -66,11 +66,11 @@ class User < ApplicationRecord
 end
 ```
 
-### Update the routes
+## Update the routes
 
 The generator would already have added the new routes for sessions and passwords, but we still have a `devise_for :users` line, which should be removed.
 
-### Fix up `ApplicationController`
+## Fix up `ApplicationController`
 
 Devise exposes a `current_user` helper that I use everywhere in the views, but the generated code exposes the current user using `CurrentAttributes`. I decided to add the helpers I was already using to `ApplicationController`:
 
@@ -83,7 +83,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-### Fix test helpers
+## Fix test helpers
 
 `Devise::Test::IntegrationHelpers` was included in `test_helper.rb`, so I removed it. The generator added a `test/test_helpers/session_test_helper.rb` file with a `sign_in_as` method. I added a `sign_in` alias for that method, so I don't have to change all the existing tests in the same PR.
 
@@ -97,18 +97,18 @@ admin:
   password_digest: <%= password_digest %>
 ```
 
-### Add `RegistrationsController`
+## Add `RegistrationsController`
 
 The generator doesn't add a sign up route, so I had to manually add it. This is documented in my previous [post about the authentication generator](/posts/rails-8-auth/#adding-registrations-to-rails-8).
 
-### Replace devise path helpers
+## Replace devise path helpers
 
 The devise path helper names are different, so we need to update those in the views:
 
 - Login: `new_session_path` instead of `new_user_session_path`
 - Logout: `session_path` instead of `destroy_user_session_path`
 
-### Fix system tests
+## Fix system tests
 
 Devise includes `Warden::Test::Helpers` in `ApplicationSystemTestCase`, which provides a `login_as` helper. Warden is no longer a dependency, so we need to remove that and the `teardown` block that references it:
 
@@ -153,7 +153,7 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
 end
 ```
 
-### Remove devise completely
+## Remove devise completely
 
 Now that everything else is fixed, we can remove all references to `devise` in the code:
 
@@ -161,6 +161,6 @@ Now that everything else is fixed, we can remove all references to `devise` in t
 - Delete `config/initializers/devise.rb`
 - Delete `config/locales/devise.en.yml`
 
-### Wrapping up
+## Wrapping up
 
 With that, I was able to remove another dependency from the project. If I had more complex authentication requirements, I'd have kept devise on. However, it is overkill for an app only for myself. The migration was quite easy, and now I have one less dependency to worry about.
