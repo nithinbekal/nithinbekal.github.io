@@ -195,6 +195,11 @@ h1, h2, h3, h4, h5, h6, strong { color: var(--bold-text-color); }
   position: relative;
 }
 
+#author-bio .bio > a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 #author-bio .links { text-align: center; }
 #author-bio .links a { padding: 0 10px; }
 
