@@ -34,7 +34,11 @@
   <link rel="stylesheet" href="/css/syntax.css">
   {%- endif -%}
   {%- if page.balloon_css -%}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/1.2.0/balloon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/1.2.0/balloon.min.css"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/1.2.0/balloon.min.css">
+  </noscript>
   {%- endif -%}
 
   {% include analytics.html %}
