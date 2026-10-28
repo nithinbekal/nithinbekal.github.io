@@ -75,7 +75,7 @@ balloon_css: true
           {% for post in year.items %}
           <li>
             <code class='published-on'>{{ post.date | date: "%d %b" }}</code>
-            <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
+            <a class='title' href='{{ post.url }}'>{% if post.podcast %}{{ post.podcast }} - "{{ post.title }}"{% else %}{{ post.title }}{% endif %}</a>
 
             {% for category in post.categories %}
               <a href="/categories/{{ category }}/" class='category'> {{ category }} </a>
