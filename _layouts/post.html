@@ -10,7 +10,7 @@ layout: default
   {{ content }}
   </div>
 
-  {%- if page.categories -%}
+  {%- if page.categories.size > 0 -%}
     <div class="categories-links">
       Tags:
       {%- for category in page.categories -%}
