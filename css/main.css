@@ -285,3 +285,100 @@ hr {
   }
   .top-nav-link { padding: 0 5px; }
 }
+
+.site .posts .compact-archive {
+  color: #e4e5e9;
+  font-size: 15px;
+  line-height: 1.45;
+}
+.site .posts .compact-archive .year { margin: 16px 0 0; }
+.site .posts .compact-archive .year:first-child { margin-top: 0; }
+.site .posts .compact-archive .year h2 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 7px;
+  color: var(--main-link-color);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.2px;
+}
+.site .posts .compact-archive .year h2::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #30343e;
+}
+.site .posts .compact-archive ul { padding: 0; margin: 0; }
+.site .posts .compact-archive ul li {
+  display: grid;
+  grid-template-columns: 51px minmax(0, 1fr);
+  gap: 14px;
+  align-items: baseline;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+}
+.site .posts .compact-archive .published-on {
+  display: block;
+  padding: 0;
+  color: #a0a4b0;
+  font: 12px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.site .posts .compact-archive .post-details {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  min-width: 0;
+}
+.site .posts .compact-archive .title {
+  color: inherit;
+  font-size: 18px;
+  letter-spacing: -0.1px;
+  overflow-wrap: anywhere;
+}
+.site .posts .compact-archive .title:hover { color: var(--main-link-color); }
+.site .posts .compact-archive .post-categories {
+  display: flex;
+  flex-shrink: 0;
+  gap: 9px;
+}
+.site .posts .compact-archive .category {
+  display: inline;
+  padding: 0;
+  color: var(--main-link-color);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .site .posts .compact-archive .post-details { display: block; }
+  .site .posts .compact-archive ul li {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .site .posts .compact-archive .post-categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .site .posts .compact-archive .title { font-size: 16px; }
+  .site .posts .compact-archive ul li {
+    grid-template-columns: 6px minmax(0, 1fr);
+  }
+  .site .posts .compact-archive ul li::before {
+    content: '•';
+    color: #a0a4b0;
+  }
+  .site .posts .compact-archive .published-on,
+  .site .posts .compact-archive .post-categories {
+    display: none;
+  }
+}
