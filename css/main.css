@@ -3,7 +3,7 @@
   --background-color: #111;
   --bold-text-color: #ddd;
   --text-color: #ccc;
-  --main-link-color: #79a7b5;
+  --main-link-color: #b7c3ee;
   --author-bio-border-color: #7c7c7c;
   --heading-border-color: #444;
 }
@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6, strong { color: var(--bold-text-color); }
 }
 .site .posts .category {
   font-size: 0.7em;
-  color: #b8b8b8;
+  color: var(--main-link-color);
 }
 .site .post .category { font-size: 0.8em; }
 
