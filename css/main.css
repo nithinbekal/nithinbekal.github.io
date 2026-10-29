@@ -45,7 +45,8 @@ h1, h2, h3, h4, h5, h6, strong { color: var(--bold-text-color); }
 }
 
 .container > .header {
-  padding: 30px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #30343e;
 }
 
 .container > .header h1.title {
@@ -56,11 +57,19 @@ h1, h2, h3, h4, h5, h6, strong { color: var(--bold-text-color); }
 .container > .header .links { padding: 0 0 0 20px; }
 
 .container > .header .links a {
+  color: #a0a4b0;
   font-size: 0.9em;
   padding: 0 10px;
 }
 
-.site-title > a { font-weight: bold; }
+.site-title > a {
+  color: #e4e5e9;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+}
+.container > .header a:hover { color: var(--main-link-color); text-decoration: none; }
 
 .about-me {
   font-style: italic;
