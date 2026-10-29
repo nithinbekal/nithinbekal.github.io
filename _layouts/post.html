@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class='post'>
-  <h1 class='title'>{% if page.podcast %}{{ page.podcast }} - "{{ page.title }}"{% else %}{{ page.title }}{% endif %}</h1>
+  <h1 class='title'>{{ page.title }}</h1>
   <p class='meta'>{{ page.date | date_to_string }}{% if page.kind == 'podcast' %} · Podcast · {{ page.podcast }}{% endif %}</p>
 
   <div class='content'>

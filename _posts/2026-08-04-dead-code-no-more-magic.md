@@ -1,5 +1,5 @@
 ---
-title: No More Magic
+title: 'Dead Code Podcast - "No More Magic"'
 layout: post
 date: 2026-08-04
 kind: podcast
@@ -9,7 +9,7 @@ listen_url: https://shows.acast.com/dead-code/episodes/no-more-magic-with-nithin
 
 I joined Jared Norman on the Dead Code Podcast to talk about [Sapphire](https://sapphire-lang.dev), my Ruby-inspired hobby programming language. We talked about programming language design, developer ergonomics, and how heavy use of LLMs shaped the language.
 
-{% include podcast_link.html %}
+[Listen on Dead Code Podcast](https://shows.acast.com/dead-code/episodes/no-more-magic-with-nithin-bekal)
 
 > On this episode of Dead Code, Jared talks with Nithin Bekal, a longtime Ruby developer at Shopify, about Sapphire, his hobby programming language: a gradually typed, object-oriented language inspired by Ruby but stripped of metaprogramming magic, implemented in Rust, with features admitted only if he'd use them in production code.
 >

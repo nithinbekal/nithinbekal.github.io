@@ -76,7 +76,7 @@ balloon_css: true
           <li>
             <time class='published-on' datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%d %b" }}</time>
             <div class='post-details'>
-              <a class='title' href='{{ post.url }}'>{% if post.podcast %}{{ post.podcast }} - "{{ post.title }}"{% else %}{{ post.title }}{% endif %}</a>
+              <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
               {% if post.categories.size > 0 %}
                 <span class='post-categories'>
                   {% for category in post.categories %}
