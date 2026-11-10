@@ -1,0 +1,80 @@
+{%- capture page_url -%}{{ site.url }}{{ page.url | replace:'index.html','' }}{%- endcapture -%}
+{%- capture website_id -%}{{ site.url }}/#website{%- endcapture -%}
+{%- capture person_id -%}{{ site.url }}/#person{%- endcapture -%}
+{%- capture blog_id -%}{{ site.url }}/#blog{%- endcapture -%}
+{%- capture page_id -%}{{ page_url }}#webpage{%- endcapture -%}
+{%- capture post_id -%}{{ page_url }}#blogposting{%- endcapture -%}
+{%- if page.url == '/' -%}
+  {%- assign page_type = 'ProfilePage' -%}
+{%- elsif page.layout == 'post' -%}
+  {%- assign page_type = 'WebPage' -%}
+{%- elsif page.layout == 'category' -%}
+  {%- assign page_type = 'CollectionPage' -%}
+{%- else -%}
+  {%- assign page_type = 'WebPage' -%}
+{%- endif -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ website_id | jsonify }},
+      "url": {{ site.url | append: '/' | jsonify }},
+      "name": {{ site.name | jsonify }}
+    },
+    {
+      "@type": "Person",
+      "@id": {{ person_id | jsonify }},
+      "url": {{ site.url | append: '/' | jsonify }},
+      "name": {{ site.name | jsonify }},
+      "sameAs": [
+        "https://github.com/nithinbekal",
+        "https://ruby.social/@nithinbekal",
+        "https://bsky.app/profile/nithinbekal.bsky.social",
+        "https://www.instagram.com/nithinbekal/",
+        "https://www.goodreads.com/user/show/1059476-nithin-bekal",
+        "https://www.linkedin.com/in/nithinbekal/"
+      ]
+    },
+    {
+      "@type": "Blog",
+      "@id": {{ blog_id | jsonify }},
+      "url": {{ site.url | append: '/' | jsonify }},
+      "name": {{ site.name | append: "'s Blog" | jsonify }},
+      "publisher": { "@id": {{ person_id | jsonify }} }
+    },
+    {
+      "@type": {{ page_type | jsonify }},
+      "@id": {{ page_id | jsonify }},
+      "url": {{ page_url | jsonify }},
+      "name": {{ page.title | jsonify }},
+      "isPartOf": { "@id": {{ website_id | jsonify }} }
+      {% if page.url == '/' %},
+      "mainEntity": { "@id": {{ person_id | jsonify }} }
+      {% elsif page.layout == 'post' %},
+      "mainEntity": { "@id": {{ post_id | jsonify }} }
+      {% endif %}
+    }
+    {% if page.layout == 'post' %},
+    {
+      "@type": "BlogPosting",
+      "@id": {{ post_id | jsonify }},
+      "url": {{ page_url | jsonify }},
+      "isPartOf": { "@id": {{ blog_id | jsonify }} },
+      "mainEntityOfPage": { "@id": {{ page_id | jsonify }} },
+      "headline": {{ page.title | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "author": { "@id": {{ person_id | jsonify }} },
+      "publisher": { "@id": {{ person_id | jsonify }} }
+      {% if page.last_modified_at %},
+      "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }}
+      {% endif %}
+      {% if page.og_image %},
+      "image": {{ page.og_image | prepend: 'https://s3.amazonaws.com/nithinbekal.com/og/' | jsonify }}
+      {% endif %}
+    }
+    {% endif %}
+  ]
+}
+</script>
