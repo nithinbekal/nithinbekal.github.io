@@ -12,13 +12,12 @@ List of tech that I use on a daily basis, inspired by [uses.tech](https://uses.t
 
 💻 Computers
 
-- Work: **[Macbook Pro 14"](https://www.apple.com/ca/macbook-pro/)** M3 Pro, 32GB RAM ([review](/posts/macbook-pro-m3/))
-- Personal: **Macbook Pro 16" 2019** Intel Core i7 2.6Ghz, 32GB RAM
-- Gaming: **Windows PC** Ryzen 5600X, RTX 1080Ti, 32GB RAM
+- **[Macbook Pro 14"](https://www.apple.com/ca/macbook-pro/)** M5 Pro, 64GB RAM
+- **Windows PC** for occasional gaming (Ryzen 5600X, RTX 1080Ti, 32GB RAM)
 
 Accessories
 
-- ⌨️ Keyboard: **[Logitech K120](https://www.amazon.com/dp/B003ELVLKU/)** keyboard
+- ⌨️ Keyboard: **[Ergodox EZ Shine](https://ergodox-ez.com/)**
 - 🖱️ Mouse: **[Logitech MX Master 3S Wireless](https://www.amazon.com/dp/B0FB21526X/)**
 - 🎧 Earbuds: **[Airpods Pro 2](https://www.amazon.com/dp/B0CP4CG1ZB/)** ([review](/posts/airpods-pro-review/))
 - 🎙️ Microphone: **[Blue Yeti](https://www.amazon.com/dp/B01LY6Z2M6/)**
@@ -29,7 +28,7 @@ Accessories
 
 - Phone: **[Samsung S21 Ultra](https://www.amazon.com/dp/B0CKZXY7CD/)**
 - Watch: **[Galaxy Watch 7 Ultra](https://www.amazon.com/dp/B0F7PKN2C8/)** ([review](/posts/galaxy-watch-7-ultra/))
-- Earbuds: **[Airpods Pro 2](https://www.amazon.com/dp/B0CP4CG1ZB/)** ([review](/posts/airpods-pro-review/)) for regular use, **Jaybird Vista** for workouts
+- Earbuds: **[Airpods Pro 2](https://www.amazon.com/dp/B0CP4CG1ZB/)** ([review](/posts/airpods-pro-review/))
 - Reading: **[Kindle Oasis](https://www.amazon.com/dp/B0CNV9F72P/)**
 - **[iPad Pro 12.9" 2018](https://www.apple.com/ca/ipad-pro/)** for reading graphic novels or notetaking with [Apple Pencil](https://www.apple.com/ca/apple-pencil/)
 
@@ -47,52 +46,58 @@ Accessories
 
 ### Software
 
-**Editors and IDEs**
-
-- **[Neovim](/posts/decade-of-vim/)** as the primary text editor ([read more](/posts/decade-of-vim/))
-- **[Cursor](https://cursor.com/)**  when I'm depending on AI assistance in the editor, which is fairly often these days
-- **[Antigravity](/posts/antigravity-impressions/)**, as an alternative to Cursor, for hobby projects ([read more](/posts/antigravity-impressions/))
-
 **Terminal**
 
 I use an installer script to set up my [dotfiles](https://github.com/nithinbekal/dotfiles) with these tools:
 
-- **iTerm2** terminal emulator
+- **Ghostty**
 - **zsh**
+- **[Neovim](/posts/decade-of-vim/)** as the primary text editor ([read more](/posts/decade-of-vim/))
 - **Homebrew** for installing commandline tools
 - **mise** for switching tool versions
 - **fzf** for fuzzy file search
 - **ripgrep** for search
 - **[Fira Code](https://github.com/tonsky/FiraCode)** font
 
+**AI**
+
+Models
+- **GPT 6 Luna** is my default model, with **Sol** for planning
+- **Deepseek V4 Flash** for Hermes.
+
+Providers
+- **GPT Plus** subscription is my go-to these days for the value it provides.
+- **Openrouter**: I usually put $10 in credits for testing out open models
+- **Deepseek API** makes Deepseek V4 Flash a lot cheaper because of much better caching compared to Openrouter.
+
+Harnesses
+- **[Pi](https://pi.dev/)** as the coding harness
+- **[BB](https://getbb.app/)** to set up automations and custom UIs on top of Pi
+- **ChatGPT desktop** when I'm working on front end.
+  The annotate feature in the in-app browser is fantastic for iterating on UI.
+- **[Hermes](https://hermes-agent.nousresearch.com/)** as an always on remote agent running on a VPS.
+
+_See posts tagged [#AI](/categories/ai/) for more._
+
 **Desktop apps**
 
 - **Google Chrome** for browsing and devtools
 - **[Obsidian](/posts/logseq-to-obsidian/)**, for personal note taking and journaling at home
-- **[Logseq](https://logseq.com/)** for note taking and tracking daily todos at work.
 - **[Raycast](https://www.raycast.com/)** instead of spotlight on Mac
 - **[MonitorControl](https://github.com/MonitorControl/MonitorControl)** for controlling external display brightness
 - **[Notunes](https://github.com/tombonez/noTunes)** for preventing Mac from accidentally opening Apple Music
-
-**GenAI**
-
-- **Cursor** for AI assisted coding
-- **Antigravity**, as an alternative to Cursor, for hobby projects ([read more](/posts/antigravity-impressions/))
-- **Claude Code** at work, to hand off long running tasks, when I'm not doing hands on coding
-- **[Ollama](https://ollama.com/)** for playing with local models
-
-_See posts tagged [#AI](/categories/ai/) for more._
+- **[LM Studio](https://lmstudio.ai/)** for playing with local models.
 
 ### Tech stack 
 
-I primarily work on **Ruby + Rails + MySQL** at work, with **GraphQL** acting as the API for the React frontent.
+For the past decade, I've worked primarily on **Ruby**, with a **Rails** monolith, backed by **MySQL**.
+**GraphQL** acts as the API layer for a **React** front end.
 
-For hobby projects, these  are the technologies I reach for:
+For hobby projects, I typically reach for:
 
-- **Ruby + Rails + SQLite** as the default stack for hobby web apps like [photography](https://photos.nithinbekal.com/) and [bookmarks](https://bukmark.me/) sites
-  - **Postgres** was my default DB in the past, but I like having the simplicity of SQLite
-- **Elixir + Phoenix + SQLite** when I'm looking for a change of scenery from Rails ([Devlibrary](https://devlibrary.org/))
-- **Fly.io** for hosting web apps
+- **Rust** + **Axum** + **SQLite** for small apps
+- **Elixir + Phoenix + SQLite** for more complex apps
+- **Hetzner** VPS for hosting web apps
 - **Cloudflare** for domains and CDN 
 
 **Blogging**
@@ -100,6 +105,5 @@ For hobby projects, these  are the technologies I reach for:
 - **Jekyll** with [custom theme](https://github.com/nithinbekal/nithinbekal.github.io/)
 - **GitHub Pages** for hosting
 - **S3** for hosting images and assets
-- **Cloudflare** CDN 
-- **Obsidian** for editing markdown
-
+- **Cloudflare** as a CDN 
+- **Obsidian** for composing posts in markdown
