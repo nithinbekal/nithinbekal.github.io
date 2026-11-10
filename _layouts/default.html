@@ -16,7 +16,7 @@
   {%- if page.og_image %}
   {% assign og_image = page.og_image %}
   {% else %}
-  {% assign og_image = "word-cloud.png" %}
+  {% assign og_image = "default.png" %}
   {% endif %}
 
   <meta property="og:image" content="https://s3.amazonaws.com/nithinbekal.com/og/{{og_image}}" />
