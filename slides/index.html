@@ -6,12 +6,17 @@ title: Slides
 <div class='posts'>
   {% assign slides = site.pages | where: 'layout', 'revealjs' | sort: 'date' | reverse %}
 
-  {% for page in slides %}
-    <div class='post-listing'>
-      <a class='title' href='{{ page.url }}'>{{ page.title }}</a>
-      <br/>
-      <span class='published-on'>{{ page.date | date: "%-d %B %Y" }}</span>
-    </div>
-  {% endfor %}
+  <div class='post-listing'>
+    <ul>
+      {% for page in slides %}
+        <li>
+          <time class='published-on' datetime='{{ page.date | date: "%Y-%m-%d" }}'>{{ page.date | date: "%d %b" }}</time>
+          <div class='post-details'>
+            <a class='title' href='{{ page.url }}'>{{ page.title }}</a>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
 

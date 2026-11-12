@@ -64,7 +64,7 @@ balloon_css: true
 </div>
 
 <div class='posts'>
-  <div class='post-listing compact-archive'>
+  <div class='post-listing'>
     {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
     {% for year in years %}
