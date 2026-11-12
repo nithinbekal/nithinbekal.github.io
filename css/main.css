@@ -244,7 +244,34 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.categories-links { margin: 40px 0 100px 0; }
+.categories-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 56px;
+}
+.site .post .categories-links .category {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 5px;
+  background: #242733;
+  color: #b7c3ee;
+  font-size: 0.72em;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.categories-links .category:hover {
+  background: #303544;
+  text-decoration: none;
+}
+.categories-links .category:focus-visible {
+  outline: 2px solid var(--main-link-color);
+  outline-offset: 2px;
+}
 
 .note {
   background: #1b1b1b;

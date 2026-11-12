@@ -12,7 +12,6 @@ layout: default
 
   {%- if page.categories.size > 0 -%}
     <div class="categories-links">
-      Tags:
       {%- for category in page.categories -%}
       <a href="/categories/{{ category }}/" class='category'> {{ category }} </a>
       {%- endfor -%}
