@@ -364,7 +364,10 @@ hr {
 }
 
 @media (max-width: 600px) {
-  .site .posts .post-listing .post-details { display: block; }
+  .site .posts .post-listing .post-details {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
   .site .posts .post-listing ul li {
     grid-template-columns: 48px minmax(0, 1fr);
     gap: 10px;
