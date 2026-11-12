@@ -3,7 +3,7 @@ title: Leaving Shopify
 layout: post
 categories: 
   - updates
-date: 2026-11-13
+date: 2026-11-12
 og_image: leaving-shopify.png
 ---
 
