@@ -18,7 +18,8 @@ layout: default
               <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
               {% if post.categories.size > 0 %}
                 <span class='post-categories'>
-                  {% for category in post.categories %}
+                  {% assign sorted_categories = post.categories | sort %}
+                  {% for category in sorted_categories %}
                     <a href="/categories/{{ category }}/" class='category'>{{ category }}</a>
                   {% endfor %}
                 </span>
