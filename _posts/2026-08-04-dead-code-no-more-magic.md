@@ -4,6 +4,8 @@ layout: post
 date: 2026-08-04
 kind: podcast
 podcast: Dead Code Podcast
+categories:
+  - podcasts
 listen_url: https://shows.acast.com/dead-code/episodes/no-more-magic-with-nithin-bekal
 ---
 
